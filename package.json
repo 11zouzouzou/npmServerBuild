@@ -1,0 +1,8 @@
+{
+  "name": "npm-server-build",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:11zouzouzou/npmServerBuild.git",
+  "author": "zouzouzou11 <1096174991@qq.com>",
+  "license": "MIT"
+}
