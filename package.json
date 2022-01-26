@@ -17,5 +17,8 @@
   },
   "files": [
     "build/"
-  ]
+  ],
+  "devDependencies": {
+    "pm2": "^5.1.2"
+  }
 }
