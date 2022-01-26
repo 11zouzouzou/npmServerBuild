@@ -1,0 +1,3224 @@
+{
+	"name": "@verdaccio/commons-api",
+	"versions": {
+		"0.0.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "0.0.1",
+			"description": "commons api utilities for verdaccio",
+			"main": "lib/index.js",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"devDependencies": {
+				"@commitlint/cli": "8.0.0",
+				"@commitlint/config-conventional": "8.0.0",
+				"@types/http-errors": "1.6.1",
+				"@types/jest": "24.0.15",
+				"@types/node": "12.0.10",
+				"@verdaccio/babel-preset": "0.2.1",
+				"@verdaccio/eslint-config": "0.0.1",
+				"codecov": "3.5.0",
+				"eslint": "5.16.0",
+				"husky": "2.4.1",
+				"in-publish": "2.0.0",
+				"jest": "24.8.0",
+				"lint-staged": "8.2.1",
+				"standard-version": "6.0.1",
+				"typescript": "3.5.2"
+			},
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"private": false,
+			"license": "MIT",
+			"dependencies": {
+				"http-errors": "^1.7.2"
+			},
+			"lint-staged": {
+				"*.{ts, json}": [
+					"npm run lint",
+					"git add"
+				]
+			},
+			"homepage": "https://github.com/verdaccio/commons-api",
+			"scripts": {
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"coverage": "codecov",
+				"release": "standard-version -a -s",
+				"test": "jest .",
+				"lint": "npm run type-check && eslint . --ext .js,.ts",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch",
+				"build": "npm run build:types && npm run build:js",
+				"build:types": "tsc --emitDeclarationOnly",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --ignore __tests__",
+				"precommit": "lint-staged",
+				"prepublish": "in-publish && npm run lint && npm run build || not-in-publish"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"engines": {
+				"node": ">=8"
+			},
+			"_id": "@verdaccio/commons-api@0.0.1",
+			"_nodeVersion": "10.15.0",
+			"_npmVersion": "6.9.0",
+			"dist": {
+				"integrity": "sha512-bPY15WJwOH/MkWXL69Bb0QxQHF//vgcW4nmQ7iKSGngSUkmfsIw7ggmdAU3RxU0Ycs2eDdegUVIC+d06Lzyo4A==",
+				"shasum": "f869678f31ebe2f2866335dabb1932ad2e03a374",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-0.0.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 12442,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdDj08CRA9TVsSAnZWagAAQaMP/02MVtOvZP8BpJOqL6Nv\nN15S60PPL0iaxj4vTnF7okwRx6DmBNAvHJnN2kZLA8VOmJACMmRbmu6qeNd+\nUIMFFzqM5Ck79mt1ZtZ+iBJYgXK9YIige0eDD5bxVhQ168rqnBqGGri7Q+xk\nnS/fjl0AE2QnmAV2OsupY9PO+0J0Au3BT/33O0PqkMhrIeZXLzXG0moN2uji\nIQVf906baz6eaX0FgUcWpEMhdyrrSnwOpgcFWbEHLRfJT43dzulkYPlfCHMj\nnsjLLFmbNcOl2X8J2/E2D4LtHozZbc4MA5b+a4mqBW5Y4s2dY0iBrhtCoxUM\n0e2rQ1WWnQ3dEXBQFfe3vDkur1kzpilxXqLqk/RQIJRAqls+ug6ZCcBdIi2p\nyMZetpqimSo46/CctAlnmWdZavS3hfgWA50SXLWy/oDbFz8X4sjC/KsibPW1\nTInp6xFgecU11WzAw5SdiONMGo4/syeqtS6QR6F8xEXw182BtGLcO9AC3/+b\nrYB9ge7wxSKJo4UbWSMiXQmvTGoJDcdDx9zcB3KnY0sdbLjgbThfihAzwVL3\nHxTjsB+jwgA/H1TnA7h1FH08IomlCeTWTeuzlvxHwjC6TbIIDxZpz0kiEgn2\nx9p237QsMren0XQNm6ptMVQ2+M3wUwq3qTp1W2/4t36MhXxxO/mtXVcEfqQM\nZb7V\r\n=9KLt\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_0.0.1_1561214267477_0.7309322535316403"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.1.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "0.1.0",
+			"description": "commons api utilities for verdaccio",
+			"main": "lib/index.js",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"devDependencies": {
+				"@commitlint/cli": "8.0.0",
+				"@commitlint/config-conventional": "8.0.0",
+				"@types/http-errors": "1.6.1",
+				"@types/jest": "24.0.15",
+				"@types/node": "12.0.10",
+				"@verdaccio/babel-preset": "0.2.1",
+				"@verdaccio/eslint-config": "0.0.1",
+				"codecov": "3.5.0",
+				"eslint": "5.16.0",
+				"husky": "2.5.0",
+				"in-publish": "2.0.0",
+				"jest": "24.8.0",
+				"lint-staged": "8.2.1",
+				"standard-version": "6.0.1",
+				"typescript": "3.5.2"
+			},
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"private": false,
+			"license": "MIT",
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"lint-staged": {
+				"*.{ts, json}": [
+					"npm run lint",
+					"git add"
+				]
+			},
+			"homepage": "https://github.com/verdaccio/commons-api",
+			"scripts": {
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"coverage": "codecov",
+				"release": "standard-version -a -s",
+				"test": "jest .",
+				"lint": "npm run type-check && eslint . --ext .js,.ts",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch",
+				"build": "npm run build:types && npm run build:js",
+				"build:types": "tsc --emitDeclarationOnly",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"precommit": "lint-staged",
+				"prepublish": "in-publish && npm run lint && npm run build || not-in-publish"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"engines": {
+				"node": ">=8"
+			},
+			"licenseText": "MIT License\n\nCopyright (c) 2017 Verdaccio team\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "@verdaccio/commons-api@0.1.0",
+			"dist": {
+				"shasum": "6d36820038b64ee34026a2dcf15a15d6c3623edf",
+				"integrity": "sha512-qWIaXL9fzUabiAKRp1idROBeCn3GUwfMjwpOd3wDHwP1LQJZh0CDifIP+p0DROx2mR/fAteu0SIRRP5hV41Ryg==",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-0.1.0.tgz",
+				"fileCount": 8,
+				"unpackedSize": 12764,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdEoreCRA9TVsSAnZWagAAwiMQAI5Mm4iGv7AFKLRL1ksY\nqSN/tTKsW6oeJLY/UEL3OfYIsRrEDwHDEeUmhm6x4YeqMKiguV95P5Hs2pUP\nY0un727KY89FuTdMZo61lrjB7ohPbf7jLcOoOE/YtSzKMIUaO3uGGpmJ00Vr\nywBdY67jXstcTqiphpJwUzPQ31g//a7o3zQSGffBihDsJPJ8CnNqAVB0IYgz\nE9SNcUNmdAATUdYkD8Ik0b0mMxakplWyUWO4vUXnNbugv48/BJ7JaJEufRqL\n69yPF9Gy5NLFluyoScPsGQLi8pi//2Nq2gXi9WRlhz14spdRYF/McucYp6tN\n10R/BH+Ucux3FngnSo7awjIH6YGi3Hr9oT+voNgQWQ1yVf6KVeB/vGLpDpMq\ncAYNQ9b/b0wb60oUozyluP60dpi/cKFpyIfkKkJeBxJkiIkHFJNATmim7pk9\nesfKAdMsWqPc48W8/8/Lbenyj+qEO7IHGM/9u5cK/lMJGev+btoLdlf1hcnf\nQmQtYK3D4ck5WsYN/05x1Th1aY52m6TKWxcKBI/uk8mUUEsGiNI1CHjHsCae\n8AvU+mLk72wziHiTzB1IVZ19ueAwyqHViXx1+dfUg0/0YBfl8n4b25bOg/Wb\nKSXKfazJIq7Q+ESd4aSrzjxFtQh/dwFx74otKbNR5qwYdWcZ+SCZ19/goc+J\nLZnH\r\n=NJon\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_0.1.0_1561496285556_0.2501104320023788"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "0.1.1",
+			"description": "commons api utilities for verdaccio",
+			"main": "lib/index.js",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"devDependencies": {
+				"@commitlint/cli": "8.0.0",
+				"@commitlint/config-conventional": "8.0.0",
+				"@types/http-errors": "1.6.1",
+				"@types/jest": "24.0.15",
+				"@types/node": "12.6.2",
+				"@verdaccio/babel-preset": "0.2.1",
+				"@verdaccio/eslint-config": "0.0.1",
+				"codecov": "3.5.0",
+				"eslint": "5.16.0",
+				"husky": "2.5.0",
+				"in-publish": "2.0.0",
+				"jest": "24.8.0",
+				"lint-staged": "8.2.1",
+				"standard-version": "6.0.1",
+				"typescript": "3.5.2"
+			},
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"private": false,
+			"license": "MIT",
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"lint-staged": {
+				"*.{ts, json}": [
+					"npm run lint",
+					"git add"
+				]
+			},
+			"homepage": "https://github.com/verdaccio/commons-api",
+			"scripts": {
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"coverage": "codecov",
+				"release": "standard-version -a -s",
+				"test": "jest .",
+				"lint": "npm run type-check && eslint . --ext .js,.ts",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch",
+				"build": "npm run build:types && npm run build:js",
+				"build:types": "tsc --emitDeclarationOnly",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"precommit": "lint-staged",
+				"prepublish": "in-publish && npm run lint && npm run build || not-in-publish"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"engines": {
+				"node": ">=8"
+			},
+			"licenseText": "MIT License\n\nCopyright (c) 2017 Verdaccio team\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "@verdaccio/commons-api@0.1.1",
+			"dist": {
+				"shasum": "2248e98fb43b258da026e761140141e3f2fd213b",
+				"integrity": "sha512-n7JdKfac9TV5CubXP3ZeH5Ci8Gj/Q+gPfYF5pwm9MRH5VYs3oNWFtjGsOVZEKDTeKGelnf/Ht6iuAE9LVWntiQ==",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-0.1.1.tgz",
+				"fileCount": 8,
+				"unpackedSize": 12978,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdKJU4CRA9TVsSAnZWagAAsq0P/3Ws+waOlB+p8+1Ha5QJ\n8eeXaLzYAwSj/AbSeq5gp4YH9okjoMbvSnLm9x2apQR8WHQwBJT8LndveaXt\nl5RnYlGRFuEqYv2siAv8PKWlz3NoUJzKEAoXHDzBzo8Zu30CPv2e53F4riWc\nHdeCCqV59ciEI5cxpZKc9vlj/DND7xXW5wKug8SzmInpUqxCG/t2pbNlJIMs\nAdbVefuHLvd2wSo7KsFtrGv33R3i6x/GjsxjcCPyrz7KhXjDLc8/p0mfsiHz\nzw3I6kqqiQfSrjcjGQgMpbsIzsL0GmmNhp6WmKrUsAYMgRO6HB5enWtSYLh8\nRdmbf2TOFKX4cw96EP7uhySkGaf8G67QxJr05z/20EjWFfW8ldhtVAM8iYZL\nCLTdMZymNDaT+ctwl8Z/cDWChfx9dHNtH0yoEwWiWPlJGzXokAryXH4ZxH43\nEgGvJMq85H/cXKr7onvUUtsSWZpiRkZBMGGRk39nB85uawq97WfrZRZGHLp6\nwDVy6nSFzPVYxydYpOsvhjIFPUINdBkDi2QAIMP1MVR9Atf2eWjGU/W81HZh\nee8hW4vHg/DdQnQBXCE1myEOI3tHL1tqSnTkJYiSiB5Bc0gAFsK1n+L+jSyH\nec3b2qfhfXGMTTq+GUs/U5aCQSBrFqeD/fpgUd+6plrXST0OMQYERD4xnM+r\nULxU\r\n=gQD+\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_0.1.1_1562940727329_0.8196511544940925"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "@verdaccio/commons-api",
+			"version": "0.1.2",
+			"description": "commons api utilities for verdaccio",
+			"main": "lib/index.js",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"devDependencies": {
+				"@commitlint/cli": "8.0.0",
+				"@commitlint/config-conventional": "8.0.0",
+				"@types/http-errors": "1.6.1",
+				"@types/jest": "24.0.15",
+				"@types/lodash": "4.14.136",
+				"@types/node": "12.6.2",
+				"@verdaccio/babel-preset": "0.2.1",
+				"@verdaccio/eslint-config": "0.0.1",
+				"codecov": "3.5.0",
+				"eslint": "5.16.0",
+				"husky": "2.5.0",
+				"in-publish": "2.0.0",
+				"jest": "24.8.0",
+				"lint-staged": "8.2.1",
+				"lodash": "4.17.14",
+				"standard-version": "6.0.1",
+				"typescript": "3.5.2"
+			},
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"private": false,
+			"license": "MIT",
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"lint-staged": {
+				"*.{ts, json}": [
+					"npm run lint",
+					"git add"
+				]
+			},
+			"homepage": "https://github.com/verdaccio/commons-api",
+			"scripts": {
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"coverage": "codecov",
+				"release": "standard-version -a -s",
+				"test": "jest .",
+				"lint": "npm run type-check && eslint . --ext .js,.ts",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch",
+				"build": "npm run build:types && npm run build:js",
+				"build:types": "tsc --emitDeclarationOnly",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"precommit": "lint-staged",
+				"prepublish": "in-publish && npm run build || not-in-publish"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"engines": {
+				"node": ">=8"
+			},
+			"licenseText": "MIT License\n\nCopyright (c) 2017 Verdaccio team\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "@verdaccio/commons-api@0.1.2",
+			"dist": {
+				"shasum": "084c2c06b22e998ff3bab265de17397998953da3",
+				"integrity": "sha512-BweLdqHGVpDPZf1BkFVOTb+OW+WQp8TiEFJ4EvVJkpngg9rgvK9MAdJF/NZorGuUIoVIPJmtNwf/fId/ya9Udw==",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-0.1.2.tgz",
+				"fileCount": 8,
+				"unpackedSize": 13226,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLEEsCRA9TVsSAnZWagAAgVEP/0pZ1PHUu+dmS3ZgOnND\nWrsYM65tebwc7S3qPYQ7VaSjBOXbdNrITM5mtkqVO1XIGq0srpVa9cLLRS2v\nEEpPHRhmweIVSHtClGKnGahT/GgR9VUcV3W1gECccKkKjMUlzCoBaNwdk/oS\ny2LQiAuQk9FzSEJ57fm6vswFwwgBLwrUnq0w1qHTeGSzUxWSsyYaGhAkzssU\ncBsWQbweJ91pOAxSvdg09Gr5tVVgF125wjm39OdljHNTp1vwKwfZAxwfEgl2\nHLB+rClDi3ebgHttF5z/j5rbTunimANNv4x9Cp2nC5Ni++uxBVYXS2KkjDkK\n8o6GfPmE+rk8QHkgMihCfsrNgeWaEn4M6NH+r4oKtVh7OLaclwEzBtTOph0m\n93oCEm3Uf3kMbhnlDKtTaGC8yJ6ztEqMWeFJN3CBhfddFGH9tPQMe5erXvHe\npO/mnJVy2imZkq2urWckW9QfqhuLXwJCHz9r3C8uBzT3qwRURwYX43nHpdZy\n1y86JGmZumlm/F/FOQq/VvZaxIrENP2bzX3wcgGvD5UADy7vHwOHu7r1D6+P\nwHuT2wH+szZ+/D1YJz5AxEhBBFodVAhVIAwV1dUvFXHU8xnj2YZBoy/G5ZYG\nNRKsiBPY2f2jS/MNaLQMPsIQr5sinQsmV5XP2MbqKxiED04OPJtofz1EHNmo\nbE3L\r\n=6DlK\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_0.1.2_1563181355876_0.572580308155215"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0-next.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.0.0-next.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0-next.1",
+				"@verdaccio/eslint-config": "^8.0.0-next.1"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{ts, json}": [
+					"eslint --fix",
+					"git add"
+				]
+			},
+			"gitHead": "f8ed319778e95dff21aa6113be45300570d00de8",
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@8.0.0-next.1",
+			"_nodeVersion": "12.7.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.7.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-Tgtb8cAsiqR2DDrfCOz3o4/7yINvvQMX3TMT5TTtn/lrNl00nwwM1CUUH+11Qmccacdn8Qu/I2h+8Aw00ykc/w==",
+				"shasum": "d6e59983aa77e13ac0aa910292eb93539ac40bcf",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.0-next.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 13183,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdQzzuCRA9TVsSAnZWagAA3PYP+wdxYWOwF6k4w5X9HK82\ngVXjkyoRIYwQuQn6wPXohNrlSKFa3VQyR+pqKPZ1al7JMmnoQDlkAqneIQzm\n3+VVrp4T77slpy+1VrfPZgauaSw/SCclkuf4tWCVxLj/pn9lLtl1CZ3A3NT8\nvLtl1f/UwNb+jOEj5wxZp9kKhnv5AvstG6kVdHIScnmipQljh/7FpMLte/ri\nuoZTswZjEzi5F4MWBeXmzRy3mC7mgCo9HZ+9X9Pbj84V8Pr8WDyOUicLi55D\nAN4WlNsB/VO2NW0Dx2iJ9CocBwa37tU3kBjym/nV6gLsQFiCmb0dz3IFPAFg\nNZgHmP/C8zPoLPQd6r8dcax7eRKInUUP/UV1MkEHUt3DjU3SXpjwddPPHjc9\n4pNOCRjwKoMPwRjhI4DhVNUx9QflHTQg91FkIqPkg5BYUwPvLBwoqDX7ZlXd\nk0ETyixMk8diqaF/V7skyR6ZcvPAOoielZkC7rrOcNa3d0HGYplIwwMKIgOn\nk8sIxQHP42RBzJ7PHytRb4R7K5uZZ53gesb3JQDh7HiqGjLulGR+AIFmyFcL\ncIf87Odz9h/RWZWDeuR9gqOxOz1yrQv79cPReebAvIBmAkZJtq2EfzCZdFOS\nBfxX9QrJSeunzVWAfk1gjGs8XfxU8wOPW2OKJjlU0KDDTM5EieNFV2gvFsl1\nEXSu\r\n=JQN/\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.0.0-next.1_1564687597698_0.48390134024780473"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0-next.2": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.0.0-next.2",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0-next.2",
+				"@verdaccio/eslint-config": "^8.0.0-next.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{js,ts}": [
+					"eslint --fix",
+					"git add"
+				]
+			},
+			"gitHead": "91ffbef68827bb79d1240846c76327df89f97cad",
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@8.0.0-next.2",
+			"_nodeVersion": "12.7.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.7.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-kUf7JAP9lYY+sXQ9MbWqGN3LJIZ1szLIQ4T/PsdcKOZSW6NhjS9M48M7dOJXinPck0pu8Db0x9Qox1tTk/lKtA==",
+				"shasum": "e5d30e1d581583d2df88da8dc7a55f987906f073",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.0-next.2.tgz",
+				"fileCount": 6,
+				"unpackedSize": 13356,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdRbNNCRA9TVsSAnZWagAA+lkP/iWykvjbHpenu5wxY75+\nrmw/Ek+9Ub+/ixZVmn+Vi+tWl+DKDJknq1ahPzh1RZAtugamz5BPo6ntomLb\nnHOQjsa1tps9qF1HCVNNQKsN8/3BcfFY+gIK1Q5iONXWISeSc1vxO8SjH7nI\nyzrlh65mQYpCkPsffrus4/vcpeLv/ngDh+GmI3AMR2nJuZr3DhLkh4eOY0ix\nFRcuHkmT1m6QhnuGEph7qFAvc6yjA5YNvuSE7hJNznWDrQSukvevGQv27P3c\nTOmeIEUJulr6B4Lh0cHiPEt70+VZXt+cxExrLJ2BFJXNOjvTAqsTZC+8ioDd\nBHaKOWs6KB5Rj0XAdXsngx+A2G7aNnWgO0whr/wwogSJylAc430iWNjBpbIU\nsgXCHcXPoha0BHYXXzceI2yW3wysgPk3Er4EPgSCsORgcAM/ciNvhBXV0Owa\nK1XZBL1UgAr30y6zdUsSzP+096qWX2MCY9E5kncmD7ns5UnGxPM9IZpLFBEo\nV3cj1FXZhRsWcxJldsRhrc9LhuDJQk/c0hCftoFH9Kxzsl3l52eR6Ivtmvdj\ns/cgCrjftc23QmPlVXKytOg/1lPxTUVbPSeEzRj7b8AU2rIcuvEbmCUWcbhd\nCx8bownph7n1QdLK2SUZzSGaT4I6wX2WgBuzh2d+kIJRH8LnYvAGNz10zTNa\nuBFx\r\n=irz5\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.0.0-next.2_1564848972407_0.2940863721329403"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0-next.4": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.0.0-next.4",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0-next.4",
+				"@verdaccio/eslint-config": "^8.0.0-next.4"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{js,ts}": [
+					"eslint --fix",
+					"git add"
+				]
+			},
+			"gitHead": "0f789035d4f581ee112ca50f9926fcdeeaafbbc7",
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@8.0.0-next.4",
+			"_nodeVersion": "12.8.1",
+			"_npmVersion": "lerna/3.16.4/node@v12.8.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-q1NKdI4KS4hlKS+vfCLXjaSond5V6pvDlS71iN5N/u1BTESHMEdP3kz9nWRw+8tdwDNARnaTgrh6HvWD0d37xw==",
+				"shasum": "49e315ee0cb715592d5f4c65ef78a3f26045329c",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.0-next.4.tgz",
+				"fileCount": 6,
+				"unpackedSize": 13554,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdWc4gCRA9TVsSAnZWagAAbxgP/RWcqz+V4aQNtGWaWDrM\nH9drc3G663K+iQIV1yjfUvrSD6FZdeepu/0fQg7o+0/CAv3r6lGDeIr5TBmf\n6pJQWdZWS5d8ia17sGtAXCh3nPGtuLBZ7PC31JV237iMyhXicqI8yRnWyqAH\nnrUuiO+4YsgqfYEhLNd3I7DYBLJoklnB9RHMOX3HeF8qAs/84m1Nz2euarEk\nCm5aH+54aqEntBpPb/gLYg8D9xhsDI8wMhnSymo6LGSR/TDubJTBlkm/Izky\nPl44jjzvIlnvZf/jvEdZbkJc/dzgWjhtG0wKbpemIWbJ+yziVWA4vliEmW9f\n2VygcHuM0WyRurivy3Y2L1581jdIV9WGwEaumjSG8t+0CHP5yKYibjBvztTZ\nIJBEyWBqISOlCQB9coDCUcduflQ7RW5b5vC88wwCbcub9QENQPDI5qCU0/lW\nFU7/EJMkTcvpXgXaEbpoM+da2liZxmK/vkBnBN/Et+2g/EQnr/nw8DMcdAh4\nRvq6Hq+Ml/qxaA+uhL/NPkYxZ4psI/SoFP6RyDGLJWs+5s+DzIrSMUMc8jn0\nIBYzS7o562wiDxull9Ho3ci763NxCARtqIBuqf97OHwUNxecp1AzuVhSbpcR\ncJTuBlyqpAJO7OhLht7I1wyVTTdjKYRMc/cuTh4jdsI9j3cbr7FbeLI7SSx7\nS7I5\r\n=IZyc\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.0.0-next.4_1566166559359_0.6739533116667085"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.0.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0",
+				"@verdaccio/eslint-config": "^8.0.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{js,ts}": [
+					"eslint --fix",
+					"git add"
+				]
+			},
+			"gitHead": "2a8ce693d280e7eebafa006f76c17aff7cecce6e",
+			"_id": "@verdaccio/commons-api@8.0.0",
+			"_nodeVersion": "12.9.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.9.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-s0HFftOhhhnWGVxMRwX1iq7lvFdn9uWmZziG65/XBOrLVw9C1YNsvxmuchIYD0/mms35gq5hm8Z8UqvgGjKo0w==",
+				"shasum": "b7f2480c73b33311932e59b2dec8c0cda3a1995c",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 13695,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdXowVCRA9TVsSAnZWagAA4+wP/jhBW8XrNztLwMaIlR2m\nIXyoKSCsFM2PnOYY7OAAZtpmQvJZnbhRTyz68z6NvGae8IhO275IGN905MCN\nMIVYZP8+cBxhzYeWqu2pHZEuhPsmy8m86YDuZRZXzKvmLHThFOoBJASH6w1y\nbGqdsmE9sH+SAH5Ax+vz4NkT2QhWIW2+oN033Xq19uxXltaWA0C9rIocoUfm\nQQBZri4y4HneBeFzIMa3VIm903Qm65j0adtZF5XJY8mC+ffBalTVqkSay4rU\nvaVsWWE0lGSnqK9VQmTL0FIl64xg1ceEA+AXyzrx71CEwu3O4vyFsi2fTEQh\nrTiWAu+ioVTWgpqekkyFMR7x3ctR5aMs6zt0T9BLIwK4J1Ydm3ObxFTewrlw\n8d2tnAVJ76ZRSxIBPJ6I/OBeYPZKfP39kqAU6AzLO3xcITyYC+ZMwRKErk7w\nDLwUIeb8lcsN+JNqM7PU8zc0bJ0jeOX2ja3U8hGWVEZofqNweJF4UHFeXXYk\n9MhCmMmXXBSZg3xn5vcgnmPPLLPTKNTHTQ2NANb93rKshP0eyR/eGsrXmkld\ne5lbmyeica7UpOjqPV5k5MWXOqB+U6Fv+dCVWkxBSmpEn7aVpUtA1hDoxMXK\n/QfvRZ2HQdP1GbWnKZo6MtVlMCNhS7vbQtJq0Z0n20EGBWVpW+VNCf+zfDo9\np2mr\r\n=hiXx\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.0.0_1566477332910_0.2781559871682644"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.1-next.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.0.1-next.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.1-next.1",
+				"@verdaccio/eslint-config": "^8.0.1-next.1"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "fc56542469374249295edef5956c86aacc6886e8",
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@8.0.1-next.1",
+			"_nodeVersion": "12.9.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.9.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-nxEhLYIF3iN7K1IGjRo0wFQn5gFheVan+ZfYp3dDvIZa4L9K4+kljKo/IttdvpDdByVTWSFWTRjmYmNTOI3DIg==",
+				"shasum": "f62fe3caf0307578fd1b235d718d3b437591d3ff",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.1-next.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 14217,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdZ8IRCRA9TVsSAnZWagAAFHMP/3CJURj2bnVisPGPHxo+\n6kS9BY7G3RvOsO5p/r/eAFYyQirTbSYmIhAiSKeRPm4Fd+NisxHhI34yRO5q\n6ED+f2Xyrjb8bmq4V/QMLcNt0vHHVvzrccTZgBAEgcHGX4pIPn+G31s/Nv4J\nfN3xDr9x9kTxtQua1SGeEiKmXUYzL8aTFITUbWEd81gDmtSxOEmDfJo0duay\naF0PeNR3KLr26b4IRJ6CJxdtes3aimIn+q2rX9kL7CCzm1sbVnZOHD0h51K4\nBPO+ipxdBbY0XLhwadb5WXRkpt3cjVSHPuTG3qQo22r4Xxw+FHYG+DFre4gf\n4yzxBJaqIUmu8sDze61dXXmA2V93QJUE71Klf/bIAPNv2Vo23me6CzGCaaXT\nnuBxZ9kPoAMZDy/+ut9KoT8IxkZFJtlwqkPKk19hKTWmIYkiEIpd28ocU3W4\nd2zPaR1eAT1GaovI95PJ5K8FfBHjWK00ges+Y7KZsm6GyNDTvh5Ku+Aypd7F\nx48gyW4pwUfvRRhTvaDlUQrK0f+a2EzhA1adxi2AFIU0FlEUXQ2UeV4hPK7O\na6IKGnOhJ3n2xIuYJ8nmyADG+oVOuyb8YObab5wbFy1azkg4Ch4gvA5zrYlJ\naQ6Q2AJMkx/iaqlfW74qskYYOido3S1q3uzcxy6IMN8eGADYJQ7sTy1Pwylv\nqNaO\r\n=o8HD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.0.1-next.1_1567080976598_0.711310673147046"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.1.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.1.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.1.0",
+				"@verdaccio/eslint-config": "^8.1.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "83fb9055659791e7ec0f8513cab50d3e1383599e",
+			"_id": "@verdaccio/commons-api@8.1.0",
+			"_nodeVersion": "12.10.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.10.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-axmchhNEtYJkxDE3JZZyVUb5mtMeGEMZD2cCwGw22IGULBn0I1cGAd8Fbjqqwh5rMCh/nDhaeT6ZR/sW4qBC6w==",
+				"shasum": "60f80c6b2fb43b45a1ec577e1ce64d1659960dd8",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.1.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 14358,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdc9laCRA9TVsSAnZWagAAPhUP/jE9MnUsZJiWt+2dGmJG\n26RRQTGEgeM0ovYwkaiudach2JNQS/b6Qh9+OaZN7oZJcaSpIXTLC7cBmpMy\nFgc6ooY8BsyujxyWjBywxkWpVmAHq7OwmZPGLyKSKJlJorXn6MbrlKYlKak3\nggY+6IsjpuzfVKcRAaFk+ECszDl7GgDD8VrARSuH2apps8lCie5OY6wA48la\nGCkicd3RhXY8af7YvkZSxX1eymByJhsirIOxOOsx9gQ900QfuLS3iTB1Yj0R\nm2dBudlUXiWLPvWERJpIq64y/92IvPSQY0a+jLE2M1HxZS4aQrIsnPUmNiip\ncuFwXFwVSxoA9BbtI1vpcWLEH+UhstBXdjJXdbCBgSiAQqz5peP7dcrImJIP\nOE0v/J6pmLgx2cpMmkHhIAxDgIKdvZO63NBQpObzB8D0+koFanqtoovcPZ3M\nXqCfZA5QHboJ1lYgw4mplPS3uPpG5Iimg5S++cb9yYdiApNfpPXDJGKDvxlw\ntgR9j1RRnncZlQgfZZun5Jnu1j2anXdU/d2WlwBNk6A6ATb/eIzmdwL4/xlG\nxDtqeiVXw8zW0XE4vRLed5e8P0atFCkMeUZ6xqBfMmt+ypRi+f9s1pUXVwMW\n/FAbIdTRc28wQ3NcZBNE9epNhorKsp2RTY++T62NQrItr3yv9Ilu6/HWT3x+\ngQ9t\r\n=Dboo\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.1.0_1567873370108_0.118408366916813"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.1.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.1.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.1.1",
+				"@verdaccio/eslint-config": "^8.1.1"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "489b56721f990b8269beab30cd78dd1bf745bb5b",
+			"_id": "@verdaccio/commons-api@8.1.1",
+			"_nodeVersion": "12.10.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.10.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-Hhu+E8aBxYTfzf4RQr8phWw13/WDgCcZeTEpM3SXI0PTc+A9v+k2/I1xwEdayH1jj+penNZWJI4QtAlkE+PbJQ==",
+				"shasum": "0cf527c5dc62aa3f5a1344c940805e44293434af",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.1.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 14514,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdjQA0CRA9TVsSAnZWagAAPuMQAJmnkiUOyaZyaK3xOXAV\ni6+BcwnwIuUR0AvnJnqgMNsWIuSbneYiZMQqdjsXcZuKY+QxOKFfNM+dj3Tk\n5hPOyln1XyCVWj94u/ScC7SLTqzpFhXRhBOM6jYd0pKbqpAI6RM55UzCiPDq\nTzYYzcxUA1dgSHP/Cdm5R2kz1Z6uoA7NZLz8ht5v+2bERZso8I4GGzUV95To\nU7ZutaJhIXyBkavj2pWKI55QGESNp6LH04ImJ2iBDTaIOKBJKsAnSbTFiYTO\nPPDD8u3Qw3+wa8fORCN3GIPJUu6UWflfwwvnrN/+zw/9mLa5kMPoZAze1wl3\nm5K5cKGTgiPg4RqZgZef4AnSUOfsW6zUaArWkyc/BdKvI5Qco5NPr1IcuR6v\nBjgrkLfDHLxBzdI1/o6vO3J8BOSd09lcXSCxLH0YgU+t8rX+7PzqKtUn4X3E\nyrginMTywZ16nhty1z/bQxW6/dNBAoxm92gze2SO6/WdhVlujfugFqYl8rJ3\ntejCLOJFvPhjlv91EUIzUxPDNIfLQ1btoGl5QQUZKCaSbGru67kEg2XZdxg+\njeVDGfMWjuvlEdPlUNWuSg7IXDS4KIyiqdJ89Hj0DnyzxHiLbPlm02KgFGEo\noPxMYvLZ/yzOlxCZZpQyfN+32JqtJu2j9CdM5NMgLaxL7iTsZqibBdytOqPo\nON6g\r\n=+FgZ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.1.1_1569521715963_0.09293954289748574"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.1.2": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.1.2",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.1.2",
+				"@verdaccio/eslint-config": "^8.1.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "64f536365815b2d60aa7c049f6d673cd990b2d2a",
+			"_id": "@verdaccio/commons-api@8.1.2",
+			"_nodeVersion": "12.10.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.10.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-voJIpdikrSe6aWpRmGoyHGIB0mUgLyNe5oz+jBH81G0/8VsFiIEXye2WTJ4vmEGsZV3tsitMfJM0x+H+uFpE4Q==",
+				"shasum": "725b04dad6c09f6d9c3d6a9ca83fbb9d55f6dae1",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.1.2.tgz",
+				"fileCount": 6,
+				"unpackedSize": 14670,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdkSZ5CRA9TVsSAnZWagAAkm4P/1rMjMw+/puvV8Tk8SC8\nMZBawwFa8ksNXpNR2ko2Y7YPEMKHvcV+xfY1o4+x8soUXqhdcZrv7YiXJPta\nJziAzvdTBQsfqJVaJPNjOgCp/LyXzDMBZAqcT6Xf6TDQaHgTY+GCXo3F/IzE\n1w76nfbWisn8wT0Oe6LuX04x0rpyLCCbgrCUY/oEhUb0cycdmPDO28KP8kkY\nrUhyzI+2UF0CrhVRISylbizUm9A+wcaxC6hhTYE8o6ThBfsE9eGiNY3R7qPo\nWcsPjK6A6yYlg/Wrt4jakRSgX2J2lU8KrbLBIQyJVTRVdus+wecCcwjBMobW\nBiZ2QZUZ2X4OqM+a3vFdtNToyIB6PU8q/h3OQfx/FUz3WLOgvjUvdnBEWTE/\nW6y++oXJ4Pq+PrefNaWL1DiDTxuFyJCePIqub9GfiGpaoKOA0cA0uZPKIEEa\nO5c8Nu8Li/89suM9mhisolHDAkMfX2iV3veKqPHotLpiqZq7BASmPPGRrGdg\nEst+TQegrUsfhyaqd1d7L2zYHqV+3hVrslY9psgwnOaBT91Zz4c+oEXLHeTp\nbBKqiIfMgcIxbsGLxMxdoyNNTdWFbyXcW38IN4WdYg/YsigMXE+Z+4r4fMK3\nymdNUmlt2KeUPb+4bkn3Sx3LuchmcgOiSf6gThTs9FDtbQJBUKw+BLaiWp2M\nJu/E\r\n=xEWG\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.1.2_1569793657288_0.5856221180581815"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.2.0-next.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.2.0-next.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.2.0-next.0",
+				"@verdaccio/eslint-config": "^8.2.0-next.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "6f307f95ec6fbce70d80a359d19b4c08ef7f41f6",
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@8.2.0-next.0",
+			"_nodeVersion": "12.11.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.11.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-2FDuzvAE0jXsFHbPk65raCKWmf28Bq89OACDbdmpt0dQzKSV1E+zQ349BLDLy6dVsFT0Uty5u3kxh5Kl1tLvXA==",
+				"shasum": "5d6c7be13ab1f643e195ffdc399c122f098611c0",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.2.0-next.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 15077,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdnHqXCRA9TVsSAnZWagAARN4P/izs/yq8nr+5ricqbyX9\nhrJuxIZlodvYFPyl9t6UyBcrsKUtO9yyuqJywEPbYfVdWZNwcucN20CRLRlz\nom4ncw6gsSBAerFAejQBHAYwUDcDwi8VhyjOIbHpYXw5XvA8BOOkTxHsiWWF\nMyMrc4UxIu0PBRrcdmoSbMxGWpmoBw4YNd1DDoPQva7OMhsvSo3o7PijKrf/\nOo9/V7MpBKMGLNxc7JFBa7B3UPD3ean0dH5AZOqoj8nt9CYCMHLP6a+1pM/W\njRuNgn5tpFUsKnR2tv+PS0pBZpDmcs1z8D+YigaWcyOH8ym763xGKphomL7e\nz/w0jW18zB6xkJ870jrWZljL+Xe1JyEPuCH/UMmCAGeEOsxzhEAP/Lgw3nwc\n/ltS5KoCc7/ZznMm6RYd8YoK8QsYsA5UtVpiqR04GgViLlUSErx2w6IIHBqO\nOVr11eJRIYWb64IDFv7n8z5j53BSxk50oA8tmh8drCYfOw+V+cxUWRMVY5GW\nnGH8WrTyu6F+9rm5X4xL5RGpDQ9nYGVyCsSfPESObxLwuM98ZFADaFF4bxMm\n+E6IT0mqTrAKe+iqUKwYFOzT9qhBTzEZaO9WFKubf5xwSny2K+2Ih71doxdS\nGI9mA5Q+MyxKh4XTtMRcEODLwUVerZig987cFJeOvt748DH1kWgZpl5DpF1I\n2mD+\r\n=nmk2\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.2.0-next.0_1570536086927_0.4288135747808406"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.2.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.2.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.2.0",
+				"@verdaccio/eslint-config": "^8.2.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "6ac6a2f5d223ef5117b3afad9ad2b23f9bd7d61f",
+			"_id": "@verdaccio/commons-api@8.2.0",
+			"_nodeVersion": "12.13.0",
+			"_npmVersion": "lerna/3.18.1/node@v12.13.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-dypbrd/3gmuAfLW3cUdkQ0NwQdtrGfEjv4qJ+Qw6/jnNf7goGmI/94XwqgIAZdmPN+JH99r7kwa9qHtfUyYWvA==",
+				"shasum": "0ed20a7feba6af02bc525f36c46834971b9fd0a7",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.2.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 15218,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdsJr+CRA9TVsSAnZWagAAULgP/RLhVmY8V+Mftt3Dg7WB\nzwzg5Ih/Wct/kjQLlrUfNpVOf/l2EKRcAMfzm33LqamIn2WSGJuwXLbIzNXd\n95OIdAZAtlSJysJkV8XFEXuUKqkebNMB5t9wqEmhM2gfH5tbfg8zA1Efl9dw\nBh/UNj9W3uo2bR30vflJimiDnZhOwo/HsubuTe5LgmJTz2hTDKpYQsyt7SvH\nZZBdfvB1LMNzPcnm+CqtgeudBoXCqU1v7CThiLVnVL9ba35rPhfE3PwTDtKO\nyO9WzpJq4omdONyAePw8QA1QlWGnX4dwa4bND6iICCcr1/OTWGFXwV28MFGZ\nehZFVVhJrWOaiAm67ed4VPSJWBRIcLMb2owdsceMjGlm0jsOuBQxo0htsuVF\nGSUm8NT73PBlgHpCYwW98JbXPCabyEsOeWA80uUDm8oNoz5yrVLnuzO9B6J0\nTGxHQ1RxRgcOEPfcXeXEqZhpBbexBfx+j77Z4gE+OYZYOqwHbuWYCWhzC0P2\nQmmM2inFltsvVsmDtXPYT94CFQWzhSGafq0pI7aKJbqDKb07EzV/hjvfzQoB\n54QLFknamyxXzqqyriXXd8sfiQAMIQHt6HJwOYLZTD0XEMLdfVVOxV7w1rUs\nMMosil546dZ7SJAtqDaRXk1UNgGRJYQGRT9swwoKWc6CzPebCr+RY3InSIgy\nsUTr\r\n=JQAn\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.2.0_1571855101970_0.09269865649745967"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.3.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.3.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.3.2"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.2.0",
+				"@verdaccio/eslint-config": "^8.2.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "b0599e31925653bd5bf8d224c7daad9d468e0455",
+			"_id": "@verdaccio/commons-api@8.3.0",
+			"_nodeVersion": "13.0.1",
+			"_npmVersion": "lerna/3.18.1/node@v13.0.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-MfXwbPa41mjkjCOFr6QOgThBzmtL1cuQuViurPQXpLsNeTC1EuZ1BkNjbrnOfEQuFKWsWmtLd8tEUP0hNcLMcg==",
+				"shasum": "3a4b07b63561b21bfc8242330da528e12788635e",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.3.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 16044,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdtgDiCRA9TVsSAnZWagAAa0oQAIs73g8NSFDQmlUakAK0\nqVxKWL8nwzs30ER8l5dNqgVBexJxJfew0EozNlRy7U+0/Dz29YgvE8WwfPtA\nr1oInUVbouq5+l9ngB6gV6/xirRKB/5L5+qRreOMH8IYguLTLHQF9+0v1j/k\nEGQxWq+Ybzst5r3KgG/XlzMupZbdXPbpAJTShOF/II2+Aoy1Hs6Rg6l48maW\njeNM1H9Cd3OLxw08njgg/OSWmB2tGnQSSfuRI81LGcXMzTLoBruKSe6aYP9e\n/pbCtbdOswhFwxzhMAk6cxXxcm1aj8RnpbJvOK7bGr29GdNk6tIsFSg21OHB\nGWLrWoEXYuU7XFwgQSgVAv7SlXSp+MJJbY1wcHD8ItLXfHD4Pucq4QhvgWvo\n86UelwTtyhMt/FyOjDpwJcKry1F+DQh6ssyCMtcATknERf6BvoVDVrVLOouU\nxlIqRxXU7BEQzOBMzSrW7yigKy0tJl/JkmA4f8u8NfkS7wylw3JaheL0Au7p\nXgVIWm4qp7W0I2iQSzg+PaX5e/sZUwBU1v8sZbIV5zMumpTTbo9NvJ/W6qYK\nto3RhJOcfRFnzUO72OMfp5/wXtjvFHpQtIRe5oiFuaItL0fbCg5mKS403zVe\n4AVPSNPzT+blbdlh27Y51XdbC1c9zJZ33tnsyvrpONpYggyqvQPwB2M0mLPh\n662+\r\n=uA+/\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.3.0_1572208865827_0.6849658893084654"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.4.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.4.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.4.1",
+				"@verdaccio/eslint-config": "^8.4.1"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "8d7ca5bb31fff96281a0896c72f9f1426fa8b728",
+			"_id": "@verdaccio/commons-api@8.4.1",
+			"_nodeVersion": "12.13.1",
+			"_npmVersion": "lerna/3.19.0/node@v12.13.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-puj+/NAUM28r67z5GpjCZErGYvGkfy2e0EjkF2triUYkZBfKwvR5/PevFRt3p/XdSOXw8jyQFPtDyez9B8ns2g==",
+				"shasum": "8aeb184fbf889f3a9c438c582c03761f3585458e",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.4.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 16355,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd2VE/CRA9TVsSAnZWagAA4dkP/i5gm/B+sQYmu9aUzNt1\nmTw3y1UH8jo3EKF31m9T/hBg5uJb1e7qwPv+Wzp2dDmx+VkgigggRf6Qe2JK\nbUkqFlk4b5JPqKjQ5C4wzrHioFxZKCeoAT9WhOXZkkjaSfwE1K5BPzR7xWwj\nc2olQHNzJGiEoOQ09lPPzqMi5DTCAe8C7r2UTJk8LM04u0FuvZFup2EfSp6R\nc/K/UH+zJtaFXmEGXFPhHldRsF7QOSftwlNpgnbPgBuASwbtUdnbM3BIGnqb\nPwubQjdSDk3T2FdN6baiy9Nb1Od/9voK/0Z6VXBqEnQv8UtxPNtdQY5rwgo+\nKaa9ruhzkmeFodao663jH6rCr6fI3vPkoFOVE+nXDhJ3zgNcbsdOxCh7HHBe\nAQ0w600Uw4hf6venzQRxirR0GvYN45+7NGFV+WU9ua8AFQCtyIimJxsSFi+R\nZs3kwAFOu89XdYJi6yPDRJsvoPfwt6z27YzUXNGou+KG40c12+ZfXeGQivzQ\n1rRvrWNgfqlMaTB1J2ylIS4kAFzOP3rFTxKAy0+61JApSXtnqAG2rhIj9fgo\ngVwiM7lfmMvmMLfyBXbqZxGiFoaTqM9vrzPSDpa2YuvepqRxgvtsDWOA/Xpv\nYG8E2E1r/P2bh7o3/IAT4l9T/g6k8IZhN7d9OBfl+pfsCs4l9MVok7wVB9Qn\nQitI\r\n=hPJ3\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "sergiohgz",
+				"email": "sergio@sergiohgz.eu"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.4.1_1574523198808_0.34269249765876286"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.4.2": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.4.2",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.4.2",
+				"@verdaccio/eslint-config": "^8.4.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "e309b93cb6ba4a57f206b8528edb134d5c01f9f1",
+			"_id": "@verdaccio/commons-api@8.4.2",
+			"_nodeVersion": "13.1.0",
+			"_npmVersion": "lerna/3.19.0/node@v13.1.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-h7ThJLEOXrJ0NwxqTGbbLJbq7bS4qWXHYCEBvonfz8194lpB46cGzZKPZIzrAP5THO7nZdlIHLLkoRCZOFT0Kg==",
+				"shasum": "1b6243c5a35d7947590f3b7e51ce04cbfb70d4c6",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.4.2.tgz",
+				"fileCount": 6,
+				"unpackedSize": 16511,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd2VMGCRA9TVsSAnZWagAAU48P+wXbE0DQeb8d3Z7wiPQz\nuZaLmcdhgFtlcaoUjn5ZXokoLZ1JEjHl+GEUh5+TqzXvlVUgRsPZBmBFuGwV\nSq9j7TQp7gVl1dqe2vMkJCB7VNa04AaVhNUFbwpBdrvgl/nKQQmm0/Vxxzh6\nPQFvOIpwZrDZ9AIEuadE6WjLLpRKc1Dp2+b3AYNyMgTNx0BHrTa9Cs06+Oor\njCpA6NMmvyxgm4nyUrocLD/viVrxM2B4PAyS+J0HY5ENiVOkqVHnPnQ4CSUM\nJOfdTdHCLpoltKbGGz/AaNz3ts7CT9aX4goIWQf/27QLaPeCjqm9z9hB0wq5\nm2PJ7lgYdBxUQ9Wsdp1SWjRfWnfiTItlxJVDGp2MPYF+NhxtvowO37Uy3Xtv\nMdH34aQaJoy7T8qDaOlenhXRLVDaMEDqUYGmKuWXBIsfYVSppNQUKjS3TTX7\n8LKPxOe8X1PkJ8fwLhw2jXNhpGC19y4bE1ITHXdAPl4XpJuCzkSrwX1fzNdq\nk+/11l9bqXAGXACZPXrd1/NNoT9gUeWQ4gT9/Vq94y/RTQrufTBGE9I1xIEO\nKurWqeGYhLfM1WXoYKstVUFoBushjDKztb9dOa0A5RCKZXrZ1t+z8ukty/VE\nr+kr9uePzapswU9IcAuVYT6bdTU4GZlIB5h6E83nNqnMflh4t5j37JKl79m1\nzxO8\r\n=nQ6+\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.4.2_1574523654249_0.5286130166948666"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.5.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "8.5.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.5.0",
+				"@verdaccio/eslint-config": "^8.5.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "a404d4afcdc885f9db544a5f84273d835deeed02",
+			"_id": "@verdaccio/commons-api@8.5.0",
+			"_nodeVersion": "13.5.0",
+			"_npmVersion": "lerna/3.19.0/node@v13.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-1+82Jph7UHSii3+uQc936IHLytyCIOfF3lbQSh/cGBCFJTWi6/1bJ7d/BB0O/zzPaHRQkfGr+JH2MOSMs4UiGQ==",
+				"shasum": "4e774c4982caee20f4f2fd0d38b863502ad30db2",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.5.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 16666,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd/8ZzCRA9TVsSAnZWagAAdQoP/3HIoNiaJBXHjGe5FGQr\nMhd1J/qnXJgqxg4XOeDEhqbhyO+4h2oRa5vCodp2xF1JBIQ3jYt6IwRCgJWa\nE4t516ehKeyijyI3iqs9jz/5VWLPaBWP0DiewufGQazWusACK6Dce0hsU2kz\n9kphl/4ZBNLzB+7STqfOxeYrgRz8hngRYhNC6y3D4Yeh6CLlzisSvqJjf2I4\ntNP0oCOKIpl7Xrc3ej5R5utYBfF3TF+4pwSabttzJQAztJHlvKznsxKNQM+w\n2lrUFXpbGXi9J6ZcqhnHG1Tm+nCm72uGEe+fqgJknVqrCtc4Ip8jm2C3mddA\nAhdNgHOTxx/GGBAcuIP0izycqgWeJqko7eQJ8Xw4nqd6cVWsgodFBDJyRXav\nUF8q/vmh1qXEw08wCnF3revkwU1iAbKRHpWXIz2z8x8a/XttH4DInKNjGMcl\nl4i/3oB3sD6SzUkbbzJBWl/SELJ9HNlDideeLM3YnsSpw+6J5gOWcXpcJXhQ\nBMwrBkdaRtAd3Aon/VhvjW4x5XjGORYt47Mqn9X2z1vm8NH2VqHusYyP70D7\ntfUgCEcIlSc6G/FrJTE88JajWK1NCUBhxyqPrmgxDogpGlL524YZhqu/Uber\nIqVvEFY3E8HZezN6OTTZW0LztBzQN5t83hFYvNS2U1k9/rcb6JttqELkz8Tn\n6o0N\r\n=2fgS\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_8.5.0_1577043570941_0.006966086665638915"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.0.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "9.0.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.0.0",
+				"@verdaccio/eslint-config": "^9.0.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "21c47d3360699577961e35d6720cb126f7011036",
+			"_id": "@verdaccio/commons-api@9.0.0",
+			"_nodeVersion": "13.5.0",
+			"_npmVersion": "lerna/3.20.1/node@v13.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-rX4ABMh80dXyWRo8gEppiyA04siVAGzmhCG+vvVu7fGN6hn3XU1pR4xYeKWMDq4ofWpyI777uMftcYzbZc9AtA==",
+				"shasum": "d13d73e3d784fb2292965015176bd7f870583cb1",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.0.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 16921,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeFBPLCRA9TVsSAnZWagAAKvYP/1+nXKfnNiI6lWJ+5VBV\n/2WtunFpI5ksM8QPyF/EKd0k6fX4kLxt4rskZLXZ5pAmerfx5tlP9VmUuZ+/\nqU/1Wyjy9O6YK1pbS0HohuO1u8rsmA2yYyLA7n1xjMzb1jxFY6AX3Bk97b/b\nRgV3a8crlvyaNZYhVg6tHvhj7shAopglByjFHfIX0zgEPhjt9NJT5RKQtt16\nIvPoAFbpiHl8SgT+psv+roDxSd0NRTsNylllJZGJESHjS1MMG0L2ZxFaYTm7\nWPkPg5GQbW7zyBnBxBre2XBZvcT2xlXw0UEKep+D7rO4P+HDskxRfaxw/EOw\ns5l7XwoXHjf00y/mumfGJbGJrE62okr6RJYq43rH3PVTbHeoiz7XDmOkru7m\nx734v/GVrjyRaT/qgjNe9OScBPXKyXK9gJwpZy+e7B6b78VK1ORMhSiUdvRJ\nCsJRdcMZR7gv0//becBpEv/okOv0+oCLUCXFTZkJs0CZeA5vX3cf8kmtyNLi\n3LNJRPAfeivnuAv5RLlYiZT3vpTJC1wPEUueWwMG0+feJeE8gn6wyMZ1H/hk\n6zGWG/U39CDcfbclVAlR7piSoWuJWB354budJgPi77K5a7BSImRoPstpsk/S\nZU8ohw9tKoSezvrsCP1jJKGTshPuN3vTZFIsfYU3Pi7acZhCNiMu4+pMKuDk\nkEK2\r\n=QGaS\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_9.0.0_1578374091282_0.371052538520916"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.3.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "9.3.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.3.1",
+				"@verdaccio/eslint-config": "^9.0.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "df1fa45b7d8643ecfb0cb117e03ca6e7da77a8b0",
+			"_id": "@verdaccio/commons-api@9.3.1",
+			"_nodeVersion": "13.8.0",
+			"_npmVersion": "lerna/3.20.1/node@v13.8.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-EuBx5yYFJeOm8ryXhHEr4jsV6IySxVdItkVFQccuDc4qmLGUfNLqg1lOCtJKGu0uMvZE/m4UaUQSmvAvkizHmQ==",
+				"shasum": "64816272b878f4f65ef6378c891f7c7f4022bbd5",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.3.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 17077,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeUjAkCRA9TVsSAnZWagAAIygP/3s1uuhfg8eXju+/7q01\ntYMT6R6yRwAC3AHItmsl00ssOM2uKuwkIK3+NVxj8NShZwpQ/ClSGqmpncZn\nC9AbBQvTtqRrn9HmmzGrU1btILxGlmIh9mDR8qI/1JaMo1VDLD27+KYnXjtL\nwWistxMGn1cqH4XuSR1LuYmgbpNeVx75Bh6AbQrlby5SoP0VugJTrd+6PBII\n99HpsJQxrimxx6zFcOghk/nY8H9TFARwRwy/IdnmFPiZAxUYlAFNQdZvT3NI\nNJBOcd+1e/tf38fyT1E9OhDiP0KhTs7m8x4+KBatcEXMzdhs0ginVmuRTGSp\n+79NPVcrvYsUiWHvuxZFn4nr0p4yQWsK74dOYjSsEjdFQjyiOrEdZMmI71wO\nkyek+9nJ3ZT4SKOFBm2VkPWd/kEuHC79vEssZ7NrWaiZ2IIFkoBvR5slgr2/\njy1obVQ/LGlOYulKQ4CJXzTrZz/YxeL81zuzKkPMEdoHf2l2bptC0HzYPoka\nTiKMUteAoamGP9c5YTheLtAU9u4IwPhhBRVtPF/DliGAjCHvoFp31zuNAUa+\nKpLnQntEOjc8gKIrUng11ZpfTup3xdZ60R1ZbM3uDp9obTbClt3UwTcJwXaq\ncn0L4+b/ZUyiYvrtFO6ppPz4gq5h1MUb0/01scXHWaG2g1UY1u64YOoGz21Y\nc25Z\r\n=ynYo\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_9.3.1_1582444580117_0.5589498969469113"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.3.2": {
+			"name": "@verdaccio/commons-api",
+			"version": "9.3.2",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.3.2",
+				"@verdaccio/eslint-config": "^9.3.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "d8af80dd28afc238b2ffaa6eafab5344fab38a81",
+			"_id": "@verdaccio/commons-api@9.3.2",
+			"_nodeVersion": "13.10.1",
+			"_npmVersion": "lerna/3.20.2/node@v13.10.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-qbzyTRZtbURr6p50Gdo4axFrVBJ57HXymiU79Oh6OwmPNWpPJxhau+FURzVJySSIhCoDyOfFKI/KirTEt+V8Pw==",
+				"shasum": "7ce1e2c694fb6ca4f5a7cbc2b4445f3019d7e950",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.3.2.tgz",
+				"fileCount": 6,
+				"unpackedSize": 17233,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeZNfMCRA9TVsSAnZWagAAa4cQAJuJsjplbCdBs2Kiq8OY\nSHtOJ5Q0hmZBqhHsLmLs3gaPcmL3YBMohHX7crBa4i1hGCOrg5PhKbUuIcqO\nKs0Iwn4S3Jk/aGVmf4TNi82rDMfqpvQZn9boBtvY50mDq8q377z5lNHyZ3fQ\nROWKa+VlnyYYmIsw6UrF50YNgg5V5Q/yTa8sDzAb65VzxTELJ0MdC59My7Nc\npIOVq0G4BsoPS0NMaMBf2GKTDKTBGmdnCRKgCbX46iZ3gp/Qku0iOVQynftq\nfF18bsNIAf4i0IP2Jr+7vreVb5mdi/oAp6Q67m3gIMXjL7NoLITFcXHC3vGP\nO1fW5XrLfuav1OhSLsaAzU+IZt12oQqRpqG0FGRNEdL5OiUu0agZcnYYR5lX\nYB1HZWw0dPJvUG+Vi/RgyiWJzz8hzu5h7zj77zxOV8wHkYTejL64qkCxtgUM\nyfPg4r+ZQhxSfrfxZ0KspgIZrfL/BrFcmZ0k/6rD67dWtxPUfZ9KqsyfR1vo\nMv8EmEdmlc942lHri67L1gVszOaZflE+M/W8Zse84d1CjTKp0MQr/GMoNipV\ne+px/JFeEqIvabrNlwY+03qgk93i2MVb/d1ryiUZSRWbjNd878UJ4hi4n9z6\nhDfkNksA47KuBv/okRhIzreak7mvB2798NrQAQpEaGQi1Z5ZU9RYy2fOhPQu\nSNl9\r\n=9T39\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_9.3.2_1583667148369_0.8871078035657027"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.4.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "9.4.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.4.0",
+				"@verdaccio/eslint-config": "^9.3.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "8d7db27a3d1c975a912fa6daa962ff54538f90e3",
+			"_id": "@verdaccio/commons-api@9.4.0",
+			"_nodeVersion": "13.10.1",
+			"_npmVersion": "lerna/3.20.2/node@v13.10.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-h5DvalAx+fKbCPp9azybvZsvQARBtCeUoMc8jAstUIcOJwbJ0hzMxpM9yY+1cwJvVC7lqTxCZEduWbamfLOQdQ==",
+				"shasum": "74bb922d5d173a1c19cd2719db9f028e8909dac7",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.4.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 17388,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJedfWICRA9TVsSAnZWagAA4dYP/09QKGCJmplx2xI5cCXj\n8nXThadsJphIztmboir0S1VGqtModujg4FPntBIjsnLshwFS0Wsec0aiKoUo\n60VAQ/NppvDu0JMV+oLEB8mKTOI0w4+6gregO18ubHSbFBln8NSLeHMFfya8\nHsORS/0sdj6OfIGVAIzndUoXExMb3sJWij2/bIZhA9zwTYgk1Zua/FXQZzny\ny2/0PQ1nwwWxv+GwsKGpyMzhcwheron1hqqdOicn390TcoCzUlfdTWpKaQky\nHUA1+vAhprt3eNmhnJFtfwDGOuIG1GW/3sGAZn7BwJS+znKwcDV0iY3vBSgp\no6oM3b+vd4geUFzDmbQtbHAcINoeUDzl15TjFObIfplkXm6bTVXUJrh64xEW\nLs+zHr77L1Uwzo91snfNLIiKyP/ZCpVp3WtmpF/YKcSU3zCBYYliiTx/Jnzp\nrq3Q3LnIZIC/EJWK64tVAh8nyKxyktcrkiKdTVaqJMLiQ+mcWPIS1O5AgBUL\nweIaq9DXXV0Bc0q0oPvWc+9mGmsTp7U4gKK2c6QWMX1U7mENyoZE6stg2/fl\no6DiS1GKYXV3S/V+oHaK+vLkgGfQ8UPeI41Xv9bXApDNWy7x1W+G+OqTdEFU\nEzIa6XIvtcJZpxQeQMShMhoHnm5KbjohZexODVK5lDe9wpbKyeZJXgOwkFA/\nKnMh\r\n=pYJz\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_9.4.0_1584788872118_0.9639144551318548"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.0-next.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "10.0.0-next.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^10.0.0-next.0",
+				"@verdaccio/eslint-config": "^10.0.0-next.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "b2b740dfb65ebb890b90e5987d66bac41fbaaa3a",
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@10.0.0-next.0",
+			"_nodeVersion": "13.11.0",
+			"_npmVersion": "lerna/3.20.2/node@v13.11.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-Eh6O/P9FJAdEYZHkrOaqnXVbaz+fGANoCytzvsTN05Xt5BzfNYHE6w4mVRmssAG8kF7D7xNn89uteXP8mVuiYQ==",
+				"shasum": "eed8c1947d6635c3f1bd9f6563c9c2870654d017",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.0-next.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 17583,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJef5ULCRA9TVsSAnZWagAANKAP/jVTfnn5an0vemrsXfu0\nh2AiL4X8zcuqLsx8sHk+2GCbNpZelkTARKLD3XQePlUPjU38Jdvg4WilOtr4\n9Pqw4KazqNv9CR3YMuYsFv5XcX1Huy+AkVEZHEV0dHbrJ8abqyesZQlkajkg\nyhZCI6XVqPkl2JOz06izHJhtlMYJni3zaNOQtlYtVJnKzSM87fmeAeXZTKtD\njtVdxNGgr7qhPJcUQ10zxiEdzpcAOU8dNP44DASmb4CG7Bxcv3CAQYClpkZi\nxw/1LrUNd4xwW9FrqvxfWI7XSvW0h0e7JFB9QPI2S5G/y7vi8kT8pXOv8SSz\n1mo6UBWGTwXc+2XsgfPZBb6243c5sxfGvzmNlXLkuTz64wAizT4TuB4qftiI\nreH7B/FoznKKdaDGtym2HdS5zx4E7SFyjfuzbQ/U3CivDxpa8ptTf2hwFOkv\nW+C8cvffJ1GJwT1/OaY5fX7cElhhV7laJRua2FBlcsvz5C4p5gfoqB2krw6D\n71A4WHFg9jGhdIvzbjxvu5MzYV3Soc4Oh/WkNwhkw3Kq6FMi5B2vSbnIIP3z\noWKehLaXgwEz1x+OTyK0sv0b0703ijKmt66/EMW9CtzmJfPUf8JC2aMpqjum\nMRENZJXuxhMCACWYf3Zc5rscM7+pjB7NaCsXiTTZVnUgyV8gQZjv6DBMbjtJ\nMntd\r\n=D7rn\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_10.0.0-next.0_1585419530704_0.8422114063069559"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.0-next.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "10.0.0-next.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^10.0.0-next.1",
+				"@verdaccio/eslint-config": "^10.0.0-next.1"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "1c83f6e766a5ed042ce1bcf2ab2cb68631ad83fd",
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@10.0.0-next.1",
+			"_nodeVersion": "13.12.0",
+			"_npmVersion": "lerna/3.20.2/node@v13.12.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-qa3oksjrR6cdg3un5jk9H/t4WpIPdxra+Ifj9fzxFMb6quFJOgXTJUb+wFc5uvwSL0N1N+fc1Rq1KfEk4vnr8A==",
+				"shasum": "8f66bd4614c025d973085db8b259cf1121f80ea4",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.0-next.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 17762,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJek2SRCRA9TVsSAnZWagAASMYP/jfrAeaBYbX2qvHxGoyc\nfxUPMbS4UVX7hCXyEGDY31QUrgagX9qxsIQ0dbZijEy+wowiG3NdA3zxu7uK\nwjTKdrKWNSF+PSU7Nhcg5yvJNcVFz8eJmbZjq88d7Oz61CJOp95aiA6ibxrO\nCRCARfForw8hfob7M+T+Pl3sjbGQEIDv8wo9Xl0RBMBClPYo0QzDlssx+7PI\nS+a2mB70J4tJa938xSJ0MopCww+qUFYAK//b6gR2ZRowcGuRgc4EQ7LvUGlJ\nfj8t6zxtCTkTVZ91gjVlcdCAXbrder9XQc/PEKrDaAhodrUDAMhfduoRAiOY\nydO7xa0FXi1u48MvxOJ8ZsHxILWBX2Ozz+9WX4yk74caY2JQgkNc1i93kZJk\ndrZLW1OQ3fIvYBQgD6iB1myOpF8zCYTf5YU0820PdTydULQ/K5TKNyMVlx7o\nJOaFfCpA4u+uBJVVlZbF2LFsZK6T2P6nvBxW/md83cbuINTy/UgzNzKW8JQY\ndHO3KofYQsY1850y77mejvniq6DyX+JKoJK+7eHbFnfRYT3DhkLDs/NwjCgB\nhX8Qq/uwWcdZYKIF/B7i1Ah+UVeFX4ZV2/lmjo2ZTcSLHU/HLYaBoxKG60Rf\niKlt3uwZDa+2c8N8d6uLez+BIlFI1eNTWgm8LrdK2IuUb19288DS2PiElY5D\nhHRI\r\n=21fB\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_10.0.0-next.1_1586717840774_0.11051993827877804"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.6.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "9.6.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.7.3",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.6.1",
+				"@verdaccio/eslint-config": "^9.3.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "adb434f9dcbc5574892a1ea03e882b1f9e0355be",
+			"_id": "@verdaccio/commons-api@9.6.1",
+			"_nodeVersion": "14.4.0",
+			"_npmVersion": "lerna/3.22.0/node@v14.4.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-wGwDOxWkWjOcxCpwUvAqY+v24I9BRTB5L8xcbE+drpF4gL5q/wN+yzBgxCtkBh/nchOALxRC93JrE3IgVTu3iA==",
+				"shasum": "f62d1e0d7e55f19c483989f718ed2df2bf55ae3a",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.6.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 17544,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe3N9YCRA9TVsSAnZWagAAX8IP/RtRpFumsXXi4n7QC3Jo\n+LRyqyHn8Dv5oRfmL7e7T+4EeUhQsfCHwlmklTbX1XnbTOL11aPq7RVRWaqL\nWFXWPOPYxDkl9UqsHLdd+hBS4F5S6ub0jtC2Li6V++gk3aAQd6fbcqjEsiqx\nHZJHLA9lZwZioORfte3ru9a9d/4gSCzzhVVqCDumtly2a8HDIvvHAj/w9Feg\nLJasu1qw9A9b4CfOrZuuC5QdcSHa6JSBM0K7qD2V1dZgyel1cD4wWvSb1wgO\nVCvc6XoXnQKL8Rk6FyzMLqTyzvwOhTeIex7dlIdSO0W9xN84pxWJUsxLd7I+\nW2jWcvy6E5+08mqnh6R23kaGbnlcKVQsmJUFkx4kfjwy5LQ5fmnbzBFdlU+G\nUv8AxenSYnYTw4XIn35Lvw83Ox6kk1gLWufZdofViY2ylVgTH76BOdCH9WKW\npSpLhml6TjXqVb/bZlY7UUJpeorz0eFUyc9zOagKdd+sM7Ftu8ygTNgxdWSj\nbekYWEhE9+GU+vqGL9e3cS0ZjK5p16fKlmBRCC0pczamrcpDjlxv0o1PWNSR\n3japfA/2H6JDgcG3O6qFLuRgHL2a7mRRNG53MEAbrbw8nx1gW/wAsd5Sg+gD\nyqjsMYFb9kg3Dv5OCLQQXhUd9pOZoXzxlZndPQRedsHuYVOz8YiRmhBu5sMh\nc7pA\r\n=9q16\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_9.6.1_1591533399843_0.8754693113021699"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.7.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "9.7.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.8.0",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.7.1",
+				"@verdaccio/eslint-config": "^9.3.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "769fed7748fd2088cfc99d931059e927e1e99c52",
+			"_id": "@verdaccio/commons-api@9.7.1",
+			"_nodeVersion": "14.5.0",
+			"_npmVersion": "lerna/3.22.0/node@v14.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-s2uD3s325C0UsQ9uQTmf15dXFsGVo23IM6pSUTukCRuurCok89e/k1Adz2CaoXpEu1qpxQ6Sv0dcNpGl7Q7hwQ==",
+				"shasum": "816f08eb6cb0dbe345f2546428c837be6804796d",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.7.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 17833,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfCLEyCRA9TVsSAnZWagAAfH0P/REV/VzqDsfXXbCNEnof\nu/O9mLQhdoYT74WkHfJEBTZjo+TOq5WMeCy/U3gdal7pYCsYmVKicOnpep+q\nbQtDNGYzgNdcuNKo1haZvgUF5efgbe5W2y87OsH7dLTegFZSIl6FhT5maKRd\nhBvrpQ1GtiMz3JljvhZxaS11HxbRkHL3Lzd+75nQMeTHIC41IGH5YK4voGAx\nJh/ATctOWRvGXDakJGxvao/YU/MUqGNeGe3t+X60UtoGDVatmd+/slRWoRkA\nM8qSf/5/kwcXicZ/2ft0+fUL6mh2gfOIQDm3a/V+vzyoJYLrVV6aE58p7yPw\nJydsGgkf7NmIs8spkICCVADqDOGtBcrcFx+CFRNVXqvT9ki2aO7OYWeNuITw\n0QuuRaqq4wdqBZPnKSIdDdlwc8zjKBW4ZkJkvEYT/EPKXfHIXMb/9Ueikesh\njP2/EiAbBHNmz5U65t6dgMTw6LNFVSuDKJz6nwnECtJ4jWIMslUB4fm68Pwf\nbY7ZpWo3SKr8vgo0UDSBPd71/nqvcT3SXP6XpuUtgPFe7ezimPgXFLocjPQq\ntUBv/+b/tTuRva7Zb8VFKVjssm7aTgwyFU7buy+oJ7RK4pYC2ePm7fN3qb+B\n29pU0/LoXuXVLsnKx9UnlRpvNYMMdy4B7AD+pI89Qkoj3/w2FyjBViRkQE4t\nUPCv\r\n=fYI2\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_9.7.1_1594405170384_0.7949225311842154"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "10.0.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.8.0",
+				"http-status-codes": "1.4.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^10.0.0",
+				"@verdaccio/eslint-config": "^10.0.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\"",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F core",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "e33b0509f6dcb10c9b893fdcd3846ca69eca0bd9",
+			"_id": "@verdaccio/commons-api@10.0.0",
+			"_nodeVersion": "15.12.0",
+			"_npmVersion": "lerna/3.22.0/node@v15.12.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-UC8wrRI9FvqjfDeB1RijF7aVI0JJhCOI8RkEDibCT/JD8zVngphrNmgSWcjo8Es3lRiu7NugWXDSuggCCeCfUg==",
+				"shasum": "2d7de8722f94181f1a71891fe91198a7c14e6dea",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 17993,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgYc/ACRA9TVsSAnZWagAAHEYP/0q9Gm1p4esYC3+uqdAt\nsJ35YLS6PveBhi/l6P6uhPR7tjBiVxe9MW0UkE/X5aNAdfuKoiRwdqmijXmR\nVxZ54sxMJ1J4mU23ZnFZEQ6pPkxxmCErUs1+gdsNHVJVgVcYoonSuP980baj\n9/a/3YS7FwjZaGU1qOqYSr1sWsFIEboaDhgWcFrnaGNjbc0GXI3mchiYwBEh\nuW6BjRX9+b+0eE/1RaE+ixfJ4acIfdsz1+e3jZhVANefIxsitHAICzd96nhi\n6dWaVMKrOUc9HxuiLQtyWo23N/x/ODbINd9YWCsLqysXWombbjTtaiYtSLUO\nidL4M5ltPnqhL3z6xkfSPmJ28VfN2ylF2s/S/bL44KYdwEYhbvnqNuKWstXq\nm35NXb8sJxYwdi+EDNTqs8ACPDOExFyk1EZG4oDiID/1uY/X+1QbYLHddQF8\nr0m4pBaNkX0JPIr/936hmmfVjm2e/1EPRWNsivFJtO4aCwNC0iCWPpItEUoS\nFgp2XfnKkRUxGla//IjkR7a+q157/pi6GEZTwIhe/1dX2mGb9UTk3rTYiWyd\n9/aVLTCgJ7rV869Nf7lpVPT88+QftMtMGlEhLnJnpC2Pk6yRYPB/589g1HyX\nsuSWxh9RoHeq0hykQ3lEDW8ZlR7QFMOeiU4qsQbRR3v4PKv3gpE+w/fDrtTa\nRoj2\r\n=9MlD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_10.0.0_1617022911103_0.141081529786814"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"11.0.0-alpha.3": {
+			"name": "@verdaccio/commons-api",
+			"version": "11.0.0-alpha.3",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"private",
+				"package",
+				"repository",
+				"registry",
+				"enterprise",
+				"modules",
+				"proxy",
+				"server",
+				"verdaccio"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "https",
+				"url": "git+https://github.com/verdaccio/verdaccio.git",
+				"directory": "packages/core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "build/index.js",
+			"types": "build/index.d.ts",
+			"engines": {
+				"node": ">=10",
+				"npm": ">=6"
+			},
+			"dependencies": {
+				"http-errors": "1.8.0",
+				"http-status-codes": "2.1.4"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir build/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@11.0.0-alpha.3",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-VWObMqmBJjQ8p94qfSdc7RKIu7G2pJLFsvCRrV2tEJqYgeGpnpr2wn1cDUD9h3cIolG01sWpZ4p7zNX+3ea7pA==",
+				"shasum": "b5da652f301d7f08e3fc432a5d605c64dd5b04c9",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-11.0.0-alpha.3.tgz",
+				"fileCount": 10,
+				"unpackedSize": 48005,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhMpJ3CRA9TVsSAnZWagAAIFcP/1wfrPpGKhGJWcRf1T4q\nPfo3+XqojJiFJ5HP2YQvYSZJXNRZvsAFE0hqSgHjOOMqbF+o0DPguOimDyPO\nor6ya3u0u3LCbs3nxzpWdpCIXtuD2Lsfm5FoYpyY5mmJG0UoTRBjDUdjF4xj\nikXcExsL69tQoiymlsXPJYf4RXOZZLOXWdKGrWy/1ngBuknBgU2WXEda7pDM\n6Uz3VLIUpCQtBBAiELH6q5BVXAWhvJbSXK3HO+QpAS9o9KJIXbVu/1mbcbGp\nPwhVdCt8uf4yDZmBLyInKH2zxGkNB96eC1DBe0bUgrpk2I1XY40Kgpf6zJjO\nYLaGKj07cKW3o07EQ9vVp0Spv1aPs6V+PWoPkIeL78PUmaIaXP9rnpsLgNol\nmnSPmJCpwrx7M4FbBCMR7IOIbFmKi4x1IWH7XWybguk5jAfVgGIHT0Ax/Mwe\nWVzv3OKa7PI4oApj7HKaD4JsVdF5TYGhmB03f7n8F1UTJJ7dKRYv0PogUV5B\nZ92lbEhMEY5FBHd793QO/3HDdMl1eaV/udFcPHVDC2vSIaEMYI7qnafnvNej\nrSkXfkUXjjZjuSLEKgEfCbAPik3AVUsq5fUcOZZ49hGqo0AIumFTTvPCMJEY\nFNmhB668U0LcetW7P1iCBE/MnKyutQmnR0B0NavMvwlhr6torzojQh5HVItp\nXz50\r\n=A82p\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_11.0.0-alpha.3_1630704247004_0.5892102519954696"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"11.0.0-6-next.4": {
+			"name": "@verdaccio/commons-api",
+			"version": "11.0.0-6-next.4",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"private",
+				"package",
+				"repository",
+				"registry",
+				"enterprise",
+				"modules",
+				"proxy",
+				"server",
+				"verdaccio"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "https",
+				"url": "git+https://github.com/verdaccio/verdaccio.git",
+				"directory": "packages/core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "build/index.js",
+			"types": "build/index.d.ts",
+			"engines": {
+				"node": ">=10",
+				"npm": ">=6"
+			},
+			"dependencies": {
+				"http-errors": "1.8.0",
+				"http-status-codes": "2.1.4"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir build/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"readmeFilename": "README.md",
+			"_id": "@verdaccio/commons-api@11.0.0-6-next.4",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-t0oYXRfdw4cwJivlBIz+9aaUm6Al7tk8/xHKD+lspB7mvp57St/oC0S0DwhrtjI/d/Iq+wUYDDWzOVbXl1RtWA==",
+				"shasum": "aba03efcc2d006032eaa120252b8b96dd5b98327",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-11.0.0-6-next.4.tgz",
+				"fileCount": 10,
+				"unpackedSize": 49547,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhOPTjCRA9TVsSAnZWagAARe8P/1q0F5fiRn4JBBsbU0dA\n85j0TXvvJ7WfuhHx+oMdHPDbF/+ncEJXf7uPtc6at+bnNHbtKh67i5Kx+RMT\n4ahDCRaO06eWr4IUXgL4oeoxlx00jlLPTHvd78sthV8HfSw9sH0ePEU43mXC\n9Koba8sOF0SO3xRrSRUIdNzpTP7QmVnqLDRAD0cz9O82Aejp6EcesUqVPNUC\ns66YG5jNorAYN7B22DduB2I/j7Fv6unSGU++rn+xW/GazhClBDPkpW1OtCGn\nhQ9PlmGWlaOgEDBF39k4fOqR5C8mIgzZlKQD3Ez5MhNPRo5vtNdgrrP2MZIp\nOYIXWeN5NY9U6WMKyhblJf9jrmLAd6IPhSpB/DVOn//whEOHsqmmDvO6vI7h\n+I0oW5BlUekW8Gp9E8b13kj1/Gp0tm+gBYFLQbPtcDXq/loT1hIWXofpelt5\nhlbj+Fp4mdj77Dvcg8pevbC5ecWoKMmMGm8YUOwQ9yvB02PejpUV9VguAIoo\nCYnkuVGdRhTHzThNQno7gemz2aZzxIALNGe8m6Z3L5gngZrRUq31Bwwh4KGq\nbD2vwpVn6Be5fPgdoSdGvFkQ6V9jXTUJMC5QpBW7S0Y1ULSGvcLndMLFG0AN\nb6CeJ+8fffgeWg3eQvOwYI64ICA35UAD/LXrz09fn10tTSIhPW85OGuDQkcf\niAEW\r\n=GsFE\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_11.0.0-6-next.4_1631122659508_0.1922736573768835"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.1": {
+			"name": "@verdaccio/commons-api",
+			"version": "10.0.1",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.8.0",
+				"http-status-codes": "1.4.0"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir lib/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"_resolved": "",
+			"_integrity": "",
+			"_from": "file:verdaccio-commons-api-10.0.1.tgz",
+			"_id": "@verdaccio/commons-api@10.0.1",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-dO/3ocK2Cpx5GZ/HST7YWRMVXAZu5zkDglfcoxEnUh2V9D4detGn0sIDV9nCJJJiO70ZmhuOoA5oeUmrA1lELA==",
+				"shasum": "7217a167e428a7603ff46685c4cc40bb1526e463",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 23322
+			},
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_10.0.1_1632247509648_0.27428243536234165"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.2": {
+			"name": "@verdaccio/commons-api",
+			"version": "10.0.2",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.8.1",
+				"http-status-codes": "1.4.0"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir lib/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"_resolved": "",
+			"_integrity": "",
+			"_from": "file:verdaccio-commons-api-10.0.2.tgz",
+			"_id": "@verdaccio/commons-api@10.0.2",
+			"_nodeVersion": "14.18.1",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-bJdarFsuaAOMyk1qAFEsCqcl5Ol0LCRqlwPgi1aFBAgsPNuebLEnCrdT6B6FMnFdPSYVyP1byTLN+0W1t9Iqsg==",
+				"shasum": "a0531077d3e49d8b10e7d8f19a098ce243df1b2b",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.2.tgz",
+				"fileCount": 6,
+				"unpackedSize": 23322,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhoketCRA9TVsSAnZWagAAxVUQAKG/i34a+Prj4hVVfkuq\nzWH5S5a6iQIwKffn1bUwQ6YjDjiwGzwGMZgWZbZhKsir4m+ELtOG+68syg4d\n7mprkWR3qCpzP0jBzba38PdoLFw66manFWiGijbzDjtqSvpZXWoIzy/qeWOr\nQPW+QkV88AFsZ/zlsCw+q+nMNnV0alA07cbX6HVJzuRWEFWUSGz1FV/Hjrvk\nGYL8N5l2OWYMGCHxPBBPXrPc12ZfQu0ipfkRhYZlVQlQQ3p+ZktftiHpDlSc\n9ZQOUNez0bMSmINiYRUFvG8D/2MZPii5rXkf+TDn/+K+T1aT65Oqx91NHPMd\n1RSaIVficeLr16lntoR2Bp+zl983zMhJr1jeCDYWoo749nMX0eTomEmal0j2\nvKNOHaRIPRLWSp39wFdiloVK/jmEcX2ZuluNyLclm1nWvbiEizIU84PGj7db\n9I6uKV9jmU+0WxC79MmmbS71xB8+S65XqEEXblLmcI2PAEMiHJ+BsGGHaHs4\n6Algd4ZElukEnKkgTvLKEjmQ8/U3A4+QFYraF5zYKXT+kvXoDeCXLdqfnRPC\nlFP7pYWPii6Sh41nUXsLBC5jdEt50+kbixSnNfsFZ9pZQbRq0UC2tC7c38QZ\nVbHYTFPMFukwlqfO65tGnvlY1/hceIB50ZJ7vqb6KG/XTSCTdZDJ+S38KO1z\ntKXV\r\n=Uk2F\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_10.0.2_1638025133591_0.6571470484940061"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.1.0": {
+			"name": "@verdaccio/commons-api",
+			"version": "10.1.0",
+			"description": "Commons API utilities for Verdaccio",
+			"keywords": [
+				"http",
+				"verdaccio",
+				"api"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "core/commons-api"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"main": "lib/index.js",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"http-errors": "1.8.1",
+				"http-status-codes": "1.4.0"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir lib/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"_resolved": "",
+			"_integrity": "",
+			"_from": "file:verdaccio-commons-api-10.1.0.tgz",
+			"_id": "@verdaccio/commons-api@10.1.0",
+			"_nodeVersion": "14.18.1",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-7xidrFzpyS4QVqVSFK+2lJn3mefpAPvk2pPe4SbiCibjRBFTXdj2KaeaqMEh2ROGzag4+tbx7l4hZ1qkB/1mkA==",
+				"shasum": "08b21185f41659fff0fc810d0cd7f9a1e2c22f7a",
+				"tarball": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.1.0.tgz",
+				"fileCount": 6,
+				"unpackedSize": 23322,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhtSzKCRA9TVsSAnZWagAA+KQP/2kBVByLHlewBzNhaQ/Q\nDacBc7yjmjsScvKru7ugPGm3TUykfbVD+RK/GsqNnLIzw4BsKkIhYVjJJGb+\n68bn+u3G3Bbpr6JQI9/eJWnB3YYFKDWPg2cxwSeUmSEXhVLSNuGz5s2KHaCg\ne08/jF1bEHGbaq9zQ+jrBdiLxauU8fKQCDxIf4iaQ/7W6qwXM1sbbMs4IxJ7\n/ANju9Y1veXhUkZmiM2j5R1kiDBSZ8QST8eb/hQsPcbGgcUMXrRG/XO+z6dK\nJ2P9ES3WHugekx5fYgyuqM74ztG2CU2uHNb78Qbx9Vx52Wq2aMEF6FlpaYvX\n5R7su7AcKe4knAZZp9JWyCGwUZirj0c+CoLTZLnH7wWuS0Coi+TSR/eediGm\naS11ENKDdKAKDpQSRHRRpo/sg2jeguB9c07/qkscrM3p6J7LFap+b6t6RvAu\nHCIqXZOAcxj+Dz5PYsl3Jkvx7FQ8PUV1UTf7snawtXqWoyiTFlVpNjNgn+O4\nHTdllm0hZgnVl7kETRsY1ve5GXymV9XqEnSttStscuWDLffQOfov1QlHY/+Y\no/W3Ou+p/bqATAvgzKxjKGy8t/ZgIYN2KzqazXc4ma4Otm81xwBVST3xlhXa\n+pfpilwOGG5tgoAemzGqLA6H/NKZtCyM+T3DZnI+iw6LNzomKYb0hITvJq96\nT9Ix\r\n=a+3y\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sergiohgz",
+					"email": "sergio@sergiohgz.eu"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				},
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/commons-api_10.1.0_1639263434675_0.6391273727274016"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2019-06-22T14:37:47.349Z",
+		"0.0.1": "2019-06-22T14:37:47.650Z",
+		"modified": "2021-12-11T22:57:16.697Z",
+		"0.1.0": "2019-06-25T20:58:06.399Z",
+		"0.1.1": "2019-07-12T14:12:07.456Z",
+		"0.1.2": "2019-07-15T09:02:35.979Z",
+		"8.0.0-next.1": "2019-08-01T19:26:37.827Z",
+		"8.0.0-next.2": "2019-08-03T16:16:12.495Z",
+		"8.0.0-next.4": "2019-08-18T22:15:59.513Z",
+		"8.0.0": "2019-08-22T12:35:33.019Z",
+		"8.0.1-next.1": "2019-08-29T12:16:16.723Z",
+		"8.1.0": "2019-09-07T16:22:50.327Z",
+		"8.1.1": "2019-09-26T18:15:16.214Z",
+		"8.1.2": "2019-09-29T21:47:37.420Z",
+		"8.2.0-next.0": "2019-10-08T12:01:27.033Z",
+		"8.2.0": "2019-10-23T18:25:02.157Z",
+		"8.3.0": "2019-10-27T20:41:05.992Z",
+		"8.4.1": "2019-11-23T15:33:18.910Z",
+		"8.4.2": "2019-11-23T15:40:54.359Z",
+		"8.5.0": "2019-12-22T19:39:31.035Z",
+		"9.0.0": "2020-01-07T05:14:51.372Z",
+		"9.3.1": "2020-02-23T07:56:20.249Z",
+		"9.3.2": "2020-03-08T11:32:28.471Z",
+		"9.4.0": "2020-03-21T11:07:52.246Z",
+		"10.0.0-next.0": "2020-03-28T18:18:50.828Z",
+		"10.0.0-next.1": "2020-04-12T18:57:20.992Z",
+		"9.6.1": "2020-06-07T12:36:40.010Z",
+		"9.7.1": "2020-07-10T18:19:30.497Z",
+		"10.0.0": "2021-03-29T13:01:51.477Z",
+		"11.0.0-alpha.3": "2021-09-03T21:24:07.164Z",
+		"11.0.0-6-next.4": "2021-09-08T17:37:39.714Z",
+		"10.0.1": "2021-09-21T18:05:09.824Z",
+		"10.0.2": "2021-11-27T14:58:53.837Z",
+		"10.1.0": "2021-12-11T22:57:14.809Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "10.1.0",
+		"next": "10.0.0-next.1",
+		"6-next": "11.0.0-6-next.4"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"8a693e96927523052622ffe58ee61b99\"",
+			"fetched": 1643186340314
+		}
+	},
+	"_distfiles": {
+		"commons-api-0.0.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-0.0.1.tgz",
+			"sha": "f869678f31ebe2f2866335dabb1932ad2e03a374",
+			"registry": "npmjs"
+		},
+		"commons-api-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-0.1.0.tgz",
+			"sha": "6d36820038b64ee34026a2dcf15a15d6c3623edf",
+			"registry": "npmjs"
+		},
+		"commons-api-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-0.1.1.tgz",
+			"sha": "2248e98fb43b258da026e761140141e3f2fd213b",
+			"registry": "npmjs"
+		},
+		"commons-api-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-0.1.2.tgz",
+			"sha": "084c2c06b22e998ff3bab265de17397998953da3",
+			"registry": "npmjs"
+		},
+		"commons-api-8.0.0-next.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.0-next.1.tgz",
+			"sha": "d6e59983aa77e13ac0aa910292eb93539ac40bcf",
+			"registry": "npmjs"
+		},
+		"commons-api-8.0.0-next.2.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.0-next.2.tgz",
+			"sha": "e5d30e1d581583d2df88da8dc7a55f987906f073",
+			"registry": "npmjs"
+		},
+		"commons-api-8.0.0-next.4.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.0-next.4.tgz",
+			"sha": "49e315ee0cb715592d5f4c65ef78a3f26045329c",
+			"registry": "npmjs"
+		},
+		"commons-api-8.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.0.tgz",
+			"sha": "b7f2480c73b33311932e59b2dec8c0cda3a1995c",
+			"registry": "npmjs"
+		},
+		"commons-api-8.0.1-next.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.0.1-next.1.tgz",
+			"sha": "f62fe3caf0307578fd1b235d718d3b437591d3ff",
+			"registry": "npmjs"
+		},
+		"commons-api-8.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.1.0.tgz",
+			"sha": "60f80c6b2fb43b45a1ec577e1ce64d1659960dd8",
+			"registry": "npmjs"
+		},
+		"commons-api-8.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.1.1.tgz",
+			"sha": "0cf527c5dc62aa3f5a1344c940805e44293434af",
+			"registry": "npmjs"
+		},
+		"commons-api-8.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.1.2.tgz",
+			"sha": "725b04dad6c09f6d9c3d6a9ca83fbb9d55f6dae1",
+			"registry": "npmjs"
+		},
+		"commons-api-8.2.0-next.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.2.0-next.0.tgz",
+			"sha": "5d6c7be13ab1f643e195ffdc399c122f098611c0",
+			"registry": "npmjs"
+		},
+		"commons-api-8.2.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.2.0.tgz",
+			"sha": "0ed20a7feba6af02bc525f36c46834971b9fd0a7",
+			"registry": "npmjs"
+		},
+		"commons-api-8.3.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.3.0.tgz",
+			"sha": "3a4b07b63561b21bfc8242330da528e12788635e",
+			"registry": "npmjs"
+		},
+		"commons-api-8.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.4.1.tgz",
+			"sha": "8aeb184fbf889f3a9c438c582c03761f3585458e",
+			"registry": "npmjs"
+		},
+		"commons-api-8.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.4.2.tgz",
+			"sha": "1b6243c5a35d7947590f3b7e51ce04cbfb70d4c6",
+			"registry": "npmjs"
+		},
+		"commons-api-8.5.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-8.5.0.tgz",
+			"sha": "4e774c4982caee20f4f2fd0d38b863502ad30db2",
+			"registry": "npmjs"
+		},
+		"commons-api-9.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.0.0.tgz",
+			"sha": "d13d73e3d784fb2292965015176bd7f870583cb1",
+			"registry": "npmjs"
+		},
+		"commons-api-9.3.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.3.1.tgz",
+			"sha": "64816272b878f4f65ef6378c891f7c7f4022bbd5",
+			"registry": "npmjs"
+		},
+		"commons-api-9.3.2.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.3.2.tgz",
+			"sha": "7ce1e2c694fb6ca4f5a7cbc2b4445f3019d7e950",
+			"registry": "npmjs"
+		},
+		"commons-api-9.4.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.4.0.tgz",
+			"sha": "74bb922d5d173a1c19cd2719db9f028e8909dac7",
+			"registry": "npmjs"
+		},
+		"commons-api-10.0.0-next.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.0-next.0.tgz",
+			"sha": "eed8c1947d6635c3f1bd9f6563c9c2870654d017",
+			"registry": "npmjs"
+		},
+		"commons-api-10.0.0-next.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.0-next.1.tgz",
+			"sha": "8f66bd4614c025d973085db8b259cf1121f80ea4",
+			"registry": "npmjs"
+		},
+		"commons-api-9.6.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.6.1.tgz",
+			"sha": "f62d1e0d7e55f19c483989f718ed2df2bf55ae3a",
+			"registry": "npmjs"
+		},
+		"commons-api-9.7.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-9.7.1.tgz",
+			"sha": "816f08eb6cb0dbe345f2546428c837be6804796d",
+			"registry": "npmjs"
+		},
+		"commons-api-10.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.0.tgz",
+			"sha": "2d7de8722f94181f1a71891fe91198a7c14e6dea",
+			"registry": "npmjs"
+		},
+		"commons-api-11.0.0-alpha.3.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-11.0.0-alpha.3.tgz",
+			"sha": "b5da652f301d7f08e3fc432a5d605c64dd5b04c9",
+			"registry": "npmjs"
+		},
+		"commons-api-11.0.0-6-next.4.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-11.0.0-6-next.4.tgz",
+			"sha": "aba03efcc2d006032eaa120252b8b96dd5b98327",
+			"registry": "npmjs"
+		},
+		"commons-api-10.0.1.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.1.tgz",
+			"sha": "7217a167e428a7603ff46685c4cc40bb1526e463",
+			"registry": "npmjs"
+		},
+		"commons-api-10.0.2.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.0.2.tgz",
+			"sha": "a0531077d3e49d8b10e7d8f19a098ce243df1b2b",
+			"registry": "npmjs"
+		},
+		"commons-api-10.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@verdaccio/commons-api/-/commons-api-10.1.0.tgz",
+			"sha": "08b21185f41659fff0fc810d0cd7f9a1e2c22f7a",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"commons-api-9.7.1.tgz": {
+			"shasum": "816f08eb6cb0dbe345f2546428c837be6804796d"
+		}
+	},
+	"_rev": "2-978731e591761e0a",
+	"_id": "@verdaccio/commons-api",
+	"readme": "# @verdaccio/commons-api\n\ncommons api utilities for verdaccio\n\n[![verdaccio (latest)](https://img.shields.io/npm/v/@verdaccio/commons-api/latest.svg)](https://www.npmjs.com/package/@verdaccio/commons-api)\n[![docker pulls](https://img.shields.io/docker/pulls/verdaccio/verdaccio.svg?maxAge=43200)](https://verdaccio.org/docs/en/docker.html)\n[![backers](https://opencollective.com/verdaccio/tiers/backer/badge.svg?label=Backer&color=brightgreen)](https://opencollective.com/verdaccio)\n[![stackshare](https://img.shields.io/badge/Follow%20on-StackShare-blue.svg?logo=stackshare&style=flat)](https://stackshare.io/verdaccio)\n[![discord](https://img.shields.io/discord/388674437219745793.svg)](http://chat.verdaccio.org/)\n[![node](https://img.shields.io/node/v/@verdaccio/commons-api/latest.svg)](https://www.npmjs.com/package/@verdaccio/commons-api)\n![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)\n[![Crowdin](https://d322cqt584bo4o.cloudfront.net/verdaccio/localized.svg)](https://crowdin.com/project/verdaccio)\n\n\n[![Twitter followers](https://img.shields.io/twitter/follow/verdaccio_npm.svg?style=social&label=Follow)](https://twitter.com/verdaccio_npm)\n[![Github](https://img.shields.io/github/stars/verdaccio/verdaccio.svg?style=social&label=Stars)](https://github.com/verdaccio/verdaccio/stargazers)"
+}

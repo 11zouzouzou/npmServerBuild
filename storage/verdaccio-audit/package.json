@@ -1,0 +1,4986 @@
+{
+	"name": "verdaccio-audit",
+	"versions": {
+		"0.0.1": {
+			"name": "verdaccio-audit",
+			"version": "0.0.1",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"scripts": {
+				"pretest": "",
+				"test": "jest",
+				"precommit": "lint-staged",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.js\"",
+				"lint": "npm run flow && eslint .",
+				"flow": "flow",
+				"prepublish": "npm run build",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"build": "babel src/ --out-dir lib/ --copy-files --ignore ___tests___"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"@verdaccio/streams": "^1.0.0",
+				"http-errors": "1.6.2",
+				"request": "^2.85.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "6.1.3",
+				"@commitlint/config-conventional": "6.1.3",
+				"@commitlint/travis-cli": "6.1.3",
+				"@verdaccio/types": "2.2.0",
+				"babel-cli": "6.26.0",
+				"babel-core": "6.26.0",
+				"babel-eslint": "8.2.3",
+				"babel-jest": "22.4.3",
+				"babel-plugin-flow-runtime": "0.17.0",
+				"babel-plugin-transform-async-to-generator": "6.24.1",
+				"babel-preset-env": "1.6.1",
+				"babel-preset-flow": "6.23.0",
+				"cross-env": "5.1.4",
+				"eslint": "4.19.1",
+				"eslint-config-google": "0.9.1",
+				"eslint-config-prettier": "2.9.0",
+				"eslint-plugin-flowtype": "2.46.3",
+				"eslint-plugin-jest": "21.15.1",
+				"eslint-plugin-prettier": "2.6.0",
+				"flow-bin": "0.70.0",
+				"flow-runtime": "0.17.0",
+				"husky": "0.14.3",
+				"jest": "22.4.3",
+				"lint-staged": "6.1.0",
+				"prettier": "1.12.1",
+				"rmdir-sync": "1.0.1"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"lint-staged": {
+				"*.js": [
+					"npm run format",
+					"npm run lint",
+					"git add"
+				]
+			},
+			"gitHead": "368aa1c9208bc017e2402961fb12a144543ad717",
+			"_id": "verdaccio-audit@0.0.1",
+			"_npmVersion": "6.0.1",
+			"_nodeVersion": "9.9.0",
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-qu1ZVjDWj/ZYLFrdnGkrgJPxmqVaHNFroIeg6JRWUpaIA2/lSZUmegXR70SYTqCjSry2ytwA9f7tHbuwWMgsmA==",
+				"shasum": "045d8b2f40128f04da68b4a6b3d3df5501de5a12",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.0.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 3601,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa+nHYCRA9TVsSAnZWagAAMh4QAIIsPPzavK8+mQ5uYTJV\nlDHcqkOZ+HRXI3O/xODf3iO8IgPWvzM/aSQUPo8fzjnXdZ4q67bC9WEzfPSG\n/xbZU7J7bFUcFy7GswmewEyuHm0WeQV6i/QEdTNWePSeBHA42GtOuccs1P0K\nUN6nB41CUK66esRmq8idAVXXvcVU9Siq1zYZd+SyYZ3bbYFdz2RmFWiYcJXT\nc19xTzVBjunPTNpMZ274Yk8F/dqpUaod5wxoE1mj+A1+Xhy3ELSFbcq6f1TO\nt8kzooh4N+us7aqhs+kQC7CS7gZw3KmLvsN+mwnhRraSywIGjZGHWsS1EaMY\n8o4Z9nu0bU9iNns6jl09XxDtpLdy+dMfRiPyi2tS1fbeBTI7yC4dqPyyZd7j\nyzYEA80dRBaxGatBF3v8oylTHH6aK6qGllzbR4+xAHE8wuSCDCVKUhNZxEqK\nBNzB6CSY6EnwfSTv3HNFXIJ0hUM+XFyHExScd3tK0ioBtNcWJx0K4RVHnkAx\nrOJyNaWB8X+9EGFsV5wUaphCKE5TvPb+ISkKWrMpEXar6Rc6Q5lG7RxI9Yib\nZOzoAwGgVkgpR4v1fZOqNMqHbg5f70leAHvvqIN3OU4ktOJ5WcRWAM9Y7xFZ\neJj4N4CxA7WjG/N52EmzQzgnSVTI4gH+5amIj3kvKl+fV/wKdSYBjWdJRxCx\nf/s+\r\n=ewrV\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_0.0.1_1526362582350_0.36530934850181507"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.0.2": {
+			"name": "verdaccio-audit",
+			"version": "0.0.2",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"scripts": {
+				"test": "jest",
+				"precommit": "lint-staged",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.js\"",
+				"lint": "npm run flow && eslint .",
+				"flow": "flow",
+				"prepublish": "npm run build",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"build": "babel src/ --out-dir lib/ --copy-files --ignore ___tests___"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"body-parser": "1.18.3",
+				"compression": "1.7.2",
+				"express": "4.16.3",
+				"request": "2.86.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "6.1.3",
+				"@commitlint/config-conventional": "6.1.3",
+				"@commitlint/travis-cli": "6.1.3",
+				"@verdaccio/types": "2.2.0",
+				"babel-cli": "6.26.0",
+				"babel-core": "6.26.0",
+				"babel-eslint": "8.2.3",
+				"babel-jest": "22.4.3",
+				"babel-plugin-flow-runtime": "0.17.0",
+				"babel-plugin-transform-async-to-generator": "6.24.1",
+				"babel-preset-env": "1.6.1",
+				"babel-preset-flow": "6.23.0",
+				"cross-env": "5.1.4",
+				"eslint": "4.19.1",
+				"eslint-config-google": "0.9.1",
+				"eslint-config-prettier": "2.9.0",
+				"eslint-plugin-flowtype": "2.46.3",
+				"eslint-plugin-jest": "21.15.1",
+				"eslint-plugin-prettier": "2.6.0",
+				"flow-bin": "0.70.0",
+				"flow-runtime": "0.17.0",
+				"husky": "0.14.3",
+				"jest": "22.4.3",
+				"lint-staged": "6.1.0",
+				"prettier": "1.12.1"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"lint-staged": {
+				"*.js": [
+					"npm run format",
+					"npm run lint",
+					"git add"
+				]
+			},
+			"gitHead": "7dd81ab2c68683164d121daaf5af87c3098c1b21",
+			"_id": "verdaccio-audit@0.0.2",
+			"_npmVersion": "6.0.1",
+			"_nodeVersion": "10.1.0",
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-CxGlHH9osT41it+o5HhhdQjY2wEzdIQS1rZQigZVmFQKpwWyvRD5sw1P/r570T7l9z/oIpwISVCxOqheg2FrMg==",
+				"shasum": "6ff8a171e10e60d79f3150881e5a885764d89986",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.0.2.tgz",
+				"fileCount": 5,
+				"unpackedSize": 5205,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbAo1bCRA9TVsSAnZWagAA3D4QAIPa/J6pFUyk4RETOJ6s\n5Su3nznTS/siiSboeC2OQF+8tZOpdkWjESXjxqvnQLaBE5aDblO1CIMnZbnx\nCPiWIA7sOUV+HW7b6Soo1rqWQYSFo3u6Iff10qRJ8tvlwm8DeknF90Jp1oRH\ntW17xXvxfv5ivNWLbdn7XYRQjdZt+7Hj8CxIvWPEzFszGCgtfADReH9ilMBs\n8XukD/zcPGwSx6mAjaWpHUBrQay53M5d88AbNWVPmvAmcc6uQmZShr9G3tj7\nsqCqs6vuYQvG5XZsl2Or8Q8/ps7wocvKkanYNFBjOg1CNZXpbTta+/iJ5HTb\ngjFsacSYt1uHcX9BMzk39tlKfqP1Y0NeciNJMiWOvgWsP3pKI5CUiQDOWrDC\nnSbcBoR3U/bkZ0bq7hk4Sm4QaVfXTIJbmpiDYPV0452f4zZAZn8Me+EnAPEn\nY2lg1+luoDe+7ukP07nHnNmBpLMHObTRLMVpRwRoAwn/sVrsvsrob4rD1emU\ny0rQBcD+SWeN4i6erm8ildKraubv1hPC/HSX2J/4jb6NqlCSmFDxQVbPLbqC\nhogH1+dm6AaI/5cjQHtHs09nsXZnPbSDJsOaJhuJppauJuI+/b3DD9IIiyKW\n4Q5hwZ+KnHbHj8BW6+ZSCnY3h5i8EUBRdAiUaabHitROlL++Wf3BVsjYLQ6G\n47Wu\r\n=vIar\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_0.0.2_1526893914091_0.9033383439490841"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.0.3": {
+			"name": "verdaccio-audit",
+			"version": "0.0.3",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"scripts": {
+				"test": "jest",
+				"precommit": "lint-staged",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.js\"",
+				"lint": "npm run flow && eslint .",
+				"flow": "flow",
+				"prepublish": "npm run build",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"build": "babel src/ --out-dir lib/ --copy-files --ignore ___tests___"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"body-parser": "1.18.3",
+				"compression": "1.7.2",
+				"express": "4.16.3",
+				"request": "2.86.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "6.1.3",
+				"@commitlint/config-conventional": "6.1.3",
+				"@commitlint/travis-cli": "6.1.3",
+				"@verdaccio/types": "2.2.0",
+				"babel-cli": "6.26.0",
+				"babel-core": "6.26.0",
+				"babel-eslint": "8.2.3",
+				"babel-jest": "22.4.3",
+				"babel-plugin-flow-runtime": "0.17.0",
+				"babel-plugin-transform-async-to-generator": "6.24.1",
+				"babel-preset-env": "1.6.1",
+				"babel-preset-flow": "6.23.0",
+				"cross-env": "5.1.4",
+				"eslint": "4.19.1",
+				"eslint-config-google": "0.9.1",
+				"eslint-config-prettier": "2.9.0",
+				"eslint-plugin-flowtype": "2.46.3",
+				"eslint-plugin-jest": "21.15.1",
+				"eslint-plugin-prettier": "2.6.0",
+				"flow-bin": "0.70.0",
+				"flow-runtime": "0.17.0",
+				"husky": "0.14.3",
+				"jest": "22.4.3",
+				"lint-staged": "6.1.0",
+				"prettier": "1.12.1"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"lint-staged": {
+				"*.js": [
+					"npm run format",
+					"npm run lint",
+					"git add"
+				]
+			},
+			"gitHead": "8bc77f2263edf89e53408067be184c296e76b6eb",
+			"_id": "verdaccio-audit@0.0.3",
+			"_npmVersion": "6.0.1",
+			"_nodeVersion": "10.1.0",
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-nOVg4QG8Z9prahoJDD9q7Twy99kxbDvFXW9K8kc7n0udY20Dt9/gBSO8zUi2U1ijIT87btqzenH2+ijRs+Tl2A==",
+				"shasum": "d7743b02286f845d5b84b4400a84769660a13223",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.0.3.tgz",
+				"fileCount": 4,
+				"unpackedSize": 4932,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbApoGCRA9TVsSAnZWagAAjJQQAKRpOkrWpvanamFgDkHZ\nKmLkZPiDwnZf/Y+3jqsEbBq65CRNznyLM7dOWLq22yKrWHybBXUanRYj5ZCa\n+h4B/io3dYuVvxg9WFujGULFsFIMtQmjsoXejwSh2TcY24jrgNscm+QjM7Vn\nJNNcoPVvzygU7zFPxgn3T7aCtytUsc9aGvBBZU4OCH/ndaCY4io1HqKpHkiM\nefMmw7d7KRgSWauUTNHio0ZhYoNBZrr/gmfEQMcAIYTsvIAcdbMoqjL4D2S+\nTcykcjJPmJkj+dyV+TKsehJOpkZ5uHAFFPO9T2yWAsoLVPV4hHVeTL/BpJd6\n9KEHBmQhZ5pfoqCUU3Gt7OA7AUp2T/UvhRtOy5uGjuJCLpRRAoGKymK44lrl\nQ/+otUhl2Spjk12TsvgblGNdgN2OuPWz92ZzqHDZlNcVHbGG+pV+/nk1NXz8\n2ZJMBt/T/8tTmBdhs5cD9/Y8fN2DX+GEkiL51FjpO33d0eqniuexKlduqPTU\nAWJsXAZsKrBErt6Ms4mQN/Lmo5UJ/2ZjnRHpIZ2spCkhaM1r9ZNEkd6w3/gH\nVvzOXLKYHwSCN4CBHb7wk/Mu+BVuKoo+oCGC6IwyNiasaIqcTYPIhb4AhoQV\nt1jHChH8p8V/teinY6/DF5KO6V2k1VhPUe4byvfjSbT+20SlX1rbqXDAsGO4\nMFrl\r\n=c0tk\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_0.0.3_1526897157557_0.7932411024722699"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.1.0": {
+			"name": "verdaccio-audit",
+			"version": "0.1.0",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"scripts": {
+				"test": "jest",
+				"precommit": "lint-staged",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.js\"",
+				"lint": "npm run flow && eslint .",
+				"flow": "flow",
+				"prepublish": "npm run build",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"build": "babel src/ --out-dir lib/ --copy-files --ignore ___tests___"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"body-parser": "1.18.3",
+				"compression": "1.7.2",
+				"express": "4.16.3",
+				"request": "2.86.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "6.1.3",
+				"@commitlint/config-conventional": "6.1.3",
+				"@commitlint/travis-cli": "6.1.3",
+				"@verdaccio/types": "2.2.0",
+				"babel-cli": "6.26.0",
+				"babel-core": "6.26.0",
+				"babel-eslint": "8.2.3",
+				"babel-jest": "22.4.3",
+				"babel-plugin-flow-runtime": "0.17.0",
+				"babel-plugin-transform-async-to-generator": "6.24.1",
+				"babel-preset-env": "1.6.1",
+				"babel-preset-flow": "6.23.0",
+				"cross-env": "5.1.4",
+				"eslint": "4.19.1",
+				"eslint-config-google": "0.9.1",
+				"eslint-config-prettier": "2.9.0",
+				"eslint-plugin-flowtype": "2.46.3",
+				"eslint-plugin-jest": "21.15.1",
+				"eslint-plugin-prettier": "2.6.0",
+				"flow-bin": "0.70.0",
+				"flow-runtime": "0.17.0",
+				"husky": "0.14.3",
+				"jest": "22.4.3",
+				"lint-staged": "6.1.0",
+				"prettier": "1.12.1"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"lint-staged": {
+				"*.js": [
+					"npm run format",
+					"npm run lint",
+					"git add"
+				]
+			},
+			"gitHead": "ddc32e7de40874b25942eaf882eb6c3484eb4093",
+			"_id": "verdaccio-audit@0.1.0",
+			"_npmVersion": "6.0.1",
+			"_nodeVersion": "9.9.0",
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-cnVQHbdVDdJ1FpbDLzDGBhzt47kNpk7n33FHRAwwjWKj1KM7AgPWqZ9Wl2wG52uKFSr6oJCRaJMU2ATlMOrlmQ==",
+				"shasum": "4cc2e9a61c71492962f1a623bd099c51f5ca745a",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.1.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 5172,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbBcYtCRA9TVsSAnZWagAA+IUP+gMm/T0RI7pv6z74UcWW\nZt4fQ1pcWFDP7/CA/zNvfZ6PJLuk/ZME4CzuEgPiNZKm4MMo/83WsLRgbPRs\n4VImIa+zRDObAydAej/RsY0ElCDJg/Ir8TKVkXeOz6iUBA+CMx/ULQmnf0y/\n+zFoeLPjgjYayC48hHV5UYhx26cAzG8ufUbwtrCTQbM3+qJf6TbEl4D8zbAk\nC9/94d8e1ioDgYtzp08jmGRTa7EIgMsd7U7r7fLFJErW0t0c8OV2ZhfqonvA\nTphijtCJDI2vnnm2hgBnDPpONnrj/nYEO/T1COQHHEUzcMThPU901YpwIPFm\n9xPjO7y5I5lgYIBm68MjQxtFAeYavlUiTUzYeFyREr7RBeG02L0so/QFl/MB\nzjDNoESuVVCfekrBvfNR9PS0LUn0KbaTEj+FKd+hhc2aEuXAzgjAsNeG68x6\n3kfyghLlaoWKc4pvSSvl+vAE03OlVdKIRShP+qxvvjcrohgIsiXBwHiTbbD6\nkVyuA2WcMctYZqYmRBiGVkfz4AhX9isZrWohD3IPHfyXEiYuWa6a8l+QhDxL\n4BiRESVVHuDeNnSwPsYbwUyOdbyOjLHn333EbRud7P15mDieoU1jN7gqDLlT\nWsrHNtgMvx9SbluvdEtQjsxjl+bqdvO4wqPqi2CGtsuXCrHtX+Qt927YREiU\n5Yqf\r\n=nvAd\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_0.1.0_1527105068101_0.6890691183323074"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "verdaccio-audit",
+			"version": "0.2.0",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"scripts": {
+				"test": "jest",
+				"precommit": "lint-staged",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.js\"",
+				"lint": "npm run flow && eslint .",
+				"flow": "flow",
+				"prepublish": "npm run build",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"release": "standard-version -a -s",
+				"build": "babel src/ --out-dir lib/ --copy-files --ignore ___tests___"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"body-parser": "1.18.3",
+				"compression": "1.7.2",
+				"express": "4.16.3",
+				"request": "2.87.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "7.0.0",
+				"@commitlint/config-conventional": "7.0.1",
+				"@commitlint/travis-cli": "7.0.0",
+				"@verdaccio/types": "2.2.0",
+				"babel-cli": "6.26.0",
+				"babel-core": "6.26.3",
+				"babel-eslint": "8.2.3",
+				"babel-jest": "23.0.1",
+				"babel-plugin-flow-runtime": "0.17.0",
+				"babel-plugin-transform-async-to-generator": "6.24.1",
+				"babel-preset-env": "1.7.0",
+				"babel-preset-flow": "6.23.0",
+				"cross-env": "5.2.0",
+				"eslint": "4.19.1",
+				"eslint-config-google": "0.9.1",
+				"eslint-config-prettier": "2.9.0",
+				"eslint-plugin-flowtype": "2.49.3",
+				"eslint-plugin-jest": "21.17.0",
+				"eslint-plugin-prettier": "2.6.0",
+				"flow-bin": "0.74.0",
+				"flow-runtime": "0.17.0",
+				"husky": "0.14.3",
+				"jest": "23.1.0",
+				"lint-staged": "7.2.0",
+				"prettier": "1.13.5",
+				"standard-version": "4.4.0"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"lint-staged": {
+				"*.js": [
+					"npm run format",
+					"npm run lint",
+					"git add"
+				]
+			},
+			"gitHead": "7f1f1c8ef536cc9a419c08580671f98b3af4020f",
+			"_id": "verdaccio-audit@0.2.0",
+			"_npmVersion": "6.1.0",
+			"_nodeVersion": "9.9.0",
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-hXd1yU3FbCGXuJj+1Jigtt9ipN3pSFul+/JdUTlvMKLNS44PNHCwzK+VVlQQNNl/EvPLT3SjnGaUzbOulEJGKQ==",
+				"shasum": "426e26a3fa2e26341d7a12096025f48a8d40f6d2",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.2.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 5711,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbJCZ0CRA9TVsSAnZWagAACkMP/jfJ63tjvbpfX5fPzhKJ\nAshzp6RLT5VknT/hM7pnju1Gmh30Pgdqk9aoFWZR/yThZIKa4qYCQUKzfgDF\nb+3S7XCALrQibk+cPv0BFA9xQLtd5cmI2dK0wAJbXAAlMLdcb8Y1g+gC51GY\ntvxmx3wWTGlW3PiV+gR+YJmTjUDJ8qHYu0Ac+RtyvZVRNZaX+26h+0tZ9dJ8\nL04OkAlJa6/Yv+ZdGGdt/f/0lqegE1r5gAtLeAkOxHt4zvYH0yJKl5upgmyQ\npPRHf32jVaryYCVfexX0AqvQRaAp+NwYMa5H0YkINYzYO7ZcG6ASZSJvJ6ob\ndB1Eq0O/eqdbkShz22pEGNXN6GHDBtN5us+UmexR7zBEIpOzuM2ewTHErlWA\ny4D4DF2h5OkiP9Zap0/eKtLT2zZFqFzRCqjGJmV2LdQgpU37omTNZJxKnIvO\nyw6J3T3Zqa5YBLoDjO1vpm+AIXhuxkeBYhF5h3k5SiW+O9DbbcbTyKMKNdkZ\nM6vqN0eClS6oLj0gFIdvf2Sy57LpODITwOfe5q8HP8c9DDfWXTVXKiqsPNMs\n8NsfFeJpy15mEoMDhe/WwURpzN+5+woo7A0u5wwiAuSOF72biq0xncZpzpxX\najkthPz/L8BPdZcJ9+d69aD9E4UutydjCpA1q+PcplodeXq4zGbCNzlRSiXS\nGrkN\r\n=b+2w\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_0.2.0_1529095796164_0.3543552168368729"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.0.0": {
+			"name": "verdaccio-audit",
+			"version": "1.0.0",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/verdaccio/verdaccio-audit.git"
+			},
+			"scripts": {
+				"test": "jest",
+				"precommit": "lint-staged",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.js\"",
+				"lint": "npm run flow && eslint .",
+				"flow": "flow",
+				"prepublish": "npm run build",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"release": "standard-version -a -s",
+				"build": "babel src/ --out-dir lib/ --copy-files --ignore ___tests___"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"body-parser": "1.18.3",
+				"compression": "1.7.3",
+				"express": "4.16.3",
+				"request": "2.87.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "7.0.0",
+				"@commitlint/config-conventional": "7.0.1",
+				"@commitlint/travis-cli": "7.0.0",
+				"@verdaccio/types": "3.3.1",
+				"babel-cli": "6.26.0",
+				"babel-core": "6.26.3",
+				"babel-eslint": "8.2.6",
+				"babel-jest": "23.4.0",
+				"babel-plugin-flow-runtime": "0.17.0",
+				"babel-plugin-transform-async-to-generator": "6.24.1",
+				"babel-preset-env": "1.7.0",
+				"babel-preset-flow": "6.23.0",
+				"cross-env": "5.2.0",
+				"eslint": "5.1.0",
+				"eslint-config-google": "0.9.1",
+				"eslint-config-prettier": "2.9.0",
+				"eslint-plugin-flowtype": "2.50.0",
+				"eslint-plugin-jest": "21.17.0",
+				"eslint-plugin-prettier": "2.6.2",
+				"flow-bin": "0.76.0",
+				"flow-runtime": "0.17.0",
+				"husky": "0.14.3",
+				"jest": "23.4.1",
+				"lint-staged": "7.2.0",
+				"prettier": "1.13.7",
+				"standard-version": "4.4.0"
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"lint-staged": {
+				"*.js": [
+					"npm run format",
+					"npm run lint",
+					"git add"
+				]
+			},
+			"gitHead": "99862b94695b2a94b00ba788fc3c2eb3685225df",
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio-audit/issues"
+			},
+			"homepage": "https://github.com/verdaccio/verdaccio-audit#readme",
+			"_id": "verdaccio-audit@1.0.0",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "8.11.2",
+			"_npmUser": {
+				"name": "ayusharma",
+				"email": "ayush.aceit@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-8lNrtdRt5wafBcVhM/yziPcItPWuOFmlPQn7+E+GxH0oAjUiA4ag0uBPykbtl+CVj4gQeJAwoBxhrctRgC/ETA==",
+				"shasum": "4893baac6f711c4d065022684085220060b7c020",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-1.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 6336,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbyEb5CRA9TVsSAnZWagAAl7YQAJ/qPpQ8OSJj8LyV3Yt1\nWQU2GhVgfz3MW72VZ8avJ50RSwhquYeHcWLHdvUmLzfzAwHmOjdHNn3cOzeo\nhEHkCbVrUO/R9JAbRPYFKSMkGwX4xAsbMN/B1BcP5PzdO9MA5M99kaBZaYb/\nJkLKZd6mcYdrVk/BlFWK3/iuAyz0/EWUb5zTLn3OebGD5pGgDA0C/G5dmuY8\nkxbrXokXs1RKT1kpmCRKnQWDk7jgwEl41drpXss04nZnzbgyQgpDcsXCBZZD\n+OF1zL90tycu6Gho0UpgmViAW5IHJVgebjW0+0pILP6X477b1iVh3aK6xpb2\nfzEOP/vtGK4xbFyPZF2kDi6e0uJFDERtJqtQ3us8CA70e6ha97Xi7tuyiyVX\n531tS9ww2Rrm5vYUyyMQ7XK2c34HxgtxkF7f30KbpAJKwyfn50henLf1xVW8\nTusOZdeYTvEMSioSEQy223g7k+owqHIVbwGHJHItH8Th9pEncX/BcmDP+78V\n04Hh7hHR2UgbuKsFm9ZUc8ZvAJehUpOrQ576DJZHHdl2V2dcgtA8CrehkR34\nKHXr5/nsZ8UbsV0FKz/dfuaYwWWy7Hado3YmkoKTqYnsalTZZDTM3TYxTo4P\nbefBs8yGucVqAVexQ0QS95HkdvqT9v21vmAnbeYP0bQi6qAuauzz841K3bzO\nwlOZ\r\n=H41e\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_1.0.0_1539852024666_0.829775813892851"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.1.0": {
+			"name": "verdaccio-audit",
+			"version": "1.1.0",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/verdaccio/verdaccio-audit.git"
+			},
+			"scripts": {
+				"test": "jest",
+				"precommit": "lint-staged",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.js\"",
+				"lint": "npm run flow && eslint .",
+				"flow": "flow",
+				"prepublish": "npm run build",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"release": "standard-version -a -s",
+				"build": "babel src/ --out-dir lib/ --copy-files --ignore ___tests___"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"express": "4.16.4",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "7.2.1",
+				"@commitlint/config-conventional": "7.1.2",
+				"@commitlint/travis-cli": "7.2.1",
+				"@verdaccio/types": "4.1.2",
+				"babel-cli": "6.26.0",
+				"babel-core": "6.26.3",
+				"babel-eslint": "10.0.1",
+				"babel-jest": "23.6.0",
+				"babel-plugin-flow-runtime": "0.17.0",
+				"babel-plugin-transform-async-to-generator": "6.24.1",
+				"babel-preset-env": "1.7.0",
+				"babel-preset-flow": "6.23.0",
+				"cross-env": "5.2.0",
+				"eslint": "5.12.0",
+				"eslint-config-google": "0.11.0",
+				"eslint-config-prettier": "3.3.0",
+				"eslint-plugin-flowtype": "3.2.1",
+				"eslint-plugin-jest": "22.1.3",
+				"eslint-plugin-prettier": "3.0.1",
+				"flow-bin": "0.89.0",
+				"flow-runtime": "0.17.0",
+				"husky": "1.3.1",
+				"jest": "23.6.0",
+				"lint-staged": "8.1.0",
+				"prettier": "1.15.3",
+				"standard-version": "4.4.0"
+			},
+			"husky": {
+				"hooks": {
+					"pre-commit": "lint-staged && commitlint -e $GIT_PARAMS"
+				}
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"lint-staged": {
+				"*.js": [
+					"npm run format",
+					"npm run lint",
+					"git add"
+				]
+			},
+			"gitHead": "936871a205ab08998b074762af329d1b862ae762",
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio-audit/issues"
+			},
+			"homepage": "https://github.com/verdaccio/verdaccio-audit#readme",
+			"_id": "verdaccio-audit@1.1.0",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "10.15.0",
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-5bCiTWWBauq49vF1Ndt0Jl0GbIBDOzjiRNO33gWBPfgjoZfPn8wFpR/woFcMfS3SPzC06rH9LBcUn9KN3uWjEg==",
+				"shasum": "82c2c6722fc3ce61f3ba45bf1a2046b247f00d28",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-1.1.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 6197,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcNl8mCRA9TVsSAnZWagAA1kgQAITEtkBOz1gbs2CMzzql\njbw9dbDx93yfB8+jnFDIy/7Sa1/SceORpyPTM8b0gP8PJJYn08om5iEVFjpr\nRGV/U3nVWUhC3eVy8xwT5hNWccaRZkeHW/PmJktpLBkKqYED3zjlO6ZAwus4\ncnsLtU444ar2z6P/Y+Wgwk9p1MUROErgLL6foLoYfGRV1r2W/wwpLmbzibBv\nuXR3fxsQdE5mb5VYLtKxtFd318Ap5GxD+3w9/uNDxC+4v6rL4bfUXgiLnrKU\nMHnO1A5GjxrLW9UcPFeOnO8n4akhz4qduOhcISi2uP1Wl0VbUuoWnxjmbl+d\nkeTMNPUbqMTipUCQaxwqP+txUPrxQmQI78B+3gTWyX3j6YZg/4VPbVprepBu\nvN+8sSowjYpPOzMnwMvk6e7nDv+ObhrMSc8I2VpvlXY1VUkQRD60HLu8H1v1\nqSjYPX6FiQeaFxXdygD1wlol3F3elRQsQ19NGJTdwBVSqMqbKVCDNehEI3Jw\nS/cYWTblQEC84+iJ6YFuWQQAn1Gb6i9bgdKKTJLVNH+qDT3X0pGimf7gTCb/\ngwFlztJLX1PRHrnxKJKW6w8lOFLoSAM287xxqdz5OPfxXsrE9LLdFHnyLaCO\nP1XHmKe7jY9gIhGMJyJn3Kn+++pubgiGEBF8zXS07xbIKHvq41+imZ5SkWbb\njwr2\r\n=UsHJ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_1.1.0_1547067173357_0.2608265346905483"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.2.0": {
+			"name": "verdaccio-audit",
+			"version": "1.2.0",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/verdaccio/verdaccio-audit.git"
+			},
+			"scripts": {
+				"lint": "eslint .",
+				"test": "npm run lint && jest",
+				"prepublish": "npm run build",
+				"coverage:publish": "codecov",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"release": "standard-version -a -s",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch",
+				"build:types": "tsc --emitDeclarationOnly",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build": "npm run build:types && npm run build:js"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"express": "4.16.4",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "7.5.2",
+				"@commitlint/config-conventional": "7.5.0",
+				"@commitlint/travis-cli": "7.5.2",
+				"@types/express": "4.16.1",
+				"@types/http-errors": "1.6.1",
+				"@types/jest": "24.0.11",
+				"@types/memory-fs": "0.3.2",
+				"@types/node": "11.13.0",
+				"@types/request": "2.48.1",
+				"@typescript-eslint/eslint-plugin": "1.6.0",
+				"@verdaccio/babel-preset": "0.1.0",
+				"@verdaccio/types": "5.0.0-beta.4",
+				"codecov": "3.3.0",
+				"cross-env": "5.2.0",
+				"eslint": "5.16.0",
+				"eslint-config-google": "0.12.0",
+				"eslint-config-prettier": "4.1.0",
+				"eslint-plugin-jest": "22.4.1",
+				"eslint-plugin-prettier": "3.0.1",
+				"husky": "0.14.3",
+				"jest": "24.7.1",
+				"prettier": "1.16.4",
+				"rmdir-sync": "1.0.1",
+				"standard-version": "5.0.2",
+				"typescript": "3.2.4"
+			},
+			"husky": {
+				"hooks": {
+					"pre-commit": "commitlint -e $GIT_PARAMS"
+				}
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"engines": {
+				"node": ">=8"
+			},
+			"gitHead": "c33f3c255d75b6d7b730a879c735e3321b603a71",
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio-audit/issues"
+			},
+			"homepage": "https://github.com/verdaccio/verdaccio-audit#readme",
+			"_id": "verdaccio-audit@1.2.0",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "10.15.3",
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-383K+EFqsc0kirh2mXrd7xCBzEIQBHlGZsJCT99W8UxKtdG1vyaHiPOe8wb7/aLENSOu7G7UFSMrad/F3oCrtw==",
+				"shasum": "932485729a39f518bd4fd8d5688160cc5edafcbb",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-1.2.0.tgz",
+				"fileCount": 11,
+				"unpackedSize": 14711,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcqJqKCRA9TVsSAnZWagAAKN4QAJPmh9mLaLI2eRNs8Ngb\nso2OMEcfemJIg10CCRk/bAXo7HWQN1ta9s0Ye8cEbRT3a7f3GOdn0Y0NG6SO\nAxPN8eX5fYCvzqPnB2T/e2SnolU5nEaIsNc819BHfqAQ671e7pWeWfDxn5xn\nsO901HD8S7CR8x0/Gl2djDqg++Go8yZkYvdXu+lPLCE19JuwtQduMw/Ooqf/\nw06uUDH7EAvGKS1wvsKH2omZnMEW4UDV8F4VHtFmVruwWW3WLHLM2JYfU/pp\nYvXewgtAfdehpwLUlnKQZOwquLeo6WrrwM+F9Aawt8I+psiTQk1zEZNWGqtw\nLKSwAOZYwh7NQn+Jfsi5XIV6ularfx4HlfQv8GuqFsrWwAEZGzNAcN7qSaOS\nX50UhNrMgxdac1Ays56vstys6nRHi71/oFS1SSEw1GhKZZ/02AEgGdV+YAri\nIXxB2Mv7R2oy1d+Y7zTlXEVxf7zNfThZfBaYYz3uqxDWAwOGzZtYkAJLbjYB\ntHElZ6vwee9gPmK9BtbeRmzaWcdMq/mk6FBuQK+bLFrmfgiOkO46quYqF63o\nOld9vrWNhmCSxwxVCREnPn026vRlXvSDzYBy6rJfvaTGv1eUiW4VMwyVe/TV\nqlTGoYXdJjbHimf6ObmGH1EMYbE/3bACWQXLr53NiDi9hgh2+KtQ2ASHG9WQ\ntb3P\r\n=OWA/\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_1.2.0_1554553481398_0.5095638641191995"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.2.1": {
+			"name": "verdaccio-audit",
+			"version": "1.2.1",
+			"description": "verdaccio middleware plugin to bypass npmjs audit",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/verdaccio/verdaccio-audit.git"
+			},
+			"scripts": {
+				"lint": "eslint . --ext .js,.ts",
+				"test": "npm run lint && jest",
+				"prepublish": "npm run build",
+				"coverage:publish": "codecov",
+				"commitmsg": "commitlint -e $GIT_PARAMS",
+				"release": "standard-version -a -s",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch",
+				"build:types": "tsc --emitDeclarationOnly",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build": "npm run build:types && npm run build:js"
+			},
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"express": "4.16.4",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "8.1.0",
+				"@commitlint/config-conventional": "8.1.0",
+				"@commitlint/travis-cli": "7.5.2",
+				"@types/express": "4.16.1",
+				"@types/http-errors": "1.6.1",
+				"@types/jest": "24.0.15",
+				"@types/memory-fs": "0.3.2",
+				"@types/node": "12.6.8",
+				"@types/request": "2.48.2",
+				"@verdaccio/babel-preset": "1.0.0",
+				"@verdaccio/eslint-config": "0.0.1",
+				"@verdaccio/types": "7.0.0",
+				"codecov": "3.5.0",
+				"cross-env": "5.2.0",
+				"eslint": "5.16.0",
+				"husky": "0.14.3",
+				"jest": "24.8.0",
+				"rmdir-sync": "1.0.1",
+				"standard-version": "6.0.1",
+				"typescript": "3.5.3"
+			},
+			"husky": {
+				"hooks": {
+					"pre-commit": "commitlint -e $GIT_PARAMS"
+				}
+			},
+			"commitlint": {
+				"extends": [
+					"@commitlint/config-conventional"
+				]
+			},
+			"engines": {
+				"node": ">=8"
+			},
+			"gitHead": "dc12da186f0f38f7d3e9aff36b7bf3bf4ca88aa2",
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio-audit/issues"
+			},
+			"homepage": "https://github.com/verdaccio/verdaccio-audit#readme",
+			"_id": "verdaccio-audit@1.2.1",
+			"_nodeVersion": "10.16.0",
+			"_npmVersion": "6.9.0",
+			"dist": {
+				"integrity": "sha512-kSQ4s3B0VgO43r7zOjteINzomeTEjaQwRwcNX0XDcm671pM+ZzPFEbv6VZ+vN75KdwCYmli5r8AUI9TMcj1JEg==",
+				"shasum": "24aca87c0cd2f3b576e123d2da8b53d620f836c6",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-1.2.1.tgz",
+				"fileCount": 12,
+				"unpackedSize": 15796,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdPqlqCRA9TVsSAnZWagAADwsP/RocsPWdoM4Cyvtn/EWY\nKLnjFiVuTu3wtkxHOxYgT9WZ8wQa7vuJ/GjJj5Bl0IdYMFrK7AMCVZLB6K1v\nJFb7aGhdNy+yynzWvfqGsEuIKqEMhXUd1ahUTAcMIxtcyM+FiLXB8pJEeY+A\nZyZasIE2fV1uQShvSm9ZyvK8GMrvPQGftrNXdaUW+Pp7sXEiGeG2um4dXLHQ\naTa1+OFbL4vAXQeTJd5DaogOGzMIV1q/a/0ez3n3ZonI4e1Dp4063SkZgbqW\ntAr9MlfczHsLuaw/Ez/fBLP/Kaf8A77x7++RyGQKUiK60d/6KoGRwg88B7G3\nwiewCN7RSOWgeHIH6/EfDMOwNNnShQ2ag0go//qsaLh0+RN48mdLK4cZbluD\nkLtJ75pvEncj8VOjS6S13byOjVbqZkWDJppV1S+wVkiBBhO2HD/7sqAZrriO\nIM4jSn28zZmHXnwnlQvw0+UxNIkjKcbWn76GZfn2pj0J4r7JB3Ifnp/LFkw9\nuDFFfYKRm6/mJL4jDRX8jFwzNYAndaZbAfloAbL7d604aLZbAWD+LKUW9VQX\nxEj6MrxcPuTaV6QgXLCirSkajiwj0cGZpI1pw9MFdHf5bKQfGo0JM38BaWyy\nr3Kfkx2NS5iTdjhX7CQMRXmLgVFd1V22oteYKvfTM/Q4kovy1vGSLltJHkDW\nwUVf\r\n=R6Od\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_1.2.1_1564387688564_0.25703966688602065"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0-next.0": {
+			"name": "verdaccio-audit",
+			"version": "8.0.0-next.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.16.4",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0-next.0",
+				"@verdaccio/eslint-config": "^8.0.0-next.0",
+				"@verdaccio/types": "^8.0.0-next.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage": "codecov",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.ts\"",
+				"lint": "eslint . --ext .js,.ts",
+				"lint:stage": "lint-staged",
+				"test": "npm run lint && jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{js,ts}": [
+					"eslint .",
+					"prettier --write",
+					"git add"
+				]
+			},
+			"gitHead": "813d11299945915656687bf7cbf6286623131619",
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@8.0.0-next.0",
+			"_nodeVersion": "12.7.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.7.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-jCGq6OmZhAwKdFaFtVNpkD5La9zngQgVjcDVL7Wmvba+us7ygM80ldsosVTdxvoaAD/q7hvO8WqOtcwwSA0DbQ==",
+				"shasum": "dde544aa1bf7960c49864ad6954b5b6631255b72",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0-next.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 15646,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdQznWCRA9TVsSAnZWagAAcFkQAJHoe9b0+lnPR569k7Jg\nFm34MzVYMvzJSrzs4N6JTaeFb7gNvXkU9ENW09Lieu38OZtuKE4gb41RDfq9\nD8J6rxK3+PRE1ys0ac00bHIy7XQdf6yIZVhJq1nFjZA4AffsR8DT6+xhPbTz\nIXXmGnyG0gtHdW7YLQreTet4tBRPI584b7eHeg4sRnIMbQHWeIwNVP4vL9iq\ngTt4RhmkJE4u8Tgb3dk8jz8yGVeqDM9j8Pg72wjVliygSr/SgA+20pmEXc+t\n18N/k/DUgwpGBWrG+woND91S4po4r8qDpIO9T68oSKa8RlyqWNtBgeZcsukx\nEGTn4g5E4kcW+DjMjis0XlbjScMTp/pc+INn405f/Cq4Yu3dkapcSZZME3oj\nm75eTsGL87Lx2ltbfAhlClfqEzW2Sjk8WURERkCugvLPMmwF+DCbNOITD8Q9\nT/ngOLhcmhwBC5hWYuLPAMftU1Xut4b99W8/Jg/yHnzLEy4P8MV6QgnDTGJ/\nNnttnfLKjJl598vJHxIgFB+97knuUGwIppEA/vIXWelTBqHG6y3ts+oDJuL2\n544vqdNwtwGab1vE1HjOBo39pMJC01M6nHUWc3L0OPh+uWxO2NI6d5EWkvrQ\nmos3cVEFhm++KYfrp73CBTKr8nW9/V5ywzqJjJN70f/IHsnZjiU//vBu8ca5\nCcyE\r\n=GvoB\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.0.0-next.0_1564686805852_0.19587245927330055"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0-next.1": {
+			"name": "verdaccio-audit",
+			"version": "8.0.0-next.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.16.4",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0-next.1",
+				"@verdaccio/eslint-config": "^8.0.0-next.1",
+				"@verdaccio/types": "^8.0.0-next.1"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage": "codecov",
+				"format": "prettier --single-quote --trailing-comma none --write \"{src,test}/**/*.ts\"",
+				"lint": "eslint . --ext .js,.ts",
+				"lint:stage": "lint-staged",
+				"test": "npm run lint && jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{js,ts}": [
+					"eslint .",
+					"prettier --write",
+					"git add"
+				]
+			},
+			"gitHead": "f8ed319778e95dff21aa6113be45300570d00de8",
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@8.0.0-next.1",
+			"_nodeVersion": "12.7.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.7.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-Def6w6jZH4UGZNpyAEGb2D7lXvFz82SiYxpLWVJ5yFQ9Kqk4raY9TdPMm4z/iziDFTvecBb2TvqF1HQ9uOk4EA==",
+				"shasum": "f11d46eabc854e8e29af21142583c09f3313753d",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0-next.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 15815,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdQzzuCRA9TVsSAnZWagAAbCkP/0gpFs1z3k5nsWA6byFz\nVSHRTv2r433KY1GDT1/OhhX62tDy9PPb77fJjcUDymP8PsrnVS+Myy6HIbfE\noIoCgYa3QJ2ua3H4Jjq4Yc8Uclqfk2/kpeLBoAx1R130OU+i4e59Bw96y3re\n6EGswJpSzbgZH3ba92h5vpmZtiEvqQty5b65/Zm6OU7o8ozaOin+HTvO5+96\nnGaJde4phdPIoeDgJbKleidR60rOHq+NmlCHh4L+JlpphdcyBP9cE7656Mfu\n50EAZnW8xy6MP9UHHbb7qOB81Kfrm9mX0XWRqVf6RT9QIFID1jVl8L8ASiL1\nuP82IUzJB1F7rjbttlfylkdBRpyaP93VChOmZ8egQIQanbeomT+z/pOIKcoh\n7YxP3wS6IaEYW6YYJVLvwsTRTO0yjK9szFKojBC3pvovPVlxn2hDD/qOcIbd\nyMah1ZeMvtyqQE05qt2HQMtzhlZvaxVAaXWBCIfp84k/30R62I6Wpxc7NvIN\nA2JtFcoNuWqFZ5YfZEOlPP8gHUeaKn9DR8EWSdNRU85S8c159IJiLrksYP6t\n4StMNdCbMYU7nqM7slZZzdgEgc2UniNdZ6+tYQxbQo4MsrsH/EJvrWPLsYSP\nkCFHhDYNiSy0M/4QE1Uwbd/qLV0BAAOM0Deu/vgVwIJZ8MeCqF1y1Pjuldxv\n/Ozz\r\n=JsPM\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.0.0-next.1_1564687597586_0.29402029581972"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0-next.2": {
+			"name": "verdaccio-audit",
+			"version": "8.0.0-next.2",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.16.4",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0-next.2",
+				"@verdaccio/eslint-config": "^8.0.0-next.2",
+				"@verdaccio/types": "^8.0.0-next.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage": "codecov",
+				"format": "eslint --fix \"**/*.{js,ts}\"",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{js,ts}": [
+					"eslint --fix",
+					"git add"
+				]
+			},
+			"gitHead": "91ffbef68827bb79d1240846c76327df89f97cad",
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@8.0.0-next.2",
+			"_nodeVersion": "12.7.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.7.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-FVRkZ0S09JCPn8fmGltkWWQ4OpGqRKnyeszXhOlt4fzt3N97AkxmmWWgEtSKsV1OR8ano9qkOAv9wjph3Qd5uw==",
+				"shasum": "4a033e0bcba5803a720efa02e61ebeb265c19281",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0-next.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 15900,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdRbNMCRA9TVsSAnZWagAA7iYP/3tnu+O6/XeLmauyAmmz\nisqQV+hpJJjmvI9XoTYGNkyMOqPIp2U9WdlJ6NItRt9OTDWChdcjq15xI4BO\nOuQTRwme3LX0vp2cKiKQffrrlXwl2Fm/VkReR67ULRbvThZNt9lP1YVv1JuR\nfTEF1EeB1qYX4nQNBTdZsMRNvKNHvvyPEVtpwrYFlmRJgWRdhc5i8nd2ZeiN\n30srfA9GpufJzWZke7H1Bhz4ByPhs65S1wrf9qHW8xtwXRF1eyuk8KNvQIEf\nz1Tt29FtU2YnVvqd2Lcxes8XJT5S5ZysSOUHV4imsyvWWgxaonePunTYPvKN\n0LXee+yJ0eHAYVgVy5l7c6Xkd61QVOfUZ3c3aLFsP0P01Fod27EiNXd3TThZ\nWzZnXsrhaprZZWQWx9AV5+E4mztVIpoT2+MwxuX81pU1cMCEWcx7jnrnYMvj\nfWlTnHWUfKUdEFL1M7FD1kMFDy87ybEiZ+C5V3c2Y6EQCoVI3XAe6mPXIF1g\n99OZxD8Qs8HEdUBdsM5BpJPgNw9BZAUzV0dakf3YhBs+gVSEKR/Yzb9BDZ+8\naqcGNMdpHo2MOwj4mg9Eo2zn7RWguyZxC4on6ieV+G67Ha3VMYeVPkLewtuU\nklqN0I8OU+NdBSMbU4EDqSGZzWxxfOD5MKBoatWMTW7/eFRXQFVmccVd246y\nNaHw\r\n=crAv\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.0.0-next.2_1564848972266_0.5906558109129971"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0-next.4": {
+			"name": "verdaccio-audit",
+			"version": "8.0.0-next.4",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.16.4",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0-next.4",
+				"@verdaccio/eslint-config": "^8.0.0-next.4",
+				"@verdaccio/types": "^8.0.0-next.4"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"format": "eslint --fix \"**/*.{js,ts}\"",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{js,ts}": [
+					"eslint --fix",
+					"git add"
+				]
+			},
+			"gitHead": "0f789035d4f581ee112ca50f9926fcdeeaafbbc7",
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@8.0.0-next.4",
+			"_nodeVersion": "12.8.1",
+			"_npmVersion": "lerna/3.16.4/node@v12.8.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-kTvVoQ25H9j79RRNTffT4nJZ+08zkW+pTr1GbHGHLIgJNn5zd6+SEH4rN73bREEMigM850AZdudSUrVF0D+lig==",
+				"shasum": "e4eb6df8f981ecffe3008e49c3ad0d564a6f94e2",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0-next.4.tgz",
+				"fileCount": 10,
+				"unpackedSize": 16102,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdWc4fCRA9TVsSAnZWagAAtIcQAJ3RszIcKSnRUhpYcnCE\nXYwtg+GqYEL5Xco8nAwWNHlD+FyJAizAssCoRH1MMl7KgI97Nsoz0xeBsNyS\nKzgU0OuyXYY2X77NXn936IT0wNx+xFiCicRvS0UmTWjMGjD6lXdYsxOBzjGN\nv/TEI4R+Z9KnOMp5BoWHeKirPgfEt2PTwwskxaoiJDpaLG/cQ/AkuFUdfjPp\nw2Vf8TVwwRgbS0dIb85xqfNW1wrXADUYcCw0yZJeUkq/gFgCasE2vxRhNPyO\nIrW3SUYaSRLojBdMMBipofwF3lH2Ft3uNSaeLYM8Z5c3nDzHUDIHqer0LWlf\nlkSjaXEPt6DzyjadV9g4wtNBeM//F46xeo/U2XvNcx9y1P33rXCrIeFXEHJH\n7YksNoGwdgLu+dAlnKzXyYwNrkAjuZQa3Is/uxOiThrzXyDNCrNyGbbJNXYf\nBx995Sklinz5VuFnDmzrf/SPANFE+mKMDPaq2NdYBTJyMGKFu6T/9p7AIBBc\nG6BHm0VhXeQHLDgdZAu5/pvvVMLFuLRSrAV2reQN8yz2penUx1f1m2Eu2YkW\nFIlvVd0K/pzoSXXMza7nNyN7mMWGP9LLtjjL8Xcljo6Mjut0VGnLgyNfRmFe\nrkHYcuYjGvqaGgchGl+q8qfsmc3vTZTFGlOo5gKbhVKT4m6EdoJ2NPlp/qmL\nfkUZ\r\n=qa8i\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.0.0-next.4_1566166559406_0.7125917366521874"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.0": {
+			"name": "verdaccio-audit",
+			"version": "8.0.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.0",
+				"@verdaccio/eslint-config": "^8.0.0",
+				"@verdaccio/types": "^8.0.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"format": "eslint --fix \"**/*.{js,ts}\"",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"lint-staged": {
+				"**/*.{js,ts}": [
+					"eslint --fix",
+					"git add"
+				]
+			},
+			"gitHead": "2a8ce693d280e7eebafa006f76c17aff7cecce6e",
+			"_id": "verdaccio-audit@8.0.0",
+			"_nodeVersion": "12.9.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.9.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-80/0GEPulkwzi0qlQMHpe8tXeHEPQ+x78ZsUk3CkpNwCr+VlgzWxAzk6zI3ZUQ/gBBAidZ8We+TWNsdAPze8/w==",
+				"shasum": "61933cab21daa99a2de08c550d6c6d665f3226cd",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 16229,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdXowVCRA9TVsSAnZWagAAodcP/i1w/mEFm5O85p8coXVh\nOkiJhaRZHd3jgSDIny/2X02AsKTICgxaczP08wtXna/QWAWPo/c4EcQ27ovu\nVbczHiNuATgR4zac600qILCjiwEtHU1cGhtPoHOF/n6HET07nPCE88ViF34A\npWgaa27pf/bygVaONHTLEBKu5FT3dGOgUyTWF5hii1Fp8Zd5NLfZETdK+kIE\nDvUlm4W3sAEI0vLB92t+HFq5UojWUVLw0UP3sVZmKwczp//vjUjSnINRLTQv\nIDWcriAFxWtFoDt/nask3zf+daPRlUiEnnrMk82v6tq7N7uyLlvtRpqEAwA1\nf2z0VyjmdPG2phkkRlw4MpFsY600g2Roe8f3ITRxrrxLVbWOr1o56h+PCOPb\nyXhYkfg5MBc94I97NWRVUK0vEZ0zpxMmy+Bxh1o8LVvNDdFQwGoB2E/AOxoA\nI11TLDQYkFcjV/3RLwM+iX7sITQPPXfGQI1Jb9O/5V2M05IQogsqm/hMctUQ\nfCDtzKY5RCDkN6JqVxK4dQmf979MMJDprKt6fX8KjsKSmW1RMWg901Sg9r0k\nx0Nf1XlcNsiFNQQk8uvLKenQ7MGd19YMVZkhC5yCXp8XTEOiSNjZpnhq2WqZ\nUwnF1wnU4R4iaUGLy6XoqY4T0s6mrTRCqk1muaHOgX0JuD0CojHob/+BG3a1\nDV/4\r\n=bY7u\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.0.0_1566477332930_0.8904554841168748"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.0.1-next.1": {
+			"name": "verdaccio-audit",
+			"version": "8.0.1-next.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.18.0",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.0.1-next.1",
+				"@verdaccio/eslint-config": "^8.0.1-next.1",
+				"@verdaccio/types": "^8.0.1-next.1"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "fc56542469374249295edef5956c86aacc6886e8",
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@8.0.1-next.1",
+			"_nodeVersion": "12.9.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.9.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-s33mKrw2gCd8ap+ELx8+9xGaYqtu4j4ukQUAqiEdE/WB1lWq4hcKa1+/g5a8iVObHPjoj633532D7Cm41ymv3A==",
+				"shasum": "0688d84188411d54373ab02f7802049bcef53eec",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.1-next.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 16694,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdZ8IZCRA9TVsSAnZWagAAIBsP/27PJ26tZRLSqoPBRoAG\n4qJ28gAXky+UBllRCfVMrxzZVGlagwkjhp3ahPs02NvtW62V0xwf54Upfbv5\nuoAL0jFTe+mbcOm8MdzJgdmGgwRz/HkJ2XixM88rZkFeJmAyiXWNJgh/X36x\nDzBaikHm1pYqLE2XEnA+8nZOkAWZRjnCKZmx8tGrfghAm2LCqjlpP/QPnfTA\nrHfAvZg3uyXpckPZ3uxA12nKTRCXnzReHyQjf4QO6WfEZjVyymjNPplkIc+W\no+23NPci+gPIRMqs3t0sn7GFbN+R6RezIXTcBBzWYm1cCxtX53rqZBBvxb2Z\n1xJKpOEDT/GpaujSAcMKghFTJq7pASk1O+oRX/xDNX0za+KRmmz+0aNucnQJ\neIuq+OpTGtSUO5sqPeeJJ0t3VFFykGVxbJ1QpyY+Jpr9v9OsTcQ221WGKfMD\nAI/SvMrF3P50jgOVLpFlruBPy5T2nthtQXCOQaTUiSQs7ZAMPic6WRYr09AC\nAcrz+mDooyBLeX2Aoi4jO48Lxc7Se5DWIu+hsBnSTl7Gc/pJf9AbXtGhld79\nqDnp5BfDoGOHOfft3W4llEbGJjuodV/qr+lAYtRXyJEqHNIJ1Z3J310jMPvu\n7WmanL6eO9cQwGoifZgWPJkvOxv/AIOlyMDYbVdV2p8XfQW946rUGibbVC+A\nJluy\r\n=8eZJ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.0.1-next.1_1567080976477_0.6611334357437237"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.1.0": {
+			"name": "verdaccio-audit",
+			"version": "8.1.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.18.0",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.1.0",
+				"@verdaccio/eslint-config": "^8.1.0",
+				"@verdaccio/types": "^8.1.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "83fb9055659791e7ec0f8513cab50d3e1383599e",
+			"_id": "verdaccio-audit@8.1.0",
+			"_nodeVersion": "12.10.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.10.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-NkYelLP7aQuTWTb3DK+dwLY2GDkvKjakqqxcDkR+vmO5mTX6ej/8M14P5fVV7+qRyXwyNWPOlETgt7CxpuyQhw==",
+				"shasum": "4c0f4daabe92a647f93f019a1610e3a106ec4a73",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.1.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 16728,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdc9laCRA9TVsSAnZWagAAMckP/joDsEq9uBtwU89XhXGZ\nHGeazQreVOOTR9Q9UQ8WQdf8GByGHq/1nXdJ7wfy7vBMxo/pimeH1JNqFpo5\nS3Jj0/LzLRS4ZmLzcXJjLCnpTPZoh36pGqRa4GT+z7xIBRdjvRxRjQEm4RyW\nVcFdkfrwaU8u4kscE4aOioUtBO9088X7+nE8KPCk8/FMYMUxr7DhETqaKVaU\nz4BCpAkk8TPkuWmKTFUpDj/tVNVOw7TVjKNLuUb50JxFkZUmDMt8E1VCSCwT\nDjJd9NVL9Ey53ke15QYk2k8DfJ3gYmyxdYji2LTCePLO9beof+SVd1hiaoW1\nOaFte6nFgMy3rV+uFQ6WMh/b6V+oaPQfyhFcUnu7TovxJaQx6RhO0kepgl8W\nKUxwEg7tfH+HEvpM9WDR1xN2+RklT6AKnYUuNTMAC7zZO5xYlpqmQXKlFKS1\npk/OYWSqA1mZjNumJ/s2sv4pN4ZcioC3NaYFWYaUY5TjzMi91p9O590QY1YO\n8nnEhigWmSXjAMTKETi735PiOMBytCFXbu+hKhfIVoLL58UWoq1Gmk/ysOzX\nxNlaabyfxi9CAh5aIab9SEvuSdnW7Ka2XcdMjRvw8ae3A4a1j5GAA81/xvEA\nNGGpw1BI4+P8UBxYjDqSdilHlO7Ye8x3jtWBHUTzZqWgFDrFyABV99DbQCft\nKVca\r\n=EyOq\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.1.0_1567873370003_0.21338519491846752"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.1.1": {
+			"name": "verdaccio-audit",
+			"version": "8.1.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.18.0",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.1.1",
+				"@verdaccio/eslint-config": "^8.1.1",
+				"@verdaccio/types": "^8.1.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "489b56721f990b8269beab30cd78dd1bf745bb5b",
+			"_id": "verdaccio-audit@8.1.1",
+			"_nodeVersion": "12.10.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.10.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-5uz1UtDGkqDvUqzWQuLqJ9Iw83n1tUJuM/nBZoTS/PnkzFhnfUNosDQm+HiUCGqHKnSKlx7B1MaP0WFH90RDcg==",
+				"shasum": "2fcf44cdcaf90b09705d3840ba4444a8cda80913",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.1.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 16877,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdjQA0CRA9TVsSAnZWagAADA0P/2Eku843EzolyOZ7f0gg\n4jz8YLqfv64pGjXc4UKjMy6Ben7wZETcTxgpx7+SJvLejU2jvnnj+CDNp3fW\n5PBEAXcmi8AfeMv+pcJZjWGWDqmI1oarC888PUFGY0t8PUNJlwjuEIqRdUYr\ndATyqVawBsML+jw9xocBgLWpbLo9dpANVcUC6LYUm7Zw2OdGik7r60DnM52V\nbV0zrs/nyJv6DrRuSKdYrmjx1yxGOUBSKPyeJN1bg9BxRkh0gJRHPZZ+E2Y1\nPtqSObKx234Xsj/ES3rwSK7PCmBHWLkZM5F6PQ5DnCGMLEaG5U5MsLoTHPt0\nD4Qg+3ar/HHChJmR9WDCDjTW4/nP9tkHZGydQVNI+YVcSMzXUfCyPmLzp4Ow\natCf0m63JJl7qXNAQ4pZPd1MT1iAelP/L0HEWbder21YIA7TKCAYxNfxm8MQ\nQsPLioUp7k3a+d/4xKuFdHOCS8a2tHj/D1lZPouwcoY1KBwsz3Nz/0g5mMG/\nN343dtnmQcMuTRIi72emyvmggmWKCncaJQ9YCIjfWRcrde/5pRrrAo4M/b6Y\nZ2A/RX3asE5UiEjuefhYpL5m1ehxiaKZzr+mqT7ghGStocB6cWKgQafAxME5\nbY9Vlq8yKXQnoQIjrfKe5nbm99tcLbhgVS1tGIkxPkp28CLYYO4uccFkv5UC\nFugE\r\n=6kL3\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.1.1_1569521715687_0.45475713611814417"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.1.2": {
+			"name": "verdaccio-audit",
+			"version": "8.1.2",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.18.0",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.1.2",
+				"@verdaccio/eslint-config": "^8.1.2",
+				"@verdaccio/types": "^8.1.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "64f536365815b2d60aa7c049f6d673cd990b2d2a",
+			"_id": "verdaccio-audit@8.1.2",
+			"_nodeVersion": "12.10.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.10.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-lJXOwn2525Pjr2XBlKu+OiT96ymieRo6/lxK9ByTeLIZAUbmMiSncoYdPt1riM1w4rulqYmOChF8qn2MbGzUUA==",
+				"shasum": "66080218e2ae88fe47286d560d0e763483298da4",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.1.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 17026,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdkSZ5CRA9TVsSAnZWagAAwt8P/AqPDBBt5v5v3kc0YR7+\n6X92pHxFInoNSzKzcCi+0B/JXTUbN5GNcvrLl6zOlC+B5tzvqW+g7mda1tof\nf43/5XxUTU/3jSd+fr9nbfdz3wVA4nrSyR8Msh0+w9QMlWxHdoTpanadHcn3\nGKaP7fmoxEXuLdbojhM80//o0eQ0ki+2EvlTb1mdAEPg5WCOXZ3vf82zvmFY\nHHfOR5sNt30WPd7/F0TTVqyNZw18u6KpwSSnR6UR2rXfMJjrERyd0UQKT7iL\nOI9bVPZIJy+TeBW+R+4Uf2SAJ2rqdru5wFl8odvEDONFZtSyg8Y5ubyl573+\n2/kwhCXUdJ1b++QU0fUob93YDyPo0Qdyy6n2dDSN1aUy+zA3I2Kh1+bgZ/tY\nVil0vFUsLP8XTJ2QVwytaaYDIqeWHIokSt8B8wC9PPltEebA3TUiAlh+Z0Il\nnIM353Coj5uqtZJPNixIIF932+R0T3zjU7cUtwBUpC1dsvMAkhf9Ti+lQuhz\n2Hixoeha8X04nonKljnKAxO7ewl9nQAMR0+ip3h4zwJxsUhwjisbw6LGfhJ8\nZWTtU9KJe+Z/6lH6WI1eibm77xuuyRc+o9O8KPrKq3RD9ZY5f2ehfsTGDuw5\nuqo1Ac+td6n9TytR6tjgo4v4RNdYuOTjLbqExPW4qsZhumROCDVagZQcdaI9\nI19N\r\n=b4tJ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.1.2_1569793656924_0.2850748331711028"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.1.4": {
+			"name": "verdaccio-audit",
+			"version": "8.1.4",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.1.2",
+				"@verdaccio/eslint-config": "^8.1.2",
+				"@verdaccio/types": "^8.1.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "4d06b75281412dda23e7f6c03cc5846605a33e2d",
+			"_id": "verdaccio-audit@8.1.4",
+			"_nodeVersion": "12.10.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.10.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-Ehg9XS1soO5xfbtut64MU+FutF42kay0tw1wwB84UaQJ7YgZ58ftgvLZcL3AuPlTzI9KHMCf6ZOdyt6/fNmsVw==",
+				"shasum": "b2005927cbfe29229b01034e9d2d8bc635f12970",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.1.4.tgz",
+				"fileCount": 10,
+				"unpackedSize": 17324,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdklotCRA9TVsSAnZWagAAkuUP/Aor3FPTkSuS16z46Obz\nrZdyZ4QZBJ3GjEuDW8P5UQnQLE50YcvJvFp9oZ8RTAKwrWL1JfmvSu3UCE0/\nQjNiiskvHCV4y0qJipHH6xQaowWjeXQ27xXIO8TnedB4Jg8XwHZroZfI6J3Y\nNwQ1u4zlNY99Bh0iM3PCETDu9PBKlPn3S7CFsjb/mcP3XQwU2nqMoqWRXzbh\nIXyuogqQZFjAl2AbbQ9L7XojxbyW67bSd4hT7sEarCRKcKikPZcgfiiTU2MD\n4fM+IFP+ubeLfTWIWSD7eqzNyDkOztlbBgucZXZIRvbwkRRUQvD5fhMNP44D\np+KcHoLzIMMZ/u6R2uUQBj9qn41wiEQimU8j6ihORgoneqlO1kGX7PRSkMtp\n6QuBxW9wKLd63c+aBubDpcW2VcJLgJsGqJ+tIrR8dT1FAiln5MB9/Ef8Brcv\nxg8hi3TYv/5gk8wVqnhdjWX3jPlpapsABz6AdNT4o73MKMrPxA9O7Hj6Mz0f\nB7Vz+eym1VwJiYcpcFMDMhDIiXvT4IsdNBHx9uoxmXTPkivagX6W26AqHOrI\n2az578s8TUds22E+LdfzifItcl3fWO8IgF+A3PIyv01o7Tim3+KVkNSFLFNX\nf1qhOD8+nyZ+jau4+TwRCOtzDcDLEcnQY5RRfNEtK6zNBfAe5UHuFmt7js+Z\njnss\r\n=vuVQ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.1.4_1569872429240_0.4357352595818189"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.2.0-next.0": {
+			"name": "verdaccio-audit",
+			"version": "8.2.0-next.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.2.0-next.0",
+				"@verdaccio/eslint-config": "^8.2.0-next.0",
+				"@verdaccio/types": "^8.1.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "6f307f95ec6fbce70d80a359d19b4c08ef7f41f6",
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@8.2.0-next.0",
+			"_nodeVersion": "12.11.0",
+			"_npmVersion": "lerna/3.16.4/node@v12.11.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-3wvMLNwDC2GNmWDETIl81mOq1YnjUsqqvVQyNqlBtUBTdlz0Eq+55Vm0qn1CfTZ1hrTcWmBaolF9XF+P0NsYPg==",
+				"shasum": "e389d8778280ee4944072fa620fa352f3bd9749f",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.2.0-next.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 17553,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdnHqXCRA9TVsSAnZWagAAM/sP/3IhqIiShAciBfeZu6l9\nIyZl44VISS3g9KQuQBXtwIkVcH1xpUVd1XPWDdvdyarobaSvc1syPj522BJk\nXuABJwg5ClljwDjwOcshkIVc+9ch3OphmDdoObqrZehZe8TWkECPN130IG/j\nxar5zUQ8W3ZOdC3lwZhvGvqezCgrn/tqbJADujwV2p8elJF5ze9Q/CFj9WcF\neVAqUxiIVR2O07N4s49GSa/Kc1rjR8HyzaScL2rW57bJMrXsQNFnHMhhxPzw\n7i6LNY5VqajCUdgDKIlaPnhpYs3JVJogYBodoHUEVm4SS3ScyyDgmI3EpGkT\nLUItRvWVdMCvRLWvA/h4etH0Gj1l9FpTydC/LgJK6ZRqfda/r13b15/tTc5f\nK40dXxd0cHn+l6uNQNFZqMBSMhiQl+Hrcx96gf1oVCv0e/gVgpKirEeWqYgk\ngHzNN1V/ted54ikVgJ4rRPZAL/OYJb8q9pqrr/ns9djML5XhPbDNaH1mxgJG\nG7KqBLD11ZUh58buwISTeV4QoKADt39P/Vie7Em+SmuzZozmMlFItE28IQt8\nGjmWHY0EUFUyI6CrWgw+JOf6lbH7IMYNLEkVy/o0Z+N4zXbB1HWWFIUs+DLT\nRw8Y/olu/UWMgkWHgftXzkG9DDuWpAQSupfFEDg8TDLwVlGUoE3GT3a8iE9u\nPZbj\r\n=n3y+\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.2.0-next.0_1570536086499_0.20585704140982153"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.2.0": {
+			"name": "verdaccio-audit",
+			"version": "8.2.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.2.0",
+				"@verdaccio/eslint-config": "^8.2.0",
+				"@verdaccio/types": "^8.1.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "6ac6a2f5d223ef5117b3afad9ad2b23f9bd7d61f",
+			"_id": "verdaccio-audit@8.2.0",
+			"_nodeVersion": "12.13.0",
+			"_npmVersion": "lerna/3.18.1/node@v12.13.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-kVrUn31FqxBwZAXccdP4YsbriVtp5/fs3DX31z9hur/nIzxCNw8XM56E6aylB0eiiYjNETu/fAcf6/DuHnEPKA==",
+				"shasum": "0b8f39cdc56cb74ef17137916371d28c4b968ff0",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.2.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 17687,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdsJr+CRA9TVsSAnZWagAA8W4P/i0waFJoBDLGZppXdtzK\nxiteVuL3iBd+V0NWPJCnSZhicnvYB3LOIODEIZVOtWuE/x6iTAZjySGJde0U\nYLBvXtG8QcQpHEDJo0O5RkQDejPpHp2rnO9Lq9MXkS1hxaMH1nKJ81l0ic4X\n+fxJ497Xiqx/6zVO+XqQ72o7MoMDviU8Dl0NSnXN+Ypy+DNw9vBAvUAfSVWI\nRUx5dnDB+Zqj5bmaD/0yrSxBpUsxQ1NJZrJnHufgKwtWJWvAmWi37NIHU2fE\ndefGRUYkAIlExwoCpL3O+G4YGY7xpwrcGLUet9f10XM+yOMqkGhwPLDafYHL\njfyRoclbh3/xODIbZy6R1zQYougqku17QM9l987ZZzPgcoGNcwuUgEuDBlv0\nra/BRErDVJjy9EWEXHTJQrrRvffpeqbQd9IOefMSdTeDIAiAQK/CqWAt3Uwk\nm/5z/x7skkYfuT2kCExghf9RpcekZGiX2u8CAwbx063fP+BLs7wRFalthKWp\nk4BR67A5rwIUY313UI/MKdlSNVy0H38HIn6urhrRM7LX9pPqaS2UWnPBKFhV\neDBdx6Y5azNukYdAowxCmHJL1HcyRjN3+qKDbefEB+6pW4HrAG9N/3qxF6qc\n8fbXb9t1GZh6wWIuO8I8pRPRqfzzlg8CWGs3ILVhn3rEYFzr28KPKcfWGzOs\n1DhY\r\n=Z9wL\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.2.0_1571855102166_0.055778311928027735"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.3.0": {
+			"name": "verdaccio-audit",
+			"version": "8.3.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.2.0",
+				"@verdaccio/eslint-config": "^8.2.0",
+				"@verdaccio/types": "^8.3.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "b0599e31925653bd5bf8d224c7daad9d468e0455",
+			"_id": "verdaccio-audit@8.3.0",
+			"_nodeVersion": "13.0.1",
+			"_npmVersion": "lerna/3.18.1/node@v13.0.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-YubTyzbYgppJCZoHSOJWV39qtPJZU69fhEq+bojkWwwwaNkPg2xhpuwCU1QqhTw0Zwn9kNxKJSLBsZrdldTZOg==",
+				"shasum": "7b3e0d4de31be95fe5b4f09d733cd4c7377fdafc",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.3.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 17835,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdtgDiCRA9TVsSAnZWagAAbTQP/iD2bTRtAE26pOsL8LLj\nez2fD44CQV/nYLDJGDhtae4CfGKBUs3zH8l71Qk/p1AeVaBcEiiIPvkp6Pse\n7X5uZuKrnorDtBo7mcrCBSBxf3fIbdCLnQjESLTkGTYLo0cafENEhOTlHAQG\numVYS2ZwrKcJauubvHnH0RiNe+g+IVd4r7THh4gBtP/8ueFfLd2O4o4WV7YR\nirGYNVLX9ukBS4RY5o2hRtXSHun+5/2EqG9Njiyvz3FGglXJCD/t/Y118h/M\nJJCRYi05vvAu0DCjpFYv8Zh6ZmjoCRckok6AMP18h1lAdDxMkmaX3f5kIVqu\nqJYwJIHZ+CZCQgl7nIDDQgQaoNxihntW6WkYfR6S21UtjoZBEVMDtadzdO1t\nQ7NlBySt6uLYomDcm9WJmqZuBtH2ssThJW6dXlgQxK3R69uhH3KcRk73bOhF\naRz1MakSzD1udOUyV48xKop8M/HVdxPXkCtm2wOJVxzokahUxE0+jS+mWZcI\nKaZsLvzliemueH0V7CLDhQ4JYYfpDuf+tlnBY949r2il3O00Ex33iT5QQ469\noR7pRe3QFTbQrt2lyjKuU9mqftxX8K+d1EPPzHuHuitvJjr0jEJmDqCvEg9a\ngQ9OffarB3x3C6MrMqVMXp8DJm5cP//MP+Q3v/dMmw6XAMUmMsZ0Pi3TiCvq\nRxPq\r\n=yPlF\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.3.0_1572208865991_0.13644308511657122"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.4.0": {
+			"name": "verdaccio-audit",
+			"version": "8.4.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.4.0",
+				"@verdaccio/eslint-config": "^8.4.0",
+				"@verdaccio/types": "^8.4.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "d67589f9211519dffbad71413d8381013804b1da",
+			"_id": "verdaccio-audit@8.4.0",
+			"_nodeVersion": "13.1.0",
+			"_npmVersion": "lerna/3.19.0/node@v13.1.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-sk1/OLQaHd9CaqI3C78M9XQJkI66urGMrUSaKzdXXkZx3NnLYucIUMs7no2b+oONP/YMhvOflCTgmxFQAn+nMw==",
+				"shasum": "c25408dc447ca3523b692a611aec90ced6be375a",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.4.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 17983,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd18G3CRA9TVsSAnZWagAAYiMP/04yfrv8YkHEpcOTKUwU\nYzY3j+JEzj/VqqrjmgpdvBopAQB6M0uYsY4G5s5+KMCTt7E4y0hV6X/LSFZZ\n5jw5yAgSYR7Gq8sRP1B4RSZWt63tcIO1HN0Q0p4R1VvvEdTahRv2Z3MHN2or\nlHB4Qg4qu27FDf520PDOC/sXpgr0OVxcgErIZxkg6YjsnmYxZmI5uRXIlSfv\nZWo6+pxTTgHFT1+nNDLZ4QomcgWzY3NZ35tMGGj0QmfiKllj6zOAlwHNhu1/\nWUa+0oqK/hp8CyV2/mfg5oHchBynM8zLnkqM8MU6nTKWLN26RsYYmIrbfOIF\nV3UUMiWIAFw4BuYcLZSfe9nam6tzkCWKLTp9aoYRKBZDMftoP+lWwkQcPjF3\nguEvTElAGU2QjZkjd3xr2ro/JYlpHQBowtBfCYB8lZlFyfdUOUZIiFD2y4av\nn+lYLJArRy5bBRjGwNYM+ZxRo1s5PzQvAxueptEZCXoaqM1T9bAUzy+/Z1kP\nv0yBT6JXkvb8CpMXx6sYJ6k4u3p4WbtBOKgW2wSBXApFRb4fV9XyUrnjs8nI\nJffrBoNLjRdJsVZGjST5Wi7vQCAvtImPsfajMdslFnPM34CFzsCgMGTUKATC\nMfLs2kCT361khJKV90yWWy2qn8Ecw7K5UbxyF2J0Z+VtqyBDf9tLUzX7BS0j\nWZuu\r\n=LcPv\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.4.0_1574420918686_0.226714562481648"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.4.2": {
+			"name": "verdaccio-audit",
+			"version": "8.4.2",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.4.2",
+				"@verdaccio/eslint-config": "^8.4.2",
+				"@verdaccio/types": "^8.4.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "e309b93cb6ba4a57f206b8528edb134d5c01f9f1",
+			"_id": "verdaccio-audit@8.4.2",
+			"_nodeVersion": "13.1.0",
+			"_npmVersion": "lerna/3.19.0/node@v13.1.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-GNRUB06MCRIsHd2oBJQ8VtpikNYduJVSxJo3k+XKy7vjNu9yMXId65arkZ2egF9TUUSl5xAoVR2lqXrm5P7CiQ==",
+				"shasum": "60b80e75ff3c173910cf52937c4b163d795901dc",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.4.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 18281,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd2VMGCRA9TVsSAnZWagAAjhYP/0exTQYX4Q6e6PPJUUjE\n0cYh0KDDS2l2IeOH18x2QT9NY0jnZ5HvFl55eRIeiYh6CHflPXlUmUd/9f7B\nATbK4psEgw/LYkX+szj0ehk6ilhgK79DuduYReqQ0BwBXtxwL3EM/cXPDiSU\nN4jOYkzTTbDFtCzyQsQiJdha/GljDYWp1aoYSh+2+t5A9bd/MWlsSQeMkX/+\n5rwXv7nRbl2RcfgYV1+eR8oQ9yhSs0RFpZHMz1oyF83NL/7W1A8h19plnlkY\nRB5rCK77FK68RIgdz6qDHFKC6+uUuwG41hnpRlbmVJ1wbOFedaYvvtlQGjw2\nIc3TEYwJY7gTQbKsuXtrT9O14RsLCtdxMWZ8Qg/DIlpb60jLZ1LySPnPYqVd\nFupnuoCnbOWj8B6oW1w8+gl7tm/RF7MgZSyWTazqeF8tWFFVsk/Hw4CYmY0/\nuYi8AyYHeNorNkfEUUl6Pk2dWoNTH+JZAmtEXt3EaqxhChpXN+kVhFxmho3H\n2DbFAdWhd+ASn43lqzytvoMZQJVaGKvGLAbxUG/JVk+4R6acOoCZFpj4aJ/j\neUfpeFY0dBMpFXtIQBjpy8ujnIjzCtnBMOJFin7pzaO7MAzYqjEUpPYO7z7C\ncdQa9070C/UgCpn/8KpWumkgbwQsPTWJWLQLy6KO2Eio0uJ+EiGwePtKaU5S\nLHoa\r\n=+1RQ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.4.2_1574523654111_0.28322875765481936"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.5.0": {
+			"name": "verdaccio-audit",
+			"version": "8.5.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.5.0",
+				"@verdaccio/eslint-config": "^8.5.0",
+				"@verdaccio/types": "^8.5.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "a404d4afcdc885f9db544a5f84273d835deeed02",
+			"_id": "verdaccio-audit@8.5.0",
+			"_nodeVersion": "13.5.0",
+			"_npmVersion": "lerna/3.19.0/node@v13.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-QpzUb0Ypoow9fjPE/r20w0ORKO1qshuWwkMccA1kuUgYimIpURkGOntZh/AVWiSb6Qr26Ngj5Jw/7Ddd68YuWQ==",
+				"shasum": "fd7493b5a08fe416b7a71e5dd0055ef5b62d02dc",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.5.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 18429,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd/8ZzCRA9TVsSAnZWagAAgvYP/i7DCUqyyON9T5fmDh2c\nRqYGYrDmLeY8lIPz+t2KtYk2PAUkYb8moKUUzQTWIWK1GjbW4AAYJiQqkZ91\nIKKYxbqMpWxiMWlpBWIgro4Ve0Mrdx8keSVptSBVrjAOmqqtOVsQJeDcR0PT\n0a2gC0S0JFfxWI003rOy/VqbYjldWADeO0tlXWqLqzLFMD+zZe21Bjy/kZu7\n3DvweKs9WCccb5Vr+z/IgGGL2ENFjKjUx0XPkDFYwaTON4b09ZEG5feJEJvM\nwsObQWoI9Ta/6n9JJar14P/RS0BUSHzTxYrjF6oS4MmH4eaCVPdmhonAmRyb\nAxrX/2AAl51eJDoHDk1C1V4qZXmNEPIMmJRHDbPOrBKjfCt3vBBncePUK5C6\nB/SiJdEv8erL0Wnk4XZI01ulMJnOnqhMteQYere7u8FBccYJpV+In+051gmG\nORjVa9b8ZGF0hoFxQxUX/P6cBdzjXuSXBK/rWv8tF6CLYYgHZCHoZcyNZrU6\nHuCx4SycxbXpKXmU6TB86X8CDP5kUSatwwyVONjdH7PK2FVp6/4z4Ub4dJsv\n7cMBtMZHCT/LTSQoYDrm+c8hJeHAc4ndeFbL5PaA75LMyloGmwDeQtPYkG6F\nT7ZSecn5Tr+QMLSy8yjXg+bw38cwxNw+TNtbA6eUzqgSeL/eTDgsbi5Y8+n6\nFXS7\r\n=VaaI\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.5.0_1577043570778_0.5953097873688697"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.5.1": {
+			"name": "verdaccio-audit",
+			"version": "8.5.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.5.0",
+				"@verdaccio/eslint-config": "^8.5.0",
+				"@verdaccio/types": "^8.5.1"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "f0887bdc71a239e013fb4142d5e23e3cae9068b7",
+			"_id": "verdaccio-audit@8.5.1",
+			"_nodeVersion": "13.5.0",
+			"_npmVersion": "lerna/3.19.0/node@v13.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-GMz7S4e4RPQzHSfZ+aLGi2nZuZbK7Esg2rA+KNBs9wh9S4dEbPOS+aiHSQ1O5VUSOuVEGUpjvi2YIkK1oPZvWA==",
+				"shasum": "619036c4677fd5b28c41132dfc5b9eb320ea1949",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.5.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 18578,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeAk3NCRA9TVsSAnZWagAAHMEP/RwJfUIEd2JjJIofvfoo\npXX7r47LwXE2837ZoaYVtU/EU2jK0jO4Bc6KwiMMxUrWIiKyPs06PVL8p79M\n/LH6sU6q1pZAUcUMvO3ohtdMLi7O7RF8JfEu7jvZ2QtItf9DvwQz5XzzJHVx\nJTsLfjS1oXXwfRQWT4F9YeBBhPqFPBR8rarpzYeM/zucNmPZdk8aTPcDzcaj\nPwV68KXW9X3fDdYJsBriHHsy42tSA45QQ//ARP2LRlwtvpDVf5swEbQSfeQ6\nnHBUBXOPEjXzFQXYfCDuJEfOUh2RDiPusvkJ83A5j0RsMM0eRTAeq9X9mYks\nIj+sNFdAFVWaQhyWyz5OOMs7Bg1nEyF8K8LAMt+Onl/yRAjNDpEUJ85K0i3+\nitM8q2g8x1H0fzKSKnQMPyhcY1nrPMX5+5RBSuPHJ814mZj/Fbwc2lOceHCN\nrx5CH5KbZQyncgAr2mSlHnUrckdQ7PjgHXul8xhoaapO4U2EQFegzE2K8eXH\n3fMopVoJnUx8WLwiGYlBXhoEGgEAgIPQL7K5xmASeTMm/pcPm7xaK9//JkHs\nqk8aZped4RRXfDh8W31Y9XG/10shSzMd/gu3FEGydoyXZ1pXshCkK4pNXoKO\nnccbQFsbfv9zT45zHeswXiEkeFM/QWIo9ddVb5tIqrhh5IZ7gDKFcCEV7p0e\nOReJ\r\n=jGJf\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.5.1_1577209292917_0.132703568233699"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"8.5.2": {
+			"name": "verdaccio-audit",
+			"version": "8.5.2",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^8.5.0",
+				"@verdaccio/eslint-config": "^8.5.0",
+				"@verdaccio/types": "^8.5.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"gitHead": "e269378a704559a3bd4a655cddb9d8b0e614d752",
+			"_id": "verdaccio-audit@8.5.2",
+			"_nodeVersion": "13.5.0",
+			"_npmVersion": "lerna/3.19.0/node@v13.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-eFRNiWrr6tkEFlyg+H1KLiu/MlocZP0h870mf/HH6mBCy1X33oIfVhvdA0ZSq72ksI9yu8rqHdfOh2ZpQM0fDA==",
+				"shasum": "9431635419e227cfb08b7389ca87c012de7fc70f",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.5.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 18727,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeA0NpCRA9TVsSAnZWagAAIVwP/3/Igo1/ohtbbBCwZsZ7\no6AHShkR3p/rztiDGQ4CZ4fFkd2qi46ticARYjQe9l5d/EB4MXrRMFJyn5vY\nR3TFFj21CvohhTVv3l6k8uj+x1poTfSkq6BEwmS+Cml6V285rWQFgBaIWBIb\nG2QtczTzlE+JHv4KEZ+FX8I3Q3RuqIxx4vCmDY8/xsbdPdGOSgbRpdD8f4V0\ndpGVHSrAbW7j0tSsRnsK5ooIcwLqPn0jH3YgHJkHyZKulVBkR9++GLzg6ZGV\n76hg50z73qUAiIjCOWHoT+vOvOs+oP3+NB5UBa4aX3PeZPUJ1gB5bc/qvVxz\nEBycjhRDb/mXvGKo4s+1VEPI8M+g8fg7TcXfm2dYjVlY/sE7KyjS9s823ElE\n9rYI002wfrkycP74JHAOu7Un2VyASz6SC4PJWnUQpj0glLjHKiEkD5QsUJ5S\nT5brcV8q3f6QFYXsaBdWNan6bBSTqa2InmgnoyZJFwzit1eJsfCVLE1ot0DK\nuA1P6ktJOPxWTaXHLmxlSNSH+B1kTZuhrKhBkfrywaFX+bdQTgxrLxMAhZdw\nttdsnOrkbZnKppSLzloJK9ZmhiDnJlMaR1ehNvNGs/0m6JtdPxfxdk9wWBbq\nE2mdGVFygJRG78+Abg59Q5iyM/Mgf05oMEk1QkzdlOC5Ow3TdI/DVSoJCzVT\nm6C4\r\n=akmP\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_8.5.2_1577272168732_0.4170721920688507"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.0.0": {
+			"name": "verdaccio-audit",
+			"version": "9.0.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.0.0",
+				"@verdaccio/eslint-config": "^9.0.0",
+				"@verdaccio/types": "^9.0.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "21c47d3360699577961e35d6720cb126f7011036",
+			"_id": "verdaccio-audit@9.0.0",
+			"_nodeVersion": "13.5.0",
+			"_npmVersion": "lerna/3.20.1/node@v13.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-JdaPyIL8OkW1rglc+GzpzXesLbXZY4kltU9LSO0hNRIhjtzOfsBFwVMSyXsDMS1miqUzEByw5pTSeRdHPlKC1g==",
+				"shasum": "faac5dd42a60c0c107f987045864948c5f4a1105",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 18975,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeFBPLCRA9TVsSAnZWagAAVIIP/A+iqoqwP8omzqd3f87s\nC5mM0UkycJIAyh9vRK37Qnbk5aVmfYOt0GiG+u9WjYOzgqK/9m4QjaGgiPP5\ncZgJw5b0nt+ejIrfvpZf2MzPvc9tEelclE4UgquHSemY4UfqcJUuKbdjaOPn\nQagLYNhAalrN9bH8UiCzjsUC5Y1bjpDpnMzDCIIKpim9+UyAhHIaBpcEG2tJ\nwdhQoZi9lQNu+OwoKEpSEeka+ufn6rwK2728YW9JhksBoh0sMJLs9j2hYJpt\nYGGhb8ot+f3Yrr1sLhO/7mQTF+lzh3hylpqOFUakMmfkPTA0BMwukzhvU9Sl\ng057u1AeIUi5v456uK89eLuZuw1mv9hlbxCdcplY41L0VtRtb2uyjrJ0LdnY\n0k3/xpSxB2IpFwgWsANF5HCo5VgDudmyt0KtyFTZxlMADvMH0g09OV/XXjrc\npQ7UBWhj32tXGhBO/zA1P3F8Eu3lkJrvq7HZunCXQpArDvQkpQw0mbENrTMJ\nJSvKTbPr+DuSo1WHCaPCYOO4G8jTLMHq89EinoyEWGkFXU84mHVB+ca/vPMC\nmzba64tNJ8q6QI3g52WkWrsazFPoTYAMeoTOVs2ggagPCw31HcFOcHAsV+IB\n5+IqgLxU9WXY/1XieDg1yTMNiOGWjB0/ELm8kHYL7EaPMbGuL3cE5+qeYglH\n9N3o\r\n=eoTe\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.0.0_1578374091112_0.9472922703486588"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.3.0": {
+			"name": "verdaccio-audit",
+			"version": "9.3.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.0.0",
+				"@verdaccio/eslint-config": "^9.0.0",
+				"@verdaccio/types": "^9.3.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "a303b26d71a18dc0621289a5de721b21a59b9ae0",
+			"_id": "verdaccio-audit@9.3.0",
+			"_nodeVersion": "13.7.0",
+			"_npmVersion": "lerna/3.20.1/node@v13.7.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-beGYXcPGtXg1AmaoT65cv+C6V+cKQqFLotdPg3iIfvnIfsrVP6ev7ClJtiYrnamG5n5XJAoB9yCywKzi/T9GDA==",
+				"shasum": "5fb3bf9ffc49e68b174915d1545e5af26d6c27ed",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.3.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 19123,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeMSpdCRA9TVsSAnZWagAApQgQAJxe9H0jVUCES3H/X01d\nTPhwpXIwSr9zijrWf/mJu5Xh3x30TxVbNTYpLwVj2n8RLhK4jlAVnL2m4VmL\nwKZh8XBs1o0zE35eBG1t8mJGw5twUuaG6oPAhVJS1yPPuVxU9qq9EDbXGmJo\neV4F9J0+bPkt6fD7/1AJVPng3xlfxNWU3viA+VRCke2YwhlP9hLiZoU8EGiN\nrez26S3MpjzldOnLtJaUfWQTl50Nj0WGERmdPmfi1yM5EMIMAPFkrF7zIERS\nj9/dfKVw7L7x30t7mzJ0odQ7RpUWukHHIbJ23eMWfaQHfk4+F4+eChfd0nKe\nhhur7oo+icjwBpn+MbpBUpbtCmKFPHLh/UNmjFXYkJG6z42ZcXan9arf81gm\nqSscw2+p4AnJdZtXMeIf71bFIeUiO8wKHq+kU/0Sb/M2NbTorBcq37NSLCuo\nYcggjzqn8p4UyadkKTdOfYfkiCrQedX0ojP8/K4Tf8no33xQQ+51gb/Q88eO\nDnJ6OXKtUXmKWOnJ4/Fz2yLHD0y2ZCOClCGjkPL/k30qm8VPObJ+a+Nfg/4g\nrJRqOg0dCG9gItCr8lGEoA1Dyn5qmwf6GU28IMGV/SoG6FHTbNQOWpPg1GqK\ndjkJEGIDNb01+VJ/K6kY9S88A79A/gE6Ub3oA9uteyF5kcrIdz/clhKhDqRY\nAWYB\r\n=xlyQ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.3.0_1580280412726_0.02609073511831017"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.3.1": {
+			"name": "verdaccio-audit",
+			"version": "9.3.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.3.1",
+				"@verdaccio/eslint-config": "^9.0.0",
+				"@verdaccio/types": "^9.3.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "df1fa45b7d8643ecfb0cb117e03ca6e7da77a8b0",
+			"_id": "verdaccio-audit@9.3.1",
+			"_nodeVersion": "13.8.0",
+			"_npmVersion": "lerna/3.20.1/node@v13.8.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-2bv/ANvk+EjK3OWcnlrpy48LkqaZqLNfRwPcmND53WQ4bLKOb3mJCxGDJmW94MFpH1/EtMH4W+tUqz+Iz0uAjw==",
+				"shasum": "96d96e1263a3030c04e8b25b54b5349a72b6231a",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.3.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 19272,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeUjAkCRA9TVsSAnZWagAAJzAP/3tpRyKWqNB/V52T2Qsp\ncnAx1VPHOdRlO8DZfGyzhhmA+9NUOIYoE7cpa77RsKw5GeMxVxvqsEHq0fzl\nwwfM9DnS6fEz1QK9S9aKov8Js65670vwoxt+5wquMn3O0juVa4Q27v2rmfrv\n3l7ob7x1HiLD6lq60toAO44Kgs7B4jKWaYNozd3r+5TgnAnJq4NGfS3mWSJm\nfU0b8N4VVcLIdGVGQuYlsvlHqi6JMylVKZkasmECBXkiowKy2UUu+hYZFWW0\nQziyp9tXkWrTLa7lFaHrmtFIMg4i/hQPGXT9Y++i1ujgxNGkVevF1JuuU0DN\n7KI5K7OjeHhQknn/KncXzIl7ZYcJacMIEzUWYNPC6PVDDvp0PnkA3cDB0pAp\n0NXk6pl8adR9fPXqckQTLXxy6Mb56kZbz6GUi6UtSxf3N5tiaH+LWURLujW+\nwmFZvADvzWPVdqDAPp2q3V8Bc0kS446hGXYWT8/O1imoye3LAXQMizbPbk6b\ntxHb8AMzDzQxRd/u6CGaOAbQEHTuqTxBad4ApV13sf3LDuQGnvDugMaO8ocn\nnbB++TfcvP3ZrcRTGk6LvuvcSTminT7ETiHato62ZnW9gqJYOAWeAivzC+zU\nVt0kaQrvSn9xVzs3MxLYQkndBthyTjvmEUIs10HU+NqFTYXI+v0qD2kbwXuI\nR4RZ\r\n=MYP0\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.3.1_1582444579619_0.06154391091883227"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.3.2": {
+			"name": "verdaccio-audit",
+			"version": "9.3.2",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.3.2",
+				"@verdaccio/eslint-config": "^9.3.2",
+				"@verdaccio/types": "^9.3.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "d8af80dd28afc238b2ffaa6eafab5344fab38a81",
+			"_id": "verdaccio-audit@9.3.2",
+			"_nodeVersion": "13.10.1",
+			"_npmVersion": "lerna/3.20.2/node@v13.10.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-b0+6vlpkdE5TAQJbQqGvzNiAfEucAV1aYw3ZA3ztPCTu/IA4qHYXe9sdcXGZgS4Tbc4Vb6I+z927otq0bC8AjQ==",
+				"shasum": "6a71b3dab8878ffdd221df17785d1100dac6eb4c",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.3.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 19421,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeZNfMCRA9TVsSAnZWagAAHLcP/0Mjvk6rJeqG5R7IJeY3\nH8nzVyj59ANKKPd+iYkKoCA3N9/PikZYVef+qQqFsaQcrQgwip716u78oAbz\nC5Ge1Uc+rE0U0DWaaie7Jvd3l9oPsz66Nsl6ltc7gfVyr6IdnihY6Lds2p85\nqXJCKUFphqu7hQReEYaHbuuOXSNWjnRylzWhjLudo1GTklar7Wo3MtDztJAJ\npZAG2EiL78EyfgrARTiVyLRry0O236mthPTYU2ZVf5Qxjx1BvZTaZdH12JXp\nWQ1zhLYxlKEEfVjck4R1h3uzfVpHWwpHJ0iLEzsvrzO02e3v/Sn8p4Pfo246\nOKvOCWB2+9oheHw7fzNmt9u8ZPucS2cYfMlUxI5e2xVAon7i1VwjU0wbUPMv\n1apvGJgArzPDuRb4D9zZdAeBevVQ0J8aFlRO162z/KREf8bjqp/XLuhMJAu/\n4XyRHqGMVA7sCWH6KOabnOaK4+KwbnflPpbEMMFLm2msDCtjoQ5xZjB4Ju6V\nJVGJsWBr4De/vLArak1dYnZr1EJWcTKxHbjXlcuVbvFzFOLDQ3KjpOSw6iKX\noB6yJLbfPbzzPPDT99yq+tMiveQprqfg7Yl8XGjYA/xwED3+f3wAJ1SrIeaZ\nNkKuguzlBYDORQ+zp4bqb3gmKZMFnTTp0BJ7JVxet3cdPB0VdHH6DJGLDAiF\ndpsc\r\n=5ELK\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.3.2_1583667148085_0.643526875230056"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.4.0": {
+			"name": "verdaccio-audit",
+			"version": "9.4.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.4.0",
+				"@verdaccio/eslint-config": "^9.3.2",
+				"@verdaccio/types": "^9.3.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "8d7db27a3d1c975a912fa6daa962ff54538f90e3",
+			"_id": "verdaccio-audit@9.4.0",
+			"_nodeVersion": "13.10.1",
+			"_npmVersion": "lerna/3.20.2/node@v13.10.1+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-oXHYg/1L+f+iOcdD38gXN/OVmE+cW+fCsX/1Apg/0G6JHpl4msTpJ5DTeP3QdcggXwVHKMvU1NM8PNJBpxpfnQ==",
+				"shasum": "1a06ccf30290e1563f7f578dc9c19811b73dc029",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.4.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 19569,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJedfWICRA9TVsSAnZWagAARkwP/38Jmv3BYlcaKNrON/Ml\n2vMsrh/932LipAgdCdrc6aVVn1twk4aewbJEy2FLtcvWLYJ/Ndkk87Ky6tX+\nhVG9hEmEgk9OQwTBoxf9DF3bpAanJaoCNzzrfvcP5vcNgk5EvizrxH1Jg/GI\nzEhAEUMHQ1X/s0lstOHJDntC46zov8QDLUq50HNykLuEFuIIhfBnKHukEPx7\nnNhn2OyH8EjjTq8Xg0p+mLRus8i0KToVj2JEtpOihsEcZKG78KnaSTK1O3H9\nXqbAOVlLke3tGYRxcycJ5MuYeFh7vhyh/01acyOLTuk/VLBDhiFGR46mhywh\nMo0GwDcNZ4Jjoz/ALVLDdTcdAL2FveXKjpKQCtVAGUL2nIEOyCPnTuuNA7rY\nWO2vyWQ0ORF0KyqPVJtf+CHmQIY1HSJ8xhnURxOxdtH+L3xxPi25qNiddJcO\nKkxuRe2XuHyFmOm+hYjya+LI8NHmveTm9kgnpQ9tdcmz6LbTy1L5a02PjvBQ\ndpVj/flNag1PMz7Rn/ps3BEMjs3aM57INDhDV5SOGciFU1EVRUIPCA1T/zOz\ntmSoB3McikiIQveIEGQ/UhhVcFQMiiyrLYp30/KRfBAFa17APZb6FhGM6K/p\nDcJXIXsdi5UqP1Z7B/LGGTVmnFw+7veB/KGiE/CUWtl3qdYF9TzurkQBefB3\nByvR\r\n=e38/\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.4.0_1584788871972_0.44976929175577673"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.0-next.0": {
+			"name": "verdaccio-audit",
+			"version": "10.0.0-next.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^10.0.0-next.0",
+				"@verdaccio/eslint-config": "^10.0.0-next.0",
+				"@verdaccio/types": "^9.3.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "b2b740dfb65ebb890b90e5987d66bac41fbaaa3a",
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@10.0.0-next.0",
+			"_nodeVersion": "13.11.0",
+			"_npmVersion": "lerna/3.20.2/node@v13.11.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-MOtzgizs2Qd7NWdxKPpYjIYt59SRcjRWLgyjsvf7zptrT6+CY18ikSjCSjrZbsNghgwVbTN1UdzoXIvimNwHiw==",
+				"shasum": "06f760d6983ca25c46991bf8a1709f5e370fa202",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.0-next.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 19757,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJef5ULCRA9TVsSAnZWagAAjUQP/2QVdkC/Da1rvMs8btio\nMxOKiM61kXEFBZPWgEhPWcmJdxPriJus+0EENkPfETK1mU4qL0rq5wmtolzG\nL0XiojEzEePs/ob7CODd85dGiGYPoWLjprWAlj42S4nAXbZiX0ZOsPNOsLoz\nawVTZeE7kZP06I92UPX0JtHjhVHp8VqY6mgOtIMzg69SRyfcoJPbeKqwwjrD\nhseSqJUpumLwVRosCcBYKqi1VDZIz2nqKLDFT4XO8303snCX5Bg0V4h/cpZz\nq9DEASzyAVaSUEKqiSymwIltPYjof5m6O5jiq/CEuDqJgQBLvqeGtlkkN2SL\nx3fI5USmGd2gHYSxS1CzOYIaHfYjlZpxkEzez9RQ7XRtaIxMucKQ/jfLfoPh\nVc9b7OSUNfusvWxiuZejA9JVeikYal8Qb01ITNHfHzkdWpNtre4X8S7jHPU2\nzshqjFqwO0CtMnn7YnpvP0NSG3+9GEcir4HYUQpecDl6mDedGjN/3uEuTSqq\nJYptapEszEWUqUcZiV1jGNIxyNjGTcWxvZziK8C2I+1fG19pCi2MK8cqGHtk\nJv0lxvMZrJQq9IY3GwI3ywPXxIUBAEGimlv1xfHWsH/pADbIRb4vgpsqJ+v1\ntaR3llU0algjn8hmXxDICBDrlUzWYj1yr9nI1Lhunvm3VhP6Dp3I7nt1E1Pp\nw4n+\r\n=apVT\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_10.0.0-next.0_1585419530552_0.2714034906516738"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.0-next.1": {
+			"name": "verdaccio-audit",
+			"version": "10.0.0-next.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^10.0.0-next.1",
+				"@verdaccio/eslint-config": "^10.0.0-next.1",
+				"@verdaccio/types": "^9.3.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "1c83f6e766a5ed042ce1bcf2ab2cb68631ad83fd",
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@10.0.0-next.1",
+			"_nodeVersion": "13.12.0",
+			"_npmVersion": "lerna/3.20.2/node@v13.12.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-fTzmUq5kfuiocP8GeW6Z7pdLI4XmGsGlRFFc1NfyimxD2g/8Ei12syQ29d5VYCEiq1bjBzrDWiM3oSavo9RTMA==",
+				"shasum": "674d655fb3e9cdb504fd9112dce45714940b3321",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.0-next.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 19929,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJek2SQCRA9TVsSAnZWagAAFAIP/1ahNjMc/07GpbF5MWrF\neFqYsgGWrheG2IYsxCYnCl4Zxg3+HF1pEA/hSG1HVuHVO2vMhqB6MXHI7rKU\n+M36Faxw8MrVEG+w9SsfjRVT1UI9a9t3ZcgsxfKBXdNzHBi3CZ4i8ixaObSA\nb8kl4Bu8AaXCJv93zu/oAnX8vrqkL/UaGyonrL3/W5DBE9gbb/CR1t9EhQCl\nz9giR6X+uRLuQEVCPvHuFXYygloilyutGjNYFaIH6aLFUm+t84UndUZUYFnS\nHu5CzkNpiFB+CmvsTgk5aX7y5pig7/KC8wg20/hI7w6oow3eggR8MjZznLrP\ntR7h4ziAtOYhP9DewYY5al1nWal+DRk/wixUclkqv+qCZnkFWXx4GElQYpv+\nr3a6d2Gzi6PRTLn/ElcwX3ZYiqalWxn1YGmog8QNLVH2YuNadSI/B1tykCw5\nFCHNdqsuUUM8BQJNjOBdv6dwXZktGiE4J5RrYiU/I2JDrsbsywCXoS80J3sP\nsq1fEe7ptqRC4Tah+QVWXX+afP0K90TqUnNFiH7znMhyCUW8ZKN9yjg5d+Xh\nO8BQZWGPqP1iPCNjc51Q8tIROEMSbJjVCU8YZqfV5TTKFOynCFGQw5S3DUVg\nBU3N01uiivISX6Gv/Loreg1s+2FhxHSQ2QK1kF89wz1uOhE1/fGwWzd3wtNp\nukj+\r\n=5p7O\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_10.0.0-next.1_1586717840504_0.10254293809923776"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.5.0": {
+			"name": "verdaccio-audit",
+			"version": "9.5.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.4.0",
+				"@verdaccio/eslint-config": "^9.3.2",
+				"@verdaccio/types": "^9.5.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "e3bf46f6418ab9c9abf9b098cda63a000c992e57",
+			"_id": "verdaccio-audit@9.5.0",
+			"_nodeVersion": "14.1.0",
+			"_npmVersion": "lerna/3.20.2/node@v14.1.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-XN/qTWKmLGAwlsZx3pDQo7z5ltmJVHIM/iVY465g40gcdPdEZEaa4roK0vh3YuGlYNl/NIfhzVEFSu4pUYR+dw==",
+				"shasum": "227b6f3faf8277100a41e240514525c1b22fcb5e",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.5.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 19717,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJerQ3uCRA9TVsSAnZWagAAUzQP/01LHjbJ7uCKdKmuZSlC\nuR1mkZ6i3VTzohXoOvLTwPvw52kwzbGep3Rb4DXrIS14+LbsRzw3tcvikeW1\nVnjaZioEMl11BB1MPmm9H1hrUXKcCmmTG1y3jsblmVBS4olSJsip0MQ19SuK\ndp8k4vCe5TKTIMou3CfGoHBVAJbQUeomiqOoUc1k4zuHD31d8ioR79m2uviI\nFzb0mSB34nhiVeTZzIjSbA9v6yZU3LxiLRVk53st4PqYiOzz4rPEhXHxvoFg\nJAZf+aC/EgeBIxRwPOHc9O2NgTeIoNERrf/8X4lgsay9E1wufB/DvGgWt5gY\nSMPHcqh8ILZitj/Fs0zkUnxHZDoa756i3RFm5peuUqT20TWp8QKD1amwEjyW\ne74mytx+Yh9/FVqseSnK9EOt5vT/0HYfKE8zzB0JxQQxvl9lAIx2UJdGfg8t\nDSENEMhq/hcVkHgjYpPD/wb5vy7coBtBxhd5MzTtp3iev6z0jlfcltADhh3I\ngt5OdFSnDEj1dsMfhlvJ/WtJcQb8XMzgEnRn2ixc023PvGQO4YO9QMqUsBHt\nw4DnvEZ6JAEDfaq0CDBa5mlsC4f/WgN+AzrzlKY2OpBs1P4gPH8M17p1Ynzz\nuh9xjn/sk7DdadQUnrcasHkY3BGkVI32+/n44XKnn0Sdaat9HZ6OFUg2tGBu\nTvPO\r\n=sYsX\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.5.0_1588399598244_0.8393933280441972"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.6.1": {
+			"name": "verdaccio-audit",
+			"version": "9.6.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.6.1",
+				"@verdaccio/eslint-config": "^9.3.2",
+				"@verdaccio/types": "^9.5.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "adb434f9dcbc5574892a1ea03e882b1f9e0355be",
+			"_id": "verdaccio-audit@9.6.1",
+			"_nodeVersion": "14.4.0",
+			"_npmVersion": "lerna/3.22.0/node@v14.4.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-dyYeGhg+HfLFgTMJEV7usJ46xQix9SU566XIi278IlYFmBkFe6SsmiZUHKaL3pbq8K9ESQYNCyYkZW29QMpcIg==",
+				"shasum": "aa18ffeb23923df56399ef3f0d7aa20ffb10e03e",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.6.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 19866,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe3N9YCRA9TVsSAnZWagAApP0P/1w2QjArq+Sk5tQhillJ\nCRKKz3/Axg7IXC2lNM00YiXfn2LvoLqqzlq0hW4VtXIg3F386PvJTI4Y3Pgp\nYKaH+abcFcCCvWzBM36C7kMsEBTFpMgIqqarLuXxpacix+q/UlLYLO32hEef\nn8Ba0ZrdSL8wB9X6BNHpBiGogLNAQTFPBNquy4XVrNVDMAT2NdGWBfK3Sc77\n4EhLyf+TF5fucGeXWa8Pi7qicQnoif9wQ4Vd9kgTcsbzKODmximp+fHJ6fLJ\nbwz7TPKLAMHGjqwIk9+RSHKsNrMq3BRJTfYJsd0DLyioRwWMwmfrN+848fE7\nMiGrnsyDnjFH/gDP4e2TKXSSkSu6cF9mGSpWWTcIi83g4CC4O2wk9688CVA4\n8+7MJrNp68lbcjZS5TPiTWIFH+Rnxc9Hpuw+2IR4eB7PIOqIukYaZeVUmPQj\niRIpLIJd0KdZKC36BBf76Q8wi+LhaL0I6J3xnK93btEY+0mLTIiAd3dfGaRh\nSL80mGIlJ2fV7ODErYSLaiDVNcpbk+2aUePhko+OmD7cuyL58WFXNIZPid0o\n+jT629N+Sqs/UXfOUtqF86+f6YZe9LA1XD4FcgVgt8uQ21fNo3EZZMeV9G1O\nSJHcqlY4DyvNUD482QFPZ0zIPwZ6V+fNZ+J2dBKOlM0spchkNVUQn9l53KU5\nKanr\r\n=UFzc\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.6.1_1591533399949_0.8249237379614813"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.7.0": {
+			"name": "verdaccio-audit",
+			"version": "9.7.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.6.1",
+				"@verdaccio/eslint-config": "^9.3.2",
+				"@verdaccio/types": "^9.7.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "2e40ebb1eb8760c2cd4b5a239f648c79a3667a56",
+			"_id": "verdaccio-audit@9.7.0",
+			"_nodeVersion": "14.4.0",
+			"_npmVersion": "lerna/3.22.0/node@v14.4.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-Ki1qZhVjNdcdIbHm3hg/3ha/av5zx1lsbk5iT92GSreLylwsYF0DdocHNQmC2oXiZDjFFoBQCNPEBnJCDAIlsw==",
+				"shasum": "e0814f24601c2eba871b4de765c90751813ef9a4",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.7.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 20014,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe8wGkCRA9TVsSAnZWagAABN8P/3vETbDWArQK/ohJ3hYJ\nlwS1ZGFp5moNYGxdE5YjeUSqVjkMCa3IH71HkQ1LYkbwAjKHbsWv2tbvBow9\nJPLjds0lESyQqgsTCaOdW+CHyvDBRksQ5GllvUgFpmRMFhEk7U9mHSDelKcq\nLHBchgvcusV9FU6n93A7TmMW1Dbw4noELjJ3pbZJ6cxHojGugz/RN3qiK+Uk\nWNosdkTLZ6bEsr9Si7aYmBbjRgIW2TYlskwsu5sdN5dYI8GuOaH3rZGFaXd3\n2BJxjSKbYChpPzBWIQRjyauOUJOABcf6pAa6T7FEKDh+YXSv9Z/w87KE3B7M\ns4utyuFFW+DA9CvxEpLvPml7Yjjrn9RRMfzOz9ODyCJps04Z/63z61clUaaF\n/QrYvHXqlD29Y27S/jECZ61c+i/aWTJp/6SKJntypwvdWPoXUMrmPoOeylnm\n/aPDaFwYJMzyjzzzUmmnhPLnnJgaP0tBWTGKYVP4j4Na9U2jOE4ZAFWoUx/g\nF02eH/2P5wx90eTVjKeLYymLU5OM5Lo53kJr5Qbie+rjjBbbbLa62dpWE2Wv\n8joQvo+7uYZSOSSgbXfvysWW7jlZTsQcHmEbvSkBIVYxNI9nf4ZLmRuxxfpV\nBMhp4mWJ+REwPgfBdhlGIqB82MidOwRc10VzkWcspKfxzSYYDnqS+y5oHcDP\nwPga\r\n=r1lM\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.7.0_1592983972311_0.7483024239378369"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.7.1": {
+			"name": "verdaccio-audit",
+			"version": "9.7.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.7.1",
+				"@verdaccio/eslint-config": "^9.3.2",
+				"@verdaccio/types": "^9.7.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "769fed7748fd2088cfc99d931059e927e1e99c52",
+			"_id": "verdaccio-audit@9.7.1",
+			"_nodeVersion": "14.5.0",
+			"_npmVersion": "lerna/3.22.0/node@v14.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-yGvhxOeQjh+DfQwIZpR7j5nmtDQ+O9vp2u5MrpKztd38F7ohI+PZjtLPWd3b71qoZwMXkzTNfB9zHqP2C8fr4A==",
+				"shasum": "45b76addcccf8f2005acc6f07cc7799111cbc06a",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.7.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 20163,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfCLEyCRA9TVsSAnZWagAAeQYP/AwpweO4fboChKXv5gr3\nLkzf7ULJtejMAgBarh/KQaHU6+0DTFESHHt2AHPwtPZ5/ALtTUuIJU5VSjpU\nY+6jWyKPR6wpYzVdISsEHxZobn6qmLHJzMyNC8r8NQYJpHr974O942dbsXiD\ngOFMWff2zVXT81CuMP6h03se2n5A2QYgHoZAnZXm5icrUPIknYkliwxHfgvF\nn+UEh9zXtOtC0LQZZgLeTO7uV+4XplsNmuqlX3oiNkaGNMf0d9KLQDhXQ4ct\ntovj2hPDaf4AD1lY3tEpAOmH2WwIyslEQnBTBmCtjCWsYz4wJJBE3L/JDLB0\nbqXHELhYMgknGlnPsgIxyB+6khlD0Z3zRj5mHL3SvzDCgvSDqhlILzAE5eBD\nT3CiBhx31SVwqLgNAg8AYACVFMeXXnuBmfZmQKjqVnO0XTOmdWeCo2MQLzNR\nCxKnVNewZc36xOk/1IB44J3Sq8HFxRoD888DJWSgCcK67wJ1JezhM15cBJrd\nYYXgDsc7/4oL2x2AfdlUYnb3xxHjZTvAbcpEer9j8O26rwriZOsYFn3kcII8\nyTTWZ5CQN7aG6CzpQ30U8CCi2LLxdHs5ZVIrmUvml4hcBIxNrWJg0DxzIL2v\nAynPmhavxOUrmhUViGfVFwU9/WOuCjdbTxd4tyHW+JB+DD219jLRQ/WNyaLl\nEH1f\r\n=vTpD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.7.1_1594405169997_0.03399895410730136"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.7.2": {
+			"name": "verdaccio-audit",
+			"version": "9.7.2",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.0"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.7.1",
+				"@verdaccio/eslint-config": "^9.3.2",
+				"@verdaccio/types": "^9.7.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "5c7d3c5af1bf28da8ffe61f73dfc6380b5e91679",
+			"_id": "verdaccio-audit@9.7.2",
+			"_nodeVersion": "14.5.0",
+			"_npmVersion": "lerna/3.22.0/node@v14.5.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-MI3sf9ZWQO4y4h4amOh2OT8CkAh60G6UlTsEo8ys0fk02cZ08X5whZQyGnFsRgt2KDwpIMeuvypRhjc8ScWQeA==",
+				"shasum": "54c2f063d869a3c23472a854bef49cb44863afdd",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.7.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 20312,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfFfAHCRA9TVsSAnZWagAAJtYP/RI0mJG5S0XT0KsSP1Oc\nxiHW6BlDegCUZ8cYT6NQ6Pj7LLmZcpIKz8Qhvh+b/6l1QWkS1l6f7do4jhMm\nDdW2qfoSVTyFdKSqnb3mMmORdAr9jD3DvFHAB9+ou5fzG6wu5OQbo0sToKdk\nOd7DVDEWVrCfeTNItkiOjIhGAlfQVKchx+Hw/cftC0lu8R83Jg4aS2Ivhrj3\nSkXqWqkGK2kWH6NtnPHr+MvxXC9tdYcRCECLCTe6Dmeh4jBRD7fE0lz42CDx\nTwCcF+6EE5CE/HTxxKsZNhDz3NRsmPrIPIif+TTBSVgd6N9EU9/ript4YJKM\nYjcyayHAGdw8Iw3qC9i1qyoPsqky4Oj40XPJDlRroX7rAN7sTmytYinYrzzl\nQQFxaTALTM27KPelxh2r4CpEY0OvqyRXr4OZsuQHNv5dRdOfmDH7Sh4xNf4k\nmvh1diCYl4AXVRyTlXxQjAT3LXFxnDt6XvQ/8S/hL7rw4xOasXwGiWMikLuq\naq8b1jsNGOsfUKCstea78aRN2nHBKj1ZFxtfaooNCAaw9QB/9gy7dGJDrKG6\nira/koMYvQVKLYi7ci5q3xG4QxYGVwDAqf7v0ZstBUP8kEWEuzgDINu5qcGm\nR7h7BqQ6dXno9dKyr9o7T1tt+kc1V75efbLyDY4IFhiU0V1OlyeqlwgpXdsb\n2Kzd\r\n=zHMl\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.7.2_1595273223414_0.46279294948029404"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"9.7.3": {
+			"name": "verdaccio-audit",
+			"version": "9.7.3",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.2"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^9.7.1",
+				"@verdaccio/eslint-config": "^9.3.2",
+				"@verdaccio/types": "^9.7.2"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "69c59f0582b25c2dd578a370f902521539040d31",
+			"_id": "verdaccio-audit@9.7.3",
+			"_nodeVersion": "14.6.0",
+			"_npmVersion": "lerna/3.22.0/node@v14.6.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-FDWafgDjvnTbJapQpd0c41FjrecR+iRHrnDi2gkAn4IJpiLCgXC6R5NdkXjDIekKEsou9PyQTsEdoHK7iDx+tQ==",
+				"shasum": "a31d0c63e9c050a9575431a82fbbc56a25a249e5",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.7.3.tgz",
+				"fileCount": 10,
+				"unpackedSize": 20628,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfIzDvCRA9TVsSAnZWagAAtfAP/jLuemYzSeyrg52QtL/D\nKW/zLLq9fMP23FMjWsIQ8FBeenm8+bkUHq27QHvsFT+VuGrUZoIlU9EQdYMa\nXSYpsas2Runogn7G1Hbphm18GgIp6xbCslPi3C5lJqmUH7USX6teLPNS+3xo\ncAifaRiioMiWQGTK480Er7/P2zu6Ro9Ir6eKbMT9W3qJeNjZtNMBh8gP3LdB\nWvFmNc3pmtpO+2Eu44PsCpweUx8d5fdoy/fTGqsm2a2FUPdSWNPTx0I0TjHT\n1jWuSJcu6YAA1yjmCunSB9wCIIc3216ClD45rNBFSd0hzgxQJZBFV/ZZk7ZI\nQCsQU3bggtKP/FaYjUS4Lf2ETsYnoTAXGmLmiUKKFK6HiEvbI7OYfouB9+IG\nVZRFF1FjgnlZ2N5FH1vK9Tqw1OcE6XNtJgma26vdNnwC/IPq4BmPMXB4yIB0\nHugZsykfdvmRiODOlhm0aa+PNHFM/KnKfQ9o6FAjS8tLTmnVh6+wWJZ/vm6n\nvnQTKh/FAIYuo0aBqbbH5e+lcQXdySLAmGykuYjc5P7wWl/jOa0BIYNkr4fi\nW8OyyrlsKFJu6P5lx6Kr9LtN4eJVlht7Ie6h97rPs57Pp/spS4mY+aTsvKm+\njHfSUtbFRLFQZa7D5RWXniejnfVr60206ssjuXwcyYXezHWJFDZggX0WTgmW\nq7Pv\r\n=aXxj\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ayush.aceit@gmail.com",
+					"name": "ayusharma"
+				},
+				{
+					"email": "juanpicado19@gmail.com",
+					"name": "jotadeveloper"
+				},
+				{
+					"email": "verdaccio.npm@gmail.com",
+					"name": "verdaccio.npm"
+				}
+			],
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_9.7.3_1596141806556_0.3343980244094851"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.0": {
+			"name": "verdaccio-audit",
+			"version": "10.0.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"request": "2.88.2"
+			},
+			"devDependencies": {
+				"@verdaccio/babel-preset": "^10.0.0",
+				"@verdaccio/eslint-config": "^10.0.0",
+				"@verdaccio/types": "^10.0.0"
+			},
+			"scripts": {
+				"build": "npm run build:types && npm run build:js",
+				"build:js": "babel src/ --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+				"build:types": "tsc --emitDeclarationOnly",
+				"coverage:publish": "codecov --root=../../ -F plugins",
+				"lint": "eslint \"**/*.{js,ts}\"",
+				"lint:stage": "lint-staged",
+				"test": "jest",
+				"type-check": "tsc --noEmit",
+				"type-check:watch": "npm run type-check -- --watch"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"gitHead": "e33b0509f6dcb10c9b893fdcd3846ca69eca0bd9",
+			"_id": "verdaccio-audit@10.0.0",
+			"_nodeVersion": "15.12.0",
+			"_npmVersion": "lerna/3.22.0/node@v15.12.0+x64 (linux)",
+			"dist": {
+				"integrity": "sha512-Epsh+C7ZEdq39PR9QeDBTWktbeqc0zOQjMzWte6Ut5Jh6fPLZzxGF8VK8O67B6mnTwLvGy50A1aPVM97Ysh5Rw==",
+				"shasum": "d3304d923c7f2c28c173a02425208c941f25217b",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 20782,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgYc+9CRA9TVsSAnZWagAA6JAP/RvI596Ham6Zn/ulWJHw\nqblQqaxgKWe0GrK1RlrkDGPgBeMU2mH1iX0w9KNZTI2GZlFPFXiJochL45nN\nS4Kdwvl6al7nPzI7MzdTTUhE85fEfZMl7r2CJ/gXQne68bJzngU47wvAo6wI\nLph49u/GjmN6LRsyGIBVBLSYdx+Vh5CtNG2EQZhPFtWR9G3HIpLc4HTLpoF9\nA4NQKWp0CfLf3iyKd73sYWfdfCrj5VNfZu7YoGEJ+EgwQSymTiA8m0gZnXfV\nOFF7oUAn0gQkwgKZw35u86O0s8jSUtjZpBcFSQ5uuT1FE2IOLgfyFDZfPmTt\ngs9YwNlP3/goMelSPME7fv7CWUITeQj2D9r7NpHI/Mty2410LZJcVrQdJaSQ\n6uJEZLypA41+qbbS0z5mZ1Zrtb1fomdZMJoF3es8yDfzl1eYy8kofWwVRDLY\nbwfp23+sJcE/OOM+k4mkKyKdb2ddjxDsEfKoW2ucdnFde3qVQA2Op1nuodxs\nUiDNo3YSTjMnk95ou01UPyDp/zwKgk6PgdfpmAViEZaOYrnGQwy5HNPjErCi\nX3fvxOrfVfavKMTtIai0LZsQdD/MiHMnV1SxGfzYVgDgj5QQ1gdkD6z4WxlF\nEasC6Z3XFoooB3Ed+jrhq4Upt6FZlNEX05jQnw+tnihZFKrPB4D2/h8f+G8e\nHuom\r\n=ZhiW\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_10.0.0_1617022909020_0.302018154622105"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"11.0.0-6-next.5": {
+			"name": "verdaccio-audit",
+			"version": "11.0.0-6-next.5",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"private",
+				"package",
+				"repository",
+				"registry",
+				"enterprise",
+				"modules",
+				"proxy",
+				"server",
+				"verdaccio"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "https",
+				"url": "git+https://github.com/verdaccio/verdaccio.git",
+				"directory": "packages/plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio/issues"
+			},
+			"main": "build/index.js",
+			"types": "build/index.d.ts",
+			"engines": {
+				"node": ">=10",
+				"npm": ">=6"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"https-proxy-agent": "5.0.0",
+				"node-fetch": "3.0.0-beta.6-exportfix"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "11.0.0-6-next.7",
+				"body-parser": "1.19.0",
+				"nock": "12.0.3",
+				"supertest": "6.1.6"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir build/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"build": "pnpm run build:js && pnpm run build:types",
+				"watch": "pnpm build:js -- --watch",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest"
+			},
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@11.0.0-6-next.5",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-LDapyr+QV1466+bAjvGH8H3unsy5em591dHTqNliBqoHqoRcD6tebyl7YzgNAHiEpHjTRtqqoFlDpD3b96PA6g==",
+				"shasum": "6facd5045518b96faa9a9d88964c0490f7577ba8",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-11.0.0-6-next.5.tgz",
+				"fileCount": 21,
+				"unpackedSize": 29391,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhMpKDCRA9TVsSAnZWagAAbmkP/3WyvC0gWdj45HSkwaGY\nOFqSrmlY9AoWjjJauFvBSMWnH6yluzBHCecBi+GbKf//Kze/mnt0FXBGpwWZ\njIQxGcuDE3t4CrSRGN1YkttvMICR0o+PAEVZ+E5FuFjxJHtM54Isgi5cwDDG\nh9oI7ssidOvs4CaGa+kPGBZc/lQUuYSGcAau6jYtVfUHaknmzoeFEsIQ2MXA\nr5sJg5pJgzUpga6WTlxIBlULO5QFuMPzccTCwR11Xao/eIEVlqDCrW0VoQx7\nK5q4aXLupAf+F7ZTGSK3oMZipdZD9BytvOO8w0KzWvF/H1jQ+6uH+48OcR6T\ne1FUTm6HoTALBPnHHd8FjEn99hqc6r1Z2YRusqYYqhGCzTiI2mKQCadkqH0g\nxm+A0rxSCr2Xn0PTTe1fVP6fcElK2bzkqh8X/wwtT8RUDFU/DFxq/6z+GmXW\nPoK4m/6MrPUNnDzdRKG92v2N0kyFnA2K2R50qHvl1A6ci9ajAtgCcp990iJo\nkMusCuZgQdBjLRpRh7IsbN/7udyW5o8aCzv/UTDq8CluhundxRiNHCwkYjfF\nt7M9VEHJeTO3AbdAEbhOHNeU781IjxZQbF7lKL6vszaqBA0omH10hNCtCjug\n5y+mYlhuLtvBMFVHX3hlMbf7PulmyU8Quh5BuUkE75X4n8HSmlAt2MQWrw9e\nj9LK\r\n=+i4X\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_11.0.0-6-next.5_1630704258944_0.3167959769281168"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.1": {
+			"name": "verdaccio-audit",
+			"version": "10.0.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"https-proxy-agent": "5.0.0",
+				"body-parser": "1.19.0",
+				"node-fetch": "2.6.0"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "10.0.0"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir lib/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"_resolved": "",
+			"_integrity": "",
+			"_from": "file:verdaccio-audit-10.0.1.tgz",
+			"_id": "verdaccio-audit@10.0.1",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-OxY5REold4AjecbhydgB4DN/9mr0+mR+okxYl5BPugXKNuyfFO/CeXluEKnYBqIcbsEghu/zPrOJbJgrShJdGQ==",
+				"shasum": "dc5b28c6a5315d874552b982d047c7e5bb3644e5",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.1.tgz",
+				"fileCount": 12,
+				"unpackedSize": 15404,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhN7T7CRA9TVsSAnZWagAA6KMP/2ybklb1+7HzCZLsJVmZ\nBWu+FI69ucP3Pnmz/BcJZsudAJEIcpP/rnKAfmYY0IXv/caiZsoHDmYjSH0e\nPv1tmap/sDGe5Cu4B6aeO8v8BA3dtrnc4UIUqoq7jyDlpTn6S4bcr+b535y7\nZEkXKE415wxTapR5nOd1rPubyO0sf1Da5Gjt9QA9tFnwcw3mZ9sfHKLcuc4p\nsvIPSmCanV9q0bC2CaORrjAbETL58iEW2kP/P90RdiUWUwSG91qAJL1kPLMF\nghrmBLRRVehbDJoTSzpFFgOY6UM1Qb+CaMvY3/9LJ9W+hZPpIXe7xDky8BGV\n8TlPRORzkIFDCF2lhvsv0IvTlwIkc7aMjX3RLiA1nWPXYclyh8Eu9yacXdZs\n34CiNi9/87dFwNXl99WquU0IeKmaxXT1ckcUwVjhp5soOpY+bJl9kU8YfrtQ\nDvckOa6iZAqqEFlLQ6sapgrZ9JhsnLksgJcYF70GykHuLWS4gyhBY0q7gay8\nVE9OxhE/wHjyxY20Qpup4tF/U+omsaS7ehQIGWTtTMZ/ZM/aVXUwmkWBYLlS\nL/k2129P6yIsZOYRvZL6/TCGIPOkzB+N/z2O8DAGgeWkdV+Fior1xUVxQJEu\nVLPNLHYE+O8vxZ60yZkJT53BvPO77pbGOZqp9eCRut/YJARm2qZsrkVZoWSJ\nGHS+\r\n=qudI\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_10.0.1_1631040763426_0.4584603589859342"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"11.0.0-6-next.6": {
+			"name": "verdaccio-audit",
+			"version": "11.0.0-6-next.6",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"private",
+				"package",
+				"repository",
+				"registry",
+				"enterprise",
+				"modules",
+				"proxy",
+				"server",
+				"verdaccio"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "https",
+				"url": "git+https://github.com/verdaccio/verdaccio.git",
+				"directory": "packages/plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio/issues"
+			},
+			"main": "build/index.js",
+			"types": "build/index.d.ts",
+			"engines": {
+				"node": ">=10",
+				"npm": ">=6"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"https-proxy-agent": "5.0.0",
+				"node-fetch": "3.0.0-beta.6-exportfix"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "11.0.0-6-next.8",
+				"body-parser": "1.19.0",
+				"nock": "12.0.3",
+				"supertest": "6.1.6"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir build/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"build": "pnpm run build:js && pnpm run build:types",
+				"watch": "pnpm build:js -- --watch",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest"
+			},
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@11.0.0-6-next.6",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-E9d/OxXxVLsGOrtultoocskwuwvqFPrZaD1yRbGnNKheuVQXygj9L6sn06vb3BCbz8BetnNYXq6wIZSku2SE7Q==",
+				"shasum": "12d91afe81784637946d861ff5837ced1e851647",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-11.0.0-6-next.6.tgz",
+				"fileCount": 21,
+				"unpackedSize": 30772,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhOPTtCRA9TVsSAnZWagAAwi8P/2Trzez1o4tKeZ5zAlTn\n1HinCZhK0w62LOYkVGU2CDKxSgEOCkE4s2eyWsZu5n4+7ogJqkn56RCk19cN\nflJsWASP9WX9VoTVYTgYoC5coq7Pq3zMHvhecxH8fmepFy14i97+xYq9+BYQ\nfyESXaJyKUsV3VKYnC0NjTo5neCy7HGJm7aIXsGfl4jRcKAEVrnJhewa05fJ\n1QgZlXs1R186tFVOEoJwYElZCErlJFInHsBIRoUeLJ4TaVaAcrWQAV7tblBo\nKLsYFFjWtvZJzr5Lc6pGazrisKeOE2YDid9HkAT36NU2I26I3D5W3bhYMn/y\nOHBKANFMSZMOG+sE3J8caYlAn2eahJ9kLyQ/Ls2PTIK5BSxC53BNO0HUxLn6\n0bc69fmg7vUiclTtxlUoGLrkugI3hBZ9muY4g1lry8gcpdYLNNw2c6dotAZD\nd22diFzcexpoXwYUX/StvBwqKb8mtDD21TSTIyRBfJiKCZqbFj9C/YIQcZi0\nM4gAf5vCucroYmluQO3RZaOyqVzoWebQ5/g2lTuxPaNtHqMFpyLO3ZNEMIgy\n1kU87N3v86OoETSUa/I9tSYRzBfzTXAeG74bzBrwverLvw46GIb+a/GIAr7p\nC5N6vDpJrE1+PoBGy9o0jHVIApgU8t+yaE2ZuvBM5cx99KsqNMYf2ekZ9QjB\nXRJ0\r\n=IIPV\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_11.0.0-6-next.6_1631122669357_0.7993225037848459"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.2": {
+			"name": "verdaccio-audit",
+			"version": "10.0.2",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"https-proxy-agent": "5.0.0",
+				"body-parser": "1.19.0",
+				"node-fetch": "2.6.1"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "10.0.0"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir lib/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"_resolved": "",
+			"_integrity": "",
+			"_from": "file:verdaccio-audit-10.0.2.tgz",
+			"_id": "verdaccio-audit@10.0.2",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-pcud2xwztYETO15r+a11cFkpvweLmnsuJJ0FLCifL3+z4IzYFgD5KgPwUD9sdMPHFz5efOrHeO71cu8hb8oEWg==",
+				"shasum": "736e1d0dd96039a9de32830ea5a295bb9773f7a2",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.2.tgz",
+				"fileCount": 12,
+				"unpackedSize": 15404
+			},
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_10.0.2_1632247509818_0.7197060808290312"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"11.0.0-6-next.7": {
+			"name": "verdaccio-audit",
+			"version": "11.0.0-6-next.7",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"private",
+				"package",
+				"repository",
+				"registry",
+				"enterprise",
+				"modules",
+				"proxy",
+				"server",
+				"verdaccio"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "https",
+				"url": "git+https://github.com/verdaccio/verdaccio.git",
+				"directory": "packages/plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio/issues"
+			},
+			"main": "build/index.js",
+			"types": "build/index.d.ts",
+			"engines": {
+				"node": ">=14",
+				"npm": ">=6"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"https-proxy-agent": "5.0.0",
+				"node-fetch": "3.0.0-beta.6-exportfix"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "11.0.0-6-next.9",
+				"body-parser": "1.19.0",
+				"nock": "12.0.3",
+				"supertest": "6.1.6"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir build/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"build": "pnpm run build:js && pnpm run build:types",
+				"watch": "pnpm build:js -- --watch",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest"
+			},
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@11.0.0-6-next.7",
+			"_nodeVersion": "14.18.0",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-7ktdxdUY3a9UY1+GKxomFuBcA3i+q5Zu3QeFxHxaxCxbuWDd+cCzk92vfsF2ptEavnAndH7v5RJr65oZVwy6YA==",
+				"shasum": "2c7e0d3c4eeb859a751c091ddaea6a7fb5c803e8",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-11.0.0-6-next.7.tgz",
+				"fileCount": 21,
+				"unpackedSize": 30917
+			},
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_11.0.0-6-next.7_1634332736009_0.15026654314300725"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.0.3": {
+			"name": "verdaccio-audit",
+			"version": "10.0.3",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"https-proxy-agent": "5.0.0",
+				"body-parser": "1.19.0",
+				"node-fetch": "2.6.6"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "10.0.1"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir lib/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"_resolved": "",
+			"_integrity": "",
+			"_from": "file:verdaccio-audit-10.0.3.tgz",
+			"_id": "verdaccio-audit@10.0.3",
+			"_nodeVersion": "14.18.1",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-Jt3J5DXK1sHqhkoxMHedGDeHfLUv92sEZe43Dqav+N6TsCCG+iIpcef5FMfosnXgEds1LVndbJr+GL2ZW5qSYg==",
+				"shasum": "52f3ce89b8bd7660b75db7149f5df9919c301945",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.3.tgz",
+				"fileCount": 12,
+				"unpackedSize": 15454,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhoketCRA9TVsSAnZWagAAjFYP/1y2gflyvdFp0ts4OU7O\nbwgAndjmctylLpQzySYPhNyLEXeC99Xn02OPqJKf973SVfQSsaldt8wcQBG9\nSQiNrJdcyfth5pXufHK2r/tT0FAF6rbC+w/5lNZq9kFftphZcAmOxYW3EJz+\n2EW4/EXkcSAvYwqeFChzlhlAz0u8wqa+MOyYFCweoMNogLNfEZoTKim1geni\nPJ4tsjmMdnUVFMAtLa9jSTG3J+Q2TsFd6FnPl0mArx2RAUy50X9xwiDjSy2/\nMAvWr+v6TxwdiajoSem33kViTm2KgosMjYenHydoKMXHhl8zDBHV3yG7Tqgq\nrBcE9IgGDqavhOkHT+cBxDKE9/UR7My65gh/RpM9clVXy8H4Ryp84PaAFzSC\nUWveqTsZDOirFIQVQsMaYwuYFwS3+T9aJFCfnzuSsByOhrLtl/X7JRBFWWM2\n3239s/GXj7S4uDTyf/4uCJ3wrZJebmpwJ4AD5g7FZs2kpsgS19wAorszY0pP\ngYpe1SnVEdHTjLbfC2S0QIP47bpBUN3j1cIOUjOcszmTsa2n4rYtRw18tznG\nYlOOFUjIrVkitZFyMmSw4TB2lgNtfSkgDPw6y5OEPGfRaNh0RNGlrOHqAh6Z\nYZou14wfgqVKg4qFtJ1Vs+YQoOUxyVfP1pacfVAYIjZx4wLOn+EfLa8qyet8\nO61L\r\n=ud1S\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_10.0.3_1638025133588_0.782606105884651"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.1.0": {
+			"name": "verdaccio-audit",
+			"version": "10.1.0",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"https-proxy-agent": "5.0.0",
+				"body-parser": "1.19.0",
+				"node-fetch": "2.6.6"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "10.1.0"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir lib/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"_resolved": "",
+			"_integrity": "",
+			"_from": "file:verdaccio-audit-10.1.0.tgz",
+			"_id": "verdaccio-audit@10.1.0",
+			"_nodeVersion": "14.18.1",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-lu2rpicM7PeVQ+7dlupP92Ddp7v+Rqae4gFfzd9GTxgzS7wWm7USM88GalEPTJtcn4zDh4nC3nbjE7eEQTVFKg==",
+				"shasum": "b01a137b893807bd73c48ac5ef72e5a5b402c239",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.1.0.tgz",
+				"fileCount": 12,
+				"unpackedSize": 15454,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhtSzLCRA9TVsSAnZWagAA3RUP/1ciXcXg6bZGgvpIYoDd\n6UAXm0kNKzRf/Il+KHGc9FYHnhSQUxqJGIA8zSAB0gyAYKUEtzhpf7o7gqKG\ndNPvRCVNbA3TWRClgugSI2bJ6j53qcvclEyIA6PzM6cXHY/ys83tCDW1AjQv\nt1UQixvSJ+/Gelg/lbJHbXMAmZazxNaiMvNqMjckEBfSzjkiGrQvga4Xvfj4\ndPnj11FpIS52GAVtK+0NEg8kc13ShRpVff7Ed/ZGMIDcIPJnCF0BNPQWVuOR\nkJjKLXJzuW14l+ehwM2VrQ1FI1TXxIZUyjHaEemcQvvVuhcY+mWxhHOMtShs\niF0ffkkEoR3dN7ZbMc0iQ4daem2weH8ob5nnL5dOzVBZhZxX6H1UYYsYcMmc\n4gJKLrFe42lYy68zzpT7VZSR2gwSGy8s/ghz3SWnA/0oN7aZJvlzpghxXHW8\nmju1O66VjAIhY+nULMzdeW1TEbrm9KLKNFaRBMd+7ImYlJCIBUnD4HV+ud/W\n8XUP5F8ehzsol4Q44EBD1ozkix5B2iQfEUZyJXxp2DIaiDOQnP33PpAyrV8h\n/ZFX3POBtsEkcJZM6W9daWX2rQjd1mzzbv7pdWkeJRiFhaClz+j+SJ2BzJV2\nDPxNGNmgKyFnz7ek2xNDN/o/CjTtbBKRUnrbk1+xF4OWIfJc16zIXz5uZ41m\niE23\r\n=oUuy\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_10.1.0_1639263434953_0.20486202191297598"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"11.0.0-6-next.8": {
+			"name": "verdaccio-audit",
+			"version": "11.0.0-6-next.8",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"private",
+				"package",
+				"repository",
+				"registry",
+				"enterprise",
+				"modules",
+				"proxy",
+				"server",
+				"verdaccio"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "https",
+				"url": "git+https://github.com/verdaccio/verdaccio.git",
+				"directory": "packages/plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/verdaccio/issues"
+			},
+			"main": "build/index.js",
+			"types": "build/index.d.ts",
+			"engines": {
+				"node": ">=14",
+				"npm": ">=6"
+			},
+			"dependencies": {
+				"express": "4.17.1",
+				"body-parser": "1.19.1",
+				"https-proxy-agent": "5.0.0",
+				"node-fetch": "3.0.0-beta.6-exportfix"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "11.0.0-6-next.10",
+				"nock": "12.0.3",
+				"supertest": "6.1.6"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir build/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"build": "pnpm run build:js && pnpm run build:types",
+				"watch": "pnpm build:js -- --watch",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest"
+			},
+			"readmeFilename": "README.md",
+			"_id": "verdaccio-audit@11.0.0-6-next.8",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-xfd+yA+xvQMui1dL2+cwdY7fT+VswOwyJHAV+AQtmtKdP660G6sacqQIt8O4JHtY7a7gBQmQM8blGu3mFY0bPQ==",
+				"shasum": "eab4ad543d8e89f357db50aaeb0479152ee78321",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-11.0.0-6-next.8.tgz",
+				"fileCount": 21,
+				"unpackedSize": 30673,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhui76CRA9TVsSAnZWagAAtsUQAKMlaDpFFX7pjy4j5c9U\n7DE2GA/V/hG2jGJLyl4RBeLyWlgJnQf7watFvov+OofD+f3vGSBr53NK4PTw\nIpvj5JowMqghVhzfiYpnqMdHIkf67+vL8MXh8e8ZLMMPbUgoZYm/mL8lq7bA\nGc+FhYa7dd7Yf9mPaERCRdy86A+zpmBm5LpFUZbrd1EArIh+4UyDwtXuuJbS\nWfTWKaWfGxgl+JvHMhtHXCou+1JMyg+LKKwCgY9BFMjoGxmXwHtI0F0cpqer\nZXtOk307qcR8j5ArD4hANHm9y6fkZBp1meimhblCAVaCMNR7ARkyLe6Ke6a6\njszRpKVw9+PKEzRK7eZ1LGzyNyeYD1jrWa10DqewgIOtuPT6cvpUmEi1Uv59\nlpDp0YwpQSiKcl5q9oyHN34fVzr5GaoF2e8buk1ZVITNjc2T4AR3lW0pTDqO\n0g63m9a1lomjJgvMfVKrT0GE9SjUDc8XfbRzwaLQk7IMwmnFgOXQLFoo43gS\n7cj8HvGhP95DFAuh7Ia77wQtiSpOeGFc2bmAzH38/O7NcseiFkBnT5s3Cf9f\nnUdJ8jXvQtTJoorJelZp/q0DR3ATWH0aWUJpBddLxDuPhcwaDdqYlFGSeOPn\nDnvA/dl6/edzLH0kfyIg0g2V25BVEvSnp484VU5iLfYxz8SKeUl4Y5/squRH\nfHTL\r\n=osj9\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "verdaccio.npm",
+				"email": "verdaccio.npm@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_11.0.0-6-next.8_1639591674536_0.7267753592828337"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"10.1.1": {
+			"name": "verdaccio-audit",
+			"version": "10.1.1",
+			"description": "Verdaccio Middleware plugin to bypass npmjs audit",
+			"keywords": [
+				"verdaccio",
+				"plugin",
+				"middleware",
+				"audit"
+			],
+			"author": {
+				"name": "Juan Picado",
+				"email": "juanpicado19@gmail.com"
+			},
+			"license": "MIT",
+			"homepage": "https://verdaccio.org",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/verdaccio/monorepo.git",
+				"directory": "plugins/audit"
+			},
+			"bugs": {
+				"url": "https://github.com/verdaccio/monorepo/issues"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"engines": {
+				"node": ">=8"
+			},
+			"dependencies": {
+				"express": "4.17.2",
+				"https-proxy-agent": "5.0.0",
+				"body-parser": "1.19.1",
+				"node-fetch": "2.6.7"
+			},
+			"devDependencies": {
+				"@verdaccio/types": "10.2.2"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/verdaccio"
+			},
+			"scripts": {
+				"clean": "rimraf ./build",
+				"test": "cross-env NODE_ENV=test BABEL_ENV=test jest",
+				"type-check": "tsc --noEmit -p tsconfig.build.json",
+				"build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
+				"build:js": "babel src/ --out-dir lib/ --copy-files --extensions \".ts,.tsx\" --source-maps",
+				"watch": "pnpm build:js -- --watch",
+				"build": "pnpm run build:js && pnpm run build:types"
+			},
+			"_resolved": "",
+			"_integrity": "",
+			"_from": "file:verdaccio-audit-10.1.1.tgz",
+			"_id": "verdaccio-audit@10.1.1",
+			"_nodeVersion": "14.18.3",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-j4+u/DLzcsLESnjDNCA937PPlTi+ipBppy4g9H4oKC8COLY4Pe7yIMX7Xzb/hWVVKKtOjdDTLiakRpyT079XAQ==",
+				"shasum": "d783bd3e3d6e5880aa9ad88a691f27018e1f21fa",
+				"tarball": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.1.1.tgz",
+				"fileCount": 12,
+				"unpackedSize": 16973,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh57Z+CRA9TVsSAnZWagAABfkP/1/VtuysmqtQJySYLGtU\nUoBeHdy/rzfFC8aZFeCtID1+H4n+vG+H6I8u5E9vwDUV7pNYw8g70YKReja4\nhPQYixRQcHaVNsfmDyVIkkvoovUuaVAM0OkTE9T8651JiRe+VBM+WbQVU5/4\nBUBP+DczdRiO5U76HmPETJ0CK6ov3pq5qW96lgHkhb3l3wobHlymwtNQAub2\nAPCnE1sNIA32MwsTR6KSpDt2Ny35aYm1zZlJ5Afc4FyksXjMQAJBokzsvZMs\ne2yfaJkJX7hytSVTXIigTq6oiUzbGCBGRT4qJC3kDK8sW/0EkwFNAygwGO6V\n0dvp3ofGmcTWtGN5uQdB0qZxZ5k9jMsRJ7Ceyac3L2fj7ESSRxXZxEWxnf69\nMyqBRdcYaykc1Ws75UI3UY+szyb7cQHey7+YpMSEWVvssR4Y2rpqTQhkKR1M\n1sFFiSjIUMZBxgfI9xCsEJNlt4gHO+n1j+iMnwmhQeMs+56ZTzq+chKNh6oU\n7EMYjIDaernqQ78kQbe+2Iw5LSOtKVSlw4JnNGqD3U2c1LkeaHTqMdfKpnQD\nX0lqNtuoE1PgX9FnTf0BgC9IL17wPEc72dRcGVdz9zBbXdQbQnlUZ/ci1YFv\nwBBwRRoduNM2D8VaVJxxPm6O4MCqcD9eVmHKt9H7DEBCQqDJB4JTKeNlNlfC\nCUpP\r\n=Fy8H\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "jotadeveloper",
+				"email": "juanpicado19@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "jotadeveloper",
+					"email": "juanpicado19@gmail.com"
+				},
+				{
+					"name": "ayusharma",
+					"email": "ayush.aceit@gmail.com"
+				},
+				{
+					"name": "verdaccio.npm",
+					"email": "verdaccio.npm@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/verdaccio-audit_10.1.1_1642575485864_0.06272499401664033"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2018-05-15T05:36:22.348Z",
+		"0.0.1": "2018-05-15T05:36:23.024Z",
+		"modified": "2022-01-19T06:58:09.438Z",
+		"0.0.2": "2018-05-21T09:11:54.180Z",
+		"0.0.3": "2018-05-21T10:05:57.653Z",
+		"0.1.0": "2018-05-23T19:51:08.171Z",
+		"0.2.0": "2018-06-15T20:49:56.357Z",
+		"1.0.0": "2018-10-18T08:40:24.762Z",
+		"1.1.0": "2019-01-09T20:52:53.507Z",
+		"1.2.0": "2019-04-06T12:24:41.545Z",
+		"1.2.1": "2019-07-29T08:08:08.667Z",
+		"8.0.0-next.0": "2019-08-01T19:13:25.971Z",
+		"8.0.0-next.1": "2019-08-01T19:26:37.736Z",
+		"8.0.0-next.2": "2019-08-03T16:16:12.393Z",
+		"8.0.0-next.4": "2019-08-18T22:15:59.541Z",
+		"8.0.0": "2019-08-22T12:35:33.031Z",
+		"8.0.1-next.1": "2019-08-29T12:16:17.835Z",
+		"8.1.0": "2019-09-07T16:22:50.157Z",
+		"8.1.1": "2019-09-26T18:15:15.791Z",
+		"8.1.2": "2019-09-29T21:47:37.043Z",
+		"8.1.4": "2019-09-30T19:40:29.425Z",
+		"8.2.0-next.0": "2019-10-08T12:01:26.623Z",
+		"8.2.0": "2019-10-23T18:25:02.300Z",
+		"8.3.0": "2019-10-27T20:41:06.125Z",
+		"8.4.0": "2019-11-22T11:08:39.062Z",
+		"8.4.2": "2019-11-23T15:40:54.225Z",
+		"8.5.0": "2019-12-22T19:39:30.913Z",
+		"8.5.1": "2019-12-24T17:41:33.036Z",
+		"8.5.2": "2019-12-25T11:09:28.891Z",
+		"9.0.0": "2020-01-07T05:14:51.244Z",
+		"9.3.0": "2020-01-29T06:46:52.869Z",
+		"9.3.1": "2020-02-23T07:56:19.733Z",
+		"9.3.2": "2020-03-08T11:32:28.285Z",
+		"9.4.0": "2020-03-21T11:07:52.146Z",
+		"10.0.0-next.0": "2020-03-28T18:18:50.684Z",
+		"10.0.0-next.1": "2020-04-12T18:57:20.650Z",
+		"9.5.0": "2020-05-02T06:06:38.349Z",
+		"9.6.1": "2020-06-07T12:36:40.168Z",
+		"9.7.0": "2020-06-24T07:32:52.475Z",
+		"9.7.1": "2020-07-10T18:19:30.194Z",
+		"9.7.2": "2020-07-20T19:27:03.666Z",
+		"9.7.3": "2020-07-30T20:43:26.671Z",
+		"10.0.0": "2021-03-29T13:01:49.126Z",
+		"11.0.0-6-next.5": "2021-09-03T21:24:19.080Z",
+		"10.0.1": "2021-09-07T18:52:43.607Z",
+		"11.0.0-6-next.6": "2021-09-08T17:37:49.534Z",
+		"10.0.2": "2021-09-21T18:05:09.942Z",
+		"11.0.0-6-next.7": "2021-10-15T21:18:56.162Z",
+		"10.0.3": "2021-11-27T14:58:53.795Z",
+		"10.1.0": "2021-12-11T22:57:15.176Z",
+		"11.0.0-6-next.8": "2021-12-15T18:07:54.899Z",
+		"10.1.1": "2022-01-19T06:58:06.031Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "10.1.1",
+		"next": "10.0.0-next.1",
+		"6-next": "11.0.0-6-next.8"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"b8eabddc5708d03048a97b411ee84b52\"",
+			"fetched": 1643186341075
+		}
+	},
+	"_distfiles": {
+		"verdaccio-audit-0.0.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.0.1.tgz",
+			"sha": "045d8b2f40128f04da68b4a6b3d3df5501de5a12",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-0.0.2.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.0.2.tgz",
+			"sha": "6ff8a171e10e60d79f3150881e5a885764d89986",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-0.0.3.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.0.3.tgz",
+			"sha": "d7743b02286f845d5b84b4400a84769660a13223",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.1.0.tgz",
+			"sha": "4cc2e9a61c71492962f1a623bd099c51f5ca745a",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-0.2.0.tgz",
+			"sha": "426e26a3fa2e26341d7a12096025f48a8d40f6d2",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-1.0.0.tgz",
+			"sha": "4893baac6f711c4d065022684085220060b7c020",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-1.1.0.tgz",
+			"sha": "82c2c6722fc3ce61f3ba45bf1a2046b247f00d28",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-1.2.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-1.2.0.tgz",
+			"sha": "932485729a39f518bd4fd8d5688160cc5edafcbb",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-1.2.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-1.2.1.tgz",
+			"sha": "24aca87c0cd2f3b576e123d2da8b53d620f836c6",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.0.0-next.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0-next.0.tgz",
+			"sha": "dde544aa1bf7960c49864ad6954b5b6631255b72",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.0.0-next.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0-next.1.tgz",
+			"sha": "f11d46eabc854e8e29af21142583c09f3313753d",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.0.0-next.2.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0-next.2.tgz",
+			"sha": "4a033e0bcba5803a720efa02e61ebeb265c19281",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.0.0-next.4.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0-next.4.tgz",
+			"sha": "e4eb6df8f981ecffe3008e49c3ad0d564a6f94e2",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.0.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.0.tgz",
+			"sha": "61933cab21daa99a2de08c550d6c6d665f3226cd",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.0.1-next.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.0.1-next.1.tgz",
+			"sha": "0688d84188411d54373ab02f7802049bcef53eec",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.1.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.1.0.tgz",
+			"sha": "4c0f4daabe92a647f93f019a1610e3a106ec4a73",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.1.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.1.1.tgz",
+			"sha": "2fcf44cdcaf90b09705d3840ba4444a8cda80913",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.1.2.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.1.2.tgz",
+			"sha": "66080218e2ae88fe47286d560d0e763483298da4",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.1.4.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.1.4.tgz",
+			"sha": "b2005927cbfe29229b01034e9d2d8bc635f12970",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.2.0-next.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.2.0-next.0.tgz",
+			"sha": "e389d8778280ee4944072fa620fa352f3bd9749f",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.2.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.2.0.tgz",
+			"sha": "0b8f39cdc56cb74ef17137916371d28c4b968ff0",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.3.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.3.0.tgz",
+			"sha": "7b3e0d4de31be95fe5b4f09d733cd4c7377fdafc",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.4.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.4.0.tgz",
+			"sha": "c25408dc447ca3523b692a611aec90ced6be375a",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.4.2.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.4.2.tgz",
+			"sha": "60b80e75ff3c173910cf52937c4b163d795901dc",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.5.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.5.0.tgz",
+			"sha": "fd7493b5a08fe416b7a71e5dd0055ef5b62d02dc",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.5.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.5.1.tgz",
+			"sha": "619036c4677fd5b28c41132dfc5b9eb320ea1949",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-8.5.2.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-8.5.2.tgz",
+			"sha": "9431635419e227cfb08b7389ca87c012de7fc70f",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.0.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.0.0.tgz",
+			"sha": "faac5dd42a60c0c107f987045864948c5f4a1105",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.3.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.3.0.tgz",
+			"sha": "5fb3bf9ffc49e68b174915d1545e5af26d6c27ed",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.3.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.3.1.tgz",
+			"sha": "96d96e1263a3030c04e8b25b54b5349a72b6231a",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.3.2.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.3.2.tgz",
+			"sha": "6a71b3dab8878ffdd221df17785d1100dac6eb4c",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.4.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.4.0.tgz",
+			"sha": "1a06ccf30290e1563f7f578dc9c19811b73dc029",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-10.0.0-next.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.0-next.0.tgz",
+			"sha": "06f760d6983ca25c46991bf8a1709f5e370fa202",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-10.0.0-next.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.0-next.1.tgz",
+			"sha": "674d655fb3e9cdb504fd9112dce45714940b3321",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.5.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.5.0.tgz",
+			"sha": "227b6f3faf8277100a41e240514525c1b22fcb5e",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.6.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.6.1.tgz",
+			"sha": "aa18ffeb23923df56399ef3f0d7aa20ffb10e03e",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.7.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.7.0.tgz",
+			"sha": "e0814f24601c2eba871b4de765c90751813ef9a4",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.7.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.7.1.tgz",
+			"sha": "45b76addcccf8f2005acc6f07cc7799111cbc06a",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.7.2.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.7.2.tgz",
+			"sha": "54c2f063d869a3c23472a854bef49cb44863afdd",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-9.7.3.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-9.7.3.tgz",
+			"sha": "a31d0c63e9c050a9575431a82fbbc56a25a249e5",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-10.0.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.0.tgz",
+			"sha": "d3304d923c7f2c28c173a02425208c941f25217b",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-11.0.0-6-next.5.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-11.0.0-6-next.5.tgz",
+			"sha": "6facd5045518b96faa9a9d88964c0490f7577ba8",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-10.0.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.1.tgz",
+			"sha": "dc5b28c6a5315d874552b982d047c7e5bb3644e5",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-11.0.0-6-next.6.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-11.0.0-6-next.6.tgz",
+			"sha": "12d91afe81784637946d861ff5837ced1e851647",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-10.0.2.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.2.tgz",
+			"sha": "736e1d0dd96039a9de32830ea5a295bb9773f7a2",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-11.0.0-6-next.7.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-11.0.0-6-next.7.tgz",
+			"sha": "2c7e0d3c4eeb859a751c091ddaea6a7fb5c803e8",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-10.0.3.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.0.3.tgz",
+			"sha": "52f3ce89b8bd7660b75db7149f5df9919c301945",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-10.1.0.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.1.0.tgz",
+			"sha": "b01a137b893807bd73c48ac5ef72e5a5b402c239",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-11.0.0-6-next.8.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-11.0.0-6-next.8.tgz",
+			"sha": "eab4ad543d8e89f357db50aaeb0479152ee78321",
+			"registry": "npmjs"
+		},
+		"verdaccio-audit-10.1.1.tgz": {
+			"url": "https://registry.npmjs.org/verdaccio-audit/-/verdaccio-audit-10.1.1.tgz",
+			"sha": "d783bd3e3d6e5880aa9ad88a691f27018e1f21fa",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"verdaccio-audit-9.7.3.tgz": {
+			"shasum": "a31d0c63e9c050a9575431a82fbbc56a25a249e5"
+		}
+	},
+	"_rev": "2-08e595b76f9add48",
+	"_id": "verdaccio-audit",
+	"readme": "# verdaccio-audit\n🛡🔬 npmjs audit support for verdaccio\n\n[![verdaccio (latest)](https://img.shields.io/npm/v/verdaccio-audit/latest.svg)](https://www.npmjs.com/package/verdaccio-audit)\n[![Known Vulnerabilities](https://snyk.io/test/github/verdaccio/verdaccio-audit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/verdaccio/verdaccio-audit?targetFile=package.json)\n[![backers](https://opencollective.com/verdaccio/tiers/backer/badge.svg?label=Backer&color=brightgreen)](https://opencollective.com/verdaccio)\n[![discord](https://img.shields.io/discord/388674437219745793.svg)](http://chat.verdaccio.org/)\n![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)\n[![node](https://img.shields.io/node/v/verdaccio-audit/latest.svg)](https://www.npmjs.com/package/verdaccio-audit)\n\n## Requirements\n\n* verdaccio@3.x or higher\n\n```\n npm install --global verdaccio-audit\n```\n\n## Usage\nTo enable it you need to add this to your configuration file.\n```yaml\nmiddlewares:\n  audit:\n    enabled: true\n    strict_ssl: true # optional, defaults to true\n```\n\n### Strict SSL\n\nIn some scenarios it may be necessary to disable SSL certificate validation. Setting *strict_ssl* to false will disable these checks, but will make all connections passing through this plugin inherently insecure.\n\n## Disclaimer\n\nThis plugin is experimental and unstable. Please report any issue you found.\n\n## License\n\nMIT (http://www.opensource.org/licenses/mit-license.php)"
+}

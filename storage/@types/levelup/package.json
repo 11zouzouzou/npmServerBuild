@@ -1,0 +1,1283 @@
+{
+	"name": "@types/levelup",
+	"versions": {
+		"0.0.14-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.14-alpha",
+			"description": "Type definitions for LevelUp from https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.14-alpha",
+			"_shasum": "9913b66776a02a7196f7d5894d8eef031f549f44",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.8.2",
+			"_nodeVersion": "5.5.0",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "9913b66776a02a7196f7d5894d8eef031f549f44",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.14-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.14-alpha.tgz_1463463096397_0.12047307472676039"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.15-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.15-alpha",
+			"description": "Type definitions for LevelUp from https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.15-alpha",
+			"_shasum": "05f725c1f84b58897521a7ad434041e3cb941a81",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.8.2",
+			"_nodeVersion": "5.5.0",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "05f725c1f84b58897521a7ad434041e3cb941a81",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.15-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.15-alpha.tgz_1463693768270_0.34434609790332615"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.20-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.20-alpha",
+			"description": "TypeScript definitions for LevelUp",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.20-alpha",
+			"_shasum": "bec892219ca5c2c64660efee1de1b94f51a61c3d",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.8.2",
+			"_nodeVersion": "5.5.0",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "bec892219ca5c2c64660efee1de1b94f51a61c3d",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.20-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.20-alpha.tgz_1463774725151_0.8880724615883082"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.21-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.21-alpha",
+			"description": "TypeScript definitions for LevelUp",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.21-alpha",
+			"_shasum": "9a9143db09ef122ae9bc9717408925f0c4200809",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.8.2",
+			"_nodeVersion": "5.5.0",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "9a9143db09ef122ae9bc9717408925f0c4200809",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.21-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.21-alpha.tgz_1464153806254_0.9694358163978904"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.22-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.22-alpha",
+			"description": "TypeScript definitions for LevelUp",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.22-alpha",
+			"_shasum": "be229596dcb4fda1af88b9060a6821c72e79e1ff",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.9.5",
+			"_nodeVersion": "6.2.2",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "be229596dcb4fda1af88b9060a6821c72e79e1ff",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.22-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.22-alpha.tgz_1467403062880_0.04247980657964945"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.23-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.23-alpha",
+			"description": "TypeScript definitions for LevelUp",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.23-alpha",
+			"_shasum": "65a095031504eb315d7d40043fe710de7bd1ea99",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.7.2",
+			"_nodeVersion": "6.2.1",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "65a095031504eb315d7d40043fe710de7bd1ea99",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.23-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.23-alpha.tgz_1467415380501_0.17394629283808172"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.24-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.24-alpha",
+			"description": "TypeScript definitions for LevelUp",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.24-alpha",
+			"_shasum": "fb5729ddd8768bb56acc2b2557f694c3728466b4",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.7.2",
+			"_nodeVersion": "6.2.1",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "fb5729ddd8768bb56acc2b2557f694c3728466b4",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.24-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.24-alpha.tgz_1467428052652_0.9452404701150954"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.25-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.25-alpha",
+			"description": "TypeScript definitions for LevelUp",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.25-alpha",
+			"_shasum": "6480e921a1839b755ff084ea875a2063efe3ad19",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.7.2",
+			"_nodeVersion": "6.2.1",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "6480e921a1839b755ff084ea875a2063efe3ad19",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.25-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.25-alpha.tgz_1467593154730_0.5693443303462118"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.26-alpha": {
+			"name": "@types/levelup",
+			"version": "0.0.26-alpha",
+			"description": "TypeScript definitions for LevelUp",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.26-alpha",
+			"_shasum": "5ec7eb2213346fdf0ceebce402f9a9381e1d1eb8",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.3.0",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"dist": {
+				"shasum": "5ec7eb2213346fdf0ceebce402f9a9381e1d1eb8",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.26-alpha.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.26-alpha.tgz_1468010885467_0.37665501702576876"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.27": {
+			"name": "@types/levelup",
+			"version": "0.0.27",
+			"description": "TypeScript definitions for LevelUp",
+			"main": "",
+			"scripts": {},
+			"author": {
+				"name": "Bret Little",
+				"email": "https://github.com/blittle"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"license": "MIT",
+			"typings": "index.d.ts",
+			"dependencies": {},
+			"_id": "@types/levelup@0.0.27",
+			"_shasum": "cce6b922fae6fee122e785db27d69cfdefdbd6c4",
+			"_from": "output\\levelup",
+			"_resolved": "file:output\\levelup",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.3.0",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"dist": {
+				"shasum": "cce6b922fae6fee122e785db27d69cfdefdbd6c4",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.27.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.27.tgz_1468509509601_0.3276237607933581"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.28": {
+			"name": "@types/levelup",
+			"version": "0.0.28",
+			"description": "TypeScript definitions for LevelUp",
+			"license": "MIT",
+			"author": "Bret Little <https://github.com/blittle>",
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"typings": "index.d.ts",
+			"typesPublisherContentHash": "4d9c8e620d18840575255abf31efb2e9b661af853cb426729d0ce234b429b291",
+			"_id": "@types/levelup@0.0.28",
+			"dist": {
+				"shasum": "1047067a38feaf8305a7e71376ad916132625751",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.28.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.28.tgz_1474307453500_0.023616430349648"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.29": {
+			"name": "@types/levelup",
+			"version": "0.0.29",
+			"description": "TypeScript definitions for LevelUp ",
+			"license": "MIT",
+			"author": "Bret Little <https://github.com/blittle>, Thiago de Arruda <https://github.com/tarruda>",
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/node": "*"
+			},
+			"peerDependencies": {},
+			"typesPublisherContentHash": "a40f00d1316ac75959bc41911c611d56c85532f28fbd71d9f3d51edd7218beae",
+			"_id": "@types/levelup@0.0.29",
+			"dist": {
+				"shasum": "e5368cbf602a76b89ed76c67430c44cf019f6ff2",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.29.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.29.tgz_1480555128817_0.5730791459791362"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.30": {
+			"name": "@types/levelup",
+			"version": "0.0.30",
+			"description": "TypeScript definitions for LevelUp ",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Bret Little",
+					"url": "https://github.com/blittle"
+				},
+				{
+					"name": "Thiago de Arruda",
+					"url": "https://github.com/tarruda"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/node": "*"
+			},
+			"peerDependencies": {},
+			"typesPublisherContentHash": "e7a46c76b7f35acfc3663c0a0e692d130b1c0e77d73b249dfd1556c98f03e5eb",
+			"typeScriptVersion": "2.0",
+			"_id": "@types/levelup@0.0.30",
+			"dist": {
+				"shasum": "869dd7a82cdbe5983e737006a1ff4e42fac97ca7",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.30.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/levelup-0.0.30.tgz_1493947145596_0.6300568194128573"
+			},
+			"directories": {}
+		},
+		"1.0.0": {
+			"name": "@types/levelup",
+			"version": "1.0.0",
+			"description": "TypeScript definitions for levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Bret Little",
+					"url": "https://github.com/blittle",
+					"githubUsername": "blittle"
+				},
+				{
+					"name": "Thiago de Arruda",
+					"url": "https://github.com/tarruda",
+					"githubUsername": "tarruda"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/leveldown": "^1",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "cb9b3716f78076d978a1bd4c31f0e5f8b568400329c67a98f276ec247123e986",
+			"typeScriptVersion": "2.0",
+			"_id": "@types/levelup@1.0.0",
+			"dist": {
+				"integrity": "sha512-qf2tqF6xu/KQXdr1erDVNwDRJNpnqmd9TmcUzT/dce208nrrDE6xr6fFTHPliMEoQDtRReh8T1v8LmZ1JxllYg==",
+				"shasum": "1b4010585ddb772d62f1a853b44e253dc8079345",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-1.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 5592,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJboVqiCRA9TVsSAnZWagAAnkoP/0Zyc3mILGw3tKHaXMht\nYW65C+VpkkUOyWF7lkRJNUfsGSstdRDYe+dGwbr9/OsC86fwFGW/r8CHOe5j\n/TdlTSXk0j5evd1oLb2rth1pLdHkA4tCnS4D4a5GNZzAliC39mrZqsAim6VB\nB1o8t9OXhHgQ9xLD3xnFsyusJBzwMFAYMNmTz/rwp6LAqsVlZubaVazOWw2C\nnHXmm1oINVZj8h4ajkukF81eutBdSjtGh9rpuHpRSgQxrdE4YkKevSflJSE5\nkwFstebTHuot0oc/MlqSxdMOOUBPF24W3R6j07/y+rK9oe7ru/C1/fWC6JSw\nba+2UBnt0f9bHF/oMS7fVC1K0rg4OCqyVi2WBj7RK7f499Jilg1T+2vit714\nmRRheP3GF3Drp/MF182+hlw3faxT6pri5WJ7PwtaZDemSp8/knjc23nGN9k1\ns7kAnZqBH38Srgb+Od0odFaWugJ9eZXpFgiwWL3TNXNcWdxkFNx4IU+HZazU\n8SvZgazO91qNZbtYG/RsaOJ1LpaFsLHFCA+orEHSG//j5Ka6mNceScifCbSW\n+h2qMB3DkMHvcj7VVfEE7dm7iiXNpyR0YsVRDzmuxkmbGJ2gxJpcUzJRHCnM\nvhVOvgNesI4DHs7HlUVjdgBITzn6TtMwWKcMcx2ghyUXzezuxYMPpkGfg9CP\nVKhM\r\n=7gv9\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ts-npm-types@microsoft.com",
+					"name": "types"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_1.0.0_1537301153651_0.7908500198986446"
+			},
+			"_hasShrinkwrap": false
+		},
+		"3.1.0": {
+			"name": "@types/levelup",
+			"version": "3.1.0",
+			"description": "TypeScript definitions for levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/events": "*",
+				"@types/abstract-leveldown": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "becc92e2f49c6d5f5d6e29b7f5497bf2d1a5f1dbc3487828c72145cce016318d",
+			"typeScriptVersion": "2.8",
+			"_id": "@types/levelup@3.1.0",
+			"dist": {
+				"integrity": "sha512-Y2SC5PskYsE8+dELuWLCMG+UcUrkhhIz5wV55yX73AAVqr3kDXLYlj6k/vuchXUt1L1b/P1Frt4Dcc3WmWcbLA==",
+				"shasum": "e04f6a8eaf707f88d7c6e043a9067dda431f4538",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-3.1.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 6941,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJboVqlCRA9TVsSAnZWagAAbBgP/RhSEn4nwCBoCJHC0JR9\n60uwqXWvwZWJ49rt8kF+VP3Sf5ZuzM0v7/n6L7IvjnBqplV6wkRPv/4Gz0vw\nIcWWbiVmmmMOSB4ahipTLN8q7GhjZKhqmtbpxJATGjIY0zdKlhSDNMrqlgP5\nQGuhtgw1w3QqkOu+YV9iqZN01e5l1c4lKaOgfPANe+P8lDRO1e1yE0K1GyCN\n91DMcR6KwQ4zH7LUVrwb9NxKu9qhl2qKznW+9H7HBypwRdpL3pmKf+JoHcY0\ns2UZqL9uWqd/p5m2gb14WQ5JquEyN4bSapbUXgfEyj+M4iUnu4F+0VHuw7+7\ng7JK4Nq+dP7nHG37SeLN68cMpZb/ZiiVY83Fo3z9GyGNY2MOmongPco+YVyp\nUzqgdRCBEmaPq4NmYelKesj3Pzg9uwrCDmb9nEYxry2SITvkKG8rDRqDWjFe\n1BgcZIW5ryUhEZk/tOlfJiwkt39fvBarymL4ppwD/VXYbShv3qxx65UDcWG4\nTdIdmzyjesdYQp3vNi0GZJD4Kc6S0Drhm+RZ48LAc6f+Q6Y1hyOKTBYEDRqG\nL7fFPE97+/mqt4xEWOphO1M6xvUlf/+rMs2brgPH3bDmnYAFtB3YDeeK1Ynb\nppIiHYUKPgo37A51ge1O4XG3qe+mIg0U6mXueMxxYJkCT3GTvG7P7nR5G/A5\nTQnW\r\n=wP5i\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ts-npm-types@microsoft.com",
+					"name": "types"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_3.1.0_1537301157287_0.28513454009828787"
+			},
+			"_hasShrinkwrap": false
+		},
+		"3.1.1": {
+			"name": "@types/levelup",
+			"version": "3.1.1",
+			"description": "TypeScript definitions for levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"types": "index",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/levelup"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "31a40fcacaa4dd13d3c67e9e6d5efef1270e2199553c7aa3ac07f3176c108e58",
+			"typeScriptVersion": "2.8",
+			"_id": "@types/levelup@3.1.1",
+			"dist": {
+				"integrity": "sha512-LjvlfctJYj23Xuqq3jCT8ZPSUSSgDcRJg8+XFDBasoYzefFbB4cHzlDmBVjc2rBOYvklpYHJRayD0jBsbJLD9w==",
+				"shasum": "f7cc08f248f14cb6c92914e91bceb8761020e8f0",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-3.1.1.tgz",
+				"fileCount": 4,
+				"unpackedSize": 6972,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdBepMCRA9TVsSAnZWagAAY4AP/1tqqOXx5ncknlbpA/na\n7k4gi+Uz96TWtw1qCCzKiaAnjU/3cXpwYQ6kdWOM0YC8Lu7bpQLRy0dUooQf\nxXF69s8DI9afJz0+eoG/aEeRJctG1e4jdN32wbi46HK+DaEbVG48e/3v4sVN\nqoBj1jsl84VEKdl48TUXgmopbnQUimlQ62JXbQpN43sGUznR3jjPv6nDXmve\nudz2q86pDIs2mSa/a+w10w3BovQW4wcz/o0ItRIoaHWtA5OHBfynvFMzEAvR\nFuhTuHAJfuyksZtdmkubLjJx5l48fD3sKABtXBpl8OPvqrXF88pe31uTnnbx\nFgJF1upcIkLOuw0mMShg7e+fjos2EJxjMPGhacSQCMI7ZMZlw1OPK0Tp1cuO\nvJAnnSeVxc/4lrgmLOqP++bUNjh+6hL99oNkC1Cli6F3cxEe7/pJwMTx2QGM\nn4vY/hNWCLj5y+t33l9qJ0xRYaOSzdGiwFjr7lMwqukglRGe+/MK6Su9RRed\nq6INe/syHjFk/oh9npKD/9lnoF3XGgGBFIHWKC9szuKiLDnrLvOkxnyGqueL\nFAmgNHPKARb9jteB29z1EFfcbmxew2BzBLk1EIiZXTk4FQd8ZcyaUKAbSI37\nxlGg1VIj78FhdWpIh7Ab6QqEfu7in47B4UGOLx5tjjntlDxUnPyIMMh3FLDX\nuH/r\r\n=+9NA\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ts-npm-types@microsoft.com",
+					"name": "types"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_3.1.1_1560668747331_0.5241226399043444"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.3.0": {
+			"name": "@types/levelup",
+			"version": "4.3.0",
+			"description": "TypeScript definitions for levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				},
+				{
+					"name": "Carson Farmer",
+					"url": "https://github.com/carsonfarmer",
+					"githubUsername": "carsonfarmer"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/levelup"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "7d609349c99f8b1fcb6b6eb6d1ec966e02a6b3a8dcae5cda1585e10f5023ebeb",
+			"typeScriptVersion": "2.8",
+			"_id": "@types/levelup@4.3.0",
+			"dist": {
+				"integrity": "sha512-h82BoajhjU/zwLoM4BUBX/SCodCFi1ae/ZlFOYh5Z4GbHeaXj9H709fF1LYl/StrK8KSwnJOeMRPo9lnC6sz4w==",
+				"shasum": "4f55585e05a33caa08c1439c344bbba93e947327",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-4.3.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 7971,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd6cQSCRA9TVsSAnZWagAAhYUP/iSJwFGl8D6cpHcyT45U\nlV+h0qukF9vL72Jdmi8bHlMekAf3Ab4FoLxMAcM9S02CIZa1l+N4R3+eYUMU\n3jkg9p64ONleYHWLX6VxeEFpE18IURwMNJgH5+3DbDV4MhCsN+8LD9/9ZnT/\nFv5Ux1WebNQ58/9qcl+zS8N9eCne1QUUG+oM84sUCc+NfUYA9bXXhPiPndLD\nzGBfM6TBt8JfNkM86wFljjPhjQc2v7Qe//NFtOEUBO0Qa4Vdp8WrMI0aMLiq\nDyLHTd4F0VIKnUDmVKjmqkx+dR2F1hUNr5eE6eEP6esfyX2QlUtVv+M1KyIh\novRfG0ReGG3JJg92MuCuCxJD6y7p1eYlKBI3+nR3T/6JQvN3cq0z4YlhRKKU\nFHRiUR8UdxxdALEh7ZAaMWR7KUVZqoooqIcxrhuJX+ndszAtRomV0Moxmrxu\ngUtEd+ySzlVFHibZYYOTM5lzdMeodQn0uk6kKoMuVl0OfE7slzI0eQEv+pGe\nvxq9aN5c3ac7WyGUDuhkddHAg9aVD9daw5kbUKE34oU4rZ2HBFtUdsxbeRaO\nTZqOtfsa+jiAvX+1M4wJW9vrruB84j2xb9pBSe2FTuSbwruKBzA3NRlcYQea\nA5BZw3NjBC/Yrbsu1qIQ9ObX+Q8kFe5G9lZ7tpnyLrtsLaa0nZugVm8T+5WV\nLh+R\r\n=1wGJ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "ts-npm-types@microsoft.com",
+					"name": "types"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_4.3.0_1575601170201_0.4348588000852114"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.3.1": {
+			"name": "@types/levelup",
+			"version": "4.3.1",
+			"description": "TypeScript definitions for levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				},
+				{
+					"name": "Carson Farmer",
+					"url": "https://github.com/carsonfarmer",
+					"githubUsername": "carsonfarmer"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/levelup"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "601fe77468e207ba3cf3929d05f690919e0a441c1609406bc447933a49e28b4a",
+			"typeScriptVersion": "3.5",
+			"_id": "@types/levelup@4.3.1",
+			"dist": {
+				"integrity": "sha512-n//PeTpbHLjMLTIgW5B/g06W/6iuTBHuvUka2nFL9APMSVMNe2r4enADfu3CIE9IyV9E+uquf9OEQQqrDeg24A==",
+				"shasum": "7a53b9fd510716e11b2065332790fdf5f9b950b9",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-4.3.1.tgz",
+				"fileCount": 4,
+				"unpackedSize": 7867,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgbz4aCRA9TVsSAnZWagAAp2EP/3tNV2xHqwdPY2TY2pUn\nnm5rivkeXtQKbYK49ncWqp6D84eBQEeFllIwzNBF9QiISi5RLTTESW0JKL/x\n2ng2FhDWN9UTL1XN8tPhMifK53mPZHKRxLcd4VD2baUyVZ1+tcdiR8UvE2M+\nRTRkMaeYKTFJ61mzyIj+ubZ/WU3IZWqICDT+DgYBKNCd8O1rJo0ce03n/bks\n+xPs878/FAMiV4as8U3K/7CMLE4h4xOAVucmgyW8sEkox1y8JoFKXiP0E922\n1J4e47Rrx1crO31amYdaKVUJtWPaz6in2/lxaFNLvYchft0tWA8VzvpITWlH\nXQRVxqamySMoXY8ZDaZaLm3XpRKRU9f/D4CCxS0vDtcBq0gxag8V6WhadbEn\nSHHElYTh2/IHGxETIRx9la2bf3lCEsRlO0BInS9CrcwS4GnV2Uwg8+vhJg+V\nm3hq0fro4Rmp4N3eOqrvc8SdrC8X3zZZXksbHokD+WBHqBJBDgrKnD/dpOrg\nUxfMyOog6mw7My6+LdMt4lLiaimccj2xtpHw5yKdggRFdepIRZllfBPxGtKD\nRQF7VwFw+H2fX+sD8Dt81z49k5kp2/ZC95KM3QgozUmARJlfar6lUp1CI49k\nw13LDhUUqDzDF0ZZwkAhd1RKJbeeKjxnlmhPuCEP7JATqnbFUaSjrhQnHfXc\nzLE1\r\n=p32h\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_4.3.1_1617903130285_0.1601222577727499"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.3.2": {
+			"name": "@types/levelup",
+			"version": "4.3.2",
+			"description": "TypeScript definitions for levelup",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				},
+				{
+					"name": "Carson Farmer",
+					"url": "https://github.com/carsonfarmer",
+					"githubUsername": "carsonfarmer"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/levelup"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/level-errors": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "ec85bc7b0f9b67a452684b2fb173471ba028a0176b3976be6439f2342dd34657",
+			"typeScriptVersion": "3.6",
+			"_id": "@types/levelup@4.3.2",
+			"dist": {
+				"integrity": "sha512-5Su1Dkl6nMjkXqUb2z72gbroG0WFLs+6nMH+wQt4GWIrDwR/IconLTojHtC0klLJODCJ64Cr6P5cWqVeuxAbSg==",
+				"shasum": "a185ecc30118bd7ee48b2d8d57de566a08d24cb2",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-4.3.2.tgz",
+				"fileCount": 4,
+				"unpackedSize": 8488,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg3PEICRA9TVsSAnZWagAASHwP/iadDjKQWD1yMjC7Oc50\nAfLXmt5/J3UERzemy1xOw2YK/tHzuFncZ2Ybn8GwFtTeO4nFm7IciiaIbT+C\npUTXSMtE68yHMjDTWO6rHQ0HYvQtTXn5hu3egf/xsiogVqj1msBVhjbs1Yf3\nXlv91aZYPWg7qJie84vnXLEHIOJZBNZx/7YrubtL1VleVllyQ817A+pLh2+r\n0Q1X5yYcKY/sLMDAVW0/m2ZmipGuWrZjYHFMMurniOvPIYWSC9joXRM9rjRI\nwoR1FHy+Zjooilm9+HHFPXbbU8kjl8WJ5pHx0DDOzLfKOxLJ08B504Q2w3I0\nON97kJpCLZKEjOmDjSVNKTRT4XOZRBwunJ8+Jx9m+Obr5ReZqoh0pgyZ0E9j\nDt3c6jbO3Dx60CMRNqMi1aDNP7Jzv1wixVvl2wdUrz60vAIcWqjfR279883Z\n5JtlxK6z9PO7mqgjkGetwSuwg5q5o1BCWrT8n+CVXYEdpVDXu7GMTs/DHm4W\nLW1uYzUPXOXZqy62pptEhnN2Fc7ie5vFKX9xoUdRM5PrpROMkq0VZCMYhzRd\ntWk6uRiTYea6UiNZo9PMBEGhRcY/44tkALsOGhfWESmJmGQK3VAwBes6UNyt\neihOpu3i0EuDVNyB6+q6Rd/RNVhkyCZit6p8f8U+x1oLtJayi5gna10B22Cx\nAKca\r\n=ziBc\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_4.3.2_1625092359780_0.5890787122918828"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.3.3": {
+			"name": "@types/levelup",
+			"version": "4.3.3",
+			"description": "TypeScript definitions for levelup",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				},
+				{
+					"name": "Carson Farmer",
+					"url": "https://github.com/carsonfarmer",
+					"githubUsername": "carsonfarmer"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/levelup"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/level-errors": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "cbd2489dd51f0fcbbbfba0e29c8a130e7fe904748438b7e4fd5c868df4774791",
+			"typeScriptVersion": "3.6",
+			"_id": "@types/levelup@4.3.3",
+			"dist": {
+				"integrity": "sha512-K+OTIjJcZHVlZQN1HmU64VtrC0jC3dXWQozuEIR9zVvltIk90zaGPM2AgT+fIkChpzHhFE3YnvFLCbLtzAmexA==",
+				"shasum": "4dc2b77db079b1cf855562ad52321aa4241b8ef4",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-4.3.3.tgz",
+				"fileCount": 4,
+				"unpackedSize": 8560,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5NRwCRA9TVsSAnZWagAAIaQP/2iAvrbzIwrF712CvUnP\ncAK9pKdlDPMdkvpmCFsw5lAF0NWf1xuUmh1S8SzolicfJx/gIc/+luJNPXr7\npW7oPiOw7A62sgbAL1KaU7BBl5Yimw7AjEBXco0nDJQgcfEcnELUZYO4aj99\n2xHOJJ4ba8MfT+N9L2D08jZZFCu5oXhhRGRfgFT25cfPgfDAgPl/c94GbZEG\nDhYxkppdmx+21GZ+2S//V+W6qWqo9U8pWAlV9B9eh8irPRotNPSGs41sdFX5\nXCb+3QmzdH7mmwWbCDnI/qsmJLEac/yOYn8PP+p1KgGoR/AfFZnDCxWuUMRO\n/hXqc+paXiiXGfG4NM16A8/GsglKCv0PpsZugVy4q2uDabziRDX5KWn8aHSN\n/JrGHjQNkG38kL0CfppiT8cA7utXH5kLYjJmaK3itLpHhslwaunbNmuTa1or\nBhTb1n2peR01T9IBiihyatcyQByPWlmFCIlSCcSzDDHM3Rmo6DCBQVSQQA1F\nlD8hL+SzpgDFgqA8IwrtOM/b81JdsctrBs+fq8xJ7JCnI5SZq295dyceZP63\nQFmG3SazJasH3LyWHLyJIM47D5nDjL73SPFQnnQXavuDn5cSmnvkURaPaKy9\n6BdnqwIY9pbVql6BGiIeuErxVWomdhqTtv0tZL1D8i8cewMPY1ow2bD0j+4+\ncZV9\r\n=QF/F\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_4.3.3_1625609328249_0.6737965615284067"
+			},
+			"_hasShrinkwrap": false
+		},
+		"1.0.1": {
+			"name": "@types/levelup",
+			"version": "1.0.1",
+			"description": "TypeScript definitions for levelup",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Bret Little",
+					"url": "https://github.com/blittle",
+					"githubUsername": "blittle"
+				},
+				{
+					"name": "Thiago de Arruda",
+					"url": "https://github.com/tarruda",
+					"githubUsername": "tarruda"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/levelup"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/leveldown": "^1",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "403c1e7313f68b9a2bafcad07568ee44c2ec4bab65af079ff9daec758df5316a",
+			"typeScriptVersion": "3.6",
+			"_id": "@types/levelup@1.0.1",
+			"dist": {
+				"integrity": "sha512-NKBdRzfgMEO8Mow7bropyu52tJf7d2xGEekUJXlBrJubVDYaxB68g+6CejGm0Pkt08jrnuSc/bWX7d9ggo1gJA==",
+				"shasum": "040300cea41d93c8ca2a438ed12b87cb011d97c7",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-1.0.1.tgz",
+				"fileCount": 4,
+				"unpackedSize": 5981,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5NR7CRA9TVsSAnZWagAASsUP/0vja1wV1pcptZS8kCqC\n41vAwBxYOLjwlilEkhp/s3GpLhNfHMXOvD8cBC2Gj/ihJNGDVvNAt+rFXR+2\nLtBspMpBzUDTT0MKhyl5+fet/Uk+sTDGPdupTTlcPPxaUMTla1C258slqINH\ngyR0xNJbN4p3CGLPfXvq5ts+bMdV1+BLdtrsVY6zR4VogaduB4C8afajHME6\nSLMNpeq+0tR5AgtDZ/P/Pty/qnp6o827GRrpkix2QgbQeXjvJcAQTg4CE7AR\nLv69JRgV35pjNNY8dH6GNZGjo3A5pNWLFywAnpvGXHtVFo4BeMKoykTiV+y5\neteS7VSY1FJuXd3W/WV+GfWJcm1iZptPOwrAwizLyE4Vt6NyQzdudAH0IZO7\nK951PtoXBjHoC+iyk3azXY7a8JAaS5vOSufNSXYRpisikcZgQhity92MaOL9\nHjyiURPDzYsqRD6ZkkG+byoKSj9/MPtna7Rem1Ivwek2xuw1JljQ5CD4jqiz\n/h5ArwrEaz0gcRQgCtWAsReeSkw0JrNpRTe53oogSk6BmRK5bNlaiDkhzHnK\nAv8x9U5foNT0ATlGadkgfYAHaYHqKpFM6pCxP/81oR/oVCFQfEW5vyrAxdoD\njbtMe/tj/CLsv+D4z5HQIifdjenNCNPaJRPxy+J6dACkJYXHtPxXytJC6TS7\nqBKQ\r\n=JZXZ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_1.0.1_1625609338718_0.9606938668930476"
+			},
+			"_hasShrinkwrap": false
+		},
+		"5.1.0": {
+			"name": "@types/levelup",
+			"version": "5.1.0",
+			"description": "TypeScript definitions for levelup",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/levelup",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				},
+				{
+					"name": "Carson Farmer",
+					"url": "https://github.com/carsonfarmer",
+					"githubUsername": "carsonfarmer"
+				},
+				{
+					"name": "Steffen Park",
+					"url": "https://github.com/istherepie",
+					"githubUsername": "istherepie"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/levelup"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/level-errors": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "9aa1ac947a7146dfc6775ab6366680c371ad9e0be7cd8aedc1ae4ebd2060600d",
+			"typeScriptVersion": "3.8",
+			"_id": "@types/levelup@5.1.0",
+			"dist": {
+				"integrity": "sha512-XagSD3VJFWjZWeQnG4mL53PFRPmb6E7dKXdJxexVw85ki82BWOp68N+R6M1t9OYsbmlY+2S0GZcZtVH3gGbeDw==",
+				"shasum": "5ea4bdab3eaa5672977c7c3b4a7271af6caa3d4d",
+				"tarball": "https://registry.npmjs.org/@types/levelup/-/levelup-5.1.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 9396,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1avjCRA9TVsSAnZWagAAAWQQAJg5A9wdSwtFkqtxU6Vc\nPUGxD8yXrbXojZu6T52IsXQMj3QpB0eAaEl5Mj+sD4/V9zGKNyChIhGpcdIo\ndiS/WAZ+89QKgmevkJ4+S1kkxvLO1CMWPKDx3Onklz/eW4KLYQqknajcnaij\nZNV/7SDVCS48XC/LotovHf26Usgd9s7t361KqSpEg88J1vhLWnNF4Hek8elP\nrVXV0EYYrgtpz4LDoMwQpcuURzY2JyURF0zAqNPfTN/wGOCJxCHzoGVBfPcC\nA+t7R9PW1kayn6TqEgbhs7HRFMDI1UN8mJFIcRV7OcHYqXdI6G60CbbEkv5i\nKKFng4oybBO+rkrV8qBaS7r8yHqYRBZcbrMFbp6omAfbpotuA0SEQnG4aqqj\ntE/YhdXBgnXsE0Sr/RbUsfkgUDjMu6V5Xp7lGNp+z8d4rnK3D20XK+aHGG86\nMSNkMeEDgFbfvkWnVUcEdT7k6gQ+Ldg+UofeaFLriTy4IrfOBU2LrI3rVFRP\nSJHBQG7vZv0/2l76nk/r7xpYZI34AdxdaTsCtTTr+iJHoP3tITw61mv19rvS\nWFoAcPpbt/qbLyPWLFVpUsO0pc7C5d38aN8ASGJW5Qks2P9fp6ZA76tG8P3v\n7d0wvw6y2XTa4MO4P67/EqIvsCaoW+lJfFw3xzuXiR8LK8ciCyAZGgS046Vy\nKMvy\r\n=nJbZ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/levelup_5.1.0_1641393123627_0.9775825227959609"
+			},
+			"_hasShrinkwrap": false
+		}
+	},
+	"time": {
+		"modified": "2022-01-05T14:32:12.208Z",
+		"created": "2016-05-17T05:31:36.906Z",
+		"0.0.14-alpha": "2016-05-17T05:31:36.906Z",
+		"0.0.15-alpha": "2016-05-19T21:36:11.648Z",
+		"0.0.20-alpha": "2016-05-20T20:05:26.193Z",
+		"0.0.21-alpha": "2016-05-25T05:23:26.744Z",
+		"0.0.22-alpha": "2016-07-01T19:57:45.273Z",
+		"0.0.23-alpha": "2016-07-01T23:23:02.581Z",
+		"0.0.24-alpha": "2016-07-02T02:54:16.183Z",
+		"0.0.25-alpha": "2016-07-04T00:45:55.307Z",
+		"0.0.26-alpha": "2016-07-08T20:48:08.012Z",
+		"0.0.27": "2016-07-14T15:18:31.753Z",
+		"0.0.28": "2016-09-19T17:50:56.522Z",
+		"0.0.29": "2016-12-01T01:18:49.037Z",
+		"0.0.30": "2017-05-05T01:19:05.847Z",
+		"1.0.0": "2018-09-18T20:05:53.795Z",
+		"3.1.0": "2018-09-18T20:05:57.394Z",
+		"3.1.1": "2019-06-16T07:05:47.469Z",
+		"4.3.0": "2019-12-06T02:59:30.354Z",
+		"4.3.1": "2021-04-08T17:32:10.427Z",
+		"4.3.2": "2021-06-30T22:32:39.881Z",
+		"4.3.3": "2021-07-06T22:08:48.408Z",
+		"1.0.1": "2021-07-06T22:08:58.905Z",
+		"5.1.0": "2022-01-05T14:32:03.753Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "5.1.0",
+		"ts2.0": "0.0.30",
+		"ts2.1": "0.0.30",
+		"ts2.2": "0.0.30",
+		"ts2.3": "0.0.30",
+		"ts2.4": "0.0.30",
+		"ts2.5": "0.0.30",
+		"ts2.6": "0.0.30",
+		"ts2.7": "0.0.30",
+		"ts2.8": "4.3.0",
+		"ts2.9": "4.3.0",
+		"ts3.0": "4.3.0",
+		"ts3.1": "4.3.0",
+		"ts3.2": "4.3.0",
+		"ts3.3": "4.3.0",
+		"ts3.4": "4.3.0",
+		"ts3.5": "4.3.1",
+		"ts3.6": "4.3.3",
+		"ts3.7": "4.3.3",
+		"ts3.8": "5.1.0",
+		"ts3.9": "5.1.0",
+		"ts4.0": "5.1.0",
+		"ts4.1": "5.1.0",
+		"ts4.2": "5.1.0",
+		"ts4.3": "5.1.0",
+		"ts4.4": "5.1.0",
+		"ts4.5": "5.1.0",
+		"ts4.6": "5.1.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"c9c18d12d983b322f0c792d06850c72d\"",
+			"fetched": 1643186350866
+		}
+	},
+	"_distfiles": {
+		"levelup-0.0.14-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.14-alpha.tgz",
+			"sha": "9913b66776a02a7196f7d5894d8eef031f549f44",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.15-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.15-alpha.tgz",
+			"sha": "05f725c1f84b58897521a7ad434041e3cb941a81",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.20-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.20-alpha.tgz",
+			"sha": "bec892219ca5c2c64660efee1de1b94f51a61c3d",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.21-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.21-alpha.tgz",
+			"sha": "9a9143db09ef122ae9bc9717408925f0c4200809",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.22-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.22-alpha.tgz",
+			"sha": "be229596dcb4fda1af88b9060a6821c72e79e1ff",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.23-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.23-alpha.tgz",
+			"sha": "65a095031504eb315d7d40043fe710de7bd1ea99",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.24-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.24-alpha.tgz",
+			"sha": "fb5729ddd8768bb56acc2b2557f694c3728466b4",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.25-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.25-alpha.tgz",
+			"sha": "6480e921a1839b755ff084ea875a2063efe3ad19",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.26-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.26-alpha.tgz",
+			"sha": "5ec7eb2213346fdf0ceebce402f9a9381e1d1eb8",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.27.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.27.tgz",
+			"sha": "cce6b922fae6fee122e785db27d69cfdefdbd6c4",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.28.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.28.tgz",
+			"sha": "1047067a38feaf8305a7e71376ad916132625751",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.29.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.29.tgz",
+			"sha": "e5368cbf602a76b89ed76c67430c44cf019f6ff2",
+			"registry": "npmjs"
+		},
+		"levelup-0.0.30.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-0.0.30.tgz",
+			"sha": "869dd7a82cdbe5983e737006a1ff4e42fac97ca7",
+			"registry": "npmjs"
+		},
+		"levelup-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-1.0.0.tgz",
+			"sha": "1b4010585ddb772d62f1a853b44e253dc8079345",
+			"registry": "npmjs"
+		},
+		"levelup-3.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-3.1.0.tgz",
+			"sha": "e04f6a8eaf707f88d7c6e043a9067dda431f4538",
+			"registry": "npmjs"
+		},
+		"levelup-3.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-3.1.1.tgz",
+			"sha": "f7cc08f248f14cb6c92914e91bceb8761020e8f0",
+			"registry": "npmjs"
+		},
+		"levelup-4.3.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-4.3.0.tgz",
+			"sha": "4f55585e05a33caa08c1439c344bbba93e947327",
+			"registry": "npmjs"
+		},
+		"levelup-4.3.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-4.3.1.tgz",
+			"sha": "7a53b9fd510716e11b2065332790fdf5f9b950b9",
+			"registry": "npmjs"
+		},
+		"levelup-4.3.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-4.3.2.tgz",
+			"sha": "a185ecc30118bd7ee48b2d8d57de566a08d24cb2",
+			"registry": "npmjs"
+		},
+		"levelup-4.3.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-4.3.3.tgz",
+			"sha": "4dc2b77db079b1cf855562ad52321aa4241b8ef4",
+			"registry": "npmjs"
+		},
+		"levelup-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-1.0.1.tgz",
+			"sha": "040300cea41d93c8ca2a438ed12b87cb011d97c7",
+			"registry": "npmjs"
+		},
+		"levelup-5.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/levelup/-/levelup-5.1.0.tgz",
+			"sha": "5ea4bdab3eaa5672977c7c3b4a7271af6caa3d4d",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"levelup-5.1.0.tgz": {
+			"shasum": "5ea4bdab3eaa5672977c7c3b4a7271af6caa3d4d"
+		}
+	},
+	"_rev": "2-18f83912fadf0acf",
+	"_id": "@types/levelup",
+	"readme": "# Installation\r\n> `npm install --save @types/levelup`\r\n\r\n# Summary\r\nThis package contains type definitions for levelup (https://github.com/Level/levelup).\r\n\r\n# Details\r\nFiles were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/levelup.\r\n\r\n### Additional Details\r\n * Last updated: Wed, 05 Jan 2022 14:31:41 GMT\r\n * Dependencies: [@types/abstract-leveldown](https://npmjs.com/package/@types/abstract-leveldown), [@types/level-errors](https://npmjs.com/package/@types/level-errors), [@types/node](https://npmjs.com/package/@types/node)\r\n * Global values: none\r\n\r\n# Credits\r\nThese definitions were written by [Meirion Hughes](https://github.com/MeirionHughes), [Daniel Byrne](https://github.com/danwbyrne), [Carson Farmer](https://github.com/carsonfarmer), and [Steffen Park](https://github.com/istherepie)."
+}

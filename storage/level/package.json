@@ -1,0 +1,5449 @@
+{
+	"name": "level",
+	"versions": {
+		"0.0.0": {
+			"name": "level",
+			"version": "0.0.0",
+			"description": "LevelUP + LevelDOWN",
+			"main": "index.js",
+			"license": "MIT",
+			"_id": "level@0.0.0",
+			"dist": {
+				"shasum": "53b81e9ec7e6ac1e0e77442b4be5705ec3e18833",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.0.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.2.17",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.1": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (this package bundles LevelUP + LevelDOWN)",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				}
+			],
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"version": "0.0.1",
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.2.1",
+				"levelup": "~0.7.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/rvagg/node-level.git"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"_id": "level@0.0.1",
+			"dist": {
+				"shasum": "06a6657ec1950d7e4417d30bdae45c4af9757206",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.0.1.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.2.17",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.8.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				}
+			],
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"version": "0.8.0",
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.2.3",
+				"levelup": "~0.8.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.8.0",
+			"dist": {
+				"shasum": "3123bc9572be3625d0f9d4a42aeba77ee04981b5",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.8.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.2.21",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.9.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				}
+			],
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"version": "0.9.0",
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.5.0",
+				"levelup": "~0.9.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.9.0",
+			"dist": {
+				"shasum": "4cf158f40fa660dacd97e9d6eea89fdced0e38e1",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.9.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.2.21",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.10.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				}
+			],
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"version": "0.10.0",
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.6.0",
+				"levelup": "~0.10.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.10.0",
+			"dist": {
+				"shasum": "e8cf5d901465c17f94fcf6a8974aa5c9aa901855",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.10.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.2.25",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.12.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				}
+			],
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"version": "0.12.0",
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.6.2",
+				"levelup": "~0.12.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.12.0",
+			"dist": {
+				"shasum": "a27d5601cf2c8fb7233bb99177680c4a600d3daa",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.12.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.2",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.13.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				}
+			],
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"version": "0.13.0",
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.7.0",
+				"levelup": "~0.13.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.13.0",
+			"dist": {
+				"shasum": "ee610c48737a71263338730a1a39686ad75bef85",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.13.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.5",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.14.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				}
+			],
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"version": "0.14.0",
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.7.0",
+				"levelup": "~0.14.0"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.14.0",
+			"dist": {
+				"shasum": "a352fa2c59006301c6614750694fd6f6225b9f47",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.14.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.8",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.15.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "0.15.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.8.0",
+				"levelup": "~0.15.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.15.0",
+			"dist": {
+				"shasum": "f272e7318555f26b2794cfc9caa137036a3ac940",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.15.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.8",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.16.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "0.16.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.8.0",
+				"levelup": "~0.16.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.16.0",
+			"dist": {
+				"shasum": "8b7b7de96d3e1aa91128452cfde26359cfe74be8",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.16.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.8",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.17.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "0.17.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "index.js",
+			"dependencies": {
+				"leveldown": "~0.9.0",
+				"levelup": "~0.17.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.17.0",
+			"dist": {
+				"shasum": "fadef2bf9cb2df23489030f900db6db66504bd89",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.17.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.8",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.17.0-1": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "0.17.0-1",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"leveldown": "~0.9.0",
+				"level-packager": "~0.17.0"
+			},
+			"devDependencies": {
+				"tape": "*"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.17.0-1",
+			"dist": {
+				"shasum": "c5f8438a1d0988f78dceb0efb6828a84b37119da",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.17.0-1.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.11",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.18.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "0.18.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "lars.magnus.skog@gmail.com",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"leveldown": "~0.10.0",
+				"level-packager": "~0.18.0"
+			},
+			"devDependencies": {
+				"tape": "*"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.18.0",
+			"dist": {
+				"shasum": "e1a3f4cad65fc02e25070a47d63d7b527361c1cf",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.18.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.14",
+			"_npmUser": {
+				"name": "rvagg",
+				"email": "rod@vagg.org"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				}
+			],
+			"directories": {}
+		},
+		"0.19.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "0.19.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~0.19.0",
+				"leveldown": "~0.10.0"
+			},
+			"devDependencies": {
+				"tape": "~4.0.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "21f338b408ce83f3901574a27df125b62caf01ca",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.19.0",
+			"_shasum": "e09016f79fec85b37650f6a3b037af83708100b9",
+			"_from": ".",
+			"_npmVersion": "2.9.0",
+			"_nodeVersion": "2.0.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				}
+			],
+			"dist": {
+				"shasum": "e09016f79fec85b37650f6a3b037af83708100b9",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.19.0.tgz"
+			},
+			"directories": {}
+		},
+		"0.19.1": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "0.19.1",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~0.19.0",
+				"leveldown": "~0.10.0"
+			},
+			"devDependencies": {
+				"tape": "~4.0.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "61dcb7ad48763960f9210414f35b20846f39f900",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@0.19.1",
+			"_shasum": "e761c7402c8c3ba8b26084eadf8a5bec62a513bd",
+			"_from": ".",
+			"_npmVersion": "2.9.0",
+			"_nodeVersion": "2.0.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				}
+			],
+			"dist": {
+				"shasum": "e761c7402c8c3ba8b26084eadf8a5bec62a513bd",
+				"tarball": "https://registry.npmjs.org/level/-/level-0.19.1.tgz"
+			},
+			"directories": {}
+		},
+		"1.0.0-0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.0.0-0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "next",
+				"leveldown": "~1.0.6"
+			},
+			"devDependencies": {
+				"tape": "~4.0.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "f65f66df4544f966df428006288fb15d502b0fa5",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.0.0-0",
+			"_shasum": "159aa7ab9b823798bcffc03897ea8441122343c6",
+			"_from": ".",
+			"_npmVersion": "2.9.0",
+			"_nodeVersion": "2.0.2",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"dist": {
+				"shasum": "159aa7ab9b823798bcffc03897ea8441122343c6",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.0.0-0.tgz"
+			},
+			"directories": {}
+		},
+		"1.0.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.0.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~1.0.0",
+				"leveldown": "~1.0.6"
+			},
+			"devDependencies": {
+				"tape": "~4.0.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "c727f2c6c4e01866f9123a9e4ce859ff7e8ce13c",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.0.0",
+			"_shasum": "6b8ecf3e823546259995b23b2cf5d7e1bae63ceb",
+			"_from": ".",
+			"_npmVersion": "2.9.0",
+			"_nodeVersion": "2.0.2",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"dist": {
+				"shasum": "6b8ecf3e823546259995b23b2cf5d7e1bae63ceb",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.0.0.tgz"
+			},
+			"directories": {}
+		},
+		"1.1.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.1.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~1.0.0",
+				"leveldown": "~1.2.2"
+			},
+			"devDependencies": {
+				"tape": "~4.0.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "137ab61952a2c8be717aee8d8a0ce3e6559c42c1",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.1.0",
+			"_shasum": "6346223477064eabe355ef68389b39bf6bcedd4c",
+			"_from": ".",
+			"_npmVersion": "2.9.0",
+			"_nodeVersion": "2.0.2",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"dist": {
+				"shasum": "6346223477064eabe355ef68389b39bf6bcedd4c",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.1.0.tgz"
+			},
+			"directories": {}
+		},
+		"1.2.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.2.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~1.1.0",
+				"leveldown": "~1.3.0"
+			},
+			"devDependencies": {
+				"tape": "~4.0.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "c43f08d4b2ccb15298a2c2a8d1ac930aa775d0e6",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.2.0",
+			"_shasum": "c17c380c54853d474b379530645dcb1e9eb79c07",
+			"_from": ".",
+			"_npmVersion": "2.6.1",
+			"_nodeVersion": "0.10.36",
+			"_npmUser": {
+				"name": "juliangruber",
+				"email": "julian@juliangruber.com"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"dist": {
+				"shasum": "c17c380c54853d474b379530645dcb1e9eb79c07",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.2.0.tgz"
+			},
+			"directories": {}
+		},
+		"1.3.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.3.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~1.1.0",
+				"leveldown": "~1.4.0"
+			},
+			"devDependencies": {
+				"tape": "~4.0.0"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "f4d594b6399dd50929816cf721655b38591a4490",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.3.0",
+			"_shasum": "b545a3d6145d414bddc8379e3db018c7e51ca504",
+			"_from": ".",
+			"_npmVersion": "2.9.0",
+			"_nodeVersion": "1.8.4",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"dist": {
+				"shasum": "b545a3d6145d414bddc8379e3db018c7e51ca504",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.3.0.tgz"
+			},
+			"directories": {}
+		},
+		"1.4.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.4.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~1.2.0",
+				"leveldown": "~1.4.0"
+			},
+			"devDependencies": {
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "b9eb36258079ff449b16516aac892c27c58df3ad",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.4.0",
+			"_shasum": "640c742097e515a6785c66c5f8a5464a01c2f581",
+			"_from": ".",
+			"_npmVersion": "3.5.0",
+			"_nodeVersion": "4.2.2",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"dist": {
+				"shasum": "640c742097e515a6785c66c5f8a5464a01c2f581",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.4.0.tgz"
+			},
+			"directories": {}
+		},
+		"1.5.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.5.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~1.2.0",
+				"leveldown": "~1.5.0"
+			},
+			"devDependencies": {
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "4f0e211da1a134d12799c56cc2c897e093c52cf7",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.5.0",
+			"_shasum": "08a6683cf13efe2e6bfe236e2811ace3520c6038",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.6.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"dist": {
+				"shasum": "08a6683cf13efe2e6bfe236e2811ace3520c6038",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.5.0.tgz"
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/level-1.5.0.tgz_1476658292247_0.17076159780845046"
+			},
+			"directories": {}
+		},
+		"1.6.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.6.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~1.2.0",
+				"leveldown": "~1.6.0"
+			},
+			"devDependencies": {
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "46b1ee4ae085d0029599054a81be82e182eee7ed",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.6.0",
+			"_shasum": "3fcbae9163a091668b8ec7a9efd1d2feef1e6621",
+			"_from": ".",
+			"_npmVersion": "4.0.5",
+			"_nodeVersion": "7.4.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"shasum": "3fcbae9163a091668b8ec7a9efd1d2feef1e6621",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.6.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/level-1.6.0.tgz_1486405070036_0.6359349640551955"
+			},
+			"directories": {}
+		},
+		"1.7.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "1.7.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~1.2.0",
+				"leveldown": "~1.7.0"
+			},
+			"devDependencies": {
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "07bfcac4b382753a52c58b18d302508b8caecdc9",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@1.7.0",
+			"_shasum": "43464a3a8ba73b2f3de56a24292805146da213a1",
+			"_from": ".",
+			"_npmVersion": "4.2.0",
+			"_nodeVersion": "7.10.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"shasum": "43464a3a8ba73b2f3de56a24292805146da213a1",
+				"tarball": "https://registry.npmjs.org/level/-/level-1.7.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "rvagg",
+					"email": "rod@vagg.org"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				},
+				{
+					"name": "juliangruber",
+					"email": "julian@juliangruber.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-18-east.internal.npmjs.com",
+				"tmp": "tmp/level-1.7.0.tgz_1495034205793_0.6574828154407442"
+			},
+			"directories": {}
+		},
+		"2.0.0-rc1": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "2.0.0-rc1",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "2.0.0-rc1",
+				"leveldown": "~1.7.0"
+			},
+			"devDependencies": {
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "f67d2e54d7ecdf5ec0acb558829e7adfc2b9ead9",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@2.0.0-rc1",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "8.4.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-dZSZ8555lbcjBvXVRy6W3+0l6LYD61TTzVL0RhrlnZJJBPgKcBtss4Mem/Zv3SKfrpnaUdg6NJGxxMowJly+NA==",
+				"shasum": "42e164c407ed6c017838a4d95f959cca010cf281",
+				"tarball": "https://registry.npmjs.org/level/-/level-2.0.0-rc1.tgz"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-2.0.0-rc1.tgz_1504700905366_0.3710201238282025"
+			},
+			"directories": {}
+		},
+		"2.0.0-rc2": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "2.0.0-rc2",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "2.0.0-rc2",
+				"leveldown": "~1.7.2"
+			},
+			"devDependencies": {
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "1346b5664267ba5a0cd415518a9b9081cd56e0f4",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@2.0.0-rc2",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "8.4.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-fmidPrA2xAoVsmJO/gNo2bTxGJAFsfBJj+rDp3bllLdNC1zjif3CAH9eJVoY57eucbr5jM1KmUUMVEznc6IrOQ==",
+				"shasum": "c17644115a372d458ac8bc1c233c02d056eec783",
+				"tarball": "https://registry.npmjs.org/level/-/level-2.0.0-rc2.tgz"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-2.0.0-rc2.tgz_1505248513764_0.44496545218862593"
+			},
+			"directories": {}
+		},
+		"2.0.0-rc3": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "2.0.0-rc3",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "2.0.0-rc3",
+				"leveldown": "~1.8.0"
+			},
+			"devDependencies": {
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "node ./test.js"
+			},
+			"license": "MIT",
+			"gitHead": "54385175ea10e046e0b1841e530f5ac56be27110",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@2.0.0-rc3",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "8.4.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-FvOej+CpPGHEoWq780BkQ/ouOuN4K3WBYn1R0+2gLJj0x80xnJtrBI7zKPIMglOdFDmPl1+4Z5EcfPFD9UxZ8w==",
+				"shasum": "91573649295146227f9c3b2b63eb438444469a9a",
+				"tarball": "https://registry.npmjs.org/level/-/level-2.0.0-rc3.tgz"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-2.0.0-rc3.tgz_1505558924367_0.15602029906585813"
+			},
+			"directories": {}
+		},
+		"2.0.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "2.0.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~2.0.0",
+				"leveldown": "~2.0.0"
+			},
+			"devDependencies": {
+				"standard": "^10.0.3",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js"
+			},
+			"engines": {
+				"node": ">=6.0.0"
+			},
+			"license": "MIT",
+			"gitHead": "efb99908567aaefcc7f076a3c62fc475be36a49d",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@2.0.0",
+			"_npmVersion": "5.4.2",
+			"_nodeVersion": "8.4.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-UXD8/VbwKsaXhQRYodUMSL6EjgdwBEp1PAoBuoetNXTwkQinvSPGvEkkRKA4PA++M+Ch/epjei5gLFZXNLpF9w==",
+				"shasum": "78efdf9cb909025125929c2f0026d04cfdb70523",
+				"tarball": "https://registry.npmjs.org/level/-/level-2.0.0.tgz"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-2.0.0.tgz_1508258833348_0.7783416276797652"
+			},
+			"directories": {}
+		},
+		"2.0.1": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "2.0.1",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "~2.0.0",
+				"leveldown": "~2.0.0"
+			},
+			"devDependencies": {
+				"standard": "^10.0.3",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js"
+			},
+			"engines": {
+				"node": ">=4"
+			},
+			"license": "MIT",
+			"gitHead": "efa401f4dc6eae5ffc9b9752f38d4635d280dc80",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@2.0.1",
+			"_shasum": "03f7d9384cec8bb5a14ea22f9aac88537bfc0a40",
+			"_from": ".",
+			"_npmVersion": "3.10.8",
+			"_nodeVersion": "6.8.0",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				},
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				}
+			],
+			"dist": {
+				"shasum": "03f7d9384cec8bb5a14ea22f9aac88537bfc0a40",
+				"tarball": "https://registry.npmjs.org/level/-/level-2.0.1.tgz"
+			},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-2.0.1.tgz_1510411666034_0.8687806837260723"
+			},
+			"directories": {}
+		},
+		"2.1.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "2.1.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "^2.0.2",
+				"leveldown": "^2.1.1"
+			},
+			"devDependencies": {
+				"standard": "^10.0.3",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js"
+			},
+			"engines": {
+				"node": ">=4"
+			},
+			"license": "MIT",
+			"gitHead": "60fb927a1375f0e3af52d8b2de80a7266fc91fe4",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@2.1.0",
+			"_npmVersion": "5.5.1",
+			"_nodeVersion": "9.2.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-J1MuO0iJuG93xsJjugr2qrAcC95RVKMqrAiio1AcoM2FaAxrUJacAbtfLqYqr7xwQ/NiTXCMfBX71gNmGROXOA==",
+				"shasum": "ae5ba907919c97dc8f1f85d70db28f4173ab6fba",
+				"tarball": "https://registry.npmjs.org/level/-/level-2.1.0.tgz"
+			},
+			"maintainers": [
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				},
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-2.1.0.tgz_1512561575329_0.6275668488815427"
+			},
+			"directories": {}
+		},
+		"2.1.1": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "2.1.1",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "^2.0.2",
+				"leveldown": "^2.1.1"
+			},
+			"devDependencies": {
+				"standard": "^10.0.3",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js"
+			},
+			"engines": {
+				"node": ">=4"
+			},
+			"license": "MIT",
+			"gitHead": "f481db5382a70d28ba1c9a6d6e408ee32ad845aa",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@2.1.1",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "9.2.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-jhsItEs/L5bf5ctKsvIPcMzeh4nwXxnL3Tsxm4E9My07jcFfqEYwKP57Y9AZu7tmtECdyK6bvCqoClwuOBuY9w==",
+				"shasum": "6c9d459dc6a417ef1f53c58e3cb23180b0734926",
+				"tarball": "https://registry.npmjs.org/level/-/level-2.1.1.tgz"
+			},
+			"maintainers": [
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				},
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-2.1.1.tgz_1513173519664_0.10679455171339214"
+			},
+			"directories": {}
+		},
+		"2.1.2": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "2.1.2",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "^2.0.2",
+				"leveldown": "^2.1.1",
+				"opencollective": "^1.0.3"
+			},
+			"devDependencies": {
+				"standard": "^10.0.3",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js",
+				"postinstall": "opencollective postinstall"
+			},
+			"engines": {
+				"node": ">=4"
+			},
+			"license": "MIT",
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"gitHead": "020ffae936407967637c417734f07dc96f5e0cba",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@2.1.2",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "9.4.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-BPcWD6a1oNSXU9b9V/rCaYfmDGhoJ7AezgZ7IKOrR5d9TXz0GRtGNFWm6rCfo3Y36w3nUeP9OefFvy13YiSoYQ==",
+				"shasum": "3aaca16af50f4953c4433815fe0cccf999d98d39",
+				"tarball": "https://registry.npmjs.org/level/-/level-2.1.2.tgz"
+			},
+			"maintainers": [
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				},
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-2.1.2.tgz_1516962131975_0.8748308515641838"
+			},
+			"directories": {}
+		},
+		"3.0.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "3.0.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "^2.0.2",
+				"leveldown": "^3.0.0",
+				"opencollective": "^1.0.3"
+			},
+			"devDependencies": {
+				"standard": "^10.0.3",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js",
+				"postinstall": "opencollective postinstall"
+			},
+			"engines": {
+				"node": ">=4"
+			},
+			"license": "MIT",
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"gitHead": "064b5496aecb9cec8c111deeba1ff8528690dd73",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@3.0.0",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "9.4.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-jIMBmvh/u0hagHWN+Ysbrom3Tx2Ck3V5lxcLgGnOSgq7ASGvqYq+dJVwOO62fU3P04jDSdienlRwdb+RUvhzkw==",
+				"shasum": "5a99288b8cc7b961e3f9560a9edfa45b1001a518",
+				"tarball": "https://registry.npmjs.org/level/-/level-3.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 36371
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_3.0.0_1518863877887_0.29334865179756164"
+			},
+			"_hasShrinkwrap": false
+		},
+		"3.0.1": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "3.0.1",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "^2.0.2",
+				"leveldown": "^3.0.0",
+				"opencollective": "^1.0.3"
+			},
+			"devDependencies": {
+				"standard": "^11.0.0",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js",
+				"postinstall": "opencollective postinstall || exit 0"
+			},
+			"engines": {
+				"node": ">=4"
+			},
+			"license": "MIT",
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"gitHead": "cec4d9a131416ba680bed0a019d79c70c8594c4c",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@3.0.1",
+			"_npmVersion": "6.0.0",
+			"_nodeVersion": "10.0.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-VxUl997qTXDlOdai/3YQeQGNRO38AuCDFNLxmgqe/dJ4w94uuMtMrMh+YYXmt44Bkw4UYMmOzsTFEDDvL0sFrg==",
+				"shasum": "577093dc988410372ae84dfc07370e0ac69175e3",
+				"tarball": "https://registry.npmjs.org/level/-/level-3.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 36691,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa7YPiCRA9TVsSAnZWagAAAbcQAIHETBE2+E2bf0SqJC15\nOGvvbxa6LGtOAWB3iScnJdbZ6Wm16g9uTlbebWBcQoqmuTWe4jgT/Nba5O57\n1716SNmnY7MAd46fUbK27j+Ntl1fXSjamXDRdNPIcQetkJqOboQkv6VYrZMX\nUbOoCwfJRLrD/XuJwB6Tqydeum5jg0EisqMOojL3nZX0G1/lZKHZA21JIxmA\nX6Lb5itNvdFXfLg9ldvsPTbUUPiDJgbtb22/mKsnVzAVQws/212suNrX1AVi\nYXeGuQj673vAoaX0bqt84mkddjSgaRxzqirtzyRJs15+h0srUWTOxo6KLR10\nFm2I2nnDhq2+N+0ltWinXOQxrOQK4+OrceEAuPTknuuhA1K69hqQSJ5IeVr8\ntzvdh9dBx5cYpHJVkys1EmaqxJXO1pZr0Hgy7/GPho6HYalZ6If7vKaiZUHG\nO6BAEdygyiPn7JnTsIxTAZkIsS0BWn4AmmlS/JmnL7BPk1z+2yq1AzL0FFs8\nbGON2A2u+MxSHwHRHYmfOgE8w3Qf2ZyBZGAzuzqgOg0RQ6L1UYweDy2nAn/b\nAgYreNw03x3S/oHqz/Tty6+RJGjkgQXDivDBUrmIm4JZ3LOHKdKeH63dUbQF\n5gbJirVZl2XoSuYa9UMeQ91ZTG3bnxKe+fINDg2i/0mA7Dh9fottXiV2cosj\nEyJf\r\n=84fB\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_3.0.1_1525515231516_0.1875156386275625"
+			},
+			"_hasShrinkwrap": false
+		},
+		"3.0.2": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "3.0.2",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "^2.0.2",
+				"leveldown": "^3.0.0",
+				"opencollective-postinstall": "^2.0.0"
+			},
+			"devDependencies": {
+				"standard": "^11.0.0",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js",
+				"postinstall": "opencollective-postinstall || exit 0"
+			},
+			"engines": {
+				"node": ">=4"
+			},
+			"license": "MIT",
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"gitHead": "2ca3209eb3392bc6c6339392ae0796bcd77a741c",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@3.0.2",
+			"_npmVersion": "6.0.1",
+			"_nodeVersion": "10.0.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-2qYbbiptPsPWGUI+AgB1gTNXqIjPpALRqrQyNx1zWYNZxhhuzEj/IE4Unu9weEBnsUEocfYe56xOGlAceb8/Fg==",
+				"shasum": "83c3d6e48c9e89abc4b6f5ca1c591f177ea2bd59",
+				"tarball": "https://registry.npmjs.org/level/-/level-3.0.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 36863,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbBU/YCRA9TVsSAnZWagAAajsP/18dYcwp4Trk/ADNsnkE\nu0RaJVOLFBM5shigP0SCRIxvqlObdYvkO7NoFnTIP00c++r6jWM4qW5tkRRU\ntXchrbWbntoB6UCd2/I8apnhpMqKpDIDGiH/WX71LdNKmf34REyIUWI3lFBT\nqWQzRhxslTU2QOKm+sRC9hoygw6QyV3OUFmp8NjLOzJ2DrTEmYRfPtd3OkhG\nG4yO2bkN16/94frLrqDL18vhP1ngQGPj1EkE6VJpLbpE8JIXPVxcQpJoEvc6\nO5H2LWhFWiXxKKl4RPtR4CQsMroNosFx8x8C5bzLfaI2zODO29B5j9ijobEc\naOqF/uO6KDG79gbOvAanONOOK7+VosGgsEj00KCaQ9QII1lediDsfSC8xoaB\nklc1BU7b3VAZMXS13KkLg3qZtLDjvDoUsUpcWYDc1IzNYN3do4K7+0hmnf//\nQsmVgm4turiTUoTuH3PeSrb7tPYWDlb9ITri1veKRky6egyHCH/MdgaFO09w\noZyISncKO6Dt35IF6itCot8CACTkX+9ji1fopnQimtj7PJh3tUKUDHhe5Dcx\nA9a1WmGVBW0hqcdNXxNi3c9EZuG+ZaCbJCumLXzTTRgAXeSf1yq6YlvqZfKa\nhsDGQnJsi5xBjZpEAkcUe0FuHaSWzQS1qYwBJiZLbz4J+o1SFKAjIryP3z7n\nG1Cg\r\n=VquY\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_3.0.2_1527074774407_0.3000079879105626"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.0.0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "4.0.0",
+			"contributors": [
+				{
+					"name": "Rod Vagg",
+					"email": "r@va.gg",
+					"url": "https://github.com/rvagg"
+				},
+				{
+					"name": "John Chesley",
+					"email": "john@chesl.es",
+					"url": "https://github.com/chesles/"
+				},
+				{
+					"name": "Jake Verbaten",
+					"email": "raynos2@gmail.com",
+					"url": "https://github.com/raynos"
+				},
+				{
+					"name": "Dominic Tarr",
+					"email": "dominic.tarr@gmail.com",
+					"url": "https://github.com/dominictarr"
+				},
+				{
+					"name": "Max Ogden",
+					"email": "max@maxogden.com",
+					"url": "https://github.com/maxogden"
+				},
+				{
+					"name": "Lars-Magnus Skog",
+					"email": "ralphtheninja@riseup.net",
+					"url": "https://github.com/ralphtheninja"
+				},
+				{
+					"name": "David Björklund",
+					"email": "david.bjorklund@gmail.com",
+					"url": "https://github.com/kesla"
+				},
+				{
+					"name": "Julian Gruber",
+					"email": "julian@juliangruber.com",
+					"url": "https://github.com/juliangruber"
+				},
+				{
+					"name": "Paolo Fragomeni",
+					"email": "paolo@async.ly",
+					"url": "https://github.com/hij1nx"
+				},
+				{
+					"name": "Anton Whalley",
+					"email": "anton.whalley@nearform.com",
+					"url": "https://github.com/No9"
+				},
+				{
+					"name": "Matteo Collina",
+					"email": "matteo.collina@gmail.com",
+					"url": "https://github.com/mcollina"
+				},
+				{
+					"name": "Pedro Teixeira",
+					"email": "pedro.teixeira@gmail.com",
+					"url": "https://github.com/pgte"
+				},
+				{
+					"name": "James Halliday",
+					"email": "mail@substack.net",
+					"url": "https://github.com/substack"
+				}
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"dependencies": {
+				"level-packager": "^3.0.0",
+				"leveldown": "^4.0.0",
+				"opencollective-postinstall": "^2.0.0"
+			},
+			"devDependencies": {
+				"standard": "^11.0.0",
+				"tape": "^4.2.2"
+			},
+			"scripts": {
+				"test": "standard && node test.js",
+				"postinstall": "opencollective-postinstall || exit 0"
+			},
+			"engines": {
+				"node": ">=6"
+			},
+			"license": "MIT",
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"gitHead": "2e95a49fe1afa7482504d017b6f4473ea8bc6925",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@4.0.0",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "10.1.0",
+			"_npmUser": {
+				"name": "ralphtheninja",
+				"email": "ralphtheninja@riseup.net"
+			},
+			"dist": {
+				"integrity": "sha512-4epzCOlEcJ529NOdlAYiuiakS/kZTDdiKSBNJmE1B8bsmA+zEVwcpxyH86qJSQTpOu7SODrlaD9WgPRHLkGutA==",
+				"shasum": "86aa46b5430bac12676e693ebff206232ef1e549",
+				"tarball": "https://registry.npmjs.org/level/-/level-4.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 37243,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbBXR1CRA9TVsSAnZWagAAlAoP/iC3+Pw7e5Hnf2Nyjqv3\nRA2uLcpvwe8m2bYljtsbh53flREnoIujvlXoMVLa2StuyFxsisOah5nBk0qi\nWbRVraICfltQJ+YA0QNvVdU/dlGn+dZISU17+SrRqTRuB9acNoZneQvGU8ue\nF3FhH6yCbJ2rS7yp+TZMvW4Uk/0N2025c60xZby7oChSpeR3dc+5njCaocIN\nhhBjSCfjhOV4DFWGA1du/NO3yHPOnOXd2IZbIpaM0Kw/Q9SvUb9ovk5pWvkF\nXugWo2EvuU0nN3yEKs60BD2vwOsi7cRVOHLhGF3b8kOgni3GnVGPymySUyK3\n58P19quxUnZ4/6/irZPrL8pUiJ8jTlI11+U1+9FEB5ybWdaJLQc0MD8umhOd\nVHqIzkqQO8IsSeKz1pTRt/0VKKc2MztVaoC8wHITNKON4MNoF+q7mBHvG4zE\nBb/wIbaAoNoM3PG1rD4X31dkXyW/k1zOZ9JrgAdb7zj/MSwYtnqJ/z7x/hMs\nqh1PXbr28v/vwblmQw2MWZqdhDDdElftJulipFPeojGkuXPlIENfujij3rK9\nR9m4BHV3YFM4b9oT40orgUaEYeQBeFuzFOCjILjCUIqhSwThRMz6S0p2WCXL\nrc63lfsaXqwsb32NRM8sBf2CbWszTZImBG0kVMC9su2S/9XFmdxT5TcL8P0h\nr8RV\r\n=emSN\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_4.0.0_1527084148404_0.07323593085320046"
+			},
+			"_hasShrinkwrap": false
+		},
+		"5.0.0-0": {
+			"name": "level",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"version": "5.0.0-0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"main": "level.js",
+			"browser": "browser.js",
+			"dependencies": {
+				"level-js": "^4.0.0",
+				"level-packager": "^5.0.0",
+				"leveldown": "^5.0.0-1",
+				"opencollective-postinstall": "^2.0.0"
+			},
+			"devDependencies": {
+				"airtap": "^2.0.1",
+				"coveralls": "^3.0.2",
+				"hallmark": "^0.1.0",
+				"nyc": "^12.0.2",
+				"pinkie": "^2.0.4",
+				"standard": "^12.0.0",
+				"tape": "^4.2.2",
+				"uuid": "^3.3.2",
+				"verify-travis-appveyor": "^3.0.0"
+			},
+			"scripts": {
+				"test": "standard && nyc node test.js && verify-travis-appveyor",
+				"test-browser-local": "airtap --local test-browser.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"postinstall": "opencollective-postinstall || exit 0",
+				"hallmark": "hallmark --fix CHANGELOG.md UPGRADING.md"
+			},
+			"engines": {
+				"node": ">=8.6.0"
+			},
+			"license": "MIT",
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"readmeFilename": "README.md",
+			"gitHead": "2dcb31d4a0b2ab572d388745768f530a7dea7dc3",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@5.0.0-0",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "8.14.0",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-/fq+piLlJcXwWhROH6MyWii8QhRdMN78CiGIZp0qmwQUUIV9qAxCWP/oxPXmypJqAMxiSnBhKKZi0Hlf8iwyyw==",
+				"shasum": "548ffa3c33e68aadb2d02bd72dbb26d09d809b3b",
+				"tarball": "https://registry.npmjs.org/level/-/level-5.0.0-0.tgz",
+				"fileCount": 12,
+				"unpackedSize": 47611,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcKguhCRA9TVsSAnZWagAANWkP/2AVHOWVbNFrj2WNGM3m\nvjadvLugv34NPPZuuUN1bWHoRjA87WqlmIllSAcmVirdooHhELgxUuDJbnFq\nX9EBbPC1KjiOLoFTXtXGHjYhaiUiumrIV/TwSY3SFK8IUNCzlwSl5DoDzBka\njHqpiP0JlxJ/5pppIyDuocLvw9jo/4xfO4l5IYpmWy0R12nBiClH5CCkkQ2V\np1ACKhnSw9oin0b7FWxmk85XaqjOOiwynXNEdXJGlvrCou29IrOAi/anhybt\nSudbAVUGus3m6ORKQGaYbYAWwu81z73gVogpjR/uRVoEyJRDJN5wJiwl4bia\nNZZJpmhHLoPTI8WbqBX1AadDB/zqtafrNMdOnpVPmVP1rFdOKEQtnBcrDbQZ\niKSttFgsvJBpbO41lbgxRRgxEQLMXdYnnhz5cI9G3V0E4RzEJTOvDS6Z+hf+\njm5iyRipzmwjfuRxNpj6pLTcBwdvkftvKfyLIH530c9qYEg//KilT6mS7+v3\nPiY15ovp/klc0v0FPgxeBrfR3aPwufRQebtGOZm4fYYYUJbXvy5QuHHsTGxM\nv/4ZYDcPU/jN1x3isOXMJRc2KTtHy2KtyXTYlDgFqudK4eh1YE1MIMrZoN+U\n5rs+dtQzf8KGC9AVTlxSM2A/QkfrOB5+4sxX4L5jtp+kvy8k0s9Z8tzQiaYG\nVok3\r\n=3c2o\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_5.0.0-0_1546259361092_0.8629730646209794"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"5.0.0": {
+			"name": "level",
+			"version": "5.0.0",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"license": "MIT",
+			"main": "level.js",
+			"scripts": {
+				"test": "standard && hallmark && nyc node test.js && verify-travis-appveyor",
+				"test-browser-local": "airtap --local test-browser.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"postinstall": "opencollective-postinstall || exit 0",
+				"hallmark": "hallmark --fix",
+				"dependency-check": "dependency-check . browser.js test*.js",
+				"prepublishOnly": "npm run dependency-check"
+			},
+			"browser": "browser.js",
+			"dependencies": {
+				"level-js": "^4.0.0",
+				"level-packager": "^5.0.0",
+				"leveldown": "^5.0.0",
+				"opencollective-postinstall": "^2.0.0"
+			},
+			"devDependencies": {
+				"airtap": "^2.0.1",
+				"coveralls": "^3.0.2",
+				"dependency-check": "^3.3.0",
+				"hallmark": "^0.1.0",
+				"level-community": "^3.0.0",
+				"nyc": "^13.2.0",
+				"pinkie": "^2.0.4",
+				"standard": "^12.0.0",
+				"tape": "^4.2.2",
+				"uuid": "^3.3.2",
+				"verify-travis-appveyor": "^3.0.0"
+			},
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"hallmark": {
+				"community": "level-community"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"level",
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"engines": {
+				"node": ">=8.6.0"
+			},
+			"gitHead": "3821beb951e503be9f16f2a281115d66128b1b2d",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@5.0.0",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "10.14.1",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-L7U56/Q9ULjA70XLIh6zyWczQPByBkUZcswLuAwJoZGldOyrApULAOHCLmST4BwxdIHczYIyiaC8mqzQ5ZXOxg==",
+				"shasum": "336b45c6d56878619d781ddaa4460ba6ab1333ea",
+				"tarball": "https://registry.npmjs.org/level/-/level-5.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 44231,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcne53CRA9TVsSAnZWagAA/O8P/jzCdFJnrhMVa8ZxY7Ti\nIQgn3uY7A3op52+1MRg3CN8Tj8AzQJ2Xm+whLWOeda2q2B53d1AgBpvOxKYJ\nIuJiYSYxwy8J7f7K4mmn9jPFLRq2F6Nn2V/qQKcWy6vv2n4yALaFCptPsQmr\nuyvgUKf8psXiTyKQeMRZhy11OWv3fz5Hq9kf/aKg/E4+tJkxSlao6rG38jd+\nPPr66SBtavyfo2jbxNSVlBV44PNNb2jG3kt0MCTPgPlsmnN6TDKIUCQAO94V\nzxU4zew76kLw70m6HkCKY17hfTtYk/JUZhdUdYX1BpE3gFeuvrsh+9vX3ab3\ngeIK1pCA2TIFhOaam4HTasAWfvz+Hqmz6WqeJviEDCwYWb1/aq0CciT863C4\nJPwdBMQioY/j/3rUoxXFZ7UL39ssk/SbeBCQuWZ5IG4w0LOf7HUfwgyesvJv\ni0PHbYj7Alc7NknjDVMUfzhq1ijdZcA1nrkvdVYJGmpkW6NwkBSluSYZ90v8\n4MRr5acTPfczk9dH21ToMWALmsbybupBKhmDGntJhlqA501QMcn09QPS9w3I\n3D0trZ1CIP/9EMz3FfTRDeHMcueP0mT4cNqw4U6J1KhRhehUOy1dRLcgoRBJ\nA/2/Z81d60FcK3a/qQEp/aVAPFQphH39/yJO8U3AdNCZSsL9CvUGG+V79qLp\nhPTo\r\n=V+OG\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_5.0.0_1553854070995_0.14014028578589088"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"5.0.1": {
+			"name": "level",
+			"version": "5.0.1",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"license": "MIT",
+			"main": "level.js",
+			"scripts": {
+				"test": "standard && nyc node test.js && verify-travis-appveyor",
+				"test-browser-local": "airtap --local test-browser.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"postinstall": "opencollective-postinstall || exit 0",
+				"hallmark": "hallmark --fix",
+				"dependency-check": "dependency-check . browser.js test*.js",
+				"prepublishOnly": "npm run dependency-check"
+			},
+			"browser": "browser.js",
+			"dependencies": {
+				"level-js": "^4.0.0",
+				"level-packager": "^5.0.0",
+				"leveldown": "^5.0.0",
+				"opencollective-postinstall": "^2.0.0"
+			},
+			"devDependencies": {
+				"airtap": "^2.0.1",
+				"coveralls": "^3.0.2",
+				"dependency-check": "^3.3.0",
+				"hallmark": "^0.1.0",
+				"level-community": "^3.0.0",
+				"nyc": "^13.2.0",
+				"pinkie": "^2.0.4",
+				"standard": "^12.0.0",
+				"tape": "^4.2.2",
+				"uuid": "^3.3.2",
+				"verify-travis-appveyor": "^3.0.0"
+			},
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"hallmark": {
+				"community": "level-community"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"level",
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"engines": {
+				"node": ">=8.6.0"
+			},
+			"gitHead": "7f8b03f6b69a2ec1ec52bac0f5975e6278705c7e",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@5.0.1",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "10.14.1",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"email": "julian@juliangruber.com",
+					"name": "juliangruber"
+				},
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-wcak5OQeA4rURGacqS62R/xNHjCYnJSQDBOlm4KNUGJVE9bWv2B04TclqReYejN+oD65PzD4FsqeWoI5wNC5Lg==",
+				"shasum": "8528cc1ee37ac413270129a1eab938c610be3ccb",
+				"tarball": "https://registry.npmjs.org/level/-/level-5.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 44479,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcnfy+CRA9TVsSAnZWagAAoooP/Rt0A5iOJSd5zX/MqXFL\nzqQtWxH4AYywyr9/yKGp3USiJN+sBgq6Ywv7Qu9lO3XiOdClMLJBxpeSLB9y\nzVxXt0oSOk2xPnQhv93iNbYcrbDI1eiHo+R8rDJjMPXBi2iEi6NTBm15EIpM\nXhsGFl70DgljL61m4FuZDdnG9hMg5WAH2y2wNZeL/0f3nRiNUwqIqQlC1JrC\nKj9ju5g2mlkXYLVNf8WMT/0Jevsq0wEDZTpPNpyEEDelEC8bWwO5zUxmcg+8\nf7AB5SMqRX9kO0JxwTOXvOZC5RxiQLOjci+HkA1nIQgVDjZEoVqLHyEU+lmg\nC4WEDW1+kBZdGGRFDXSfkfhjuF9zjof1AMsjRQ7ELvNEJH3gTPQUgaLCKLzF\n3K+mjzVnx+BX/T0nkK+uWxsvm7X+t95TGWIzSYgVY29M3eIT8O+ovWrJOn4G\nTF80qXLv0pYze9PoO6hJ/fkf/MpBfL03Cps6g+Lo0MaxqRDpd0OCnLMcnK+U\n84wZq4ss629ZqnwOMnc6EkJqbwVBMsErPRDKA7L2Mr6emXJQlWyDp+DdsdL0\nbR8+FI0PtamvzwSUtF2kY8HU+tIX0ZhKnYQ8bC/xDkwxqxUOuy8WhtT8xVVM\nZm44ButamReKqphRh7fZItMa1DNgsgPqHmMieeLIGT4fpQDLpsbvTgHX2Lzd\nuTG2\r\n=cN4q\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_5.0.1_1553857725072_0.8559642852930531"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"6.0.0": {
+			"name": "level",
+			"version": "6.0.0",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"license": "MIT",
+			"main": "level.js",
+			"scripts": {
+				"test": "standard && nyc node test.js && verify-travis-appveyor",
+				"test-browser-local": "airtap --local test-browser.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"postinstall": "opencollective-postinstall || exit 0",
+				"hallmark": "hallmark --fix",
+				"dependency-check": "dependency-check . browser.js test*.js",
+				"prepublishOnly": "npm run dependency-check"
+			},
+			"browser": "browser.js",
+			"dependencies": {
+				"level-js": "^5.0.0",
+				"level-packager": "^5.1.0",
+				"leveldown": "^5.4.0",
+				"opencollective-postinstall": "^2.0.0"
+			},
+			"devDependencies": {
+				"airtap": "^2.0.1",
+				"coveralls": "^3.0.2",
+				"dependency-check": "^3.3.0",
+				"hallmark": "^2.0.0",
+				"level-community": "^3.0.0",
+				"nyc": "^14.0.0",
+				"pinkie": "^2.0.4",
+				"standard": "^14.0.0",
+				"tape": "^4.2.2",
+				"uuid": "^3.3.2",
+				"verify-travis-appveyor": "^3.0.0"
+			},
+			"collective": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level",
+				"logo": "https://opencollective.com/level/logo.txt"
+			},
+			"hallmark": {
+				"community": "level-community"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"level",
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"engines": {
+				"node": ">=8.6.0"
+			},
+			"gitHead": "44de997b88132753f32898a355ea3f8e704cb80d",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@6.0.0",
+			"_nodeVersion": "12.11.1",
+			"_npmVersion": "6.11.3",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-3oAi7gXLLNr7pHj8c4vbI6lHkXf35m8qb7zWMrNTrOax6CXBVggQAwL1xnC/1CszyYrW3BsLXsY5TMgTxtKfFA==",
+				"shasum": "d216fb9b9c3940bcec15c5880d8da775ca086c5c",
+				"tarball": "https://registry.npmjs.org/level/-/level-6.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 50845,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdq15NCRA9TVsSAnZWagAA0jsP/2wfmvEDJMi/+IdwELUl\nvwRgiGEQyNVge957n83KVOKt0skaEv9cvuvk6ddhoY2Dj9f0bhlMXm/jM/2s\nvCQ7Vyd3EN29dvVDkb8FesilDB9o1Lj+P+qX+QwdRf7lPzm7i8paAds9+eyt\n90MbtUx0beJ+Ahg9w4eARnMZxnBV1Ig1/8dqjIN/jTdjw+u6UG2093u3/KhW\nj4XXMEPoFnRtFy4wW8fz00/ZHCuFWKF45xX5b/bbku4TqeDtYomCaDcPg0yW\nw+p+mdF1V+Eta+lS8QL4LN2v7/hNCtHonB++QX51t8XU7cIvBNCve/9IdN1H\nZF/bBmnrqAfNktNIhlhe0m2Hm8DfD0IKjLRD+HgpVgQ0F/lRbhkaPZrAoxm9\nnxfUx8fIuwSpwas7vA5GHJy7fPwyNvetLF+MW51pHrjFcYK9JXBgg3wg9ith\nXRcTBqnrZpiaMW672kt6qMsGpIFHnsWQT1n5N9tAg4tF/49Z38T8mFoj2LTk\nXk/GoP7hoCJG1V60l9YKqPavAEw60g8rpwt+H7LTE0aqAZs78+MVPrHvxRXW\nLqoKO9CWSpnRlOjHIJeuO6qdstKOcxilkJbb7GN/JJuV2Nod3PLYvFJv9k+c\nGASRbO8XXQDvBktzch6LFStm4Pl2uClI2Tt3FDLNUY8xWg72c8KuyDXIimVS\nmFIO\r\n=187I\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_6.0.0_1571511884297_0.46160255995610755"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"6.0.1": {
+			"name": "level",
+			"version": "6.0.1",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"license": "MIT",
+			"main": "level.js",
+			"scripts": {
+				"test": "standard && nyc node test.js && verify-travis-appveyor",
+				"test-browser-local": "airtap --local test-browser.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"hallmark": "hallmark --fix",
+				"dependency-check": "dependency-check . browser.js test*.js",
+				"prepublishOnly": "npm run dependency-check"
+			},
+			"browser": "browser.js",
+			"dependencies": {
+				"level-js": "^5.0.0",
+				"level-packager": "^5.1.0",
+				"leveldown": "^5.4.0"
+			},
+			"devDependencies": {
+				"airtap": "^3.0.0",
+				"coveralls": "^3.0.2",
+				"dependency-check": "^3.3.0",
+				"hallmark": "^2.0.0",
+				"level-community": "^3.0.0",
+				"nyc": "^15.0.0",
+				"pinkie": "^2.0.4",
+				"standard": "^14.0.0",
+				"tape": "^4.2.2",
+				"uuid": "^3.3.2",
+				"verify-travis-appveyor": "^3.0.0"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level"
+			},
+			"hallmark": {
+				"community": "level-community"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"level",
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"engines": {
+				"node": ">=8.6.0"
+			},
+			"gitHead": "049dd737304fbd788eba1bb44dcc351a842a7229",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@6.0.1",
+			"_nodeVersion": "12.11.1",
+			"_npmVersion": "6.11.3",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"email": "ralphtheninja@riseup.net",
+					"name": "ralphtheninja"
+				},
+				{
+					"email": "r@va.gg",
+					"name": "rvagg"
+				},
+				{
+					"email": "dev@vincentweevers.nl",
+					"name": "vweevers"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-psRSqJZCsC/irNhfHzrVZbmPYXDcEYhA5TVNwr+V92jF44rbf86hqGp8fiT702FyiArScYIlPSBTDUASCVNSpw==",
+				"shasum": "dc34c5edb81846a6de5079eac15706334b0d7cd6",
+				"tarball": "https://registry.npmjs.org/level/-/level-6.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 51260,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeYDAzCRA9TVsSAnZWagAA2csP/0ngzTE6QjFJyM1KbGza\ntqbZpjph0BbGED9ygbj3xW2YSvPDLslbQeQ47kVAvMijWjC3ffQoLs7k0esa\nG07WuNP/hJsxlRUF3Y41J5o7ksksEoghorTobueULrdx9nhwSEPeqlNCEzE2\nz1XD6yh1qznygHcnionBdF8H3EUl//8kpQmmIutOv2CuPpIhTV1iE9vy9G+9\nafnWC3GqVINhiybohn0IP2p1eT54Zp0q8PqWB7wtHYFSUF66jaoSBboR9MQC\nlk/62MoYxg8qiq65QdEmimfOaXItnF4w3ghgo2KivxkmBsTbe/yyGgPWZTmI\nXvQouqhekpxaTM+ETLwD7Iwi6Z/cVeD6Mw6zEYBYz+7eZrefHN3mQKWhv2LT\nW65/6mcGQmcjntzCdnrdlz0m7OKooMxzVDJoY0zz/TPMl/+R9b/hHDGnNHXB\ngivKj3XDkP6krvyasGDxsGkTlSMMKXQczClQ6h9gA5IKk6ihkSWJgqOJ9MQq\nD25jmycAsbQ5z5Slc+oPpazONpuONx0tjq+YLQO97BKaMfGk619U/wOHz++r\nhfiDRiTOdDBJrBQ7xf9WI0w3dMr+TXKsEsLwe3P2D1MNI9IkSbvAxzsDQb75\nsb7TrU71vh7z/Dj3Rq6HSVDGid3VWSZlXaGFI6i0ddwXH2KReCZ15KNgGmu1\nNdVE\r\n=bC+j\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_6.0.1_1583362099139_0.34808924096112204"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"7.0.0": {
+			"name": "level",
+			"version": "7.0.0",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"license": "MIT",
+			"main": "level.js",
+			"scripts": {
+				"test": "standard && nyc node test.js",
+				"test-browsers-local": "airtap --verbose test-browser.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"hallmark": "hallmark --fix",
+				"dependency-check": "dependency-check --no-dev . browser.js",
+				"prepublishOnly": "npm run dependency-check"
+			},
+			"browser": "browser.js",
+			"dependencies": {
+				"level-js": "^6.0.0",
+				"level-packager": "^6.0.0",
+				"leveldown": "^6.0.0"
+			},
+			"devDependencies": {
+				"airtap": "^4.0.1",
+				"airtap-playwright": "^1.0.1",
+				"coveralls": "^3.0.2",
+				"dependency-check": "^4.1.0",
+				"hallmark": "^3.0.0",
+				"level-community": "^3.0.0",
+				"nyc": "^15.0.0",
+				"standard": "^16.0.3",
+				"tape": "^5.0.1",
+				"uuid": "^8.3.2"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level"
+			},
+			"hallmark": {
+				"community": "level-community"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"level",
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"engines": {
+				"node": ">=10.12.0"
+			},
+			"gitHead": "2d0a97ff1fea3a11f5830ed2a5cb93e03cfb65a0",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@7.0.0",
+			"_nodeVersion": "12.11.1",
+			"_npmVersion": "6.11.3",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				},
+				{
+					"name": "rvagg",
+					"email": "r@va.gg"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-QrBnjcWywalh86ms9hfizvxT5aBHrgWEu6rLChS9tFE2wwFU3aI1r0v+2SSZIyeUr4O4PFo8+sCc1kebahdhlw==",
+				"shasum": "10fa2d5a0b3b21a99d33e9307c92c1270243d1ce",
+				"tarball": "https://registry.npmjs.org/level/-/level-7.0.0.tgz",
+				"fileCount": 8,
+				"unpackedSize": 53650,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgetmbCRA9TVsSAnZWagAAwhgP/3lhFRe22D9o+RSwgjjW\n83eiOWWYN3TCS6sqLHejsPkTyOsEt502ucG6TJYXLj0KRnwXDIm3rSFCfkp4\nugf9GWdXakSO38/5U9XekTb5VwT+r3OWWelsCR3KG2KkLnalWXwf6ETPNwip\nDvMYkDornmvEbr6soIy81naKmqLMmiLBlEqCz7vlJoCOPf4LVFp4Unn2H/Tm\nTx+EVDm0U8BNvWiGvJHKoz8pkf2Th8iIHBaci2jAopPKttbc/ewuC8g0bLr8\no7F4H5APaGFvTlmj1v1UNgXcqXNOPL4oMtdsNde00SupwkmoOt4p4kWoTjTO\nxzT11k5YNq/vPyUbGWU6nsaiVFJ3cHBUmBI7ifx9tUQNjFY7e2j+mac0JUQP\nnOA03Jt8jxhehJNQWqE9AZbJrkcLfmLfagjV7gMajQyOEvpDlgtMiyExT74G\nwDm/D0HCLrha6KVcNasOUqT1QtQA/sBP06jU/ZapZqUGuMT2v+yjUgwHR6uq\nLvTn5CnQ5Ud+BKRwtaa3JZhXwx7rtREbZi7fAEj58MiWv3J+oXyM/0nJZXbA\nOgfPPyI6mEQEyUkjokRp4sz4uRSet7PxdOpsH07GuUtn6DrY2HEmDK++B8N9\nCorptKWGlserAOMnwlxhcvHiGb3Qr3fJqdUOZQw3R7DuSPkdjspw8RRLccRA\ncZK3\r\n=Mcuo\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_7.0.0_1618663835461_0.9588194785262063"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"7.0.1": {
+			"name": "level",
+			"version": "7.0.1",
+			"description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
+			"license": "MIT",
+			"main": "level.js",
+			"scripts": {
+				"test": "standard && nyc node test.js",
+				"test-browsers-local": "airtap --verbose test-browser.js",
+				"coverage": "nyc report -r lcovonly",
+				"hallmark": "hallmark --fix",
+				"dependency-check": "dependency-check --no-dev . browser.js",
+				"prepublishOnly": "npm run dependency-check"
+			},
+			"browser": "browser.js",
+			"dependencies": {
+				"level-js": "^6.1.0",
+				"level-packager": "^6.0.1",
+				"leveldown": "^6.1.0"
+			},
+			"devDependencies": {
+				"airtap": "^4.0.1",
+				"airtap-playwright": "^1.0.1",
+				"dependency-check": "^4.1.0",
+				"hallmark": "^3.0.0",
+				"nyc": "^15.0.0",
+				"standard": "^16.0.3",
+				"tape": "^5.0.1",
+				"uuid": "^8.3.2"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/level"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/level.git"
+			},
+			"homepage": "https://github.com/Level/level",
+			"keywords": [
+				"level",
+				"leveldb",
+				"stream",
+				"database",
+				"db",
+				"store",
+				"storage",
+				"json"
+			],
+			"engines": {
+				"node": ">=10.12.0"
+			},
+			"gitHead": "2f569952e00809329cf1c3b23f8928fcc5b79e82",
+			"bugs": {
+				"url": "https://github.com/Level/level/issues"
+			},
+			"_id": "level@7.0.1",
+			"_nodeVersion": "16.9.1",
+			"_npmVersion": "7.21.1",
+			"dist": {
+				"integrity": "sha512-w3E64+ALx2eZf8RV5JL4kIcE0BFAvQscRYd1yU4YVqZN9RGTQxXSvH202xvK15yZwFFxRXe60f13LJjcJ//I4Q==",
+				"shasum": "05121748d95a4ff7355860d56eb5d0aa36faef2a",
+				"tarball": "https://registry.npmjs.org/level/-/level-7.0.1.tgz",
+				"fileCount": 7,
+				"unpackedSize": 49635,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh2xwsCRA9TVsSAnZWagAA1fsP/jn5ghhNv4hHYMfnrk1x\ny0D9EYUdcxW/aYNHuXZOxmzDYCf/Fj+qHflG93ODtvYY/47KU+wIqDyL3hHa\nQI3D14h3IOYepllzWSHlQrTVQn/HVIUcGOPA+gmIMO6t7LWerjZtNMxG2tn/\nyV62PLlW3JUv6LjGnKDOD/Bd1g1BPD2+FMj9+VnxNM50b8Kwr7MHCare4r+T\n9Me54aET5yAmZzGeiBHFWMfzqQlYSelOWcC4me0ByFwgu1MBoIz0G67i4SoV\nT/7uJsa1iyLcQiZpskzJkDH2xf9wAFSP8RPutqX5TcKRqVi/YJB1kHtQy1H3\n5GcI1dn78mUi5/Zb3I7bwrdaDWKGp7WCFvlq2ubOjzXJ69exU3YyQDqpOEUx\nGHZLDjwzCE58vFnECU6T+mSAODh18IDS5NwzZ/aars8Dwt5VeZSzAuafLGCk\nk/pu8fKpavkkKNB0QdsmUkbquo/DuxP0JvkW/rQwwrpZYoaqcfY2jneXPE9S\n6N+CgLDC/2qIyDdLyi5P+94DITJLydAQwpHDer5o+Fy9YOpVATqzDCsjcFlR\nHTDddzKHnSTKMnwf4uOgZXJ0fzRW3OW2LUrS79UFbQ6qth/M3jGywOVFk3fW\nK0LYcCb3ahBwhoORCcYMwfl5kOb3Qq378BEz58UEkTcmimyQkvBgC0jLFaAv\nFHc6\r\n=pTer\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				},
+				{
+					"name": "rvagg",
+					"email": "r@va.gg"
+				},
+				{
+					"name": "ralphtheninja",
+					"email": "ralphtheninja@riseup.net"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_7.0.1_1633169433933_0.7171515398478066"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-01-09T17:32:30.201Z",
+		"created": "2013-04-15T11:16:07.372Z",
+		"0.0.0": "2013-04-15T11:16:15.065Z",
+		"0.0.1": "2013-04-15T13:29:36.612Z",
+		"0.8.0": "2013-05-19T11:53:15.598Z",
+		"0.9.0": "2013-05-27T02:42:31.978Z",
+		"0.10.0": "2013-06-14T08:44:53.983Z",
+		"0.12.0": "2013-07-25T03:35:13.643Z",
+		"0.13.0": "2013-08-11T05:12:52.393Z",
+		"0.14.0": "2013-08-19T11:28:27.878Z",
+		"0.15.0": "2013-08-26T00:26:01.278Z",
+		"0.16.0": "2013-09-10T10:40:38.750Z",
+		"0.17.0": "2013-10-01T14:42:20.227Z",
+		"0.17.0-1": "2013-10-09T08:53:49.614Z",
+		"0.18.0": "2013-11-18T01:04:54.575Z",
+		"0.19.0": "2015-05-05T01:19:30.893Z",
+		"0.19.1": "2015-05-05T12:29:08.791Z",
+		"1.0.0-0": "2015-05-16T22:54:02.596Z",
+		"1.0.0": "2015-05-19T15:40:14.134Z",
+		"1.1.0": "2015-06-02T16:06:22.422Z",
+		"1.2.0": "2015-06-24T08:24:49.468Z",
+		"1.3.0": "2015-07-29T17:05:49.904Z",
+		"1.4.0": "2015-11-27T12:18:58.811Z",
+		"1.5.0": "2016-10-16T22:51:33.988Z",
+		"1.6.0": "2017-02-06T18:17:51.886Z",
+		"1.7.0": "2017-05-17T15:16:46.739Z",
+		"2.0.0-rc1": "2017-09-06T12:28:26.336Z",
+		"2.0.0-rc2": "2017-09-12T20:35:14.623Z",
+		"2.0.0-rc3": "2017-09-16T10:48:45.366Z",
+		"2.0.0": "2017-10-17T16:47:14.334Z",
+		"2.0.1": "2017-11-11T14:47:47.024Z",
+		"2.1.0": "2017-12-06T11:59:35.411Z",
+		"2.1.1": "2017-12-13T13:58:40.631Z",
+		"2.1.2": "2018-01-26T10:22:13.194Z",
+		"3.0.0": "2018-02-17T10:37:57.932Z",
+		"3.0.1": "2018-05-05T10:13:52.293Z",
+		"3.0.2": "2018-05-23T11:26:14.505Z",
+		"4.0.0": "2018-05-23T14:02:28.475Z",
+		"5.0.0-0": "2018-12-31T12:29:21.197Z",
+		"5.0.0": "2019-03-29T10:07:51.134Z",
+		"5.0.1": "2019-03-29T11:08:45.293Z",
+		"6.0.0": "2019-10-19T19:04:44.487Z",
+		"6.0.1": "2020-03-04T22:48:19.261Z",
+		"7.0.0": "2021-04-17T12:50:35.589Z",
+		"7.0.1": "2021-10-02T10:10:34.132Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "7.0.1",
+		"next": "5.0.0-0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"94157c5e046e18654a868443e9e12c23\"",
+			"fetched": 1643186341464
+		}
+	},
+	"_distfiles": {
+		"level-0.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.0.0.tgz",
+			"sha": "53b81e9ec7e6ac1e0e77442b4be5705ec3e18833",
+			"registry": "npmjs"
+		},
+		"level-0.0.1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.0.1.tgz",
+			"sha": "06a6657ec1950d7e4417d30bdae45c4af9757206",
+			"registry": "npmjs"
+		},
+		"level-0.8.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.8.0.tgz",
+			"sha": "3123bc9572be3625d0f9d4a42aeba77ee04981b5",
+			"registry": "npmjs"
+		},
+		"level-0.9.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.9.0.tgz",
+			"sha": "4cf158f40fa660dacd97e9d6eea89fdced0e38e1",
+			"registry": "npmjs"
+		},
+		"level-0.10.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.10.0.tgz",
+			"sha": "e8cf5d901465c17f94fcf6a8974aa5c9aa901855",
+			"registry": "npmjs"
+		},
+		"level-0.12.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.12.0.tgz",
+			"sha": "a27d5601cf2c8fb7233bb99177680c4a600d3daa",
+			"registry": "npmjs"
+		},
+		"level-0.13.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.13.0.tgz",
+			"sha": "ee610c48737a71263338730a1a39686ad75bef85",
+			"registry": "npmjs"
+		},
+		"level-0.14.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.14.0.tgz",
+			"sha": "a352fa2c59006301c6614750694fd6f6225b9f47",
+			"registry": "npmjs"
+		},
+		"level-0.15.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.15.0.tgz",
+			"sha": "f272e7318555f26b2794cfc9caa137036a3ac940",
+			"registry": "npmjs"
+		},
+		"level-0.16.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.16.0.tgz",
+			"sha": "8b7b7de96d3e1aa91128452cfde26359cfe74be8",
+			"registry": "npmjs"
+		},
+		"level-0.17.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.17.0.tgz",
+			"sha": "fadef2bf9cb2df23489030f900db6db66504bd89",
+			"registry": "npmjs"
+		},
+		"level-0.17.0-1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.17.0-1.tgz",
+			"sha": "c5f8438a1d0988f78dceb0efb6828a84b37119da",
+			"registry": "npmjs"
+		},
+		"level-0.18.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.18.0.tgz",
+			"sha": "e1a3f4cad65fc02e25070a47d63d7b527361c1cf",
+			"registry": "npmjs"
+		},
+		"level-0.19.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.19.0.tgz",
+			"sha": "e09016f79fec85b37650f6a3b037af83708100b9",
+			"registry": "npmjs"
+		},
+		"level-0.19.1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-0.19.1.tgz",
+			"sha": "e761c7402c8c3ba8b26084eadf8a5bec62a513bd",
+			"registry": "npmjs"
+		},
+		"level-1.0.0-0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.0.0-0.tgz",
+			"sha": "159aa7ab9b823798bcffc03897ea8441122343c6",
+			"registry": "npmjs"
+		},
+		"level-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.0.0.tgz",
+			"sha": "6b8ecf3e823546259995b23b2cf5d7e1bae63ceb",
+			"registry": "npmjs"
+		},
+		"level-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.1.0.tgz",
+			"sha": "6346223477064eabe355ef68389b39bf6bcedd4c",
+			"registry": "npmjs"
+		},
+		"level-1.2.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.2.0.tgz",
+			"sha": "c17c380c54853d474b379530645dcb1e9eb79c07",
+			"registry": "npmjs"
+		},
+		"level-1.3.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.3.0.tgz",
+			"sha": "b545a3d6145d414bddc8379e3db018c7e51ca504",
+			"registry": "npmjs"
+		},
+		"level-1.4.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.4.0.tgz",
+			"sha": "640c742097e515a6785c66c5f8a5464a01c2f581",
+			"registry": "npmjs"
+		},
+		"level-1.5.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.5.0.tgz",
+			"sha": "08a6683cf13efe2e6bfe236e2811ace3520c6038",
+			"registry": "npmjs"
+		},
+		"level-1.6.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.6.0.tgz",
+			"sha": "3fcbae9163a091668b8ec7a9efd1d2feef1e6621",
+			"registry": "npmjs"
+		},
+		"level-1.7.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-1.7.0.tgz",
+			"sha": "43464a3a8ba73b2f3de56a24292805146da213a1",
+			"registry": "npmjs"
+		},
+		"level-2.0.0-rc1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-2.0.0-rc1.tgz",
+			"sha": "42e164c407ed6c017838a4d95f959cca010cf281",
+			"registry": "npmjs"
+		},
+		"level-2.0.0-rc2.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-2.0.0-rc2.tgz",
+			"sha": "c17644115a372d458ac8bc1c233c02d056eec783",
+			"registry": "npmjs"
+		},
+		"level-2.0.0-rc3.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-2.0.0-rc3.tgz",
+			"sha": "91573649295146227f9c3b2b63eb438444469a9a",
+			"registry": "npmjs"
+		},
+		"level-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-2.0.0.tgz",
+			"sha": "78efdf9cb909025125929c2f0026d04cfdb70523",
+			"registry": "npmjs"
+		},
+		"level-2.0.1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-2.0.1.tgz",
+			"sha": "03f7d9384cec8bb5a14ea22f9aac88537bfc0a40",
+			"registry": "npmjs"
+		},
+		"level-2.1.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-2.1.0.tgz",
+			"sha": "ae5ba907919c97dc8f1f85d70db28f4173ab6fba",
+			"registry": "npmjs"
+		},
+		"level-2.1.1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-2.1.1.tgz",
+			"sha": "6c9d459dc6a417ef1f53c58e3cb23180b0734926",
+			"registry": "npmjs"
+		},
+		"level-2.1.2.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-2.1.2.tgz",
+			"sha": "3aaca16af50f4953c4433815fe0cccf999d98d39",
+			"registry": "npmjs"
+		},
+		"level-3.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-3.0.0.tgz",
+			"sha": "5a99288b8cc7b961e3f9560a9edfa45b1001a518",
+			"registry": "npmjs"
+		},
+		"level-3.0.1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-3.0.1.tgz",
+			"sha": "577093dc988410372ae84dfc07370e0ac69175e3",
+			"registry": "npmjs"
+		},
+		"level-3.0.2.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-3.0.2.tgz",
+			"sha": "83c3d6e48c9e89abc4b6f5ca1c591f177ea2bd59",
+			"registry": "npmjs"
+		},
+		"level-4.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-4.0.0.tgz",
+			"sha": "86aa46b5430bac12676e693ebff206232ef1e549",
+			"registry": "npmjs"
+		},
+		"level-5.0.0-0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-5.0.0-0.tgz",
+			"sha": "548ffa3c33e68aadb2d02bd72dbb26d09d809b3b",
+			"registry": "npmjs"
+		},
+		"level-5.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-5.0.0.tgz",
+			"sha": "336b45c6d56878619d781ddaa4460ba6ab1333ea",
+			"registry": "npmjs"
+		},
+		"level-5.0.1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-5.0.1.tgz",
+			"sha": "8528cc1ee37ac413270129a1eab938c610be3ccb",
+			"registry": "npmjs"
+		},
+		"level-6.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-6.0.0.tgz",
+			"sha": "d216fb9b9c3940bcec15c5880d8da775ca086c5c",
+			"registry": "npmjs"
+		},
+		"level-6.0.1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-6.0.1.tgz",
+			"sha": "dc34c5edb81846a6de5079eac15706334b0d7cd6",
+			"registry": "npmjs"
+		},
+		"level-7.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-7.0.0.tgz",
+			"sha": "10fa2d5a0b3b21a99d33e9307c92c1270243d1ce",
+			"registry": "npmjs"
+		},
+		"level-7.0.1.tgz": {
+			"url": "https://registry.npmjs.org/level/-/level-7.0.1.tgz",
+			"sha": "05121748d95a4ff7355860d56eb5d0aa36faef2a",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"level-5.0.1.tgz": {
+			"shasum": "8528cc1ee37ac413270129a1eab938c610be3ccb"
+		}
+	},
+	"_rev": "2-f059c1d94b5a941f",
+	"_id": "level",
+	"readme": "# level\n\n> Fast & simple storage. A Node.js-style `LevelDB` wrapper for Node.js, Electron and browsers.\n\n[![level badge][level-badge]](https://github.com/Level/awesome)\n[![npm](https://img.shields.io/npm/v/level.svg)](https://www.npmjs.com/package/level)\n[![Node version](https://img.shields.io/node/v/level.svg)](https://www.npmjs.com/package/level)\n[![Test](https://img.shields.io/github/workflow/status/Level/level/Test?label=test)](https://github.com/Level/level/actions/workflows/test.yml)\n[![Coverage](https://img.shields.io/codecov/c/github/Level/level?label=&logo=codecov&logoColor=fff)](https://codecov.io/gh/Level/level)\n[![Standard](https://img.shields.io/badge/standard-informational?logo=javascript&logoColor=fff)](https://standardjs.com)\n[![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)\n[![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective&logoColor=fff)](https://opencollective.com/level)\n\n## Table of Contents\n\n<details><summary>Click to expand</summary>\n\n- [Introduction](#introduction)\n- [Usage](#usage)\n- [Supported Platforms](#supported-platforms)\n- [API](#api)\n  - [`db = level(location[, options[, callback]])`](#db--levellocation-options-callback)\n  - [`db.supports`](#dbsupports)\n  - [`db.open([callback])`](#dbopencallback)\n  - [`db.close([callback])`](#dbclosecallback)\n  - [`db.put(key, value[, options][, callback])`](#dbputkey-value-options-callback)\n  - [`db.get(key[, options][, callback])`](#dbgetkey-options-callback)\n  - [`db.getMany(keys[, options][, callback])`](#dbgetmanykeys-options-callback)\n  - [`db.del(key[, options][, callback])`](#dbdelkey-options-callback)\n  - [`db.batch(array[, options][, callback])` _(array form)_](#dbbatcharray-options-callback-array-form)\n  - [`db.batch()` _(chained form)_](#dbbatch-chained-form)\n  - [`db.status`](#dbstatus)\n  - [`db.isOperational()`](#dbisoperational)\n  - [`db.createReadStream([options])`](#dbcreatereadstreamoptions)\n  - [`db.createKeyStream([options])`](#dbcreatekeystreamoptions)\n  - [`db.createValueStream([options])`](#dbcreatevaluestreamoptions)\n  - [`db.iterator([options])`](#dbiteratoroptions)\n  - [`db.clear([options][, callback])`](#dbclearoptions-callback)\n- [Promise Support](#promise-support)\n- [Events](#events)\n- [Contributing](#contributing)\n- [Donate](#donate)\n- [License](#license)\n\n</details>\n\n## Introduction\n\nThis is a convenience package that:\n\n- exports a function that returns a [`levelup`](https://github.com/Level/levelup) instance when invoked\n- bundles the current release of [`leveldown`][leveldown] and [`level-js`][level-js]\n- leverages encodings using [`encoding-down`][encoding-down].\n\nUse this package to avoid having to explicitly install `leveldown` or `level-js` when you just want to use `levelup`. It uses `leveldown` in Node.js or Electron and `level-js` in browsers (when bundled by [`browserify`](https://github.com/browserify/browserify), [`webpack`](https://webpack.js.org/), [`rollup`](https://rollupjs.org/) or similar). For a quick start, visit [`browserify-starter`](https://github.com/Level/browserify-starter) or [`webpack-starter`](https://github.com/Level/webpack-starter). Note: `rollup` currently fails to properly resolve the [`browser`](package.json) field.\n\n## Usage\n\n**If you are upgrading:** please see [`UPGRADING.md`](UPGRADING.md).\n\n```js\nconst level = require('level')\n\n// 1) Create our database, supply location and options.\n//    This will create or open the underlying store.\nconst db = level('my-db')\n\n// 2) Put a key & value\ndb.put('name', 'Level', function (err) {\n  if (err) return console.log('Ooops!', err) // some kind of I/O error\n\n  // 3) Fetch by key\n  db.get('name', function (err, value) {\n    if (err) return console.log('Ooops!', err) // likely the key was not found\n\n    // Ta da!\n    console.log('name=' + value)\n  })\n})\n```\n\nWith `async/await`:\n\n```js\nawait db.put('name', 'Level')\nconst value = await db.get('name')\n```\n\n## Supported Platforms\n\nAt the time of writing, `level` works in Node.js 10+ and Electron 5+ on Linux, Mac OS, Windows and FreeBSD, including any future Node.js and Electron release thanks to [N-API](https://nodejs.org/api/n-api.html), including ARM platforms like Raspberry Pi and Android, as well as in Chrome, Firefox, Edge, Safari, iOS Safari and Chrome for Android. For details, see [Supported Platforms](https://github.com/Level/leveldown#supported-platforms) of `leveldown` and [Browser Support](https://github.com/Level/level-js#browser-support) of `level-js`.\n\nBinary keys and values are supported across the board.\n\n## API\n\nFor options specific to [`leveldown`][leveldown] and [`level-js`][level-js] (\"underlying store\" from here on out), please see their respective READMEs.\n\n### `db = level(location[, options[, callback]])`\n\nThe main entry point for creating a new `levelup` instance.\n\n- `location` is a string pointing to the LevelDB location to be opened or in browsers, the name of the [`IDBDatabase`](https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase) to be opened.\n- `options` is passed on to the underlying store.\n- `options.keyEncoding` and `options.valueEncoding` are passed to [`encoding-down`][encoding-down], default encoding is `'utf8'`\n\nCalling `level('my-db')` will also open the underlying store. This is an asynchronous operation which will trigger your callback if you provide one. The callback should take the form `function (err, db) {}` where `db` is the `levelup` instance. If you don't provide a callback, any read & write operations are simply queued internally until the store is fully opened.\n\nThis leads to two alternative ways of managing a `levelup` instance:\n\n```js\nlevel(location, options, function (err, db) {\n  if (err) throw err\n\n  db.get('foo', function (err, value) {\n    if (err) return console.log('foo does not exist')\n    console.log('got foo =', value)\n  })\n})\n```\n\nVersus the equivalent:\n\n```js\n// Will throw if an error occurs\nvar db = level(location, options)\n\ndb.get('foo', function (err, value) {\n  if (err) return console.log('foo does not exist')\n  console.log('got foo =', value)\n})\n```\n\nThe constructor function has a `.errors` property which provides access to the different error types from [`level-errors`](https://github.com/Level/errors#api). See example below on how to use it:\n\n```js\nlevel('my-db', { createIfMissing: false }, function (err, db) {\n  if (err instanceof level.errors.OpenError) {\n    console.log('failed to open database')\n  }\n})\n```\n\nNote that `createIfMissing` is an option specific to [`leveldown`][leveldown].\n\n### `db.supports`\n\nA read-only [manifest](https://github.com/Level/supports). Might be used like so:\n\n```js\nif (!db.supports.permanence) {\n  throw new Error('Persistent storage is required')\n}\n\nif (db.supports.bufferKeys && db.supports.promises) {\n  await db.put(Buffer.from('key'), 'value')\n}\n```\n\n### `db.open([callback])`\n\nOpens the underlying store. In general you shouldn't need to call this method directly as it's automatically called by [`level()`](#db--levellocation-options-callback). However, it is possible to reopen the store after it has been closed with [`close()`](#dbclosecallback).\n\nIf no callback is passed, a promise is returned.\n\n### `db.close([callback])`\n\n`close()` closes the underlying store. The callback will receive any error encountered during closing as the first argument.\n\nA `levelup` instance has associated resources like file handles and locks. When you no longer need your `levelup` instance (for the remainder of your program) call `close()` to free up resources. The underlying store cannot be opened by multiple instances of `levelup` simultaneously.\n\nIf no callback is passed, a promise is returned.\n\n### `db.put(key, value[, options][, callback])`\n\n`put()` is the primary method for inserting data into the store. Both `key` and `value` can be of any type as far as `levelup` is concerned.\n\n- `options` is passed on to the underlying store\n- `options.keyEncoding` and `options.valueEncoding` are passed to [`encoding-down`][encoding-down], allowing you to override the key- and/or value encoding for this `put` operation.\n\nIf no callback is passed, a promise is returned.\n\n### `db.get(key[, options][, callback])`\n\nGet a value from the store by `key`. The `key` can be of any type. If it doesn't exist in the store then the callback or promise will receive an error. A not-found err object will be of type `'NotFoundError'` so you can `err.type == 'NotFoundError'` or you can perform a truthy test on the property `err.notFound`.\n\n```js\ndb.get('foo', function (err, value) {\n  if (err) {\n    if (err.notFound) {\n      // handle a 'NotFoundError' here\n      return\n    }\n    // I/O or other error, pass it up the callback chain\n    return callback(err)\n  }\n\n  // .. handle `value` here\n})\n```\n\n- `options` is passed on to the underlying store.\n- `options.keyEncoding` and `options.valueEncoding` are passed to [`encoding-down`][encoding-down], allowing you to override the key- and/or value encoding for this `get` operation.\n\nIf no callback is passed, a promise is returned.\n\n### `db.getMany(keys[, options][, callback])`\n\nGet multiple values from the store by an array of `keys`. The optional `options` object is the same as for [`get()`](#dbgetkey-options-callback).\n\nThe `callback` function will be called with an `Error` if the operation failed for any reason. If successful the first argument will be `null` and the second argument will be an array of values with the same order as `keys`. If a key was not found, the relevant value will be `undefined`.\n\nIf no callback is provided, a promise is returned.\n\n### `db.del(key[, options][, callback])`\n\n`del()` is the primary method for removing data from the store.\n\n```js\ndb.del('foo', function (err) {\n  if (err)\n    // handle I/O or other error\n});\n```\n\n- `options` is passed on to the underlying store.\n- `options.keyEncoding` is passed to [`encoding-down`][encoding-down], allowing you to override the key encoding for this `del` operation.\n\nIf no callback is passed, a promise is returned.\n\n### `db.batch(array[, options][, callback])` _(array form)_\n\n`batch()` can be used for fast bulk-write operations (both _put_ and _delete_). The `array` argument should contain a list of operations to be executed sequentially, although as a whole they are performed as an atomic operation inside the underlying store.\n\nEach operation is contained in an object having the following properties: `type`, `key`, `value`, where the _type_ is either `'put'` or `'del'`. In the case of `'del'` the `value` property is ignored. Any entries with a `key` of `null` or `undefined` will cause an error to be returned on the `callback` and any `type: 'put'` entry with a `value` of `null` or `undefined` will return an error.\n\n```js\nconst ops = [\n  { type: 'del', key: 'father' },\n  { type: 'put', key: 'name', value: 'Yuri Irsenovich Kim' },\n  { type: 'put', key: 'dob', value: '16 February 1941' },\n  { type: 'put', key: 'spouse', value: 'Kim Young-sook' },\n  { type: 'put', key: 'occupation', value: 'Clown' }\n]\n\ndb.batch(ops, function (err) {\n  if (err) return console.log('Ooops!', err)\n  console.log('Great success dear leader!')\n})\n```\n\n- `options` is passed on to the underlying store.\n- `options.keyEncoding` and `options.valueEncoding` are passed to [`encoding-down`][encoding-down], allowing you to override the key- and/or value encoding of operations in this batch.\n\nIf no callback is passed, a promise is returned.\n\n### `db.batch()` _(chained form)_\n\n`batch()`, when called with no arguments will return a `Batch` object which can be used to build, and eventually commit, an atomic batch operation. Depending on how it's used, it is possible to obtain greater performance when using the chained form of `batch()` over the array form.\n\n```js\ndb.batch()\n  .del('father')\n  .put('name', 'Yuri Irsenovich Kim')\n  .put('dob', '16 February 1941')\n  .put('spouse', 'Kim Young-sook')\n  .put('occupation', 'Clown')\n  .write(function () { console.log('Done!') })\n```\n\n**`batch.put(key, value[, options])`**\n\nQueue a _put_ operation on the current batch, not committed until a `write()` is called on the batch. The `options` argument is passed on to the underlying store; `options.keyEncoding` and `options.valueEncoding` are passed to [`encoding-down`][encoding-down], allowing you to override the key- and/or value encoding of this operation.\n\nThis method may `throw` a `WriteError` if there is a problem with your put (such as the `value` being `null` or `undefined`).\n\n**`batch.del(key[, options])`**\n\nQueue a _del_ operation on the current batch, not committed until a `write()` is called on the batch. The `options` argument is passed on to the underlying store; `options.keyEncoding` is passed to [`encoding-down`][encoding-down], allowing you to override the key encoding of this operation.\n\nThis method may `throw` a `WriteError` if there is a problem with your delete.\n\n**`batch.clear()`**\n\nClear all queued operations on the current batch, any previous operations will be discarded.\n\n**`batch.length`**\n\nThe number of queued operations on the current batch.\n\n**`batch.write([options][, callback])`**\n\nCommit the queued operations for this batch. All operations not _cleared_ will be written to the underlying store atomically, that is, they will either all succeed or fail with no partial commits.\n\n- `options` is passed on to the underlying store.\n- `options.keyEncoding` and `options.valueEncoding` are not supported here.\n\nIf no callback is passed, a promise is returned.\n\n### `db.status`\n\nA readonly string that is one of:\n\n- `new`     - newly created, not opened or closed\n- `opening` - waiting for the underlying store to be opened\n- `open`    - successfully opened the store, available for use\n- `closing` - waiting for the store to be closed\n- `closed`  - store has been successfully closed.\n\n### `db.isOperational()`\n\nReturns `true` if the store accepts operations, which in the case of `level(up)` means that `status` is either `opening` or `open`, because it opens itself and queues up operations until opened.\n\n### `db.createReadStream([options])`\n\nReturns a [Readable Stream](https://nodejs.org/docs/latest/api/stream.html#stream_readable_streams) of key-value pairs. A pair is an object with `key` and `value` properties. By default it will stream all entries in the underlying store from start to end. Use the options described below to control the range, direction and results.\n\n```js\ndb.createReadStream()\n  .on('data', function (data) {\n    console.log(data.key, '=', data.value)\n  })\n  .on('error', function (err) {\n    console.log('Oh my!', err)\n  })\n  .on('close', function () {\n    console.log('Stream closed')\n  })\n  .on('end', function () {\n    console.log('Stream ended')\n  })\n```\n\nYou can supply an options object as the first parameter to `createReadStream()` with the following properties:\n\n- `gt` (greater than), `gte` (greater than or equal) define the lower bound of the range to be streamed. Only entries where the key is greater than (or equal to) this option will be included in the range. When `reverse=true` the order will be reversed, but the entries streamed will be the same.\n\n- `lt` (less than), `lte` (less than or equal) define the higher bound of the range to be streamed. Only entries where the key is less than (or equal to) this option will be included in the range. When `reverse=true` the order will be reversed, but the entries streamed will be the same.\n\n- `reverse` _(boolean, default: `false`)_: stream entries in reverse order. Beware that due to the way that stores like LevelDB work, a reverse seek can be slower than a forward seek.\n\n- `limit` _(number, default: `-1`)_: limit the number of entries collected by this stream. This number represents a _maximum_ number of entries and may not be reached if you get to the end of the range first. A value of `-1` means there is no limit. When `reverse=true` the entries with the highest keys will be returned instead of the lowest keys.\n\n- `keys` _(boolean, default: `true`)_: whether the results should contain keys. If set to `true` and `values` set to `false` then results will simply be keys, rather than objects with a `key` property. Used internally by the `createKeyStream()` method.\n\n- `values` _(boolean, default: `true`)_: whether the results should contain values. If set to `true` and `keys` set to `false` then results will simply be values, rather than objects with a `value` property. Used internally by the `createValueStream()` method.\n\nUnderlying stores may have additional options.\n\n### `db.createKeyStream([options])`\n\nReturns a [Readable Stream](https://nodejs.org/docs/latest/api/stream.html#stream_readable_streams) of keys rather than key-value pairs. Use the same options as described for [`createReadStream()`](#dbcreatereadstreamoptions) to control the range and direction.\n\nYou can also obtain this stream by passing an options object to `createReadStream()` with `keys` set to `true` and `values` set to `false`. The result is equivalent; both streams operate in [object mode](https://nodejs.org/docs/latest/api/stream.html#stream_object_mode).\n\n```js\ndb.createKeyStream()\n  .on('data', function (data) {\n    console.log('key=', data)\n  })\n\n// same as:\ndb.createReadStream({ keys: true, values: false })\n  .on('data', function (data) {\n    console.log('key=', data)\n  })\n```\n\n### `db.createValueStream([options])`\n\nReturns a [Readable Stream](https://nodejs.org/docs/latest/api/stream.html#stream_readable_streams) of values rather than key-value pairs. Use the same options as described for [`createReadStream()`](#dbcreatereadstreamoptions) to control the range and direction.\n\nYou can also obtain this stream by passing an options object to `createReadStream()` with `values` set to `true` and `keys` set to `false`. The result is equivalent; both streams operate in [object mode](https://nodejs.org/docs/latest/api/stream.html#stream_object_mode).\n\n```js\ndb.createValueStream()\n  .on('data', function (data) {\n    console.log('value=', data)\n  })\n\n// same as:\ndb.createReadStream({ keys: false, values: true })\n  .on('data', function (data) {\n    console.log('value=', data)\n  })\n```\n\n### `db.iterator([options])`\n\nReturns an [`abstract-leveldown` iterator](https://github.com/Level/abstract-leveldown/#iterator), which is what powers the readable streams above. Options are the same as the range options of [`createReadStream()`](#dbcreatereadstreamoptions) and are passed to the underlying store.\n\nThese iterators support [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of):\n\n```js\nfor await (const [key, value] of db.iterator()) {\n  console.log(value)\n}\n```\n\n### `db.clear([options][, callback])`\n\nDelete all entries or a range. Not guaranteed to be atomic. Accepts the following range options (with the same rules as on iterators):\n\n- `gt` (greater than), `gte` (greater than or equal) define the lower bound of the range to be deleted. Only entries where the key is greater than (or equal to) this option will be included in the range. When `reverse=true` the order will be reversed, but the entries deleted will be the same.\n- `lt` (less than), `lte` (less than or equal) define the higher bound of the range to be deleted. Only entries where the key is less than (or equal to) this option will be included in the range. When `reverse=true` the order will be reversed, but the entries deleted will be the same.\n- `reverse` _(boolean, default: `false`)_: delete entries in reverse order. Only effective in combination with `limit`, to remove the last N records.\n- `limit` _(number, default: `-1`)_: limit the number of entries to be deleted. This number represents a _maximum_ number of entries and may not be reached if you get to the end of the range first. A value of `-1` means there is no limit. When `reverse=true` the entries with the highest keys will be deleted instead of the lowest keys.\n\nIf no options are provided, all entries will be deleted. The `callback` function will be called with no arguments if the operation was successful or with an `WriteError` if it failed for any reason.\n\nIf no callback is passed, a promise is returned.\n\n## Promise Support\n\nEach function taking a callback can also be used as a promise, if the callback is omitted. The only exception is the `level` constructor itself, which if no callback is passed will lazily open the underlying store in the background.\n\nExample:\n\n```js\nconst db = level('my-db')\nawait db.put('foo', 'bar')\nconsole.log(await db.get('foo'))\n```\n\n## Events\n\n`levelup` is an [`EventEmitter`](https://nodejs.org/api/events.html) and emits the following events.\n\n| Event     | Description                 | Arguments            |\n| :-------- | :-------------------------- | :------------------- |\n| `put`     | Key has been updated        | `key, value` (any)   |\n| `del`     | Key has been deleted        | `key` (any)          |\n| `batch`   | Batch has executed          | `operations` (array) |\n| `clear`   | Entries were deleted        | `options` (object)   |\n| `opening` | Underlying store is opening | -                    |\n| `open`    | Store has opened            | -                    |\n| `ready`   | Alias of `open`             | -                    |\n| `closing` | Store is closing            | -                    |\n| `closed`  | Store has closed.           | -                    |\n\nFor example you can do:\n\n```js\ndb.on('put', function (key, value) {\n  console.log('inserted', { key, value })\n})\n```\n\n## Contributing\n\n[`Level/level`](https://github.com/Level/level) is an **OPEN Open Source Project**. This means that:\n\n> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.\n\nSee the [Contribution Guide](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.\n\n## Donate\n\nSupport us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work.\n\n## License\n\n[MIT](LICENSE)\n\n[level-badge]: https://leveljs.org/img/badge.svg\n\n[leveldown]: https://github.com/Level/leveldown\n\n[level-js]: https://github.com/Level/level-js\n\n[encoding-down]: https://github.com/Level/encoding-down"
+}

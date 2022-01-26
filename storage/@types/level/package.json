@@ -1,0 +1,100 @@
+{
+	"name": "@types/level",
+	"versions": {
+		"6.0.0": {
+			"name": "@types/level",
+			"version": "6.0.0",
+			"description": "TypeScript definitions for level",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "danielfx90",
+					"url": "https://github.com/danielfx90",
+					"githubUsername": "danielfx90"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/level"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/encoding-down": "*",
+				"@types/levelup": "*"
+			},
+			"typesPublisherContentHash": "f5b17763722560b0b26296921e08b5a8600047128ea7926d05ecf7a36e21e766",
+			"typeScriptVersion": "3.5",
+			"_id": "@types/level@6.0.0",
+			"dist": {
+				"integrity": "sha512-NjaUpukKfCvnV4Wk0jUaodFi2/66HxgpYghc2aV8iP+zk2NMt/9ps1eVlifqOU/+eLzMlDIY69NWkbPaAstukQ==",
+				"shasum": "0bc0aaf1106598e1774e1dc5b69f0d58885d9d34",
+				"tarball": "https://registry.npmjs.org/@types/level/-/level-6.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 3317,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgbz4NCRA9TVsSAnZWagAAPikP/RiidoYjUWPpgE7XSRgj\nXHoVWAT7o6Z0IEJ1YjWD0nE7CEHUbEGbpVXh+ymfWOJHjNI/OFoeV/9bOCF0\nXWoB/4O2ZjCOJlJbVc4dqX03pywgqNmsj44LkmydTWsgPL+DvKYed75uHAIc\n075dxsqII0eDiDLU0xMBD8FAyqNRC3hBewai4OQPjLUhi3NkaqgzjZDUSjH6\namEvnBuHRjR/HGUPQ3dwmtSKqh1RYcKHufJ0ZHLibWO4lVN70NgtNVXAy04R\nRzSlEhTEuFyC2KREgLrgntf+e7i0RgQdF3zK8pGUqpmrQVDWahpa0Cwm8zMa\no7mH7CWeEOpylY63BkpNqGZy3KzRZRynu9//q/SK19GKbL7j7iJmqyMZQGuN\n0403lPcvrNtLhuDaZ2elZ67W3zU15mKJhnQOfi0QJ392qRJq0dHw3JVAHM0N\nVEiqUZ3jMX/JrUnJv/bwlo//1P/qWb/fqxZOH9PeLM/YdYD0720wR7uG/Fz6\nC2jcPVbhLXKdmKlmox91YF1gMPK3dWSJ1Ou69T6Sat+oCv6SeXQfBR07g77+\n8rFBZMY2beATDKp4OAmPZf9+DM3yoH5LvvDsnyi9tFy+Six0xkoBs9IW1zZ0\nrwNEgb629hY7w9BhXmYyuGsjZo0iTgfZl2Yqb59V7rTdOrL2OIA/gbHGUHlM\nfIqv\r\n=T2BC\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level_6.0.0_1617903116981_0.1911412239518433"
+			},
+			"_hasShrinkwrap": false
+		}
+	},
+	"time": {
+		"created": "2021-04-08T17:31:56.909Z",
+		"6.0.0": "2021-04-08T17:31:57.092Z",
+		"modified": "2021-11-18T19:59:07.950Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "6.0.0",
+		"ts3.5": "6.0.0",
+		"ts3.6": "6.0.0",
+		"ts3.7": "6.0.0",
+		"ts3.8": "6.0.0",
+		"ts3.9": "6.0.0",
+		"ts4.0": "6.0.0",
+		"ts4.1": "6.0.0",
+		"ts4.2": "6.0.0",
+		"ts4.3": "6.0.0",
+		"ts4.4": "6.0.0",
+		"ts4.5": "6.0.0",
+		"ts4.6": "6.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"0b1211a9913774a9b48dfe5f7e2ef1ea\"",
+			"fetched": 1643186350875
+		}
+	},
+	"_distfiles": {
+		"level-6.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/level/-/level-6.0.0.tgz",
+			"sha": "0bc0aaf1106598e1774e1dc5b69f0d58885d9d34",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"level-6.0.0.tgz": {
+			"shasum": "0bc0aaf1106598e1774e1dc5b69f0d58885d9d34"
+		}
+	},
+	"_rev": "2-1fc64529d39a1da3",
+	"_id": "@types/level",
+	"readme": "# Installation\r\n> `npm install --save @types/level`\r\n\r\n# Summary\r\nThis package contains type definitions for level (https://github.com/Level/level).\r\n\r\n# Details\r\nFiles were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level.\r\n\r\n### Additional Details\r\n * Last updated: Thu, 08 Apr 2021 17:31:27 GMT\r\n * Dependencies: [@types/abstract-leveldown](https://npmjs.com/package/@types/abstract-leveldown), [@types/encoding-down](https://npmjs.com/package/@types/encoding-down), [@types/levelup](https://npmjs.com/package/@types/levelup)\r\n * Global values: none\r\n\r\n# Credits\r\nThese definitions were written by [danielfx90](https://github.com/danielfx90)."
+}

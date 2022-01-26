@@ -1,0 +1,661 @@
+{
+	"name": "level-supports",
+	"versions": {
+		"1.0.0": {
+			"name": "level-supports",
+			"version": "1.0.0",
+			"description": "Create a manifest describing the abilities of a levelup or abstract-leveldown db",
+			"license": "MIT",
+			"scripts": {
+				"test": "standard && hallmark && (nyc -s node test/self.js | faucet) && nyc report",
+				"test-browser-local": "airtap --coverage --local test/self.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"hallmark": "hallmark --fix",
+				"dependency-check": "dependency-check --no-dev . test/*.js",
+				"prepublishOnly": "npm run dependency-check"
+			},
+			"dependencies": {
+				"xtend": "^4.0.2"
+			},
+			"devDependencies": {
+				"airtap": "^2.0.4",
+				"coveralls": "^3.0.6",
+				"dependency-check": "^4.1.0",
+				"faucet": "^0.0.1",
+				"hallmark": "^2.0.0",
+				"level-community": "^3.0.0",
+				"nyc": "^14.1.1",
+				"standard": "^14.3.1",
+				"tape": "^4.11.0"
+			},
+			"hallmark": {
+				"community": "level-community"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/supports.git"
+			},
+			"homepage": "https://github.com/Level/supports",
+			"keywords": [
+				"abstract-leveldown",
+				"database",
+				"db",
+				"level",
+				"levelup",
+				"manifest"
+			],
+			"engines": {
+				"node": ">=6"
+			},
+			"gitHead": "280bf78b8fc78ea1b27541f2ea59d351c9721108",
+			"bugs": {
+				"url": "https://github.com/Level/supports/issues"
+			},
+			"_id": "level-supports@1.0.0",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "10.14.1",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-01PKZumFhgysuHUbRz4c9DyA1egmcHJBAsZbm0Vf5agojC3uWOvAnhOD4swNUgHlfJBymXLi/xkBaEckeNRSvA==",
+				"shasum": "376f3f2339c23be0ba2fe62b0fa0e3ac7d6d9988",
+				"tarball": "https://registry.npmjs.org/level-supports/-/level-supports-1.0.0.tgz",
+				"fileCount": 9,
+				"unpackedSize": 13038,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdhxfRCRA9TVsSAnZWagAA75oP/2vLQdJcH0nPPdk2Atdm\n+76PFwNs6Gj1V0ooVi49vIIlj1sQSwnCmoXhb5sBSD/IscflYfGCM5JVIV72\nRpoXhWQ5rWe40qGuAgCHz3qO0Fxmq2VkgwGzSsWVGn6NqQnUl5vNhSnOrZEx\nq/eCc8btGyWYbsvlyNW4upi1Q1/+cAUKKw/wLdl/2wWDGDo1ez/dajWanG4V\nARZx5hyTNVBvYDXwvJVKCCCB/izQg8aPh3FJa2v/pUMHygXFwA0Ri9Ulga0X\nlMbBndW3+3xZFh89hMucypkUhCoVDNjZxlhStLaOIWSsV/5+b9A+k7dfIabt\nXNfsYuH6Umx0iAgvBdOBHZHWs7vWtUAZ+I5n3iLYhMGNCDN1WSxC6BPqoQwq\nP9XnKR2TAcDuqOU1q1O1W3H19PxlDIIxNjaE38hkG3AD2Mvk8UnzW56tKg9I\nekGOCH21x9TlMM4qfFFTkRf7+qHMRrgDMpBfJ7IzBol1/wbrPvcoR2EBDnu7\njIzplHcJEmHAY1aKPq7oqRfeUewcziMr8dhMOZEzdBDglEeMi7k28u9BKWi4\n74es2BdgX4DEH4WlEW3K10FOlOMKWly79cN6e+ueqBd4WTVD5FaTgKzJ9pUM\nMCTrH3Vww7dgC6lwMjgIgZoNEgODzYJYMro5abfX7XBmpic6mqfp9VeHqpwv\nUr8+\r\n=Sgt1\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-supports_1.0.0_1569134545094_0.00004518805645892243"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "level-supports",
+			"version": "1.0.1",
+			"description": "Create a manifest describing the abilities of a levelup or abstract-leveldown db",
+			"license": "MIT",
+			"scripts": {
+				"test": "standard && hallmark && (nyc -s node test/self.js | faucet) && nyc report",
+				"test-browser-local": "airtap --coverage --local test/self.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"hallmark": "hallmark --fix",
+				"dependency-check": "dependency-check --no-dev . test/*.js",
+				"prepublishOnly": "npm run dependency-check"
+			},
+			"dependencies": {
+				"xtend": "^4.0.2"
+			},
+			"devDependencies": {
+				"airtap": "^2.0.4",
+				"coveralls": "^3.0.6",
+				"dependency-check": "^4.1.0",
+				"faucet": "^0.0.1",
+				"hallmark": "^2.0.0",
+				"level-community": "^3.0.0",
+				"nyc": "^14.1.1",
+				"standard": "^14.3.1",
+				"tape": "^4.11.0"
+			},
+			"hallmark": {
+				"community": "level-community"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/supports.git"
+			},
+			"homepage": "https://github.com/Level/supports",
+			"keywords": [
+				"abstract-leveldown",
+				"database",
+				"db",
+				"level",
+				"levelup",
+				"manifest"
+			],
+			"engines": {
+				"node": ">=6"
+			},
+			"gitHead": "07c4f8001644090ba2099cf259d688f25a7139f1",
+			"bugs": {
+				"url": "https://github.com/Level/supports/issues"
+			},
+			"_id": "level-supports@1.0.1",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "10.14.1",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-rXM7GYnW8gsl1vedTJIbzOrRv85c/2uCMpiiCzO2fndd06U/kUXEEU9evYn4zFggBOg36IsBW8LzqIpETwwQzg==",
+				"shasum": "2f530a596834c7301622521988e2c36bb77d122d",
+				"tarball": "https://registry.npmjs.org/level-supports/-/level-supports-1.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 15211,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdox6oCRA9TVsSAnZWagAAl4UP/2N2cW62Vg6T03u7eLkb\n5NIqe34r0wXaljpQbh74Ie2GgSKGjvYzHO2csFTkAYdgSTAC2ryQ/e8fuTWP\nraUwn2ZspEDnKkwlMw0b4WFYlJhuyop51uECHZVux6yfPhWN1ONI/wL50ymJ\nAG+wSkUW1HYjoNEx0DEZk2jYxnHPJOaH1xGto9Y2ba7pWHLJdHUG3K4xzmR6\nhvsdbgCNVUgcj/TvyR4cYWr+9IDodF/aiDnVGZ7INSvvlAD6NzITmW0Xqckd\nrBdxKVe+UtpcFpjqgthQa8qQ8qxy2TTFj+2sdmEbWWDvy1gwt1+M8LxQhDWM\nNcagux+0wFnZQa+9RVeAQ4E0D2mMEGTJ5viCZMtlLI5MJOFb2xptxcneSPrQ\n3+EfAoRokhrPhygP5oPQCLgtVo13zl75GpOf+ash59uImKHb92KVMr5DN7v5\n2M/+WAArcKdCmcL0BlovMCstNmX7WxzTFkcLpYxbZjf5F+ZnNECo9H+4sz9n\n+fm3RkWYjwmhtzR7MilRa9pXXvDchzjYNe4aCdBhJlVVBAAfje64LHIUq6ee\n1D9kB4UKOTtGI0f0/n7M2CMHGw9L1iMmcvxJAebvUqTL6zV+aIRM3LmOWbl2\nQWkuOPO6NPQBMW/3Y2StkKzNIObnsjZJpaVsuPJr1Ts4LG/3hjRmcT3bUfx5\n82kE\r\n=66LR\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-supports_1.0.1_1570971304104_0.4748248337876886"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "level-supports",
+			"version": "2.0.0",
+			"description": "Create a manifest describing the abilities of a levelup or abstract-leveldown db",
+			"license": "MIT",
+			"scripts": {
+				"test": "standard && hallmark && (nyc -s node test/self.js | faucet) && nyc report",
+				"test-browsers-local": "airtap --coverage test/self.js",
+				"coverage": "nyc report --reporter=text-lcov | coveralls",
+				"hallmark": "hallmark --fix"
+			},
+			"dependencies": {},
+			"devDependencies": {
+				"airtap": "^4.0.3",
+				"airtap-playwright": "^1.0.1",
+				"coveralls": "^3.0.6",
+				"faucet": "^0.0.1",
+				"hallmark": "^3.1.0",
+				"level-community": "^3.0.0",
+				"nyc": "^14.1.1",
+				"standard": "^16.0.3",
+				"tape": "^5.0.1"
+			},
+			"hallmark": {
+				"community": "level-community"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/supports.git"
+			},
+			"homepage": "https://github.com/Level/supports",
+			"keywords": [
+				"abstract-leveldown",
+				"database",
+				"db",
+				"level",
+				"levelup",
+				"manifest"
+			],
+			"engines": {
+				"node": ">=10"
+			},
+			"gitHead": "2323a05add627da9f56ef6578393900d20101e63",
+			"bugs": {
+				"url": "https://github.com/Level/supports/issues"
+			},
+			"_id": "level-supports@2.0.0",
+			"_nodeVersion": "12.11.1",
+			"_npmVersion": "6.11.3",
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				}
+			],
+			"dist": {
+				"integrity": "sha512-8UJgzo1pvWP1wq80ZlkL19fPeK7tlyy0sBY90+2pj0x/kvzHCoLDWyuFJJMrsTn33oc7hbMkS3SkjCxMRPHWaw==",
+				"shasum": "b0b9f63f30c4175fb2612217144f03f3b77580d9",
+				"tarball": "https://registry.npmjs.org/level-supports/-/level-supports-2.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 15427,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgcBGqCRA9TVsSAnZWagAAfxcQAI4TnJgNE4Q1kPK4TE0b\narP5Ul2Z6uw/1JcCNTLRdK/YX1Z46xh1hZVPji6zeDWI4SfMdv1VOFU6KCmv\nCEOTeCmKncYRJvE9fNNGi3OXH9blpT7TcbffqM6TGRjgE8QBDog5fU/kq5GY\nlfWrWzqw2VE7NOCTu8jN6BaAxy8+GmNTXNeRYvWRgDPYIYJ+4bCXEHc6I+3R\n660PyUGs3c2JXoFZVnuS/uHv1zmYCZ0zAGkbVfmq7jesbFOh6FwRi35a+Mbe\nu8JNrtvjyEQtiR59FObVUhEYEOeyhZKcXgGGpO00deES3JK2aR4fl3cZ3Hft\nNGjOBcEDij5FgNid8YRzN26x4nlgEkeE3N/nB1Z9GzoxtWXvQEyQwBr66Rkr\nupb/R0Qhnb8hj8q6w9JLclFEUzMqWHiZ6NF1kAgkodszi21+1RKZf8ZPxfYc\ngc1GojX6VgoXP19k0zM3Fa46J7BhNDb3hhqdAwZfViWTqcm5SwEBsH/xm1kc\narjHdAcdlnyxHYNj0diXJTdYpbGqmMclP/zJIwR0gxT7aGQGsUmILPlqQcVS\nee5+B5VzGRctLE67l4jS+b7F4/hqeW6DjEFu7eNAwjmQ3B8sfcP0uU661F7n\ngajWUQcKxpGg2F0yTqmhpB03km1WvLJzhKqyMjotUcWrnRnsKKhTyjFu5fur\nIyCn\r\n=qGEh\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-supports_2.0.0_1617957290530_0.6751459036358194"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.1": {
+			"name": "level-supports",
+			"version": "2.0.1",
+			"description": "Create a manifest describing the abilities of a levelup or abstract-leveldown db",
+			"license": "MIT",
+			"scripts": {
+				"test": "standard && hallmark && (nyc -s node test/self.js | faucet) && nyc report",
+				"test-browsers-local": "airtap --coverage test/self.js",
+				"coverage": "nyc report -r lcovonly",
+				"hallmark": "hallmark --fix"
+			},
+			"devDependencies": {
+				"airtap": "^4.0.3",
+				"airtap-playwright": "^1.0.1",
+				"faucet": "^0.0.1",
+				"hallmark": "^3.1.0",
+				"nyc": "^15.1.0",
+				"standard": "^16.0.3",
+				"tape": "^5.0.1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/supports.git"
+			},
+			"homepage": "https://github.com/Level/supports",
+			"keywords": [
+				"abstract-leveldown",
+				"database",
+				"db",
+				"level",
+				"levelup",
+				"manifest"
+			],
+			"engines": {
+				"node": ">=10"
+			},
+			"gitHead": "a5c194c6dfef14ad7a55c5cc1373cc60ddec6c68",
+			"bugs": {
+				"url": "https://github.com/Level/supports/issues"
+			},
+			"_id": "level-supports@2.0.1",
+			"_nodeVersion": "16.9.1",
+			"_npmVersion": "7.21.1",
+			"dist": {
+				"integrity": "sha512-GHRdL9Gi5ReMwhKE4swGj08sIOvVyp+lZUXI3qcMXSF/qcDaKDBv8bduXUUpjO42GFec5bCt3O8Xum47e/h1wQ==",
+				"shasum": "a59a0e95d7a80bb377469d63e1ca991a4af7c187",
+				"tarball": "https://registry.npmjs.org/level-supports/-/level-supports-2.0.1.tgz",
+				"fileCount": 9,
+				"unpackedSize": 21900
+			},
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-supports_2.0.1_1632491625566_0.041932817916020326"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2": {
+			"name": "level-supports",
+			"version": "2.0.2",
+			"description": "Create a manifest describing the abilities of a levelup or abstract-leveldown db",
+			"license": "MIT",
+			"scripts": {
+				"test": "standard && hallmark && (nyc -s node test/self.js | faucet) && nyc report",
+				"test-browsers-local": "airtap --coverage test/self.js",
+				"coverage": "nyc report -r lcovonly",
+				"hallmark": "hallmark --fix"
+			},
+			"devDependencies": {
+				"airtap": "^4.0.3",
+				"airtap-playwright": "^1.0.1",
+				"faucet": "^0.0.1",
+				"hallmark": "^3.1.0",
+				"nyc": "^15.1.0",
+				"standard": "^16.0.3",
+				"tape": "^5.0.1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/supports.git"
+			},
+			"homepage": "https://github.com/Level/supports",
+			"keywords": [
+				"abstract-leveldown",
+				"database",
+				"db",
+				"level",
+				"levelup",
+				"manifest"
+			],
+			"engines": {
+				"node": ">=10"
+			},
+			"gitHead": "e09d8320350c842a98a5ccd90eead6d8222a9bba",
+			"bugs": {
+				"url": "https://github.com/Level/supports/issues"
+			},
+			"_id": "level-supports@2.0.2",
+			"_nodeVersion": "16.9.1",
+			"_npmVersion": "7.21.1",
+			"dist": {
+				"integrity": "sha512-dU1W7OnntoCXeNfy9c93K7KEoGNsuP+zZLbUQrIbBzhdZ75U0h8GEcioqmJc1QpYVORyFfeR+kyFeNx2N4t7lg==",
+				"shasum": "9b8a3b2de8d25cd4f31d285ca7a842c5666c2c65",
+				"tarball": "https://registry.npmjs.org/level-supports/-/level-supports-2.0.2.tgz",
+				"fileCount": 9,
+				"unpackedSize": 26449
+			},
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-supports_2.0.2_1633776923524_0.8066205503941501"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.0": {
+			"name": "level-supports",
+			"version": "2.1.0",
+			"description": "Create a manifest describing the abilities of a levelup or abstract-leveldown db",
+			"license": "MIT",
+			"scripts": {
+				"test": "standard && hallmark && (nyc -s node test/self.js | faucet) && nyc report",
+				"test-browsers-local": "airtap --coverage test/self.js",
+				"coverage": "nyc report -r lcovonly",
+				"hallmark": "hallmark --fix"
+			},
+			"devDependencies": {
+				"airtap": "^4.0.3",
+				"airtap-playwright": "^1.0.1",
+				"faucet": "^0.0.1",
+				"hallmark": "^3.1.0",
+				"nyc": "^15.1.0",
+				"standard": "^16.0.3",
+				"tape": "^5.0.1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/supports.git"
+			},
+			"homepage": "https://github.com/Level/supports",
+			"keywords": [
+				"abstract-leveldown",
+				"database",
+				"db",
+				"level",
+				"levelup",
+				"manifest"
+			],
+			"engines": {
+				"node": ">=10"
+			},
+			"gitHead": "d82cb54743999d8f6a67d117a208823fefcc6f04",
+			"bugs": {
+				"url": "https://github.com/Level/supports/issues"
+			},
+			"_id": "level-supports@2.1.0",
+			"_nodeVersion": "16.9.1",
+			"_npmVersion": "7.21.1",
+			"dist": {
+				"integrity": "sha512-E486g1NCjW5cF78KGPrMDRBYzPuueMZ6VBXHT6gC7A8UYWGiM14fGgp+s/L1oFfDWSPV/+SFkYCmZ0SiESkRKA==",
+				"shasum": "9af908d853597ecd592293b2fad124375be79c5f",
+				"tarball": "https://registry.npmjs.org/level-supports/-/level-supports-2.1.0.tgz",
+				"fileCount": 9,
+				"unpackedSize": 26856
+			},
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-supports_2.1.0_1635342791597_0.3943482189863716"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.0": {
+			"name": "level-supports",
+			"version": "3.0.0",
+			"description": "Create a manifest describing the abilities of a levelup or abstract-leveldown db",
+			"license": "MIT",
+			"scripts": {
+				"test": "ts-standard && tsc && standard && hallmark && (nyc -s node test/self.js | faucet) && nyc report",
+				"test-browsers-local": "airtap --coverage test/self.js",
+				"coverage": "nyc report -r lcovonly",
+				"hallmark": "hallmark --fix"
+			},
+			"types": "./index.d.ts",
+			"devDependencies": {
+				"@types/node": "^16.11.6",
+				"@voxpelli/tsconfig": "^3.0.0",
+				"airtap": "^4.0.3",
+				"airtap-playwright": "^1.0.1",
+				"faucet": "^0.0.1",
+				"hallmark": "^3.1.0",
+				"nyc": "^15.1.0",
+				"standard": "^16.0.3",
+				"tape": "^5.0.1",
+				"ts-standard": "^10.0.0",
+				"typescript": "^4.4.4"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/supports.git"
+			},
+			"homepage": "https://github.com/Level/supports",
+			"keywords": [
+				"abstract-leveldown",
+				"database",
+				"db",
+				"level",
+				"levelup",
+				"manifest"
+			],
+			"engines": {
+				"node": ">=10"
+			},
+			"gitHead": "6dbfb5929f5d0085296aca8acce37afc678e493f",
+			"bugs": {
+				"url": "https://github.com/Level/supports/issues"
+			},
+			"_id": "level-supports@3.0.0",
+			"_nodeVersion": "16.9.1",
+			"_npmVersion": "7.21.1",
+			"dist": {
+				"integrity": "sha512-Q2wUEQDpuO5aw5EgAjbMyoZ2/MNWkSDkg8akeAfQD4nNaGfyVZVGLNwhHttJfiRcgu6wMjKd6YoD6x8u/C+UOg==",
+				"shasum": "0f069badd54da2d9e79cb6146ed521914d70416c",
+				"tarball": "https://registry.npmjs.org/level-supports/-/level-supports-3.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 28123
+			},
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-supports_3.0.0_1636325521627_0.4190919667665738"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"4.0.0": {
+			"name": "level-supports",
+			"version": "4.0.0",
+			"description": "Create a manifest describing the abilities of an abstract-level database",
+			"license": "MIT",
+			"scripts": {
+				"test": "ts-standard && tsc && standard && hallmark && (nyc -s node test/self.js | faucet) && nyc report",
+				"test-browsers-local": "airtap --coverage test/self.js",
+				"coverage": "nyc report -r lcovonly",
+				"hallmark": "hallmark --fix"
+			},
+			"types": "./index.d.ts",
+			"devDependencies": {
+				"@types/node": "^17.0.6",
+				"@voxpelli/tsconfig": "^3.1.0",
+				"airtap": "^4.0.4",
+				"airtap-playwright": "^1.0.1",
+				"faucet": "^0.0.1",
+				"hallmark": "^4.0.0",
+				"nyc": "^15.1.0",
+				"standard": "^16.0.3",
+				"tape": "^5.4.0",
+				"ts-standard": "^11.0.0",
+				"typescript": "^4.5.4"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Level/supports.git"
+			},
+			"homepage": "https://github.com/Level/supports",
+			"keywords": [
+				"abstract-leveldown",
+				"database",
+				"db",
+				"level",
+				"levelup",
+				"manifest"
+			],
+			"engines": {
+				"node": ">=12"
+			},
+			"gitHead": "aca35ac88124ae2ca3f5ecb6c2e5cc5d80f12a80",
+			"bugs": {
+				"url": "https://github.com/Level/supports/issues"
+			},
+			"_id": "level-supports@4.0.0",
+			"_nodeVersion": "16.9.1",
+			"_npmVersion": "7.21.1",
+			"dist": {
+				"integrity": "sha512-7H29uMFn87FWa+/wrfiBT0K8XWrn7ufy4e+Yxbw9pXuHw7Pscld0B6rKfEUHy/dCSLcxK3xEI/nAQKfhlv1sSg==",
+				"shasum": "4a482f52a6d8a360f2e306db7a1c4323db6d2a2e",
+				"tarball": "https://registry.npmjs.org/level-supports/-/level-supports-4.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 30466,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh0aIMCRA9TVsSAnZWagAAHcQQAIiPYN+0w6n4ZjWKUSq/\nVZfMI8L8Er28I3QJQqsEDDadD29Hny4iaI2fCHb6sHJhsnQweAUgArmlNTX2\nJ2aH/Rzap0SJuZlmEkCwy3blAIe4kTFu6bG6N35K+Y2JDQRx+MrgWcaUbto4\n2RmDza8sudO85AHXdicYCMx69mG8zzZBhNbAqVm427CVkND3a4wvN6xU5VHb\nWAakLi4rrHqkEjG11biLhQAthvxl6v+3j2iCI727nEp9QVO70J+w6XasJHAT\nuAAwdLClAPYnIkZ/yCAxDmIojyHGcYdA8ynCY+U6p+cPpq5oUlxghzc34YGF\nzb3NlYFQG2sdUV3o1x3LlMSEinHzRp0AYyUhcVLR2KYXco9mJFw9VqSXpgRH\nxzYKpZF7mLlIAK7gg6i19I3CpdsUMpF2BUZnwR7Inbxaq7jNaFpj1/9MZeQJ\n27cvogQNCSqKlo+2AtbnQFaHP3WSZmlhRu7MhXMB28r8uJ9x9HGvwi3rTEuK\nPlOdBrlxgOTRrvFXSYuUBzbRT4U/ZnfEYzZHBBPMOTj0Olp4GWZmjBvVLJVm\nGOQjSgghvhNxEnR0/qHMMcUZldD6pVQFeJwY/PN5Dwawxrw5wh9uQuJaW5Ge\nxEJkTGAbybLg09wD+uyGQOEM53WKgCBeEa2g0zMePo8n6eLOurv+7QBeTtmj\nluER\r\n=gfm7\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "vweevers",
+				"email": "dev@vincentweevers.nl"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "vweevers",
+					"email": "dev@vincentweevers.nl"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-supports_4.0.0_1641128459917_0.48963610195742024"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2019-09-22T06:42:25.094Z",
+		"1.0.0": "2019-09-22T06:42:25.326Z",
+		"modified": "2022-01-02T13:01:01.822Z",
+		"1.0.1": "2019-10-13T12:55:04.334Z",
+		"2.0.0": "2021-04-09T08:34:50.648Z",
+		"2.0.1": "2021-09-24T13:53:45.681Z",
+		"2.0.2": "2021-10-09T10:55:23.673Z",
+		"2.1.0": "2021-10-27T13:53:11.721Z",
+		"3.0.0": "2021-11-07T22:52:01.771Z",
+		"4.0.0": "2022-01-02T13:01:00.062Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "4.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"dcb59f89103fde3cd52c9da80541be04\"",
+			"fetched": 1643186342460
+		}
+	},
+	"_distfiles": {
+		"level-supports-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level-supports/-/level-supports-1.0.0.tgz",
+			"sha": "376f3f2339c23be0ba2fe62b0fa0e3ac7d6d9988",
+			"registry": "npmjs"
+		},
+		"level-supports-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/level-supports/-/level-supports-1.0.1.tgz",
+			"sha": "2f530a596834c7301622521988e2c36bb77d122d",
+			"registry": "npmjs"
+		},
+		"level-supports-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level-supports/-/level-supports-2.0.0.tgz",
+			"sha": "b0b9f63f30c4175fb2612217144f03f3b77580d9",
+			"registry": "npmjs"
+		},
+		"level-supports-2.0.1.tgz": {
+			"url": "https://registry.npmjs.org/level-supports/-/level-supports-2.0.1.tgz",
+			"sha": "a59a0e95d7a80bb377469d63e1ca991a4af7c187",
+			"registry": "npmjs"
+		},
+		"level-supports-2.0.2.tgz": {
+			"url": "https://registry.npmjs.org/level-supports/-/level-supports-2.0.2.tgz",
+			"sha": "9b8a3b2de8d25cd4f31d285ca7a842c5666c2c65",
+			"registry": "npmjs"
+		},
+		"level-supports-2.1.0.tgz": {
+			"url": "https://registry.npmjs.org/level-supports/-/level-supports-2.1.0.tgz",
+			"sha": "9af908d853597ecd592293b2fad124375be79c5f",
+			"registry": "npmjs"
+		},
+		"level-supports-3.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level-supports/-/level-supports-3.0.0.tgz",
+			"sha": "0f069badd54da2d9e79cb6146ed521914d70416c",
+			"registry": "npmjs"
+		},
+		"level-supports-4.0.0.tgz": {
+			"url": "https://registry.npmjs.org/level-supports/-/level-supports-4.0.0.tgz",
+			"sha": "4a482f52a6d8a360f2e306db7a1c4323db6d2a2e",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"level-supports-1.0.1.tgz": {
+			"shasum": "2f530a596834c7301622521988e2c36bb77d122d"
+		}
+	},
+	"_rev": "2-9527179b36788663",
+	"_id": "level-supports",
+	"readme": "# level-supports\n\n**Create a manifest describing the abilities of an [`abstract-level`](https://github.com/Level/abstract-level) database.** No longer compatible with [`levelup`](https://github.com/Level/levelup) or [`abstract-leveldown`](https://github.com/Level/abstract-leveldown) since version 3.0.0.\n\n[![level badge][level-badge]](https://github.com/Level/awesome)\n[![npm](https://img.shields.io/npm/v/level-supports.svg)](https://www.npmjs.com/package/level-supports)\n[![Node version](https://img.shields.io/node/v/level-supports.svg)](https://www.npmjs.com/package/level-supports)\n[![Test](https://img.shields.io/github/workflow/status/Level/supports/Test?label=test)](https://github.com/Level/supports/actions/workflows/test.yml)\n[![Coverage](https://img.shields.io/codecov/c/github/Level/supports?label=\\&logo=codecov\\&logoColor=fff)](https://codecov.io/gh/Level/supports)\n[![Standard](https://img.shields.io/badge/standard-informational?logo=javascript\\&logoColor=fff)](https://standardjs.com)\n[![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)\n[![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective\\&logoColor=fff)](https://opencollective.com/level)\n\n## Usage\n\n```js\nconst { supports } = require('level-supports')\n\ndb.supports = supports({\n  permanence: false,\n  encodings: {\n    utf8: true\n  }\n})\n```\n\nReceivers of the db can then use it like so:\n\n```js\nif (!db.supports.permanence) {\n  throw new Error('Persistent storage is required')\n}\n```\n\n## API\n\n### `manifest = supports([manifest, ..])`\n\nGiven zero or more manifest objects, returns a merged and enriched manifest object that has truthy properties for each of the features listed below.\n\nFor future extensibility, the properties are truthy rather than strictly typed booleans. Falsy or absent properties are converted to `false`, other values are allowed:\n\n```js\nsupports().snapshots // false\nsupports({ snapshots: true }).snapshots // true\nsupports({ snapshots: {} }).snapshots // {}\nsupports({ snapshots: 1 }, { snapshots: 2 }).snapshots // 2\n```\n\nFor consumers of the manifest this means they should check support like so:\n\n```js\nif (db.supports.snapshots)\n```\n\nRather than:\n\n```js\nif (db.supports.snapshots === true)\n```\n\n**Note:** the manifest describes high-level features that typically encompass multiple methods of a db. It is currently not a goal to describe a full API, or versions of it.\n\n## Features\n\n### `snapshots` (boolean)\n\nDoes the database have snapshot guarantees? Meaning that reads are unaffected by simultaneous writes. For example, an iterator should read from a snapshot of the database, created at the time `db.iterator()` was called. This means the iterator will not see the data of simultaneous write operations.\n\nMust be `false` if any of the following is true:\n\n- Reads don't operate on a snapshot\n- Snapshots are created asynchronously.\n\n<details>\n<summary>Support matrix</summary>\n\n| Module               | Snapshot guarantee          |\n| :------------------- | :-------------------------- |\n| `classic-level`      | ✅                           |\n| `memory-level`       | ✅                           |\n| `browser-level`      | ✅ (by buffering)            |\n| `rocks-level`        | ✅                           |\n| `leveldown`          | ✅                           |\n| `rocksdb`            | ✅                           |\n| `memdown`            | ✅                           |\n| `level-js`           | ✅ (by buffering)            |\n| `encoding-down`      | ✅                           |\n| `deferred-leveldown` | ✅                           |\n| `levelup`            | ✅                           |\n| `level-packager`     | ✅                           |\n| `level`              | ✅                           |\n| `level-mem`          | ✅                           |\n| `level-rocksdb`      | ✅                           |\n| `subleveldown`       | ✅                           |\n| `multileveldown`     | ✅ (unless `retry` is true)  |\n| `level-party`        | ❌ (unless `retry` is false) |\n\n</details>\n\n### `permanence` (boolean)\n\nDoes data survive after process (or environment) exit? Typically true. False for [`memory-level`](https://github.com/Level/memory-level) and [`memdown`](https://github.com/Level/memdown).\n\n### `seek` (boolean)\n\nDo iterators support [`seek(..)`](https://github.com/Level/abstract-level/#iteratorseektarget-options)?\n\n<details>\n<summary>Support matrix</summary>\n\n| Module               | Support             |\n| :------------------- | :------------------ |\n| `abstract-level`     | ✅ 1.0.0             |\n| `classic-level`      | ✅ 1.0.0             |\n| `memory-level`       | ✅ 1.0.0             |\n| `browser-level`      | ❌                   |\n| `rocks-level`        | ✅ 1.0.0             |\n| `abstract-leveldown` | ✅ 6.0.0             |\n| `leveldown`          | ✅ 1.2.0             |\n| `rocksdb`            | ✅ 1.0.0             |\n| `memdown`            | ✅ 4.1.0             |\n| `level-js`           | ❌                   |\n| `encoding-down`      | ✅ 6.1.0             |\n| `deferred-leveldown` | ✅ 5.1.0             |\n| `levelup`            | ✅ n/a               |\n| `level-packager`     | ✅ n/a               |\n| `level@7`            | ❌ (`level-js`)      |\n| `level@8`            | ❌ (`browser-level`) |\n| `level-mem`          | ✅ 4.0.0             |\n| `level-rocksdb`      | ✅ 1.0.0             |\n| `subleveldown`       | ✅ 4.1.0             |\n| `multileveldown`     | ❌                   |\n| `level-party`        | ❌                   |\n\n</details>\n\n#### `clear` (boolean)\n\nDoes the database support `db.clear()`? Always true since `abstract-level@1`.\n\n<details>\n<summary>Support matrix</summary>\n\nSee also [Level/community#79](https://github.com/Level/community/issues/79).\n\n| Module                          | Support | Optimized |\n| :------------------------------ | :------ | :-------- |\n| `abstract-level` and dependents | ✅ 1.0.0 | ✅ 1.0.0   |\n| `abstract-leveldown`            | ✅ 6.1.0 | n/a       |\n| `leveldown`                     | ✅ 5.2.0 | ✅ 6.0.3   |\n| `rocksdb`                       | ✅ 4.1.0 | ✅ 5.2.0   |\n| `memdown`                       | ✅ 5.0.0 | ✅ 6.1.1   |\n| `level-js`                      | ✅ 5.0.0 | ✅ 5.0.0   |\n| `encoding-down`                 | ✅ 6.2.0 | n/a       |\n| `deferred-leveldown`            | ✅ 5.2.0 | n/a       |\n| `levelup`                       | ✅ 4.2.0 | n/a       |\n| `level-packager`                | ✅ 5.0.3 | n/a       |\n| `level`                         | ✅ 6.0.0 | ✅ 7.0.1   |\n| `level-mem`                     | ✅ 5.0.1 | ✅ 6.0.1   |\n| `level-rocksdb`                 | ✅ 5.0.0 | ✅ 5.0.0   |\n| `subleveldown`                  | ✅ 4.2.1 | ✅ 4.2.1   |\n| `multileveldown`                | ✅ 5.0.0 | ✅ 5.0.0   |\n| `level-party`                   | ✅ 5.1.0 | ✅ 5.1.0   |\n\n</details>\n\n### `status` (boolean)\n\nDoes the database have a [`status`](https://github.com/Level/abstract-level/#dbstatus) property? Always true since `abstract-level@1`.\n\n### `deferredOpen` (boolean)\n\nCan operations like `db.put()` be called without explicitly opening the db? Like so:\n\n```js\nconst db = new Level()\nawait db.put('key', 'value')\n```\n\n### `createIfMissing`, `errorIfExists` (boolean)\n\nDoes `db.open()` support these options?\n\n<details>\n<summary>Support matrix</summary>\n\n| Module          | Support |\n| :-------------- | :------ |\n| `classic-level` | ✅       |\n| `rocks-level`   | ✅       |\n| `memory-level`  | ❌       |\n| `browser-level` | ❌       |\n| `leveldown`     | ✅       |\n| `rocksdb`       | ✅       |\n| `memdown`       | ❌       |\n| `level-js`      | ❌       |\n\n</details>\n\n### `promises` (boolean)\n\nDo all database methods (that don't otherwise have a return value) support promises, in addition to callbacks? Such that, when a callback argument is omitted, a promise is returned:\n\n```js\ndb.put('key', 'value', callback)\nawait db.put('key', 'value')\n```\n\n<details>\n<summary>Support matrix</summary>\n\n| Module                              | Support              |\n| :---------------------------------- | :------------------- |\n| `abstract-level` and dependents     | ✅                    |\n| `abstract-leveldown` and dependents | ❌ (except iterators) |\n| `levelup`                           | ✅                    |\n| `level-packager`                    | ✅                    |\n| `level`                             | ✅                    |\n| `level-mem`                         | ✅                    |\n| `level-rocksdb`                     | ✅                    |\n| `subleveldown`                      | ✅                    |\n| `multileveldown`                    | ✅                    |\n| `level-party`                       | ✅                    |\n\n</details>\n\n### `events` (object)\n\nWhich events does the database emit, as indicated by nested properties? For example:\n\n```js\nif (db.supports.events.put) {\n  db.on('put', listener)\n}\n```\n\n### `streams` (boolean)\n\nDoes database have the methods `createReadStream`, `createKeyStream` and `createValueStream`, following the API documented in `levelup`? For `abstract-level` databases, a standalone module called [`level-read-stream`](https://github.com/Level/read-stream) is available.\n\n<details>\n<summary>Support matrix</summary>\n\n| Module                              | Support |\n| :---------------------------------- | :------ |\n| `abstract-level` and dependents     | ❌       |\n| `abstract-leveldown` and dependents | ❌       |\n| `levelup`                           | ✅       |\n| `level-packager`                    | ✅       |\n| `level`                             | ✅       |\n| `level-mem`                         | ✅       |\n| `level-rocksdb`                     | ✅       |\n| `subleveldown`                      | ✅       |\n| `multileveldown`                    | ✅       |\n| `level-party`                       | ✅       |\n\n</details>\n\n### `encodings` (object)\n\nWhich encodings (by name) does the database support, as indicated by nested properties? For example:\n\n```js\n{ utf8: true, json: true }\n```\n\nAs the `encodings` property cannot be false (anymore, since `level-supports` v3.0.0) it implies that the database supports `keyEncoding` and `valueEncoding` options on all relevant methods, uses a default encoding of utf8 and that hence all of its read operations return strings rather than buffers by default.\n\n<details>\n<summary>Support matrix (general support)</summary>\n\n_This matrix just indicates general support of encodings as a feature, not that the listed modules support the `encodings` property exactly as described above, which only works on `abstract-level` databases._\n\n| Module                                 | Support |\n| :------------------------------------- | :------ |\n| `abstract-level` (and dependents)      | ✅       |\n| `abstract-leveldown`  (and dependents) | ❌       |\n| `encoding-down`                        | ✅       |\n| `levelup`                              | ✅       |\n| `level-packager`                       | ✅       |\n| `level`                                | ✅       |\n| `level-mem`                            | ✅       |\n| `level-rocksdb`                        | ✅       |\n| `subleveldown`                         | ✅       |\n| `multileveldown`                       | ✅       |\n| `level-party`                          | ✅       |\n\n</details>\n\n<details>\n<summary>Support matrix (specific encodings)</summary>\n\n_This matrix lists which encodings are supported as indicated by e.g. `db.supports.encodings.utf8`. Encodings that encode to another (like how `'json'` encodes to `'utf8'`) are excluded here, though they are present in `db.supports.encodings`._\n\n| Module          | `'utf8'`      | `'buffer'`    | `'view'`      |\n| :-------------- | :------------ | :------------ | :------------ |\n| `classic-level` | ✅             | ✅             | ✅ <sup>1<sup> |\n| `memory-level`  | ✅ <sup>2<sup> | ✅ <sup>2<sup> | ✅ <sup>2<sup> |\n| `browser-level` | ✅ <sup>1<sup> | ✅ <sup>1<sup> | ✅             |\n| `rocks-level`   | ✅             | ✅             | ✅ <sup>1<sup> |\n| `level@8`       | ✅ <sup>3<sup> | ✅ <sup>3<sup> | ✅ <sup>3<sup> |\n\n<small>\n\n1. Transcoded (which may have a performance impact).\n2. Can be controlled via `storeEncoding` option.\n3. Whether it's transcoded depends on environment (Node.js or browser).\n\n</small>\n\n</details>\n\n### `getMany` (boolean)\n\nDoes the database support `db.getMany()`? Always true since `abstract-level@1`.\n\n<details>\n<summary>Support matrix</summary>\n\n| Module                          | Support |\n| :------------------------------ | :------ |\n| `abstract-level` and dependents | ✅ 1.0.0 |\n| `abstract-leveldown`            | ✅ 7.2.0 |\n| `leveldown`                     | ✅ 6.1.0 |\n| `rocksdb`                       | ✅ 5.2.0 |\n| `memdown`                       | ✅       |\n| `level-js`                      | ✅ 6.1.0 |\n| `encoding-down`                 | ✅ 7.1.0 |\n| `deferred-leveldown`            | ✅ 7.0.0 |\n| `levelup`                       | ✅ 5.1.0 |\n| `level`                         | ✅ 7.0.1 |\n| `level-mem`                     | ✅ 6.0.1 |\n| `level-rocksdb`                 | ✅ 5.0.0 |\n| `subleveldown`                  | ✅ 6.0.0 |\n| `multileveldown`                | ✅ 5.0.0 |\n| `level-party`                   | ✅ 5.1.0 |\n\n</details>\n\n### `keyIterator` (boolean)\n\nDoes the database have a `keys([options])` method that returns a key iterator? Also implies support of `iterator#mode`.\n\n_At the time of writing this is a new feature, subject to change, zero modules support it._\n\n### `valueIterator` (boolean)\n\nDoes the database have a `values([options])` method that returns a key iterator? Also implies support of `iterator#mode`.\n\n_At the time of writing this is a new feature, subject to change, zero modules support it._\n\n### `iteratorNextv` (boolean)\n\nDo iterators have a `nextv(size[, options][, callback])` method?\n\n_At the time of writing this is a new feature, subject to change, zero modules support it._\n\n### `iteratorAll` (boolean)\n\nDo iterators have a `all([options][, callback])` method?\n\n_At the time of writing this is a new feature, subject to change, zero modules support it._\n\n### `additionalMethods` (object)\n\nDeclares support of additional methods, that are not part of the `abstract-level` interface. In the form of:\n\n```js\n{\n  foo: true,\n  bar: true\n}\n```\n\nWhich says the db has two methods, `foo` and `bar`. It might be used like so:\n\n```js\nif (db.supports.additionalMethods.foo) {\n  db.foo()\n}\n```\n\nFor future extensibility, the properties of `additionalMethods` should be taken as truthy rather than strictly typed booleans. We may add additional metadata (see [#1](https://github.com/Level/supports/issues/1)).\n\n## Install\n\nWith [npm](https://npmjs.org) do:\n\n```\nnpm install level-supports\n```\n\n## Contributing\n\n[`Level/supports`](https://github.com/Level/supports) is an **OPEN Open Source Project**. This means that:\n\n> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.\n\nSee the [Contribution Guide](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.\n\n## Donate\n\nSupport us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work.\n\n## License\n\n[MIT](LICENSE)\n\n[level-badge]: https://leveljs.org/img/badge.svg"
+}

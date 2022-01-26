@@ -1,0 +1,540 @@
+{
+	"name": "@types/leveldown",
+	"versions": {
+		"1.7.0": {
+			"name": "@types/leveldown",
+			"version": "1.7.0",
+			"description": "TypeScript definitions for LevelDown",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Thiago de Arruda",
+					"url": "https://github.com/tarruda"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/node": "*"
+			},
+			"peerDependencies": {},
+			"typesPublisherContentHash": "8ad2a943006b3c5296b92869b9a520d84e733c731edabe2e500821f18f35b56f",
+			"typeScriptVersion": "2.0",
+			"_id": "@types/leveldown@1.7.0",
+			"dist": {
+				"shasum": "e778273d9a08ea67308947a2d2196778b84bf26c",
+				"tarball": "https://registry.npmjs.org/@types/leveldown/-/leveldown-1.7.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-18-east.internal.npmjs.com",
+				"tmp": "tmp/leveldown-1.7.0.tgz_1493957197203_0.6335993860848248"
+			},
+			"directories": {}
+		},
+		"1.7.1": {
+			"name": "@types/leveldown",
+			"version": "1.7.1",
+			"description": "TypeScript definitions for LevelDown",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Thiago de Arruda",
+					"url": "https://github.com/tarruda",
+					"githubUsername": "tarruda"
+				},
+				{
+					"name": "Linus Unnebäck",
+					"url": "https://github.com/LinusU",
+					"githubUsername": "LinusU"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "f32fdaec52c6f1eecb92880e50d2ed0303d0fe02990d7b3857c696d53181fc01",
+			"typeScriptVersion": "2.0",
+			"_id": "@types/leveldown@1.7.1",
+			"dist": {
+				"integrity": "sha512-i52QIHNwDv4XwTNA/g8ZKi0wv57O+uwidcaDGhWm59HtutIhk/psUZ+reArDcYpvCuSU8BsVYk30W5GRTrKdHQ==",
+				"shasum": "10e1514691988d2312b0b7f8be9021e90d040c81",
+				"tarball": "https://registry.npmjs.org/@types/leveldown/-/leveldown-1.7.1.tgz",
+				"fileCount": 4,
+				"unpackedSize": 6987,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbUpWgCRA9TVsSAnZWagAA13kP/jPBq0ebXxtLQaPn7PCr\nipt8zYS8tUrLL6h4pXFk2h6Hkde546frx5IU4hs+9tZU921LlkW04N8tmgGv\nFoEMiaHLOIAiJKvY5nRrfigNqkt+RqAMHbWz/+Gba1NG/2JbVbtMFxB1lyhH\nNXnZZCMnDRgcLmDCBvugN6X2R6KAiU2nqNSUfV5eWaFgSW4P3h2HX3af/wMS\n1/EOZzZtyeTQRf/rc63y2ktdMLHcVihTyRrQ1sFww79AnnD99anqVBjtL6f1\n0EqUxjuKec7BxPuc8U43EMYXoWUshW3fXcoxW256Mjb3Ktdr0s4ZSmJ7F/z1\nEp5XS6RBK6wRqsf8V9/9XhvP8nkJU+hnoNmibVUtvJxjslGOEmuCa284qjxz\nDPyWrrfo3p0Zn0GmJmDKFozfOO6+0eOv/BqYmbR+EN1TLzMuce2MNjoiqEGW\n55zqo2of1RTRLLp/JTXzclNDyn9u9/+GddDqIfnMWGhHrozqlywk8zFsuit2\nuZvau8U4pmVGIaj2ROQ7bF5jfgPj756R+fHgqasCyzfxJeSFxUZfN62uWyI+\ncVJ9vki2KzrkPNdYfYanDQDMFThvYvohYKevHIt5y/vWsBFYL1fRAMTfMBer\nrGQC71tS0rKvyUs8GkY85LeFrQ9CFvIU1xIosilQ8jYn9IOHW37T2kPEkipw\nCpAQ\r\n=mNW+\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/leveldown_1.7.1_1532138912794_0.7812118504928842"
+			},
+			"_hasShrinkwrap": false
+		},
+		"1.7.2": {
+			"name": "@types/leveldown",
+			"version": "1.7.2",
+			"description": "TypeScript definitions for leveldown",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Thiago de Arruda",
+					"url": "https://github.com/tarruda",
+					"githubUsername": "tarruda"
+				},
+				{
+					"name": "Linus Unnebäck",
+					"url": "https://github.com/LinusU",
+					"githubUsername": "LinusU"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "02d218f5120b04802a4fc340e223a19d038a93f9192d94541f3d148b60500481",
+			"typeScriptVersion": "2.0",
+			"_id": "@types/leveldown@1.7.2",
+			"dist": {
+				"integrity": "sha512-WyKOkNRyrq1DfGmX6YRcbPqW/Mzv9dgLSmbkCvOgaYiVzbzMcNafgSi5s6yTNWKGNjQwKxCkgytY8JERAej7TQ==",
+				"shasum": "614a749868380c7868c8e83a4360ac702db1b512",
+				"tarball": "https://registry.npmjs.org/@types/leveldown/-/leveldown-1.7.2.tgz",
+				"fileCount": 4,
+				"unpackedSize": 7159,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJboVqPCRA9TVsSAnZWagAARBYQAIHz7HRrYslaWFXJpw1W\n1HnVfxtuRc78O3LyFqIq/fSjaonHKGaJaULmevGdohSaa0Sv2I/Etn961BV/\ntLQmOAgfILhOdo49CFUIjMRvmbvN9zT9bRihpSOLRBt5JRVjt8ZFDB+O3Bxo\n2hfj3J2kWKKWMW1RnY1TPr5weAv9ihlsg/blK2ApVZYWBeT0ZBkCC5oYji7n\ndpg7ol9FhxzrtOn1bRXT3RgWQ+whVy+bIr2rAmVVvBTbJq+gi1xo1CgXTD1u\nX4E10cW3xl2MQDQeJAVa2E8Vdrwmc7CA9ZvIB3H/j7oyUmMvAvNW7z3a4k7V\nvSmLACxg93ZqJbcf5KCt3e03vLajiboLfB8kVCUqPxuX0mB7xxYOaRFZuPDB\n7GLEABRvm5WcIPRJ4TkN544hcjLpZlZsY8B9HoCpQcvr+u8dUgxBIs0Llstl\nDCLpE3AzLOithKLltN4gdDkJ8w6cNsgcYRaC3LjngT3HN/XEd9bfPMtc6e55\nSbAlLD5GESlLMPk9gkC6tW4CuJau2OcXDgPSDL+mIv23aeJeuULSHJJqm16N\nmV9bLb6S5ElttzlrMx6uklQE6D66rHcJe+SpETfZy9iGbRMyLu0n0W74FoDD\ngFvWsmIqFkcaPlVYKKCGUegH7Q2oxpw0627g3LBlKONpryulZCjHob2SI/oS\neDmY\r\n=1PSo\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/leveldown_1.7.2_1537301135066_0.07669399239949937"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.0.0": {
+			"name": "@types/leveldown",
+			"version": "4.0.0",
+			"description": "TypeScript definitions for leveldown",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "2a2b18211751d6ecfef8225eb55b2232236c0c2ea5daf6b0e1edd67c6e6b1246",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/leveldown@4.0.0",
+			"dist": {
+				"integrity": "sha512-1+h/AaqhhQK1/Q1Nr1sHyy7JDcVmKosL9uYLb4bhdLf7MQP4f4daWRLuFQKp8n/pRbai2XPUpR7z33N85m2Hng==",
+				"shasum": "3725cd6593f723435c5d72215369ef969a2fcce5",
+				"tarball": "https://registry.npmjs.org/@types/leveldown/-/leveldown-4.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 5661,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJboVqUCRA9TVsSAnZWagAA7LUP/35Cy2Fsf1bnaMxpu+FM\n/TzL3U30qWScz9o1UPkuGKJPRz2VwcK7dbD692yc6SOzu9b5F76W1thvUHni\nMtxeOyc7qLbjT4b2J4KGrv0LwCBecPcm8IdV8noi3oe9zeyVftUbhzw0hoIy\nk93iY+JdgKYiva8GDM9MXiHEn1LLWyqzWkOMPw7J5vTL0xucPKXoKHf+UZ3k\nd0F1YvfiPMT90vZHHZv9Uz4Mo40VbuCjYJyMJ9SVrEiXlgw4GtQ3OkE5z371\nv6wRUjfdqfdom4wSA5TV0loCTL7jlalxi7L2fCjefMX/3ZbGVfw4GabMWhNe\n4oDyux/1mp7ewXLfGS9bGc033b5F0Ul15njNLnIoqEFMU8DvbgThBoi1QiFf\nt2gPeQR0upJKfm+kstM7lmkaR1wlNtimjflYEs6roo3h+xie5fmk52yZC5s3\nVCbggKljVQSPqZX49/29Ktld5tMtCJD7QNoLakmXZ9Efm7NkX97JXmWM+eR4\n2DXbQegYEApfUOtgGdVdQ90ldNgdsDC5bEqXIRjhtTHDm0JM0fYBcjTBB5KJ\nPXc0NdhJVOYVACod564ikM4Kf2+VO/KA96BWcIDY4/R29NdQvnk+l9PwE3Y9\nC4IcsZr4a51/pOcwhVvX5XgpnK5fF6V6LNgvdb0TEmp4yOc0du52jfLjtCle\n42DQ\r\n=dxZK\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/leveldown_4.0.0_1537301139528_0.09778557034925583"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.0.1": {
+			"name": "@types/leveldown",
+			"version": "4.0.1",
+			"description": "TypeScript definitions for leveldown",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"types": "index",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/leveldown"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "e92cd3ba3879409225013c915f0ad9474849130c47b08f8784f9e334ace26bfb",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/leveldown@4.0.1",
+			"dist": {
+				"integrity": "sha512-hrna4yd/zAFkbM/Svic5FPPaPhBiNH4F3hM8eaTtpGI1T5ZT3j1FUO7U/Cd7s93ysEH5J6lP2ZbWGV6SqwimqQ==",
+				"shasum": "d1a57e8a3eb2d753bcd59a4f5d90ab2f068ff21f",
+				"tarball": "https://registry.npmjs.org/@types/leveldown/-/leveldown-4.0.1.tgz",
+				"fileCount": 4,
+				"unpackedSize": 5646,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdvF02CRA9TVsSAnZWagAAwxAP/R1HRt9uYsoKU+dYKAFN\npazok7mTbebncoXmMuw1iNqEtK0YW0xRoDqUC2KHrnLrNsQ0X3zLlGr7bVRo\nEEHAEfiAYq9WTQrJolziXqsBRFYgcL6goYRoRtJyV3ExsBd11xvc3PIrx5b9\nr2gteysgmNqwW6jzCiPiI+9o7mF2/1BWYwONX5uqdPtC0naAviiuY8wFXh/W\nuTQEEKy/1pvaVatlqH83NeU7+IlFxzJ0ttqdhCW7pqZhQWWBoS6F7iC4yCqu\n20KlsPSiVWKSKekx7/kXrvR5O8ALd34Dj92AQZ6pMu04oA0KseLteVBp0P+L\nUzk127oXOjBwiFLqMo7gmgjB3pUCR0WBVxeLBgveNM2ENkONLpqeW1rHlnMp\nvFJMawftt4gQbkySnMf4pgWcPkfVniZz+NBw2NDEo+PEZx9s8GqZYRASS10v\nVtSAo6cZ91b3tfrS3r7ZOOLDdtzriyG5cJ2KXioL9ldzcNzowM3usctg2KSe\n4jst1eeioEjt/V5SevhegM0yKreN85Dk1klgBXFeC97EXl+Esuvg42/2xCPa\nawHnDRXlbA84UFfnapV/JQjE0dOPxPI9qpP3MwT8c2reEIFJKmj5ZFqTsWvF\nCDZFBOhrTD6Bn1yvDONno1keMSSxhJV9KVGMyx9IMOrclCAZ415AFJaJuB2A\nGLdY\r\n=c60b\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/leveldown_4.0.1_1572625718394_0.02843542423124501"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.0.2": {
+			"name": "@types/leveldown",
+			"version": "4.0.2",
+			"description": "TypeScript definitions for leveldown",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"types": "index",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/leveldown"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "f994527ec1c2da147a62140c5323940047336330545f272811a6b462d63ac0b6",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/leveldown@4.0.2",
+			"dist": {
+				"integrity": "sha512-VW6QbUnPb5yLbUBcXEh93lFNphyxkBul7Ae41OCgROd76WfLM3qzAbuzErx1LtsTqwcNlbavTr9rWXHCiGVF8A==",
+				"shasum": "edb44a33668ae58656721bb1852345e6a2f2e42a",
+				"tarball": "https://registry.npmjs.org/@types/leveldown/-/leveldown-4.0.2.tgz",
+				"fileCount": 4,
+				"unpackedSize": 5888,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdweepCRA9TVsSAnZWagAAil4QAIQ6ECIbwD4CVOxjlMnO\nco3fxo9aGCqjukN45KaEpnI9AkGHBbcGO1tFOb3LOmO0lXWmcWO2lQBkuin7\nPFewtrBmDggMjDtKFss9R2yq9tAUm7r6gW1M/UjJ9guXwfQfLeafWFcrod2K\nZHMUD7bd+ToUytCdJY9cul1hC3QH7nIPKARpebyEW40wDmM3GJyVe4ubdCVz\nemZrdb15/QoT83vglsRVkHDFBN107E6BrhX0E6j44CoRP7POm4t+rHDLsgxU\nIIdgUd+HiMSjFKt8O5evtp66JtA/8w1JBLL5odlIE2mfITlhAKPXoEFn2ygV\n/uck7RId9oRLC2u3pYDsf2dgM4bk81FnX9OqXXduJzu7Eha+NxI03L52wp98\nKCJVzzEh3pSsdxvq+klfTCYPm0Iy79f0W4GfaWOLVLduPbourf+txszGQhq+\ndwtJksqSO9L3wW5d3ai3Kj/5zFxtM2jVUH6igsj7VjZOoA5kYslghuGSAI4q\nzoi8Z1JEUBeHfk0v+QJwD+EZwD+ubzRiVaXkIL5hhUskeujkn7/SHYxbtT6n\nrmNX1XcPZEHAY8zBGhbURqscu3KCk26PQfOjkev2luRpnduEvrxV6xm/vIi7\nDmrNlI9VLhFKmS2xCgFSe44/FHa/limidk/wmYMJDA6xs8vixeECX+DXJ+4p\nea7D\r\n=LRAd\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/leveldown_4.0.2_1572988840565_0.48232586498093033"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.0.3": {
+			"name": "@types/leveldown",
+			"version": "4.0.3",
+			"description": "TypeScript definitions for leveldown",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/leveldown",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/leveldown"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "21139be1874befa5610915c87eb508f4bb41c50b2b63a75e7a7c42d76ccf3619",
+			"typeScriptVersion": "3.6",
+			"_id": "@types/leveldown@4.0.3",
+			"dist": {
+				"integrity": "sha512-fzIXOuUCSZQKkRadWhURwu6mMYbfqi/nRDA+yBwz8kj7AK/L7L//u6A0MqSv0gsilzo7N/5+FlZOx8G6m03EVQ==",
+				"shasum": "4b868fd747808d378df6ffb27de7f889cae46aad",
+				"tarball": "https://registry.npmjs.org/@types/leveldown/-/leveldown-4.0.3.tgz",
+				"fileCount": 4,
+				"unpackedSize": 6268,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5zfrCRA9TVsSAnZWagAAiBkQAJaFl5PRjKZFX+lsvsPD\nj7nCTp/xfGlp6FeqsNfpVs9kODC022aguqgFEB/habZT00ngvp1GsHQFfDRf\nIfLFS4OWMY9eVjcgtabiYgevfh3qjPqW2Kc/aM3d2vFz0kmYnwnPkr3CHAoq\nTcqsNHfJoRGHoAyuqHOKrzJKjZki7p5h5/xlZEjhDFKShvnNCQkhtd+eb2+p\nmygZ/UCZniGI1P5shI/Bkyk+hybjjWOMef5yXw4mmkuHNd3/yr8fKA+xZ2je\nrgfnV6LNE2jBWpoZO2mQSNjjOQ4cjr+t3aYc1mJvOfII8fuk3iwkkyZC1u/6\nL4OuVP2ui1vP/LCqcf8eFfYxNAvPQdR/iC9HI9a6lJNySeMOjLQaS42YCcK6\nuqrwor54WI9otD1hHQdUdeIFzXoshKdyo8V6/Wa49dTC6eA/Lbn0R7QS+nzy\nCVeHWAtkd/+9sXfpO9XuI7CFzB+I8D09XSjPGs2exZD9szY4iXYGF/kytoid\nqT+Y05LwvEVDoCQJfezg7E/7jvsP/ssYeNQaLm86pXP15OeI+Fp+LZTil8zO\nsKfUzTak298moFAZBTeYfzMjoMmY2S57sON4TkoW8ADfTb/hk9/29jd/XC3n\niGVEaEjka6tIXYnRz+sHSTH5GvN+rS9Kk8Za00+zghMvlnucpQEPMyLuoVnw\nEG3d\r\n=n4R6\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/leveldown_4.0.3_1625765867363_0.1289253433804749"
+			},
+			"_hasShrinkwrap": false
+		},
+		"1.7.3": {
+			"name": "@types/leveldown",
+			"version": "1.7.3",
+			"description": "TypeScript definitions for leveldown",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/leveldown",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Thiago de Arruda",
+					"url": "https://github.com/tarruda",
+					"githubUsername": "tarruda"
+				},
+				{
+					"name": "Linus Unnebäck",
+					"url": "https://github.com/LinusU",
+					"githubUsername": "LinusU"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/leveldown"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/node": "*"
+			},
+			"typesPublisherContentHash": "30a3e445a830066da19ce1ce7474ee7800f21ca3a4bd39dd41b4e96fbb1e91ee",
+			"typeScriptVersion": "3.6",
+			"_id": "@types/leveldown@1.7.3",
+			"dist": {
+				"integrity": "sha512-l36ahh+Qr0hT+K7mBV3Y5LMdTalrEbj3+NSKzO1oOLbAXqq7+KAMTH43BuGw+hj0TfimCcTq2/um0w3ufOzo0A==",
+				"shasum": "7b34c065abda590bd89bce887c55c5825c7ebbe6",
+				"tarball": "https://registry.npmjs.org/@types/leveldown/-/leveldown-1.7.3.tgz",
+				"fileCount": 4,
+				"unpackedSize": 7493,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5zf0CRA9TVsSAnZWagAAUMMP/R1YQnvbywrMjNwkTHvf\nl65UxJBDF6yi+1acRFqn046uS/s5GvFteBKKjUSIrt7QzkzXKKB2NWWEzRfx\nJW0avXiz7FbJRuzQXDXuatYWKGqbkMAgZTsIX0AHLSXkVd/Ax2MBzzXju8ov\nRnfLhVrqyvvrF4jXVFzqcBkvDpQy1dnBDdF4XhD0DzvLJ07g4MwHKkgsFvql\nsqi4+Ugfc2+3Yp+crVhGD/u0TqbC1awvVTuM9Bno+r+Kg9a3VzLLTV7jpbri\nruTpGGELTAaYiYhm8RpHqQnZevHQh+tuQbEU0rTlgAAc/uhXwivkipBy7sbO\nQCxNhqZNfV9upjFqpujTN5/81UQIjYlGJ21f4Uo5osx9Nrep6U2cNqXuJoBg\n2i62aey0i8kHZZeCSOK4NNvguUW4uTQLQTDMJAVHmOHmD+ROKLJsY/RA4H/y\nZuqGKk5PSmnwx4+JPAmzYLY9fqAzv81ziYzltotKuzFV4TeThcdkZq9iBCj1\nPrGQWSWfG5Kx3dFK/mXrBhinBvSdUm0LwBsS9U5PWzRC8/xt2VwgDLcxdhph\nsqVGswku8vxw/0vPQxY57/zL9Czgf1y0iGAYZILQjTQzGaTRnjUVBme5ee0R\nfOpJwhtrFbR5oP8A9HA8QuuGgVT1HtfJQOqiiUw/oelpFzzEUgVJ5fJxl+lU\nl7HB\r\n=zjoL\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/leveldown_1.7.3_1625765876577_0.08476152293243522"
+			},
+			"_hasShrinkwrap": false
+		}
+	},
+	"time": {
+		"modified": "2021-11-18T19:59:09.379Z",
+		"created": "2017-05-05T04:06:39.895Z",
+		"1.7.0": "2017-05-05T04:06:39.895Z",
+		"1.7.1": "2018-07-21T02:08:32.896Z",
+		"1.7.2": "2018-09-18T20:05:35.150Z",
+		"4.0.0": "2018-09-18T20:05:39.651Z",
+		"4.0.1": "2019-11-01T16:28:38.529Z",
+		"4.0.2": "2019-11-05T21:20:40.703Z",
+		"4.0.3": "2021-07-08T17:37:47.510Z",
+		"1.7.3": "2021-07-08T17:37:56.711Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "4.0.3",
+		"ts2.0": "1.7.1",
+		"ts2.1": "1.7.1",
+		"ts2.2": "1.7.1",
+		"ts2.3": "4.0.2",
+		"ts2.4": "4.0.2",
+		"ts2.5": "4.0.2",
+		"ts2.6": "4.0.2",
+		"ts2.7": "4.0.2",
+		"ts2.8": "4.0.2",
+		"ts2.9": "4.0.2",
+		"ts3.0": "4.0.2",
+		"ts3.1": "4.0.2",
+		"ts3.2": "4.0.2",
+		"ts3.3": "4.0.2",
+		"ts3.4": "4.0.2",
+		"ts3.5": "4.0.2",
+		"ts3.6": "4.0.3",
+		"ts3.7": "4.0.3",
+		"ts3.8": "4.0.3",
+		"ts3.9": "4.0.3",
+		"ts4.0": "4.0.3",
+		"ts4.1": "4.0.3",
+		"ts4.2": "4.0.3",
+		"ts4.3": "4.0.3",
+		"ts4.4": "4.0.3",
+		"ts4.5": "4.0.3",
+		"ts4.6": "4.0.3"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"8dd6f347b4605bc4885de63284e8114b\"",
+			"fetched": 1643186350876
+		}
+	},
+	"_distfiles": {
+		"leveldown-1.7.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/leveldown/-/leveldown-1.7.0.tgz",
+			"sha": "e778273d9a08ea67308947a2d2196778b84bf26c",
+			"registry": "npmjs"
+		},
+		"leveldown-1.7.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/leveldown/-/leveldown-1.7.1.tgz",
+			"sha": "10e1514691988d2312b0b7f8be9021e90d040c81",
+			"registry": "npmjs"
+		},
+		"leveldown-1.7.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/leveldown/-/leveldown-1.7.2.tgz",
+			"sha": "614a749868380c7868c8e83a4360ac702db1b512",
+			"registry": "npmjs"
+		},
+		"leveldown-4.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/leveldown/-/leveldown-4.0.0.tgz",
+			"sha": "3725cd6593f723435c5d72215369ef969a2fcce5",
+			"registry": "npmjs"
+		},
+		"leveldown-4.0.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/leveldown/-/leveldown-4.0.1.tgz",
+			"sha": "d1a57e8a3eb2d753bcd59a4f5d90ab2f068ff21f",
+			"registry": "npmjs"
+		},
+		"leveldown-4.0.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/leveldown/-/leveldown-4.0.2.tgz",
+			"sha": "edb44a33668ae58656721bb1852345e6a2f2e42a",
+			"registry": "npmjs"
+		},
+		"leveldown-4.0.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/leveldown/-/leveldown-4.0.3.tgz",
+			"sha": "4b868fd747808d378df6ffb27de7f889cae46aad",
+			"registry": "npmjs"
+		},
+		"leveldown-1.7.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/leveldown/-/leveldown-1.7.3.tgz",
+			"sha": "7b34c065abda590bd89bce887c55c5825c7ebbe6",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"leveldown-4.0.3.tgz": {
+			"shasum": "4b868fd747808d378df6ffb27de7f889cae46aad"
+		}
+	},
+	"_rev": "2-d26f3b70840dffdb",
+	"_id": "@types/leveldown",
+	"readme": "# Installation\r\n> `npm install --save @types/leveldown`\r\n\r\n# Summary\r\nThis package contains type definitions for leveldown (https://github.com/level/leveldown).\r\n\r\n# Details\r\nFiles were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/leveldown/v1.\r\n\r\n### Additional Details\r\n * Last updated: Thu, 08 Jul 2021 16:23:42 GMT\r\n * Dependencies: [@types/node](https://npmjs.com/package/@types/node)\r\n * Global values: none\r\n\r\n# Credits\r\nThese definitions were written by [Thiago de Arruda](https://github.com/tarruda), and [Linus Unnebäck](https://github.com/LinusU)."
+}

@@ -1,0 +1,165 @@
+{
+	"name": "@types/level-codec",
+	"versions": {
+		"9.0.0": {
+			"name": "@types/level-codec",
+			"version": "9.0.0",
+			"description": "TypeScript definitions for level-codec",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"typesPublisherContentHash": "23e5012e49e77af13d8458b8637a92822ebdcea790bc6006033c33d92be21d3d",
+			"typeScriptVersion": "2.0",
+			"_id": "@types/level-codec@9.0.0",
+			"dist": {
+				"integrity": "sha512-SWYkVJylo1dqblkhrr7UtmsQh4wdZA9bV1y3QJSywMPSqGfW0p1w37N1EayZtKbg1dGReIIQEEOtxk4wZvGrWQ==",
+				"shasum": "9f1dc7f9017b6fba094a450602ec0b91cc384059",
+				"tarball": "https://registry.npmjs.org/@types/level-codec/-/level-codec-9.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 3478,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbicQrCRA9TVsSAnZWagAA3XgP/0AIpw0m6jh9txGTfg5X\neinn7Se1echsWhtUcn9ZTg8TfvZgFKP4XmpCqG88c/iCsiYaHeX4uCUZ4OB9\nyUniiRO+8yi9jfbrZjo0TnkpHKH0CdEA49AclZ3e1Fd8w6dcQs9a47kw4aax\nZ3B0NX1STu2iBYATd1dTFM3yH76s9xQ+svqAAwzyyxAWHC9tlgNJc2KFp7E5\nIlOybHENpXjzV/JhQcZC6z45XXYEXXXJLS8T/agofJEGCZQBV+7hhvbttusX\nwP+wqSp8cSiKXUUBTLfBMMGXQOoJxiBqndaDdSR3TWLCQu6EYO/UZY2X64lZ\n3PLHeJNEZQriQFVUUztiI3cvbd/CJjHAAqf4/bs3HLEwtJ4il6Y4N8bdyorI\nC8WVE/Dx9XvCFv2SbQtOB57i2njaXHxaFa6mfNBge6KYkTz1seSmpN3XbYfz\nhYEr43Dy7ooH8VazC/fK7+y9PEJ3GWU4yCejx43VkBzum9zhd2MsTkM7lPAv\n62XfTEt5Amryz6mNVuP/CoH7Adqzuh4mWjlzGXtkWo7EOGStWJjrsqBl6MwD\nh27fCFRmvZ94VU4uflaa30vQM/laac/J6lwoEPJqoYXv84UZWQ6+ahMcl612\nm1Z/VBOWTRhk3Tn1dL6sZ2Ihh1d6BkgYZ/alEx9dWMJqvraDjbjJigrf4goY\nrWqi\r\n=DOv0\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-codec_9.0.0_1535755307174_0.4307126852559473"
+			},
+			"_hasShrinkwrap": false
+		},
+		"9.0.1": {
+			"name": "@types/level-codec",
+			"version": "9.0.1",
+			"description": "TypeScript definitions for level-codec",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-codec",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/level-codec"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"typesPublisherContentHash": "ef25a7e341eb1e1642721f03ba21bfd7b8a6a29b7c6ee7d71fb7c80336bf73b5",
+			"typeScriptVersion": "3.6",
+			"_id": "@types/level-codec@9.0.1",
+			"dist": {
+				"integrity": "sha512-6z7DSlBsmbax3I/bV1Q6jT1nKquDjFl95LURVThdKtwILkRawLYtXdINW19xM95N5kqN2detWb2iGrbUlPwNyw==",
+				"shasum": "b135e0b3da81185b6f27655334c5f1da89b2b0af",
+				"tarball": "https://registry.npmjs.org/@types/level-codec/-/level-codec-9.0.1.tgz",
+				"fileCount": 4,
+				"unpackedSize": 4889,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5ze+CRA9TVsSAnZWagAAOxMQAI7EHvGjXPvVOTRFggOU\nw9Fw6f7tsv6tzBonbsWkDGk8f2IBgS8hTFJMcUCH3x/Owb30xrX4Nvx8b+Jg\nC+7wovVnLgZ8gN6u12nubP1VfRNwiM11o2bxsUnVtSKmZr8Cm6uDfv6zICrI\nwpuZofqXT6D1DhP6LfJefMwPTKZBXPHQWoysuUCngvb9gKn8Bm/NFW3oMcAf\nE0Zl3CYNQ4VGqpj3mqQX44du7ACH2ecFkJBI/C/u40Zb9NFT8h/MLO07fF+7\nfkJ87uIkwWQg7UI+Ebgf+Hgb56pkl/Z+Bu/qDFBTqn2CNrLrxAUnnubE6q07\nip1TabmhVztWEkTdTIiUbDrXoqC8532JgP6dDR4j2HXxQHEDQEAcmFmkYsqP\noFKPcdz2xG0EfAwlYMpLfoVwrCZrpdN9UR49P0O1sF91FeTKVHDl1BbaxJvW\nbkRdOPNavjD3yMja+leRaJ3q0TysskZwZjY9IaPOL0FTAjmv02tN+HgE1jAI\nIyj2UTbrXfywPBU6CaksnigaFBqhfPjtvU4n2WKj8XIT9qDFiBWrpgwg4ceU\nKN67la4FRUTYh6dxZJ1ONRdDDzARKTCTAqoee/mAs0KwfWwiuVeMd3LmQoBR\nmNOrMFBU9xDs2Ir1WQbug7z/pHlcKNSm4kFsIfmomdtbhPrQbFlPkWp+82pT\nOvRS\r\n=DZdK\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-codec_9.0.1_1625765821735_0.5238405144964884"
+			},
+			"_hasShrinkwrap": false
+		}
+	},
+	"time": {
+		"created": "2018-08-31T22:41:47.010Z",
+		"9.0.0": "2018-08-31T22:41:47.314Z",
+		"modified": "2021-11-18T19:59:08.240Z",
+		"9.0.1": "2021-07-08T17:37:01.871Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "9.0.1",
+		"ts2.0": "9.0.0",
+		"ts2.1": "9.0.0",
+		"ts2.2": "9.0.0",
+		"ts2.3": "9.0.0",
+		"ts2.4": "9.0.0",
+		"ts2.5": "9.0.0",
+		"ts2.6": "9.0.0",
+		"ts2.7": "9.0.0",
+		"ts2.8": "9.0.0",
+		"ts2.9": "9.0.0",
+		"ts3.0": "9.0.0",
+		"ts3.1": "9.0.0",
+		"ts3.2": "9.0.0",
+		"ts3.3": "9.0.0",
+		"ts3.4": "9.0.0",
+		"ts3.5": "9.0.0",
+		"ts3.6": "9.0.1",
+		"ts3.7": "9.0.1",
+		"ts3.8": "9.0.1",
+		"ts3.9": "9.0.1",
+		"ts4.0": "9.0.1",
+		"ts4.1": "9.0.1",
+		"ts4.2": "9.0.1",
+		"ts4.3": "9.0.1",
+		"ts4.4": "9.0.1",
+		"ts4.5": "9.0.1",
+		"ts4.6": "9.0.1"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"3f398a6a8fbd5e89ca20dcffd05b9cb7\"",
+			"fetched": 1643186350877
+		}
+	},
+	"_distfiles": {
+		"level-codec-9.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/level-codec/-/level-codec-9.0.0.tgz",
+			"sha": "9f1dc7f9017b6fba094a450602ec0b91cc384059",
+			"registry": "npmjs"
+		},
+		"level-codec-9.0.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/level-codec/-/level-codec-9.0.1.tgz",
+			"sha": "b135e0b3da81185b6f27655334c5f1da89b2b0af",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"level-codec-9.0.1.tgz": {
+			"shasum": "b135e0b3da81185b6f27655334c5f1da89b2b0af"
+		}
+	},
+	"_rev": "2-a6a2b5368c89cb2e",
+	"_id": "@types/level-codec",
+	"readme": "# Installation\r\n> `npm install --save @types/level-codec`\r\n\r\n# Summary\r\nThis package contains type definitions for level-codec (https://github.com/Level/codec).\r\n\r\n# Details\r\nFiles were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-codec.\r\n## [index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-codec/index.d.ts)\r\n````ts\r\n// Type definitions for level-codec 9.0\n// Project: https://github.com/Level/codec\n// Definitions by: Daniel Byrne <https://github.com/danwbyrne>\n// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped\n\nexport interface CodecEncoder {\n    encode: (val: any) => any;\n    decode: (val: any) => any;\n    buffer: boolean;\n    type: string;\n}\nexport interface CodecOptions {\n    keyEncoding?: string | CodecEncoder | undefined;\n    valueEncoding?: string | CodecEncoder | undefined;\n}\nexport interface Codec {\n    encodeKey(key: any, opts?: CodecOptions, batchOpts?: CodecOptions): any;\n    encodeValue(value: any, opts?: CodecOptions, batchOpts?: CodecOptions): any;\n    decodeKey(key: any, opts?: CodecOptions): any;\n    decodeValue(value: any, opts?: CodecOptions): any;\n    encodeBatch(ops: any, opts?: CodecOptions): any;\n    encodeLtgt(ltgt: any): any;\n    createStreamDecoder(opts: CodecOptions): any;\n    keyAsBuffer(opts?: CodecOptions): any;\n    valueAsBuffer(opts?: CodecOptions): any;\n}\nexport interface CodecConstructor {\n    new (options?: CodecOptions): Codec;\n    (options?: CodecOptions): Codec;\n}\n\nexport const Codec: CodecConstructor;\n\r\n````\r\n\r\n### Additional Details\r\n * Last updated: Thu, 08 Jul 2021 16:23:41 GMT\r\n * Dependencies: none\r\n * Global values: none\r\n\r\n# Credits\r\nThese definitions were written by [Daniel Byrne](https://github.com/danwbyrne)."
+}

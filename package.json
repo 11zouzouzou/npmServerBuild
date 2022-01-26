@@ -9,10 +9,11 @@
     "npm-server-build": "^1.0.0",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.5",
-    "verdaccio": "^5.5.1"
+    "verdaccio": "4.x"
   },
   "scripts": {
-    "testnpm": "ts-node src/index.ts"
+    "testnpm": "ts-node src/index.ts",
+    "dev": "yarn verdaccio --config ./default.yaml"
   },
   "files": [
     "build/"

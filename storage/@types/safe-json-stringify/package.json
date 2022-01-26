@@ -1,0 +1,315 @@
+{
+	"name": "@types/safe-json-stringify",
+	"versions": {
+		"1.0.0": {
+			"name": "@types/safe-json-stringify",
+			"version": "1.0.0",
+			"description": "TypeScript definitions for safe-json-stringify",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Eric Byers",
+					"url": "https://github.com/ericbyers/"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"peerDependencies": {},
+			"typesPublisherContentHash": "85c4b60af6942e4e86910f2d570435c4a746c308225e4e4bca05a6e7a96a3e5f",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/safe-json-stringify@1.0.0",
+			"dist": {
+				"integrity": "sha512-r+pLjNmBr53HPUeMtNN4KPBIXCjCUf+V1mML6JAs1wA0Se1nfT/yVMb3/m6/F7/XpFPlxO4OPqUGeNcGCDHoZw==",
+				"shasum": "800889d808b9c3540bd9314c71a63fc47fbd26aa",
+				"tarball": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.0.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/safe-json-stringify-1.0.0.tgz_1500559017931_0.6763922860845923"
+			},
+			"directories": {}
+		},
+		"1.0.1": {
+			"name": "@types/safe-json-stringify",
+			"version": "1.0.1",
+			"description": "TypeScript definitions for safe-json-stringify",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Eric Byers",
+					"url": "https://github.com/ericbyers"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"typesPublisherContentHash": "2bd044fb7d8c4007e8f3051aca21a64d18b8411d95ec733b8681456d3182c1a1",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/safe-json-stringify@1.0.1",
+			"dist": {
+				"integrity": "sha512-yIgpWPU1ZnLZkT+ZEYR+aAmcC9uJb829Xf7RnTamMgY7gVLbGu84NeOTSBTw7B9/LWpqtSX9lyy/mF0V06Rxrw==",
+				"shasum": "cc3af11ed5814828852c17134b465545a531bd9c",
+				"tarball": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.0.1.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/safe-json-stringify-1.0.1.tgz_1503353041655_0.792197200236842"
+			},
+			"directories": {}
+		},
+		"1.1.0": {
+			"name": "@types/safe-json-stringify",
+			"version": "1.1.0",
+			"description": "TypeScript definitions for safe-json-stringify",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Eric Byers",
+					"url": "https://github.com/ericbyers",
+					"githubUsername": "ericbyers"
+				}
+			],
+			"main": "",
+			"types": "index",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/safe-json-stringify"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"typesPublisherContentHash": "ece07e1bc7465768a034fd8f5925f414124e0d81a29277861728b18d47870ece",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/safe-json-stringify@1.1.0",
+			"dist": {
+				"integrity": "sha512-iIQqHp8fqDgxTlWor4DrTrKGVmjDeGDodQBipQkPSlRU1QeKIytv37U4aFN9N65VJcFJx67+zOnpbTNQzqHTOg==",
+				"shasum": "4cd786442d7abc037f8e9026b22e3b401005c287",
+				"tarball": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.1.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 3127,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdE6/MCRA9TVsSAnZWagAAxC4P/3T23oVJIu/DJxaUqqjx\nrIzmtancgUOtCTjoQBM6Atl2AlYUW1aB6dtgtTi5DV1NcexUg7LD0RHOEoKB\nDT+nk7b2NIbegBCYTGg5ocSEYMDRhfT+8olp8ZYtoOSRO7U0SiByJCcrVQmE\nsWLvLrp/lfFYmVtnyDBFaBCTKyuNBDPY7oTPCjGv6SR3VGmFyktLpPFucqo6\nE4TtaFAqKr5Kf5TBkt26yXsumdK1sBRLoSrlK1vkbR37EVrlvCXjb9Tldisu\nHQidDPEfalKQFnKx/iKT8MqO9QUURD7zYKEx927p1mhIVW1RAmmN1khqabld\nsJH4V8asd+8sXHFP7cLaVg1+uo2bVlqJR9Yn23DJqzctelpIzYOggSERlzol\n0UOepqwMZXtBHX09RSnGgsDxQiboUqcF0cq5Kz/zjZDp2HwWI7TiaxyOQ7Tn\n2XVoM3CLWLuvvl/P8jp4JeSG1HmyS0zWIAmfNsMa3n9kmKqQ/wfm0KEkUXVO\nSgIT8wdnizeHrtouulu47lHTKchV2EK6/Ovc4nzPWCE5k51iAJz9d+m0/L8h\nxhatUfm53U52fNqIcNMY6suHRYK4SjdX0HUoAsdNRhnmAyppvik04O50O4Q0\n+4ycyQ419rdYkPr/6nDBznOh+SHpcypSKZ6F8J50O370mkVpyXOvYAxLuvcH\nTW8+\r\n=UUPP\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/safe-json-stringify_1.1.0_1561571275388_0.2098213419561039"
+			},
+			"_hasShrinkwrap": false
+		},
+		"1.1.1": {
+			"name": "@types/safe-json-stringify",
+			"version": "1.1.1",
+			"description": "TypeScript definitions for safe-json-stringify",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Eric Byers",
+					"url": "https://github.com/ericbyers",
+					"githubUsername": "ericbyers"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/safe-json-stringify"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"typesPublisherContentHash": "d3170d7765d506abd3d28deb1814bf72829b054a1b981888a1467523a882c830",
+			"typeScriptVersion": "3.0",
+			"_id": "@types/safe-json-stringify@1.1.1",
+			"dist": {
+				"integrity": "sha512-ZmrAwAgiIDI7dKnNdHJjUWkSbj+ODVuxZvakfCNeU5yNl92BBGZ9YQp5uatIBDh3bCzpUaY07ELYzGMo5969kw==",
+				"shasum": "7b316534aa22b529cc333c3be4244a2a4be885b0",
+				"tarball": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.1.1.tgz",
+				"fileCount": 4,
+				"unpackedSize": 3099,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJevpaiCRA9TVsSAnZWagAA3C0P/3QahR0MwvOOGMKRY6Wf\nGb6CDfjiSOegOzuHCfQJMqZ2qDf6fYdBnZu1ZRIznet53JgcFU4kVQPCOMN9\nkPiBmpzW2jv+yoU7tZobsG6xYi6paPP5emmV94QWPT3mBoGjw+5dLYl38ULX\nI5IqN458OUu41uAPysDLzcvEac1OzvCZ/0PSQljwOYGAb4q+h5Xlaujc7HW8\nlfOgTEpxdeKdvwzSLK3YVwOD+sRU0/W00rp1BtopKO5THFe/SBD8ItOn0qj7\nk6yyuYXtavUcnpQ5YV2QmHPGWDhzlx6PqdhLgrcHIGKgQKArRVoaI8H9asFA\nFw5MfKFhKYYlU8Zwwxf1bckfEwZfu1CKf5HepnI7iTbvSvpy6kLdgdPLy8CO\nemoIdgNrXvrIHE+pUBZwp6cUkC3RDOR2vIaKjHaodJQfKiF112ZDNX0zcFEQ\nzbAF51KNASCF0mO21u5Lats3wZkuhW7TyiAtDAipwc+4GDBztapNtq0xMCYN\nBTTDIcAhHdEuNNGMhkMYZJsBZKbaIVCAhdr2y6w/n6oChGBTuHTHGfua8WfJ\nivTVu53OPaK64BBPikoJ4EQy7o/IJqIuxjYg9umMecZiFHDPM3KZZiHc9Stl\nTK3zxoVYj0MLirSL60wEEKfTJx9lo/0Fj4fen9S6JYGxzZId4xDOU37QsRl5\nz7du\r\n=BcxN\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/safe-json-stringify_1.1.1_1589548705927_0.0748550524464382"
+			},
+			"_hasShrinkwrap": false
+		},
+		"1.1.2": {
+			"name": "@types/safe-json-stringify",
+			"version": "1.1.2",
+			"description": "TypeScript definitions for safe-json-stringify",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Eric Byers",
+					"url": "https://github.com/ericbyers",
+					"githubUsername": "ericbyers"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/safe-json-stringify"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"typesPublisherContentHash": "b51a4c29d7febe7a1d18e03f8999af3cf8f59fdb7f0f1e4b0dbc7ed4de0f6a80",
+			"typeScriptVersion": "3.1",
+			"_id": "@types/safe-json-stringify@1.1.2",
+			"dist": {
+				"integrity": "sha512-Hj/LZMBXFH3Qj9sNmNu6syBpkZqBaM00HgP7naf9CnZhB3kdxmrenWUD2cY6vvTWjuBM3NPOLknPKDUOQuTWXA==",
+				"shasum": "913796617042de2259f62ce82843c239258ca287",
+				"tarball": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.1.2.tgz",
+				"fileCount": 4,
+				"unpackedSize": 3098,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfX9jjCRA9TVsSAnZWagAAiGIP/2A3G2hofIZ7snykAlME\nn1ZmBEhonk5gU0SspDHc53yk3GP+KITSU0PuEu6lb2zYeSq+8mCmzaOI4dO2\n0f75qa4CliLX1AWNgWG/NE2X8fdh2UQx5s1I4dk7yxhfcWSCLxKABlYQ8r9I\nCzLCVmf4CNLNj1afNIYeDLJUATbmrepR8K5doekLyTvpiLQddNVV3Y4NLRas\nTZjmbFAdcok9xHFWpjx8IGFxKNDIc150QeM9qybyOArCw6EmuEwevjI9GLTg\n3X64l409IdsAdRcYNJNA8fBuBf8HjHbpq2Z7myVbZwdLkmvRJ7TByCT6KnyR\nRdpda8jDx2ndUXaDQDV+yMD5uZSh/0ux4oZDO9TYxPXRmLI4gDtzM+Yv3+70\n3S61SsgYdERcy81ZM9F6qtaif6+52AvH0Wm2VFB1p6hIH/OOa2GiLtbbf+28\ndi2ibwp124LBHsI2JfNjTV2RUdPC/pwQM8GhCFGt0R4Rmw29wZMAB9BZnb5O\nTika0cNYQdDmorl2TsGhTctQPisKqJve6qALE65tG+SvQ+81mn+xscwz97vI\n34oJvqV/gBISTUrczT73rguMRGhTudzojMZ/KY1KNDvMa9zNKqlp1xjgG0W7\nFw+TNVy4qFEOwvwS3A+gZBB2qAnIuIhxF0ZJvqEV8wUJadL/RFNqvGxoupzq\nG9yq\r\n=Hv4L\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/safe-json-stringify_1.1.2_1600116963052_0.6943471246273571"
+			},
+			"_hasShrinkwrap": false
+		}
+	},
+	"time": {
+		"modified": "2021-11-18T20:16:34.760Z",
+		"created": "2017-07-20T13:56:58.009Z",
+		"1.0.0": "2017-07-20T13:56:58.009Z",
+		"1.0.1": "2017-08-21T22:04:01.817Z",
+		"1.1.0": "2019-06-26T17:47:55.648Z",
+		"1.1.1": "2020-05-15T13:18:26.080Z",
+		"1.1.2": "2020-09-14T20:56:03.197Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.1.2",
+		"ts2.3": "1.1.0",
+		"ts2.4": "1.1.0",
+		"ts2.5": "1.1.0",
+		"ts2.6": "1.1.0",
+		"ts2.7": "1.1.0",
+		"ts2.8": "1.1.0",
+		"ts2.9": "1.1.0",
+		"ts3.0": "1.1.1",
+		"ts3.1": "1.1.2",
+		"ts3.2": "1.1.2",
+		"ts3.3": "1.1.2",
+		"ts3.4": "1.1.2",
+		"ts3.5": "1.1.2",
+		"ts3.6": "1.1.2",
+		"ts3.7": "1.1.2",
+		"ts3.8": "1.1.2",
+		"ts3.9": "1.1.2",
+		"ts4.0": "1.1.2",
+		"ts4.1": "1.1.2",
+		"ts4.2": "1.1.2",
+		"ts4.3": "1.1.2",
+		"ts4.4": "1.1.2",
+		"ts4.5": "1.1.2",
+		"ts4.6": "1.1.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"a939dd97fe32cdaa2fc8b49fef450abe\"",
+			"fetched": 1643186351302
+		}
+	},
+	"_distfiles": {
+		"safe-json-stringify-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.0.0.tgz",
+			"sha": "800889d808b9c3540bd9314c71a63fc47fbd26aa",
+			"registry": "npmjs"
+		},
+		"safe-json-stringify-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.0.1.tgz",
+			"sha": "cc3af11ed5814828852c17134b465545a531bd9c",
+			"registry": "npmjs"
+		},
+		"safe-json-stringify-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.1.0.tgz",
+			"sha": "4cd786442d7abc037f8e9026b22e3b401005c287",
+			"registry": "npmjs"
+		},
+		"safe-json-stringify-1.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.1.1.tgz",
+			"sha": "7b316534aa22b529cc333c3be4244a2a4be885b0",
+			"registry": "npmjs"
+		},
+		"safe-json-stringify-1.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/safe-json-stringify/-/safe-json-stringify-1.1.2.tgz",
+			"sha": "913796617042de2259f62ce82843c239258ca287",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"safe-json-stringify-1.1.2.tgz": {
+			"shasum": "913796617042de2259f62ce82843c239258ca287"
+		}
+	},
+	"_rev": "2-ecb77ff0489eca22",
+	"_id": "@types/safe-json-stringify",
+	"readme": "# Installation\r\n> `npm install --save @types/safe-json-stringify`\r\n\r\n# Summary\r\nThis package contains type definitions for safe-json-stringify (https://github.com/debitoor/safe-json-stringify).\r\n\r\n# Details\r\nFiles were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/safe-json-stringify.\r\n\r\n### Additional Details\r\n * Last updated: Mon, 14 Sep 2020 20:52:56 GMT\r\n * Dependencies: none\r\n * Global values: none\r\n\r\n# Credits\r\nThese definitions were written by [Eric Byers](https://github.com/ericbyers)."
+}

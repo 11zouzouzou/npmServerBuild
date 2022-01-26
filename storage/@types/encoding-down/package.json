@@ -1,0 +1,114 @@
+{
+	"name": "@types/encoding-down",
+	"versions": {
+		"5.0.0": {
+			"name": "@types/encoding-down",
+			"version": "5.0.0",
+			"description": "TypeScript definitions for encoding-down",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Meirion Hughes",
+					"url": "https://github.com/MeirionHughes",
+					"githubUsername": "MeirionHughes"
+				},
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*",
+				"@types/level-codec": "*"
+			},
+			"typesPublisherContentHash": "7c664f6e23a87259f2669d7f44a9d75fc8a50b588911c58686c011b2dce7ca88",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/encoding-down@5.0.0",
+			"dist": {
+				"integrity": "sha512-G0MlS/+/U2RIQLcSEhhAcoMrXw3hXUCFSKbhbeEljoKMra2kq+NPX6tfOveSWQLX2hJXBo+YrvKgAGe+tFL1Aw==",
+				"shasum": "0b5b90b93ac3aa75148f19508044e7bd36463557",
+				"tarball": "https://registry.npmjs.org/@types/encoding-down/-/encoding-down-5.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 5067,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJboVK1CRA9TVsSAnZWagAApzUP/jZWh1q1XM6eEgxv9OZi\n6A4ckUkr2iGv0m/j9S/r47TG4yZpaSZXggff88vQA00lQLIehqr7a1qEjfTn\nLcsSs1FRxSwZB76RQDXGt0zDRp2HGZg6XN08rv0GFOcZ5O5VO/Extx+01WtL\nkzk3j+kIJenpiqt0+zM2KAnIIQBRXBHAZGrnZaq9HIDvEAozJDHf3bJUaZiq\nIL9vLtBp5o0qgYtZoHnRvEjNVLGipUfiO1hcKtjss2/5oVJt/tU+DIE5u9ys\nO/8o3oyYkADOpqsh0uay8cHUtoK0Mgd2+8obcRz5MiAo8VmEdvOPrRFbVIeb\nJ8sqUEsGRdRTFOtdaPXAV+mketNh7jh546L3luRLbCPbKKKQYYbBAfrStVYn\nK7HvkDjD9+biX6egjN5/XzLWDJBFFJsoAgJZ5aGIGXQxukQ+dpRU0oBBrPLy\n7nQ3XXNGDuwhSiLO6TTtkMVkgAZtfDYYh8LNKbHfRgzdT+Jw7KGs9XSka5lw\nHBAY7yk00kSqcpgqlz5rcs28L+QPx0rZur06475+Uiwjd9yehh2yz2ji3irq\nPi9OLvyJVNyiVbyjMnuHEhzbUO86IbDQLxe8WuyjPwfhQkI/zrQlzVGYv6A3\niaiiYEhD1HnJ/MZ4d5qbfnyvzuujt5UTLZnRFL0PYWrZr0o5JAIr4Ixshk++\ngEwm\r\n=jOtt\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/encoding-down_5.0.0_1537299124964_0.00879124111331886"
+			},
+			"_hasShrinkwrap": false
+		}
+	},
+	"time": {
+		"created": "2018-09-18T19:32:04.806Z",
+		"5.0.0": "2018-09-18T19:32:05.100Z",
+		"modified": "2021-11-18T19:44:52.268Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "5.0.0",
+		"ts2.3": "5.0.0",
+		"ts2.4": "5.0.0",
+		"ts2.5": "5.0.0",
+		"ts2.6": "5.0.0",
+		"ts2.7": "5.0.0",
+		"ts2.8": "5.0.0",
+		"ts2.9": "5.0.0",
+		"ts3.0": "5.0.0",
+		"ts3.1": "5.0.0",
+		"ts3.2": "5.0.0",
+		"ts3.3": "5.0.0",
+		"ts3.4": "5.0.0",
+		"ts3.5": "5.0.0",
+		"ts3.6": "5.0.0",
+		"ts3.7": "5.0.0",
+		"ts3.8": "5.0.0",
+		"ts3.9": "5.0.0",
+		"ts4.0": "5.0.0",
+		"ts4.1": "5.0.0",
+		"ts4.2": "5.0.0",
+		"ts4.3": "5.0.0",
+		"ts4.4": "5.0.0",
+		"ts4.5": "5.0.0",
+		"ts4.6": "5.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"4b2cdcec5f75a866a16f1173b7ed3e04\"",
+			"fetched": 1643186350806
+		}
+	},
+	"_distfiles": {
+		"encoding-down-5.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/encoding-down/-/encoding-down-5.0.0.tgz",
+			"sha": "0b5b90b93ac3aa75148f19508044e7bd36463557",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"encoding-down-5.0.0.tgz": {
+			"shasum": "0b5b90b93ac3aa75148f19508044e7bd36463557"
+		}
+	},
+	"_rev": "2-1df8fd738f8d7794",
+	"_id": "@types/encoding-down",
+	"readme": "# Installation\r\n> `npm install --save @types/encoding-down`\r\n\r\n# Summary\r\nThis package contains type definitions for encoding-down (https://github.com/Level/encoding-down).\r\n\r\n# Details\r\nFiles were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/encoding-down\r\n\r\nAdditional Details\r\n * Last updated: Tue, 18 Sep 2018 19:31:11 GMT\r\n * Dependencies: abstract-leveldown, level-codec\r\n * Global values: none\r\n\r\n# Credits\r\nThese definitions were written by Meirion Hughes <https://github.com/MeirionHughes>, Daniel Byrne <https://github.com/danwbyrne>."
+}

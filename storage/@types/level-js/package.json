@@ -1,0 +1,225 @@
+{
+	"name": "@types/level-js",
+	"versions": {
+		"4.0.0": {
+			"name": "@types/level-js",
+			"version": "4.0.0",
+			"description": "TypeScript definitions for level-js",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"types": "index",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/level-js"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*"
+			},
+			"typesPublisherContentHash": "1c58b81109e6bc6ca7f60ba1adc6e91e03ede80f3e714cd68fcfab5afef0750e",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/level-js@4.0.0",
+			"dist": {
+				"integrity": "sha512-qy6ABFM/yyJ6RxuoxGpWCjHGkaBAlbEytvWYteL1uhcnUXBcSnxYb6xsh5k596LaA9om1Vp7pU1jYlyzLIAEAQ==",
+				"shasum": "5f4373671456bff15dd21ea1398c8e00f5464b18",
+				"tarball": "https://registry.npmjs.org/@types/level-js/-/level-js-4.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 3358,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdBeo3CRA9TVsSAnZWagAANuQP/jcNzk64tDr/u7l8jQSd\nlk0lsBtdYVX5hzd3sXE8RjpHNOcDy5ZbvVg2+61BX1lgOY0HBr64HirAIH5k\nBZDS2uWpUOLrCTlpUhsJXdSDoRYzsSMlI8amAih/T/QWJVqTT9Ak/skNuPF5\nWrZOjgWsCf2fde/FlHG2iHDlMtETx/o6nGKCgtZyMgXVcMjpnB1Xa3fTmXZ0\nYzNJBCM/kuyruOuUxK6d/qLyBPiPjyrnOqIpXnGZ00FLruBIh9XfS+3cVzmB\nti38HfyBKbefgPuy4huJhBdrVX34SH/kL71Mdgi2hqH6UJdiOOERUvuNCB4k\nbAgxIlj0+oRL5+hCm/fFlYJCArlT4pwyErtpOb89I9nfqAB5X8z7CvPNeTW/\nUytuE5RgFV3KVJNBjWJcMLS1Sjw+dso3Nb8631gcf1vVCK+99X4MMb9VSaDP\nywHHtGk0R3xa8gZrdD7WohVM9updBGF8lu+onYVddG3Zej4sRL1lM9aQxkuV\nf7Au1Jeies3xWg4IXOjYljgyPZmkvLHS/oqlmfida2LnD0KS2/ele8pqdI0E\nDdWwc1XYVgatSjcYSkRpR3aikR/USM5Pyj5TrhXhwYK2hUmATpS4vPn5Q6sd\nv5rWh+J4MF5dH+I/5jjUHQfn8zpGcVBERgI/pcrtCGQS2Ii/Yzvb//SE/2/d\n2Ksh\r\n=0jAJ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-js_4.0.0_1560668726568_0.006922933103278073"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.0.1": {
+			"name": "@types/level-js",
+			"version": "4.0.1",
+			"description": "TypeScript definitions for level-js",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"types": "index",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/level-js"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*"
+			},
+			"typesPublisherContentHash": "29ba2776ae1ef1c05382450399d05bc0c2512b3983411042ac145adb0c1381c5",
+			"typeScriptVersion": "2.3",
+			"_id": "@types/level-js@4.0.1",
+			"dist": {
+				"integrity": "sha512-WA8Zt0RUYVWT1lhyHnT0okmMY1m5MjxC8PvpUn9ojZaU+KNsTy3A2KBHaKtjttCN+o1h7K/eQlSjM20bDraeHA==",
+				"shasum": "e094b684e546b80346b2cec0562c4216d8d29eeb",
+				"tarball": "https://registry.npmjs.org/@types/level-js/-/level-js-4.0.1.tgz",
+				"fileCount": 4,
+				"unpackedSize": 3334,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdCsDJCRA9TVsSAnZWagAAomkP/2JwL7WnOdEQEmd1k+ls\nAU4ObpdOh9XUSOIhkxaIpe7OWIsa5pYPhzOmjvN7mm+FoKQCf4eMuwFKXHdP\nn6ltj91WxNcfOloCn5OUUVlzJ+sFl4SwmmtCwqS/siuNXgSMuYqm4OjEk0BG\nbjDZDD0+bSjk9lvKLKE1iew4gH5zJ+cW46ACZQJeROF+bXF4KyOhb57C8WBH\nmZWiwA0/WaYoIlO7D9/KuNEObm1rXAKOOrzcROgIlEh2QW13jjuabmB5wo5N\nRoeCtIWeFmpT8CVB+cylZHQdH6uITDsnXiMf0F5CtJfqSJRH3iXM+GRFpAvC\njGMDGic0Ips/Pw6eVONII7OHizPcAQ9E17z1/of/15I21KWzYUyqQeec2erX\nSed2J80x/G9nLz6tLUi6V6IYWw+LaphqEqMdjuLcKDCw0ctG1dYeuqTL2Q2r\namFzWwzQVdTiAU4c00UE2xXCu0W9wQpyz86fClW4RWZjcKchnMFWwXalXqG5\n7CR/rdYEUjUZGMNOtsuCbaOTxs4JWMN/LB79dQauD18Bn91KDmMEdwzgdPds\nbdOK91/k2YKzf8QEp6fYI8eQ95bizBcPnM/qMSiNubFYBWWK+XsSgfwu6o0A\nwze+rvUouMwup5VAU/5Eoz6qUJ1DsJEV6/rbTzAJSrk2zWvaCtOspu06rzTS\nGdyb\r\n=e33T\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-js_4.0.1_1560985801136_0.7240611646345536"
+			},
+			"_hasShrinkwrap": false
+		},
+		"4.0.2": {
+			"name": "@types/level-js",
+			"version": "4.0.2",
+			"description": "TypeScript definitions for level-js",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-js",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Daniel Byrne",
+					"url": "https://github.com/danwbyrne",
+					"githubUsername": "danwbyrne"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/level-js"
+			},
+			"scripts": {},
+			"dependencies": {
+				"@types/abstract-leveldown": "*"
+			},
+			"typesPublisherContentHash": "320af8076ec76e146bc51cb59376b4154b98c54b6df2bca669fd9a121f943728",
+			"typeScriptVersion": "3.6",
+			"_id": "@types/level-js@4.0.2",
+			"dist": {
+				"integrity": "sha512-TjaIP5+LoaByFhmoD1S1YPFa81rHQzzCNbCd/oNdSct1ptrtqyI1OfsFbiT60DQb7qav2piEEzS76Y/u6chF4A==",
+				"shasum": "405786427df938d664925b3a5551c32071e5b4a7",
+				"tarball": "https://registry.npmjs.org/@types/level-js/-/level-js-4.0.2.tgz",
+				"fileCount": 4,
+				"unpackedSize": 4534,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5zfJCRA9TVsSAnZWagAAirIP/1yLWADqf6QBOC+8AzUF\n2NXyTEg4CVO7gOFFYEaLkdWkQmpH2eeQT9ydxaKwtULEpnCAE05h0lhP181k\nrqbgOZtXZDCoyKdeOnfT9DvtXUkwJshpeH1BS89NDVKRjRfwhNKK1ilBultb\nNTbHi2vCtbc5H6Jzo/VaxxPAn1x/irU8FgH9f39AZWYFvz/AfP+nLVnXnXF9\n3E0aL4ANLU0OQHlhkvuGtp1yPIp/rAnGc2ax2Adg7ts4c6CwB6A9o2jCrDOc\n7rIWO8Y7LB2FwhrmpacU/pQQaGzU5+c19goAxeTDfC8IZrkEtW59Jpolwuf0\ndPn2hYhQ3Mt98+W8KmLX7xm8bpW4jStMoQ1KE9SaXoKIUENOoobuVcLMo0yG\n9N7jou6EVGfRYtlpJhIbHx6dWEwBtTSmS9NupyLwDNzeM4VkxjbS4j0focOu\n4CEVXo4r3SVdC6+typ/b0Rs0ypIQ+T0UsAPRnp4U+qhm8Wba4VyQMlwo8/v6\n5v/quQx97Z109ue1SAlYgvZsT7JMWWeIy14fP3Khk4YvEzzaUcN7YnAgSCCe\n6lMdiRY13Dw+mgN32Lbc8CQu4QsLueFfbZlQNXTpmyEa99EMjTUn7DogS/NG\nt3WthCjf/tYiaA/94PU/X8d9jR+DXSoL5b1T9KKOx7W6DlOaMYwoU6fv5LRK\nu8oa\r\n=lVgq\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-js_4.0.2_1625765832692_0.20482609055456646"
+			},
+			"_hasShrinkwrap": false
+		}
+	},
+	"time": {
+		"created": "2019-06-16T07:05:26.535Z",
+		"4.0.0": "2019-06-16T07:05:26.711Z",
+		"modified": "2021-11-18T19:59:08.577Z",
+		"4.0.1": "2019-06-19T23:10:01.270Z",
+		"4.0.2": "2021-07-08T17:37:12.814Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "4.0.2",
+		"ts2.3": "4.0.1",
+		"ts2.4": "4.0.1",
+		"ts2.5": "4.0.1",
+		"ts2.6": "4.0.1",
+		"ts2.7": "4.0.1",
+		"ts2.8": "4.0.1",
+		"ts2.9": "4.0.1",
+		"ts3.0": "4.0.1",
+		"ts3.1": "4.0.1",
+		"ts3.2": "4.0.1",
+		"ts3.3": "4.0.1",
+		"ts3.4": "4.0.1",
+		"ts3.5": "4.0.1",
+		"ts3.6": "4.0.2",
+		"ts3.7": "4.0.2",
+		"ts3.8": "4.0.2",
+		"ts3.9": "4.0.2",
+		"ts4.0": "4.0.2",
+		"ts4.1": "4.0.2",
+		"ts4.2": "4.0.2",
+		"ts4.3": "4.0.2",
+		"ts4.4": "4.0.2",
+		"ts4.5": "4.0.2",
+		"ts4.6": "4.0.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"3f36a0e5f0aa809b4e60ebb1d85e027c\"",
+			"fetched": 1643186350858
+		}
+	},
+	"_distfiles": {
+		"level-js-4.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/level-js/-/level-js-4.0.0.tgz",
+			"sha": "5f4373671456bff15dd21ea1398c8e00f5464b18",
+			"registry": "npmjs"
+		},
+		"level-js-4.0.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/level-js/-/level-js-4.0.1.tgz",
+			"sha": "e094b684e546b80346b2cec0562c4216d8d29eeb",
+			"registry": "npmjs"
+		},
+		"level-js-4.0.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/level-js/-/level-js-4.0.2.tgz",
+			"sha": "405786427df938d664925b3a5551c32071e5b4a7",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"level-js-4.0.2.tgz": {
+			"shasum": "405786427df938d664925b3a5551c32071e5b4a7"
+		}
+	},
+	"_rev": "2-d9faba59d3c7985b",
+	"_id": "@types/level-js",
+	"readme": "# Installation\r\n> `npm install --save @types/level-js`\r\n\r\n# Summary\r\nThis package contains type definitions for level-js (https://github.com/Level/level-js).\r\n\r\n# Details\r\nFiles were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-js.\r\n## [index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-js/index.d.ts)\r\n````ts\r\n// Type definitions for level-js 4.0\n// Project: https://github.com/Level/level-js\n// Definitions by: Daniel Byrne <https://github.com/danwbyrne>\n// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped\n// TypeScript Version: 2.3\n\nimport { AbstractLevelDOWN, AbstractOptions } from 'abstract-leveldown';\n\ninterface Level extends AbstractLevelDOWN {\n  readonly location: string;\n  readonly prefix: string;\n  readonly version: string | number;\n  destroy(location: string, cb: (err: Error | undefined) => void): void;\n  destroy(location: string, prefix: string, cb: (err: Error | undefined) => void): void;\n}\n\ninterface LevelOptions {\n  readonly prefix?: string | undefined;\n  readonly version?: string | number | undefined;\n}\n\ninterface LevelConstructor {\n  new (location: string, options?: LevelOptions): Level;\n  (location: string, options?: LevelOptions): Level;\n}\n\ndeclare const Level: LevelConstructor;\nexport = Level;\n\r\n````\r\n\r\n### Additional Details\r\n * Last updated: Thu, 08 Jul 2021 16:23:42 GMT\r\n * Dependencies: [@types/abstract-leveldown](https://npmjs.com/package/@types/abstract-leveldown)\r\n * Global values: none\r\n\r\n# Credits\r\nThese definitions were written by [Daniel Byrne](https://github.com/danwbyrne)."
+}

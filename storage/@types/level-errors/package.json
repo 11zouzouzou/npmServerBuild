@@ -1,0 +1,96 @@
+{
+	"name": "@types/level-errors",
+	"versions": {
+		"3.0.0": {
+			"name": "@types/level-errors",
+			"version": "3.0.0",
+			"description": "TypeScript definitions for level-errors",
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-errors",
+			"license": "MIT",
+			"contributors": [
+				{
+					"name": "Junxiao Shi",
+					"url": "https://github.com/yoursunny",
+					"githubUsername": "yoursunny"
+				}
+			],
+			"main": "",
+			"types": "index.d.ts",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"directory": "types/level-errors"
+			},
+			"scripts": {},
+			"dependencies": {},
+			"typesPublisherContentHash": "d66e7f5c01ff1ca1328f8a66fea90d00d302113c15210dcd1fc280fb577e142f",
+			"typeScriptVersion": "3.6",
+			"_id": "@types/level-errors@3.0.0",
+			"dist": {
+				"integrity": "sha512-/lMtoq/Cf/2DVOm6zE6ORyOM+3ZVm/BvzEZVxUhf6bgh8ZHglXlBqxbxSlJeVp8FCbD3IVvk/VbsaNmDjrQvqQ==",
+				"shasum": "15c1f4915a5ef763b51651b15e90f6dc081b96a8",
+				"tarball": "https://registry.npmjs.org/@types/level-errors/-/level-errors-3.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 3818,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg3PD7CRA9TVsSAnZWagAAuj0P+wXNZDCBflMPG4S6ywYR\n7xYno+pMHnEx3WZpfFzH9vn22IxzvXzO062QnLhxvtZHJw9ysm1MYWooeIHX\njFfLSdYQz91dD1mMxkAlsA8jNmuZiGn5oLdnQoZhHU91Hghq08zUaLo6cZHp\nOEKu34wp8NzjGNWd7uRTDHT/kNC6splbfXegrsvAaK8wGcPmYbV0oVFTh2lU\naIZt6BrGOKkqlX3wSwFKSwBaH90Br5D8GOkhj/CbzOFeJkYkvSLURjBPRRZI\nvZPaVDFLNq7UbKrZ4iJ2rYGE1odF2LZgbDun39p1tXwAs0mIwVRhrmXhyYrj\nHx3vSq3BiEhvTqpHGYkfIW0UYffj6XlM6HkmVwdiGy3RcEzVmtce+1GCWMvv\n6hHp06Cau8XKo7tBMFKCodrkVpUA2sPH3wBX7wSKowAPoFGko+QMX0MUy0bv\nfPesG+fhEs1NfTMa8esy85vyq7KCpWkk56029noagxWYccVSEoXJChahN5CI\niEIMd30fZijIzKBDpFsZ5hqyFOUwfK9fKrk+et6A0JXcCgfOMfNGBsMp4l1u\nik2LGM6+j9HU3IMP9W4e7RL+1Gq0gOcqQXvn9bfBV5owAwow2EVemT0jOAD0\nb/tyvk4TZYF17ccdANaC/Kt+ra59LaUnJPj1vwy27tUYumFPxUW/S29lg9jh\nE3Jx\r\n=D7Se\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/level-errors_3.0.0_1625092347401_0.6722600497376794"
+			},
+			"_hasShrinkwrap": false
+		}
+	},
+	"time": {
+		"created": "2021-06-30T22:32:27.344Z",
+		"3.0.0": "2021-06-30T22:32:27.570Z",
+		"modified": "2021-11-18T19:59:08.510Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "3.0.0",
+		"ts3.6": "3.0.0",
+		"ts3.7": "3.0.0",
+		"ts3.8": "3.0.0",
+		"ts3.9": "3.0.0",
+		"ts4.0": "3.0.0",
+		"ts4.1": "3.0.0",
+		"ts4.2": "3.0.0",
+		"ts4.3": "3.0.0",
+		"ts4.4": "3.0.0",
+		"ts4.5": "3.0.0",
+		"ts4.6": "3.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"47c58627bbd896ef27b309e955dfcf9e\"",
+			"fetched": 1643186350828
+		}
+	},
+	"_distfiles": {
+		"level-errors-3.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/level-errors/-/level-errors-3.0.0.tgz",
+			"sha": "15c1f4915a5ef763b51651b15e90f6dc081b96a8",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"level-errors-3.0.0.tgz": {
+			"shasum": "15c1f4915a5ef763b51651b15e90f6dc081b96a8"
+		}
+	},
+	"_rev": "2-38cfc0f9b0935254",
+	"_id": "@types/level-errors",
+	"readme": "# Installation\r\n> `npm install --save @types/level-errors`\r\n\r\n# Summary\r\nThis package contains type definitions for level-errors (https://github.com/Level/errors).\r\n\r\n# Details\r\nFiles were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-errors.\r\n## [index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/level-errors/index.d.ts)\r\n````ts\r\n// Type definitions for level-errors 3.0\n// Project: https://github.com/Level/errors\n// Definitions by: Junxiao Shi <https://github.com/yoursunny>\n// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped\n\nexport class LevelUPError extends Error {}\n\nexport class InitializationError extends LevelUPError {}\n\nexport class OpenError extends LevelUPError {}\n\nexport class ReadError extends LevelUPError {}\n\nexport class WriteError extends LevelUPError {}\n\nexport class NotFoundError extends LevelUPError {\n    readonly notFound: true;\n    readonly status: 404;\n}\n\nexport class EncodingError extends LevelUPError {}\n\r\n````\r\n\r\n### Additional Details\r\n * Last updated: Wed, 30 Jun 2021 22:31:24 GMT\r\n * Dependencies: none\r\n * Global values: none\r\n\r\n# Credits\r\nThese definitions were written by [Junxiao Shi](https://github.com/yoursunny)."
+}
