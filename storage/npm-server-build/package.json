@@ -1,0 +1,61 @@
+{
+	"name": "npm-server-build",
+	"versions": {
+		"1.0.0": {
+			"name": "npm-server-build",
+			"version": "1.0.0",
+			"main": "./build/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git+ssh://git@github.com/11zouzouzou/npmServerBuild.git"
+			},
+			"author": {
+				"name": "zouzouzou11",
+				"email": "1096174991@qq.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"verdaccio": "^5.5.1"
+			},
+			"files": [
+				"build/"
+			],
+			"readmeFilename": "README.md",
+			"gitHead": "1200ae576d6f67ec19ca274856c881b0d8ef55e5",
+			"description": "npm server build test",
+			"bugs": {
+				"url": "https://github.com/11zouzouzou/npmServerBuild/issues"
+			},
+			"homepage": "https://github.com/11zouzouzou/npmServerBuild#readme",
+			"_id": "npm-server-build@1.0.0",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-cbR7vzalVmcnViuBFHUSqSHx/ihYIRhrso+nO1iSueINqzGma5JRVJzB5eVctaxjOwybvCN16+XNFtF9Pk90zQ==",
+				"shasum": "bebbe4ca28753e01d399029d847d9ec3e8f7c54d",
+				"tarball": "http://localhost:4874/npm-server-build/-/npm-server-build-1.0.0.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-01-26T02:44:37.938Z",
+		"created": "2022-01-26T02:44:37.938Z",
+		"1.0.0": "2022-01-26T02:44:37.938Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.0"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"npm-server-build-1.0.0.tgz": {
+			"shasum": "bebbe4ca28753e01d399029d847d9ec3e8f7c54d",
+			"version": "1.0.0"
+		}
+	},
+	"_rev": "4-a356765353478d38",
+	"_id": "npm-server-build",
+	"readme": "# npmServerBuild\nnpm server build test"
+}
