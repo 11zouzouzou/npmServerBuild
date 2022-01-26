@@ -36,16 +36,59 @@
 				"tarball": "http://localhost:4874/npm-server-build/-/npm-server-build-1.0.0.tgz"
 			},
 			"contributors": []
+		},
+		"1.0.1": {
+			"name": "npm-server-build",
+			"version": "1.0.1",
+			"main": "./build/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git+ssh://git@github.com/11zouzouzou/npmServerBuild.git"
+			},
+			"author": {
+				"name": "zouzouzou11",
+				"email": "1096174991@qq.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"npm-server-build": "^1.0.0",
+				"ts-node": "^10.4.0",
+				"typescript": "^4.5.5",
+				"verdaccio": "^5.5.1"
+			},
+			"scripts": {
+				"testnpm": "ts-node src/index.ts"
+			},
+			"files": [
+				"build/"
+			],
+			"readmeFilename": "README.md",
+			"gitHead": "5440dfc36e5d5582f6ceab0ec1af1f51f9c65e73",
+			"description": "npm server build test",
+			"bugs": {
+				"url": "https://github.com/11zouzouzou/npmServerBuild/issues"
+			},
+			"homepage": "https://github.com/11zouzouzou/npmServerBuild#readme",
+			"_id": "npm-server-build@1.0.1",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-KQSkJwqP9Lyy+/j6p+kVCDHvhJJc60Ng08g45mKGO65e74z5Bz4NjTSNA8vPIbltUr+LEH5BI0jpnSU09NnapQ==",
+				"shasum": "4cb777a2bc2c09318598290c775a63712dff078e",
+				"tarball": "http://localhost:4874/npm-server-build/-/npm-server-build-1.0.1.tgz"
+			},
+			"contributors": []
 		}
 	},
 	"time": {
-		"modified": "2022-01-26T02:44:37.938Z",
+		"modified": "2022-01-26T03:15:44.782Z",
 		"created": "2022-01-26T02:44:37.938Z",
-		"1.0.0": "2022-01-26T02:44:37.938Z"
+		"1.0.0": "2022-01-26T02:44:37.938Z",
+		"1.0.1": "2022-01-26T03:15:44.782Z"
 	},
 	"users": {},
 	"dist-tags": {
-		"latest": "1.0.0"
+		"latest": "1.0.1"
 	},
 	"_uplinks": {},
 	"_distfiles": {},
@@ -53,9 +96,13 @@
 		"npm-server-build-1.0.0.tgz": {
 			"shasum": "bebbe4ca28753e01d399029d847d9ec3e8f7c54d",
 			"version": "1.0.0"
+		},
+		"npm-server-build-1.0.1.tgz": {
+			"shasum": "4cb777a2bc2c09318598290c775a63712dff078e",
+			"version": "1.0.1"
 		}
 	},
-	"_rev": "4-a356765353478d38",
+	"_rev": "8-64a98f435d360563",
 	"_id": "npm-server-build",
 	"readme": "# npmServerBuild\nnpm server build test"
 }
