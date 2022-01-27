@@ -95,3 +95,22 @@ function setSecurityWebHeaders(req, res, next) {
   next();
 }
 ```
+
+### pm2 无法执行npm or yarn 指令
+#### 问题
+```bash
+PM2] Starting /usr/local/bin/npm in fork_mode (1 instance)
+[PM2] Done.
+[PM2][ERROR] Script not found: /Users/zou/Downloads/github/npmServerBuild/run
+error Command failed with exit code 1.
+```
+#### 解决
+> 用运行verdaccio.js代替
+```javascript
+const { exec } = require('child_process');
+exec('yarn dev');//ro exec('npm run dev') //dev 是你的commond name
+```
+> 指令
+```bash
+yarn pm2 start ./verdaccio.js 
+```
