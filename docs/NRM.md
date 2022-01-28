@@ -1,4 +1,4 @@
-# nrm
+# nrm/yrm
 > 建议安装yrm ,可以修改yarn,nrm不可以，yrm 与nrm commond 一致
 ## 安装
 ```bash

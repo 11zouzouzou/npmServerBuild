@@ -62,7 +62,7 @@ LoadModule ssl_module libexec/apache2/mod_ssl.so
 </VirtualHost>
 ```
 ## nrm/yrm 包源使用
-[nrm使用](./NRM.md)
+[nrm/yrm使用](./NRM.md)
 ## docker使用
 TODO
 ## 阿里云私有服务部署
