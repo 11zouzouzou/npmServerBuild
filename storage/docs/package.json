@@ -1,0 +1,868 @@
+{
+	"name": "docs",
+	"versions": {
+		"0.0.0-37": {
+			"name": "docs",
+			"subdomain": "docs",
+			"description": "The node documentation project",
+			"version": "0.0.0-37",
+			"scripts": {
+				"start": "bin/server"
+			},
+			"author": {
+				"name": "Nodejitsu",
+				"email": "info@nodejitsu.com"
+			},
+			"dependencies": {
+				"async": "0.1.x",
+				"markdown": "0.2.x",
+				"traverse": "0.4.x",
+				"mkdirp": "0.0.x",
+				"http-server": "0.2.4",
+				"jsdom": "0.2.x",
+				"weld": "0.2.1",
+				"findit": "0.1.x"
+			},
+			"_npmJsonOpts": {
+				"file": "/Users/maraksquires/.npm/docs/0.0.0-37/package/package.json",
+				"wscript": false,
+				"contributors": false,
+				"serverjs": false
+			},
+			"_id": "docs@0.0.0-37",
+			"devDependencies": {},
+			"engines": {
+				"node": "*"
+			},
+			"_engineSupported": true,
+			"_npmVersion": "1.0.27",
+			"_nodeVersion": "v0.4.10",
+			"_defaultsLoaded": true,
+			"dist": {
+				"shasum": "f359a32505dbe2cc4b47307a24529a4e5b739a9c",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.0.0-37.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "marak",
+					"email": "marak.squires@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.1": {
+			"name": "docs",
+			"version": "0.0.1",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"ncc": "^0.3.6",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"licenseText": "MIT License\n\nCopyright (c) 2019 WittBulter\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.0.1",
+			"dist": {
+				"shasum": "5b38d05d7369581c18f0fc298c63e98611e5d187",
+				"integrity": "sha512-0FeV7A114CYyxy4teMtLDKAys+qmbUDshKGVxvwOAWr9cq5c5pNKLSQyuX36NjQQamAWvOZFgMwluRVeN7FjTw==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.0.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 78941,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc+VUCCRA9TVsSAnZWagAA6OEQAIg1mnEHBgKjMASvoUt8\nFBdIE5LUB89lUuVQ964jyT3373lpJn9JsqERsjx2QID68J6i0mzrYSSn9rMi\nmXJIl/3HzZtjIHyZcvsqF3A6rsQJiYEsGmj+RKl0mz8ZjRnqOQOZ6P5ARRmw\nBrR+fhxv8aCo4rIntAiIkIiPQhkGB1XwJJqZaOO8Mx4dFPDOjWNSqUubZaFC\nPyKL6KKJlqCgrmQ49Kxq+edp/lt3MVKc8ecsThb5bmDW9UaUTprYZce646/G\nkL+1ZwkmbYcA4+ZtfMcZWS1R9ywlFBdEHpFBnsXdFGdNPkO0hxRfHEvzRn++\nASFh83xytNwK4YifaTG6hOoissUMeZI4F4H5WDyYfa6itJCGGMFpDPVbUvwv\nwdmi0od4hTLytERjwxZaHSrARSP3EZ3m0HzEJ1z2X3CwG29dMh+v81L2iTJe\nxCMjSzZDC/yPRZ7+YR/aaYdOJQcPiovMmOC7hdm6BTM5x1Zn9NHSDyBRtd2E\naqT0vAb5Z9FOTUbRAwTP+fvOgVd+MKZqsUfHgtb35kAHI2uEo5zGUgoUW++e\na9Hp2KIowei2yon2zNyl6wZO4Uk3lcZDSM7YTRm6v1WRZp55+zgIuA+fzUeY\nWOcnsIzpY1nJU13nAi63jIN48FdPIQpQ9gugI9ELho3JACYpL9p1Kn43ooE/\nScYx\r\n=I/KQ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.0.1_1559844098086_0.013721924165085886"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.0.2": {
+			"name": "docs",
+			"version": "0.0.2",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"ncc": "^0.3.6",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for `docs`.",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 WittBulter\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.0.2",
+			"dist": {
+				"shasum": "791b6f986d0dc817777be55909d1aa342f17087e",
+				"integrity": "sha512-3a+wQXi4vUiCJFs2+MbIwlKbhnCGFgA/ZqvUJlk/yuTEuadLE8TbrX19rNmBQjoU/D+lDFazub5TDdCj6MaE3A==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.0.2.tgz",
+				"fileCount": 7,
+				"unpackedSize": 79597,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc+VdeCRA9TVsSAnZWagAAEZ0P/jdLM9czApwlapFvJomS\nsz27Rz4NVP2lF2KvunwII2DseBTmNNsIagrO94BRYKB4AzsPJ08jz/0Y4SXE\nhs3BdtbkRAlGj+/rsqPAimmC2Xa5LwyA4nRwTvVPlRyUlnOjTVW3MkBby9WX\nx67we5Gh1iO07XSneMzqQakbORC2mB9m8orn2mWVKQR1sm0pnZwS1F55nSC1\n6ZmaEei9Wa2/tNxAeAajQtDvWJV8Z9pmvvkUE7DAVAYbb3h3MM+6D/QVKpNQ\n9ODH3iZx/1JVCM8iKt3JGlJBg4491/7f/cbzbzR9axQdafa1EST/PGOXhFqv\n+P1HldmRBtxDL3a74m3di9JTOvzh/2r/D3Mj61yUo1xiQs3p30F9R7O+Y0jH\nxDPKlyZA6mWy4L59h74DTugVetzsVXUR8F+2ie22IdFs77BLmaGVbIF7Rm5b\niH8uPtYkcbcKzcW7oX0w7/9B4t9FUu7jWIpDho+1Oj8kuwlBRONRVpF14SbX\ncjyfCu5JYk8RvLrnH4kepB2W5gad79pJR36NSW8BTsm9ZjtcVh0MyzdRqf3Y\nzYQmHzCEESkZSdIrnHnxmNcc1s9YWeCiWKXu9A7PZDdo8ytYfo4fNU7QVSQa\n49mfcRnJ/uUX+N8YxdIeDP6bmlWyxqcMi1GqyCxgk7Awg/otFsbOo6fw+0E2\nE///\r\n=oFKs\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.0.2_1559844701359_0.4187738466534403"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.1.0": {
+			"name": "docs",
+			"version": "0.1.0",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/wittbulter/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"ncc": "^0.3.6",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for `docs`.",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 WittBulter\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.1.0",
+			"dist": {
+				"shasum": "2cc3ce38eabc8d1cc78a4211f8b87062c025fe74",
+				"integrity": "sha512-AMyEENC9pVJVLONRQawFOjIeM6cCb2UzvKMbY7u/303pOwWCdx3nWJ+VP954/FENJAwKlnANvlQkGNyRouCggg==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.1.0.tgz",
+				"fileCount": 7,
+				"unpackedSize": 79889,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc/1MoCRA9TVsSAnZWagAAC0AP/iaIThf01Q5qQRnGNnJn\ng+UfzjBvA8cjaMdl6Y12hawAl9LYs68ekGxKZvMjO7Hp3O6tM3h3r0DkeXc7\npaFbps+Cjj/R/+H1VTZohpb7yZikzdaHyM/ydGDpB+CCHJu94ZUUpR1FFbIx\np7EyCTiNudJ1bhY7AZITLu04nYIMl4PWbo3FpBrsPRrYQzB8YOLibtZTEWAN\n/LBdZ8FWv29C0P6jqkCdvbuIk5HG1E+V8iT8CZE1UdmvCUStiFMRIsw6VQtN\nMxC6F1wWw52KDMCuJEIbGPklVquoTINhBslMQZMeQ42M9Xbsdb897KwhvQ5T\nPErWMXMJr4a9hFRk26sdM/sGXgTdERe8jfuPARdfWOMSWXU9EFtVwHR+n6Tj\nDAcmA14ohjytd8IUJ/9H0xqxJXrHCwnF2PsRacCmHVD5w3WEpRJ4skrFLCOP\nBkTrZxKbt9LoLHIQP49HxuwvT4v4sr2h3p4f/un6gZsi1cQDJPXO9p7cMkRV\n0kZ3NwP1AFTBeOYt508ywLTiE+HnEOJ8BZcOqVbBGk9IMG91pMsbki3cWK9L\nnFFErucysyuHhbo+ameMbp3yJCBYg2dc2WwuPTu5DS1fwIdqK7aZ+yD0Er9O\ndFqri69J4z+ZdBgR2F+TJa/c5Fi3eh9HUPHFBZGcumeQRSsdzAs/StMYxYTO\nrWQl\r\n=8Viy\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.1.0_1560236840075_0.5729290993419249"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.2.1": {
+			"name": "docs",
+			"version": "0.2.1",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/wittbulter/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"ncc": "^0.3.6",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for `docs`.",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 WittBulter\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.2.1",
+			"dist": {
+				"shasum": "be77e3c68f151494c0b8995c81822587b257c36a",
+				"integrity": "sha512-mf13CfE65zVnRLv0odHQptttnwq8RUkaGUGJyP3AjzsjyyLi5my9zKg+T8kHq7GfDOyhkyNPXkd3mhE1vpQZuw==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.2.1.tgz",
+				"fileCount": 7,
+				"unpackedSize": 80370,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc/1yrCRA9TVsSAnZWagAApKIP/iDAPgY7empc5rwisBk5\nWthF3a4h3XY51xLMq6aodZpT3sZXd0qRvrnIDzkNRYYNs39oRrbxR4WzRzpw\ncOLts02DjgaqslTLJ5tu4LW9jerPZmvD15iTu5PFtNfhoXTHLhCqSXQSy3rw\n0J8IUJtZ1ar7t9Hj8xfTl/omNWadRfOLSKK/yyQoPeRjFnfPoncr2A2ZYUpB\n3h1rZdJ0bA7ErdIzVoUlukmZFEqgde9vnhQXCm4Ud48d0cJB7ouyu4D0Olfp\nlfRXMnHTsQJErTcvBUFkBCrstvUwDkTo+wUMCKvWpV14ElCZdRZZI4iK78Co\nRJabnF8LG4LBcLFct7W0daSReik4Pj8pWxFjNwTYXw9RfJcb91+g+Eh1GrJr\n/ctCSgwLETVUdYAiY/Gm6+WpYNR1+FUCk1gWrFeH1uv8AjF6nXF0UnPerOTc\nK6Qmdh1359BC0thqCaQxBYZ6/5fQJge2cap8zecNc257K+gqxNTUwOvZJ0+/\nEwCALlrZIK2haxUC819BMA7u0t2rmk8eyVGRit1t8/InJzvpW6hwNJxpslAE\n7v6I1kLK4SJUzXix+cCcx5HJq/P2RkdVCQIKjomIX3f9ku0qHfL6EAEjYgfC\neuGaB5ngW7SzJuRJg2PxLrodxCXrbcOTzYqrZc4Fss2lLf2S7vkGdux5DChI\nLbZW\r\n=pe2K\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.2.1_1560239274952_0.32573459023303575"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.2.2": {
+			"name": "docs",
+			"version": "0.2.2",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/unix/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"ncc": "^0.3.6",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for `docs`.",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 unix\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.2.2",
+			"dist": {
+				"shasum": "824c5b9178758f0ff0be7223cd5b93b68028d436",
+				"integrity": "sha512-8mqwHK4FcGifvEFMrdSKt0oFU6hx88ttZwnBk2cz9/3rtveAqQ8mvgE90eSVXPPldhPmUYabXm1kYekIuR883g==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.2.2.tgz",
+				"fileCount": 7,
+				"unpackedSize": 80334,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdHAZmCRA9TVsSAnZWagAAAwwP/RrAwWHN4Awv8qIR5CJj\nt8iSywieoCCn2fqerpZwAF293kuJfXZf7gRTNBI++JRlQJkE301+xpeN+jnn\n9vQ6fo4RZipsCZLLgNgIWGbOzWWTKyyCRCz7UvmssvfSdSU6wUZOgo4Gj+tB\nOIc9BjpmqAsVzC6xZw6XW9lPjt+jcmGluhMt97Y4rznmNykPEF5hvIfX4CZQ\nd7TDkt5KftFjQbdd/ZCwcGibwZ0u81ioP6GxH9Lg/hwVwx7wbmW1AZbJwtMb\n48UN49OXvHZcDIfMfPJtAb95oWgY8yqGtmhdAJRMDf8NauDtHWrWDTgMfWqT\nukUxsZ1b0P7XNUmNiLXm+C7yIhW3hZve2PdHvUdFXL9BvV6Kb2CijXVlcnZI\nmBGVjJ9eRbgDxS66E3V23x+jRfpf5Yjd8Ex+F6P3Fdb5C35W69dLWQ15CrAX\n9UXL+UBMA3lxLalzNYHlwjc22DiQS7atfC2+qHI0dtKCEkHl+IhbkpzrLX1k\neiL538p1Eng44HMYS1WBSsPo/afjYKslr+hokYZ+DtpSqzqnemNMOnGpfBAi\n+5QKozbOMl0W0li6Eu+2cT6uke1VHgKiCmowxl9wriu3+Tw9HOWv4RtfAnzl\nH82MwbbW88hOTqsEwcRHbf5btN8R3rWNTJFsjw/E0o/WCr1uJLqqrpG4F8rA\nmcGL\r\n=aLVL\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.2.2_1562117733974_0.826873834582323"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.2.3-canary.1": {
+			"name": "docs",
+			"version": "0.2.3-canary.1",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish --access public --non-interactive"
+			},
+			"bin": {
+				"docs": "dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/unix/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"@zeit/ncc": "^0.21.0",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"shorthash": "^0.0.2",
+				"terminal-link": "^2.1.1",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for `docs`.",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 unix\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.2.3-canary.1",
+			"dist": {
+				"shasum": "7f9aeb31b68e666eafbdaa5273f9e32e8e0a6535",
+				"integrity": "sha512-yw86iRNc4ujaMzoaJtjt3+iM/ZygeNOX6ktM8AYf05wdmuP21Dz9VC6H70zuc3/FPEoY2wuVq9bDXGVqGUeDBA==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.2.3-canary.1.tgz",
+				"fileCount": 6,
+				"unpackedSize": 2765,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeEvsRCRA9TVsSAnZWagAAjlwP/2R/jcqa8tsNsAbrKQhi\nbzC49j2FVfEoH3hai8lreAgpHoEEjDLYUXDhgGtlBMOO+zIk7RLGyMU4GgHM\nyV0kaYGiT6eAXYbAfyl7ibJJbSFM1LNjsvWhojLYA7GeODu5YgTN8wLAgwoA\nYMwQo16At+dp4kb3iC/Up9JizdBVcM+fmzo4g/VVEqV64UFbZg456XxFcNTq\ngiUpuCIgIWt3e1ycxpX8wmEl0RBBDfozoeZa3uMmGiANClXjbTg+FY4z44Pv\nHTSVkbZ9rVAyT2+cWxLymzmBKMMxn4IELaylr3JMbSOan5+WqahT+XM/0gSW\nznZAZI45UUX8qY/Dnq59CxSmjQdrvGjp3IZP2FF9T861hSyBpWg+OVfSQLLL\npE1tn91nWIalKRcgTzbfJDA2SwZJjOGVhX+BUtm8x8x7VyTdAXOJFid8vgSz\nZ7wXPP8bpWlFLQF+EvA1671Dk8ks1+60dIbLNevsvAyHIl4LatRT60vgMX1t\n2SnOR7v6V32W52TiUbf9WdB1I/3kWI+Ov35MOtxCL+sH6dZbREGSktuMOjvq\nGBnTU6VHuB9ASTS2oOaOIBpJYOMa+mq6r2SA8J04KLKXMWJw504pXG0oE1m5\nqFhUb4kr2PbT6orrVPhoyX6poCYyuHUTdQca9xWlefwmBcp269Gzp2OkDUBt\nNA0i\r\n=JdA6\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.2.3-canary.1_1578302225141_0.31089716057766537"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.2.3-canary.2": {
+			"name": "docs",
+			"version": "0.2.3-canary.2",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish --access public --non-interactive"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/unix/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"@zeit/ncc": "^0.21.0",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"shorthash": "^0.0.2",
+				"terminal-link": "^2.1.1",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for `docs`.",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 unix\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.2.3-canary.2",
+			"dist": {
+				"shasum": "b9e80e29f548cce40d0f413e609eab4eeb8f0ecf",
+				"integrity": "sha512-zfWmKh6ajbPRvtMRlXEYbxVftDFk7ycK3moGbqvQ8eZKYqkxakSmuNBwgQhxhMQJ7Gz9e/y5DDL740Vr85S2FA==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.2.3-canary.2.tgz",
+				"fileCount": 7,
+				"unpackedSize": 86171,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeEvtkCRA9TVsSAnZWagAAhfgP/RlOy9duBMlGANsIHAHe\ntUMYkMCV2XqoWTE7MRA3yhyJRDksnTEr8SigFFKnT7FPeAzcnIGQrw/p2s4O\n4CVUhTyl3pPNhz72VImYmA2vo/1lwMUtqWDh9KRQJXi2cV4ElIoWuwjJhO7R\nyGSFkk6TqQwAO8Ot67SEHXSSoSEI5tsMIkhm5R3dR9+4WlWE7ohSVMp6+N4q\n9gWjv4LkRfUOPTFs+AdDMtRiTgf//WagY4hpSJ1JT/xYMuqp4sVSschaLFxy\nBFLzGYuJ8u7dyDKWNcGtIf3SXhX7JEEvRtZ9/SoQt/X8WyxBchY04kHsN6QU\nmUe/ormEUqSe0Jq5E6UJJ4hq1yXGuF8IwC5iJ0xP3RazDG990CSOTWQAOHeO\npIrd57WPL+yUuX6kUzGtaMegQp9wSTUluR8FqjXwjc1PcY5qdIU1VKh7Px3M\n0VzMR5DYLYtdcKHDaNxXwkLtuAghqVNmhCJUcLOoTmYBe1sqEdXfQQ8WIv65\nW7fYYtJCWTjc86LVs9qSD1KwieASS5LVD8QdU5wV27wYKTb5JBdz2+2WowRW\nR1LhydHHLEVigXb9PQQTY9Jh+beD3Gfj3A8faVlLVtVu49WrYBvEha+7xoCa\nCGQEIJqROZOBlfmKLdgMIV5VTmKy0OjQUEJGDKrPqHkbVqt8Giz5Fs19RqTo\nZz80\r\n=PcwA\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.2.3-canary.2_1578302308377_0.771663644949578"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.3.0": {
+			"name": "docs",
+			"version": "0.3.0",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish --access public --non-interactive"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/unix/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"@zeit/ncc": "^0.21.0",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"shorthash": "^0.0.2",
+				"terminal-link": "^2.1.1",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for [docs](https://github.com/unix/docs).",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 unix\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.3.0",
+			"dist": {
+				"shasum": "173dbc8b7cecf24ee70ba6fbc5a280ddcf786604",
+				"integrity": "sha512-Oh8fsBjM3R/e2GP2EBPTzrt82PeU0oC4ORUzLhM13SrOdnJp21nv0s9jSvwxG7Bep1Fn/CU6ApHFWvrXl8T5nA==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.3.0.tgz",
+				"fileCount": 7,
+				"unpackedSize": 87761,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeFIDICRA9TVsSAnZWagAAGvgP/3WMl/s2uz4ui36GzlaW\nY+wNa/Ntn3IZz9Gckqh6dBD55PCrCJIDhLj+UnbcYc5pdyFztGsXTM1mAOKE\nDF9NFLayzQBfDn9udRvolLi02L8sr9AyjmRwOpcWytfPKjKNLksHjTOBbcAh\nqzSR4p6aT86sw1XkWq17THzKh+kIM0cbVFTvMuH6Kt7rEFHnzpi+Cr9nEtWn\nXGN8+1ViWCsAIsxKmlpf5g8HH7d5YrLZbvB9CT8HqyLfMBqdRXTxnz9ypTOx\nO8sudw8vowXfI1UoI5kAvqvr3q9FVFKMV9XdNdBbgJ19EFgj+O0Q+Z86npVq\nZz0hv9ulwREZSG37wCjYmE+So1LXxseWZAyW0YgKbvqDSxXBIPNLr4xjCaaU\nMK0mA6PKeTQ1gjTkwM95kCIts5lxvMIPXFHTunyWv45yMoYYyUfRhjYZrAP5\nxv/BwrzfwUgEvkb7Yb3S8RhXSHN9PiftxuWjFPZaovPCYw/NdwmPy14la/5S\n184OYXdRdUupzByi+KOx+1KnqoxLPsTFrEnTFiJ6gzuwqpCmBp+jzufe7Kjl\n/s1BnexFX+d3AF96NcBYRoG0h3phG4G1rh0xOQD6KxY1Yt1qomOwd2erK0CQ\nV5u306g3v6TLkgnyzV3TWA0NwUuxearXDDPnZ0n75wLNOCcROGBJskq6lzur\naxNI\r\n=HUZG\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.3.0_1578401992434_0.5297190269238508"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.3.1-canary.0": {
+			"name": "docs",
+			"version": "0.3.1-canary.0",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish --access public --non-interactive"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/unix/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"@zeit/ncc": "^0.21.0",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"shorthash": "^0.0.2",
+				"terminal-link": "^2.1.1",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for [docs](https://github.com/unix/docs).",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 unix\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.3.1-canary.0",
+			"dist": {
+				"shasum": "f188636e2049845823ad68746b349524d2dd20e8",
+				"integrity": "sha512-3hR5AtRak5QVeZHpTOBqxeMtOY3jkxKoFyJH3DWdCbimji01b73ClQ5iJQ+W7iN2fyZlVtqAqyfV5GknkvE0nQ==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.3.1-canary.0.tgz",
+				"fileCount": 7,
+				"unpackedSize": 87763,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeFIfgCRA9TVsSAnZWagAAbp4P/jonnFLKf4QMioa6+nEA\neMl5uNCqB7yZ+iGpM+BENaPS8tSum1NGA1Hb37nOZV6SMY+O+5iiLjSVPC+c\na1O3q/Zg5BEiSe5K34WZWNHHIVp1i/YcVqXd+IEy0+QD1kC3xtILezHbjp1s\n0jvamrHEh57p9C4ytVZwRkc505xuFXOMkLd7iWDvY3INUnf2/IfE8K3vQBth\nHlAW0KQwpW8qJqpd5dYumz9ziM7UChJ1ixRSR22nHV72V3j9R1jfDvcfU19Q\nElTzEXC0jF6mLy2mlTgiT2G8pMiksxgdrrFKmZaizFEi6IHBaJAOT223T1qi\npwgumwE4eNfTS4WlvMxhxTBjH+VJrO+jbpaSG5c4l7OOCKYiynzN0Mx1E1uw\nd2JVnBi2MmGpQ8Sucm+8xu1qqJJPIXbkydhKzah67UvFdwIsNU4vaBLU98dq\njwAGIXyNbQhp8nYKsjOtF9XOD3P0mYqWLwTYSL8RuW8m4r4hSEZ27ECs9Rus\nzpWZIcFzIWdAhdO/eXbazWeU5BUFXOLj98oAgV+s0BeLLypWCua5w5HEyPWN\nWxV8B9oxGy11tie1yXJ7fcEph+52AcOxEU+3gMZFjCLdodrpWha5PIzagHe/\njXjG45BRDojJ0mugw92i//8fZ8NMrnnZoTo8s0nIfKp9QB8yjY46p6r2x7x8\nX7Hz\r\n=WPmK\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.3.1-canary.0_1578403807880_0.5692411707592313"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.3.1": {
+			"name": "docs",
+			"version": "0.3.1",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish --access public --non-interactive"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/unix/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"@zeit/ncc": "^0.21.0",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"docs-catalog": "^0.0.2",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"shorthash": "^0.0.2",
+				"terminal-link": "^2.1.1",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for [docs](https://github.com/unix/docs).",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 unix\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.3.1",
+			"dist": {
+				"shasum": "f8a199272f4f2ae2de5e373eeb0f912772d8c87f",
+				"integrity": "sha512-OUMTxW/p3VU5mKWMth5aK1HaH0w1agM4CAE+31uITzDHC9gKRBe1yyKh6KqSSi9IQAnYOOLMMB7ZSUI+ABKERg==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.3.1.tgz",
+				"fileCount": 7,
+				"unpackedSize": 88263,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeFeiOCRA9TVsSAnZWagAAd6cP+wbLFiJhETUEbE3+59Bb\n7cV8jfUSHsYnL1y6FGuZVY4cMFCjEK4RfvSIoGXHwFXRJ5zI/w7jDRKBsbtE\nbtz4HSft/Ef73TgoKmbWNo8dcE86zFhgqWivFxmJJquoK4bBs+popqed8C99\nZq4uaJKWkwT0OaKRnVRb5AxJY30qww7eKWjZwKtewcF7bVVbCdM+hgYOgdHl\neYkxNR0bpDHCuLGrFTjss/800x0N7BzLicO88tQPpUqYIWGfjr9eGNNN/s9Y\n3ki9pRYGyijhmr2Vdmr1g0w00U/WpeGmG4gCxXq4rZobZZuCo4Ug2reUsvUq\nJdLmGJnvoObPtg5FS2/j6NcrYEs+fjENLyprTaAr7jt2d7RhA1juzRB2htaP\n6UHzzlfQKGDJQQkIQavxBhEKpZuxcF/Qx6dL58SyiFlc0utZL3PFm2j4RmBT\nVvCWKQMhjnbY8edgaQcS4c6hUXJaAJsY1Ljf9LKCG7v0WxsTjPhedndyJzQU\nmSux04r/tTfiI8jCilF33SjNFkVohsyaLZ7ijbnKadHG4zs7w7M+2usxc0ZY\n1ZzxHG6b3LuCjjHXOEldcl5PvTveN7K+8wL0mOeReMiCVW25HJOObifmtyoC\nAdRUJARPq6MQt5eT4Yfq5YNg5NYSjn4itlwrmZf5+ylcpiOIkZFXtaJY6IrY\n0ihM\r\n=Uc9F\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.3.1_1578494093575_0.06408911041434395"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.3.2-canary.0": {
+			"name": "docs",
+			"version": "0.3.2-canary.0",
+			"main": "index.js",
+			"license": "MIT",
+			"scripts": {
+				"start": "bash ./scripts/dev.sh",
+				"lint": "tslint -c tslint.yml -p tsconfig.json",
+				"build": "ncc -m build ./src/index.ts && cp bin.js ./dist/",
+				"release": "yarn build && yarn publish --access public --non-interactive"
+			},
+			"bin": {
+				"docs": "./dist/bin.js"
+			},
+			"keywords": [
+				"docs",
+				"command-line",
+				"document"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/unix/docs-cli.git"
+			},
+			"devDependencies": {
+				"@types/node": "^11.11.0",
+				"@types/node-fetch": "^2.3.4",
+				"@zeit/ncc": "^0.21.0",
+				"ansi-escapes": "^4.1.0",
+				"arg": "^4.1.0",
+				"chalk": "^2.4.2",
+				"docs-catalog": "^0.0.3-canary.0",
+				"node-fetch": "^2.6.0",
+				"ora": "^3.2.0",
+				"prompts-witt": "^2.2.0",
+				"shorthash": "^0.0.2",
+				"terminal-link": "^2.1.1",
+				"tslint": "^5.14.0",
+				"tslint-config-lambdas": "^1.0.0",
+				"typescript": "^3.3.4000"
+			},
+			"description": "The command-line tool for [docs](https://github.com/unix/docs).",
+			"licenseText": "MIT License\n\nCopyright (c) 2019 unix\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+			"_id": "docs@0.3.2-canary.0",
+			"dist": {
+				"shasum": "995f15543f220485c5ffed4748b1a546882a0cc9",
+				"integrity": "sha512-jkGIXsVKFcs8SXpqJuIPZJvwAuHqNwlatDSFLhMXLQDqsvQp+IK7JAdbdJvrypJrdXUnWJTntur3s4qfh6JQCQ==",
+				"tarball": "https://registry.npmjs.org/docs/-/docs-0.3.2-canary.0.tgz",
+				"fileCount": 7,
+				"unpackedSize": 86824,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeG4akCRA9TVsSAnZWagAARMwP/3VYEYVt1Out4RrbMT+a\nSrBSGVA3pha5zkLL2nYhcgJE9JU0mgQNycuOsKYiSGMdd0JvcFjiHce/q7EW\nFAXhN3HadT26H4s021lj1ewMpRGUwDKtyt8zxjlqvEZli02v43hDGaUEca+/\n10ve0AxsGMBX70sTJwGz/pbBby4zKtVR20I7KBbe0Pt/sGW/aaNS8nyBjW5u\nY0RV5PuNbojFg1iDd2Gzt3BZ5yL0sIh0X/RHDWnVeZcFoaKWSMDpTf0Yk0ZS\nid/qISOVHndPeur8VeoHjYqL/1UnVlSenPNisfjyNBKh1Ky79lDiAyA3LdSb\nzFZHHVS3ipy3Vv2l0b8SZLZRpkCWG0Ln3pPet3ISzpSQa8n0oqw5uOqniZmL\nHukHRdcUksihsU/sLlonvAEfoaFE5tmmIYVtVJnqQNlNqae/2sVpUdZ/Nv5Y\n+j0f+17zevkmog+BlTZSMkqRljUsxFJTB1dy3SqxcXW3f07GFwsfT75+a9u5\nK5pMbrkKwEyCr2v1MkTCLbecEl4cil9SYkLA0Cap4NUbEMnluILIzHWWr15j\nn7Qo9HO2DF7kNrFoOyGWuIXtlmTWNZw8inbV5SrcwumLLBD9hMJqWDaTpErc\n0QC/rmI3Aon+XNznxbIjoG9ltuHuoSILv+AsJRMZhfbYocgqFp4KyaSk2TAu\nDwI4\r\n=0im3\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"email": "nanazuimeng123@gmail.com",
+					"name": "wittbulter"
+				}
+			],
+			"_npmUser": {
+				"name": "wittbulter",
+				"email": "lambdas.dev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/docs_0.3.2-canary.0_1578862243868_0.44033104627440434"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2021-04-27T15:34:55.863Z",
+		"created": "2011-08-30T11:02:27.838Z",
+		"0.0.0-37": "2011-08-30T11:02:31.331Z",
+		"0.0.1": "2019-06-06T18:01:38.314Z",
+		"0.0.2": "2019-06-06T18:11:41.492Z",
+		"0.1.0": "2019-06-11T07:07:20.239Z",
+		"0.2.1": "2019-06-11T07:47:55.089Z",
+		"0.2.2": "2019-07-03T01:35:34.314Z",
+		"0.2.3-canary.1": "2020-01-06T09:17:05.267Z",
+		"0.2.3-canary.2": "2020-01-06T09:18:28.516Z",
+		"0.3.0": "2020-01-07T12:59:52.564Z",
+		"0.3.1-canary.0": "2020-01-07T13:30:07.986Z",
+		"0.3.1": "2020-01-08T14:34:53.716Z",
+		"0.3.2-canary.0": "2020-01-12T20:50:43.978Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.3.2-canary.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"d188582dbc00063828d8ba408e8d119c\"",
+			"fetched": 1643339385738
+		}
+	},
+	"_distfiles": {
+		"docs-0.0.0-37.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.0.0-37.tgz",
+			"sha": "f359a32505dbe2cc4b47307a24529a4e5b739a9c",
+			"registry": "npmjs"
+		},
+		"docs-0.0.1.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.0.1.tgz",
+			"sha": "5b38d05d7369581c18f0fc298c63e98611e5d187",
+			"registry": "npmjs"
+		},
+		"docs-0.0.2.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.0.2.tgz",
+			"sha": "791b6f986d0dc817777be55909d1aa342f17087e",
+			"registry": "npmjs"
+		},
+		"docs-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.1.0.tgz",
+			"sha": "2cc3ce38eabc8d1cc78a4211f8b87062c025fe74",
+			"registry": "npmjs"
+		},
+		"docs-0.2.1.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.2.1.tgz",
+			"sha": "be77e3c68f151494c0b8995c81822587b257c36a",
+			"registry": "npmjs"
+		},
+		"docs-0.2.2.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.2.2.tgz",
+			"sha": "824c5b9178758f0ff0be7223cd5b93b68028d436",
+			"registry": "npmjs"
+		},
+		"docs-0.2.3-canary.1.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.2.3-canary.1.tgz",
+			"sha": "7f9aeb31b68e666eafbdaa5273f9e32e8e0a6535",
+			"registry": "npmjs"
+		},
+		"docs-0.2.3-canary.2.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.2.3-canary.2.tgz",
+			"sha": "b9e80e29f548cce40d0f413e609eab4eeb8f0ecf",
+			"registry": "npmjs"
+		},
+		"docs-0.3.0.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.3.0.tgz",
+			"sha": "173dbc8b7cecf24ee70ba6fbc5a280ddcf786604",
+			"registry": "npmjs"
+		},
+		"docs-0.3.1-canary.0.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.3.1-canary.0.tgz",
+			"sha": "f188636e2049845823ad68746b349524d2dd20e8",
+			"registry": "npmjs"
+		},
+		"docs-0.3.1.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.3.1.tgz",
+			"sha": "f8a199272f4f2ae2de5e373eeb0f912772d8c87f",
+			"registry": "npmjs"
+		},
+		"docs-0.3.2-canary.0.tgz": {
+			"url": "https://registry.npmjs.org/docs/-/docs-0.3.2-canary.0.tgz",
+			"sha": "995f15543f220485c5ffed4748b1a546882a0cc9",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-dcf72ccf755c2b06",
+	"_id": "docs",
+	"readme": "## docs-cli\n\nThe command-line tool for [docs](https://github.com/unix/docs).\n\n## Usage\n*Required NodeJS > 8.0*\n\n**use `npx`** [what is npx](https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner)\n\n```bash\nnpx docs\n```\n\n<br/>\n\n## Any questions\n\n  - [create issue](https://github.com/unix/docs/issues/new)\n\n## LICENSE\n[MIT](./LICENSE)"
+}

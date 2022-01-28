@@ -78,7 +78,7 @@ middlewares:
 logs:
   - { type: stdout, format: pretty, level: http }
   #- {type: file, path: verdaccio.log, level: info}
-listen: 127.0.0.1:4874
+listen: 0.0.0.0:4874
 #experiments:
 #  # support for npm token command
 #  token: false
