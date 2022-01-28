@@ -988,7 +988,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"f95c6caafc5a9869b6b7bfa27610a910\"",
-			"fetched": 1643186341862
+			"fetched": 1643351784353
 		}
 	},
 	"_distfiles": {
@@ -1068,7 +1068,7 @@
 			"shasum": "ee49736b639b4f108b6e9e626c6da99306b41692"
 		}
 	},
-	"_rev": "2-e1dacaa5ee6d2232",
+	"_rev": "3-39118839ac1078b6",
 	"_id": "apache-md5",
 	"readme": "# apache-md5\n[Node.js](http://nodejs.org/) package for Apache style password encryption using md5.\n\n[![build](https://github.com/gevorg/apache-md5/workflows/build/badge.svg)](https://github.com/gevorg/apache-md5/actions/workflows/build.yml)\n\n## Installation\n\nVia git (or downloaded tarball):\n\n```bash\n$ git clone git://github.com/gevorg/apache-md5.git\n```\nVia [npm](http://npmjs.org/):\n\n```bash\n$ npm install apache-md5\n```\n\n## Usage\n\n```javascript\nconst md5 = require(\"apache-md5\");\n\n// Encrypting password using apache's md5 algorithm.\nconst encryptedPassword = md5(\"mypass\");\n\n// Should print true.\nconsole.log(md5(\"mypass\", encryptedPassword) == encryptedPassword);\n// Should print false.\nconsole.log(md5(\"notmypass\", encryptedPassword) == encryptedPassword);\n```\n\n## Running tests\n\nIt uses [mocha](https://mochajs.org/), so just run following command in package directory:\n\n```bash\n$ npm test\n```\n\n## License\n\nThe MIT License (MIT)"
 }

@@ -399,7 +399,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"26bcf3f0f312a79ef3d78c1583570025\"",
-			"fetched": 1643186342371
+			"fetched": 1643351804521
 		}
 	},
 	"_distfiles": {
@@ -434,7 +434,7 @@
 			"shasum": "1d1009cf108340252cb38c51f9727311193e6263"
 		}
 	},
-	"_rev": "2-e38fb93a173ca2ad",
+	"_rev": "3-78aa394a8cec0e14",
 	"_id": "level-concat-iterator",
 	"readme": "# level-concat-iterator\n\n**Concatenate entries from an iterator into an array.**\n\n[![level badge][level-badge]](https://github.com/Level/awesome)\n[![npm](https://img.shields.io/npm/v/level-concat-iterator.svg)](https://www.npmjs.com/package/level-concat-iterator)\n[![Node version](https://img.shields.io/node/v/level-concat-iterator.svg)](https://www.npmjs.com/package/level-concat-iterator)\n[![Test](https://img.shields.io/github/workflow/status/Level/concat-iterator/Test?label=test)](https://github.com/Level/concat-iterator/actions/workflows/test.yml)\n[![Coverage](https://img.shields.io/codecov/c/github/Level/supports?label=&logo=codecov&logoColor=fff)](https://codecov.io/gh/Level/supports)\n[![Standard](https://img.shields.io/badge/standard-informational?logo=javascript&logoColor=fff)](https://standardjs.com)\n[![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)\n[![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective&logoColor=fff)](https://opencollective.com/level)\n\n## Usage\n\n```js\nconst concat = require('level-concat-iterator')\nconst level = require('level')\n\nconst db = level('./db')\n\ndb.put('foo', 'bar', function (err) {\n  if (err) throw err\n\n  concat(db.iterator(), function (err, entries) {\n    if (err) throw err\n\n    // [{ key: 'foo', value: 'bar' }]\n    console.log(entries)\n  })\n})\n```\n\nWith promises:\n\n```js\nawait db.put('foo', 'bar')\nconst entries = await concat(db.iterator())\n```\n\n_If you are upgrading: please see [`UPGRADING.md`](UPGRADING.md)._\n\n## API\n\n### `concat(iterator[, callback])`\n\nTakes an `abstract-leveldown` compatible `iterator` as first parameter and calls the `callback` with an array of entries, where each entry is an object in the form `{ key, value }`. Calls the `callback` with an error if `iterator.next()` or `iterator.end()` errors. If no callback is provided, a promise is returned.\n\n## Contributing\n\n[`Level/concat-iterator`](https://github.com/Level/concat-iterator) is an **OPEN Open Source Project**. This means that:\n\n> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.\n\nSee the [Contribution Guide](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.\n\n## Donate\n\nSupport us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work.\n\n## License\n\n[MIT](LICENSE)\n\n[level-badge]: https://leveljs.org/img/badge.svg"
 }

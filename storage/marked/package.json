@@ -10354,10 +10354,286 @@
 			},
 			"_hasShrinkwrap": false,
 			"contributors": []
+		},
+		"4.0.11": {
+			"name": "marked",
+			"description": "A markdown parser built for speed",
+			"author": {
+				"name": "Christopher Jeffrey"
+			},
+			"version": "4.0.11",
+			"type": "module",
+			"main": "./lib/marked.cjs",
+			"module": "./lib/marked.esm.js",
+			"browser": "./lib/marked.umd.js",
+			"bin": {
+				"marked": "bin/marked.js"
+			},
+			"man": [
+				"./man/marked.1"
+			],
+			"exports": {
+				".": {
+					"import": "./lib/marked.esm.js",
+					"default": "./lib/marked.cjs"
+				},
+				"./package.json": "./package.json"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/markedjs/marked.git"
+			},
+			"homepage": "https://marked.js.org",
+			"bugs": {
+				"url": "http://github.com/markedjs/marked/issues"
+			},
+			"license": "MIT",
+			"keywords": [
+				"markdown",
+				"markup",
+				"html"
+			],
+			"tags": [
+				"markdown",
+				"markup",
+				"html"
+			],
+			"devDependencies": {
+				"@babel/core": "^7.16.12",
+				"@babel/preset-env": "^7.16.11",
+				"@markedjs/html-differ": "^4.0.0",
+				"@rollup/plugin-babel": "^5.3.0",
+				"@rollup/plugin-commonjs": "^21.0.1",
+				"@semantic-release/commit-analyzer": "^9.0.2",
+				"@semantic-release/git": "^10.0.1",
+				"@semantic-release/github": "^8.0.2",
+				"@semantic-release/npm": "^8.0.3",
+				"@semantic-release/release-notes-generator": "^10.0.3",
+				"cheerio": "^1.0.0-rc.10",
+				"commonmark": "0.30.0",
+				"eslint": "^8.7.0",
+				"eslint-config-standard": "^16.0.3",
+				"eslint-plugin-import": "^2.25.4",
+				"eslint-plugin-node": "^11.1.0",
+				"eslint-plugin-promise": "^6.0.0",
+				"front-matter": "^4.0.2",
+				"highlight.js": "^11.4.0",
+				"jasmine": "^4.0.2",
+				"markdown-it": "12.3.2",
+				"node-fetch": "^3.2.0",
+				"rollup": "^2.66.0",
+				"rollup-plugin-license": "^2.6.1",
+				"semantic-release": "^19.0.2",
+				"titleize": "^3.0.0",
+				"uglify-js": "^3.14.5",
+				"vuln-regex-detector": "^1.3.0"
+			},
+			"scripts": {
+				"test": "jasmine --config=jasmine.json",
+				"test:all": "npm test && npm run test:lint",
+				"test:unit": "npm test -- test/unit/**/*-spec.js",
+				"test:specs": "npm test -- test/specs/**/*-spec.js",
+				"test:lint": "eslint .",
+				"test:redos": "node test/vuln-regex.js",
+				"test:update": "node test/update-specs.js",
+				"rules": "node test/rules.js",
+				"bench": "npm run rollup && node test/bench.js",
+				"lint": "eslint --fix .",
+				"build:reset": "git checkout upstream/master lib/marked.cjs lib/marked.umd.js lib/marked.esm.js marked.min.js",
+				"build": "npm run rollup && npm run minify",
+				"build:docs": "node build-docs.js",
+				"rollup": "npm run rollup:umd && npm run rollup:esm",
+				"rollup:umd": "rollup -c rollup.config.js",
+				"rollup:esm": "rollup -c rollup.config.esm.js",
+				"minify": "uglifyjs lib/marked.umd.js -cm  --comments /Copyright/ -o marked.min.js",
+				"preversion": "npm run build && (git diff --quiet || git commit -am build)"
+			},
+			"engines": {
+				"node": ">= 12"
+			},
+			"gitHead": "83753142a1351aebc0b6cd69ea1526a52b5b8dbe",
+			"_id": "marked@4.0.11",
+			"_nodeVersion": "16.13.2",
+			"_npmVersion": "7.24.2",
+			"dist": {
+				"integrity": "sha512-xL2aJ5JDggqToKOqKHJWIDXaYk24XoGm1mNlhSPFP+0OKRCcKx+/hH7hlAr5LYqBKUzqCANylALgwNstVRgtCw==",
+				"shasum": "dcd1a65b2639eb2e71f0222d00f4860ba09d7e24",
+				"tarball": "https://registry.npmjs.org/marked/-/marked-4.0.11.tgz",
+				"fileCount": 20,
+				"unpackedSize": 401918,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh8cKeCRA9TVsSAnZWagAAirsP/2ngzvT7wDL1qNL16wF/\nAkHPXijwIXNCswrj5ChafPN8qEc8cikI2d7Y+yC/wW0yVGVzwq06OqzJxGgQ\nUnbPqmzJf+7R0UJyDC3bkPVlPMaYp1fz5olEQpDi8U03hOvHQgEywkLufapX\n4KtHZ6+NdSCv3Z4fBtDWTST8cuf+kM92gvlZRjq1xPTT/ptmXtSHTucXAJYE\nRtsNjeFnhSD+x5/YM86QoEdNRCAOTZlfQldcN4WJkKjRwqn0BaHBuqr9dMfB\nSoyrYf+pqToPBUBnd9SErFnumPwJzOKExXmG+k8mH7sAp2BYHuR5wJ/dDKQw\ntfwyfm3ImqVucvIod0TFxcfWdXWhF0TqUb6xdp8O10wwvaaaUEAP1Bhg7eJr\n9YyIGaauyBLDaUjFR+gP64CYuZbYLAsz1vIIRSq858dMGNa3IuQQSPu0tHLf\ngpM7IsL3PNDMKDqwbvSyvXSeqSEJpGNXJJvoCay1JosXs/FP2JlI6MgwRJmT\nwhKOD1KgFBk1fETnhuwx2G2LHKxeyzNsZaWD6gEUUgQvAJAF53bhNTSVgzue\nB7h10vMaFK0fyo9MVZyU4cmdfTYT/SWvYpfjmLohPNBQa837Nxu2vDmMBaGL\nZ2JkEtotKweItlerTqBUcH91CPBQL6uwz2GOafkT/gTVB1MTWXMyLYhNQaTi\nEwsw\r\n=4xnU\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "tonybrix",
+				"email": "tony@brix.ninja"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "chjj",
+					"email": "chjjeffrey@gmail.com"
+				},
+				{
+					"name": "styfle",
+					"email": "steven@ceriously.com"
+				},
+				{
+					"name": "amidknight",
+					"email": "josh@8fold.pro"
+				},
+				{
+					"name": "tonybrix",
+					"email": "tony@brix.ninja"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/marked_4.0.11_1643233950065_0.11087387896125"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"4.0.12": {
+			"name": "marked",
+			"description": "A markdown parser built for speed",
+			"author": {
+				"name": "Christopher Jeffrey"
+			},
+			"version": "4.0.12",
+			"type": "module",
+			"main": "./lib/marked.cjs",
+			"module": "./lib/marked.esm.js",
+			"browser": "./lib/marked.umd.js",
+			"bin": {
+				"marked": "bin/marked.js"
+			},
+			"man": [
+				"./man/marked.1"
+			],
+			"exports": {
+				".": {
+					"import": "./lib/marked.esm.js",
+					"default": "./lib/marked.cjs"
+				},
+				"./package.json": "./package.json"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/markedjs/marked.git"
+			},
+			"homepage": "https://marked.js.org",
+			"bugs": {
+				"url": "http://github.com/markedjs/marked/issues"
+			},
+			"license": "MIT",
+			"keywords": [
+				"markdown",
+				"markup",
+				"html"
+			],
+			"tags": [
+				"markdown",
+				"markup",
+				"html"
+			],
+			"devDependencies": {
+				"@babel/core": "^7.16.12",
+				"@babel/preset-env": "^7.16.11",
+				"@markedjs/html-differ": "^4.0.0",
+				"@rollup/plugin-babel": "^5.3.0",
+				"@rollup/plugin-commonjs": "^21.0.1",
+				"@semantic-release/commit-analyzer": "^9.0.2",
+				"@semantic-release/git": "^10.0.1",
+				"@semantic-release/github": "^8.0.2",
+				"@semantic-release/npm": "^8.0.3",
+				"@semantic-release/release-notes-generator": "^10.0.3",
+				"cheerio": "^1.0.0-rc.10",
+				"commonmark": "0.30.0",
+				"eslint": "^8.7.0",
+				"eslint-config-standard": "^16.0.3",
+				"eslint-plugin-import": "^2.25.4",
+				"eslint-plugin-node": "^11.1.0",
+				"eslint-plugin-promise": "^6.0.0",
+				"front-matter": "^4.0.2",
+				"highlight.js": "^11.4.0",
+				"jasmine": "^4.0.2",
+				"markdown-it": "12.3.2",
+				"node-fetch": "^3.2.0",
+				"rollup": "^2.66.0",
+				"rollup-plugin-license": "^2.6.1",
+				"semantic-release": "^19.0.2",
+				"titleize": "^3.0.0",
+				"uglify-js": "^3.14.5",
+				"vuln-regex-detector": "^1.3.0"
+			},
+			"scripts": {
+				"test": "jasmine --config=jasmine.json",
+				"test:all": "npm test && npm run test:lint",
+				"test:unit": "npm test -- test/unit/**/*-spec.js",
+				"test:specs": "npm test -- test/specs/**/*-spec.js",
+				"test:lint": "eslint .",
+				"test:redos": "node test/vuln-regex.js",
+				"test:update": "node test/update-specs.js",
+				"rules": "node test/rules.js",
+				"bench": "npm run rollup && node test/bench.js",
+				"lint": "eslint --fix .",
+				"build:reset": "git checkout upstream/master lib/marked.cjs lib/marked.umd.js lib/marked.esm.js marked.min.js",
+				"build": "npm run rollup && npm run minify",
+				"build:docs": "node build-docs.js",
+				"rollup": "npm run rollup:umd && npm run rollup:esm",
+				"rollup:umd": "rollup -c rollup.config.js",
+				"rollup:esm": "rollup -c rollup.config.esm.js",
+				"minify": "uglifyjs lib/marked.umd.js -cm  --comments /Copyright/ -o marked.min.js",
+				"preversion": "npm run build && (git diff --quiet || git commit -am build)"
+			},
+			"engines": {
+				"node": ">= 12"
+			},
+			"gitHead": "4c5b974b391f913ac923610bd3740ef27ccdae95",
+			"_id": "marked@4.0.12",
+			"_nodeVersion": "16.13.2",
+			"_npmVersion": "7.24.2",
+			"dist": {
+				"integrity": "sha512-hgibXWrEDNBWgGiK18j/4lkS6ihTe9sxtV4Q1OQppb/0zzyPSzoFANBa5MfsG/zgsWklmNnhm0XACZOH/0HBiQ==",
+				"shasum": "2262a4e6fd1afd2f13557726238b69a48b982f7d",
+				"tarball": "https://registry.npmjs.org/marked/-/marked-4.0.12.tgz",
+				"fileCount": 20,
+				"unpackedSize": 402011,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh8hufCRA9TVsSAnZWagAAOH0P/RuLASfV8hulSyDjHVJC\nY8Z/Snxd4wIQFWEDeVz+OyO7C3fb9izEvYn3tX2Mkh90XYoaKyimgC0LkV0x\n1yRbRYVSgYc6q8go9jaYiPKOdueuCUJBOQHGqkv5jhw7QAEMOUePxjtj7cCN\nnFGwB5KJTCsZITOz12o/HAL3P+MGhUZPiCIEtlkAoGDi4OTbWLftOg1OoThh\nLc1HSGDaSaYzbWZiVXlC4jR2e6aogQ9pm3W6chOEVTakQyvZfcnpiH82oWTe\nTobQkqx9otfL7rH42Qg99DwNPgVl4dZSY4T4AxkpjWtPLwsDvLzKm6iIVk3D\nqDuB2Q2FBjXnHmgGbiiawANPxNW2xP0GM5nX8DaI0IeXy8orKx2am32XeHJs\ny9328XS7PsvY4pWX+p+HVtgvr2F9k3Z1aqnh2hu6TCiC+Rr+rJ12L8h2JNrL\nwge5W5WAlqothB62qUz9S2zUYaCkIW7ilGKiEdPXn+98GqL61fsqwroWZR0K\nDtjyHi6mAgKaxTGxsXYZovOFkT1a3/8SctaxmxhhJ6gYfzKWKOWXuHPVsVwA\nl24aPuWkn5cF5Oog2P8friMlaDExQVZrU8pS+05qpQ+sbA05sx6ZH7S9zYwS\nXvkz41dfkHh6ZuR5MNnaaXy2nqpIkOayq0l0hnWM93k2/PAtaF2QVtWmetcj\nSwZV\r\n=rM+u\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "tonybrix",
+				"email": "tony@brix.ninja"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "chjj",
+					"email": "chjjeffrey@gmail.com"
+				},
+				{
+					"name": "styfle",
+					"email": "steven@ceriously.com"
+				},
+				{
+					"name": "amidknight",
+					"email": "josh@8fold.pro"
+				},
+				{
+					"name": "tonybrix",
+					"email": "tony@brix.ninja"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/marked_4.0.12_1643256735663_0.9923301070247819"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
 		}
 	},
 	"time": {
-		"modified": "2022-01-13T02:03:36.332Z",
+		"modified": "2022-01-27T04:12:17.703Z",
 		"created": "2011-07-24T13:15:09.719Z",
 		"0.0.1": "2011-07-24T13:15:10.144Z",
 		"0.0.2": "2011-08-14T05:05:12.712Z",
@@ -10465,16 +10741,18 @@
 		"4.0.7": "2021-12-09T23:59:55.657Z",
 		"4.0.8": "2021-12-19T00:22:58.379Z",
 		"4.0.9": "2022-01-06T15:33:41.099Z",
-		"4.0.10": "2022-01-13T02:03:31.594Z"
+		"4.0.10": "2022-01-13T02:03:31.594Z",
+		"4.0.11": "2022-01-26T21:52:30.250Z",
+		"4.0.12": "2022-01-27T04:12:15.857Z"
 	},
 	"users": {},
 	"dist-tags": {
-		"latest": "4.0.10"
+		"latest": "4.0.12"
 	},
 	"_uplinks": {
 		"npmjs": {
-			"etag": "W/\"881db34b701cf5c14df1d20c71f8b05e\"",
-			"fetched": 1643186340879
+			"etag": "W/\"15cda69d7352da7b58f7757075850764\"",
+			"fetched": 1643351769620
 		}
 	},
 	"_distfiles": {
@@ -11012,6 +11290,16 @@
 			"url": "https://registry.npmjs.org/marked/-/marked-4.0.10.tgz",
 			"sha": "423e295385cc0c3a70fa495e0df68b007b879423",
 			"registry": "npmjs"
+		},
+		"marked-4.0.11.tgz": {
+			"url": "https://registry.npmjs.org/marked/-/marked-4.0.11.tgz",
+			"sha": "dcd1a65b2639eb2e71f0222d00f4860ba09d7e24",
+			"registry": "npmjs"
+		},
+		"marked-4.0.12.tgz": {
+			"url": "https://registry.npmjs.org/marked/-/marked-4.0.12.tgz",
+			"sha": "2262a4e6fd1afd2f13557726238b69a48b982f7d",
+			"registry": "npmjs"
 		}
 	},
 	"_attachments": {
@@ -11022,7 +11310,7 @@
 			"shasum": "bd017cef6431724fd4b27e0657f5ceb14bff3753"
 		}
 	},
-	"_rev": "3-d02f75e36e18c19a",
+	"_rev": "4-5c9874a57e96f053",
 	"_id": "marked",
-	"readme": "<a href=\"https://marked.js.org\">\n  <img width=\"60px\" height=\"60px\" src=\"https://marked.js.org/img/logo-black.svg\" align=\"right\" />\n</a>\n\n# Marked\n\n[![npm](https://badgen.net/npm/v/marked)](https://www.npmjs.com/package/marked)\n[![gzip size](https://badgen.net/badgesize/gzip/https://cdn.jsdelivr.net/npm/marked/marked.min.js)](https://cdn.jsdelivr.net/npm/marked/marked.min.js)\n[![install size](https://badgen.net/packagephobia/install/marked)](https://packagephobia.now.sh/result?p=marked)\n[![downloads](https://badgen.net/npm/dt/marked)](https://www.npmjs.com/package/marked)\n[![github actions](https://github.com/markedjs/marked/workflows/Tests/badge.svg)](https://github.com/markedjs/marked/actions)\n[![snyk](https://snyk.io/test/npm/marked/badge.svg)](https://snyk.io/test/npm/marked)\n\n- ⚡ built for speed\n- ⬇️ low-level compiler for parsing markdown without caching or blocking for long periods of time\n- ⚖️ light-weight while implementing all markdown features from the supported flavors & specifications\n- 🌐 works in a browser, on a server, or from a command line interface (CLI)\n\n## Demo\n\nCheckout the [demo page](https://marked.js.org/demo/) to see marked in action ⛹️\n\n## Docs\n\nOur [documentation pages](https://marked.js.org) are also rendered using marked 💯\n\nAlso read about:\n\n* [Options](https://marked.js.org/#/USING_ADVANCED.md)\n* [Extensibility](https://marked.js.org/#/USING_PRO.md)\n\n## Compatibility\n\n**Node.js:** Only [current and LTS](https://nodejs.org/en/about/releases/) Node.js versions are supported. End of life Node.js versions may become incompatible with Marked at any point in time.\n\n**Browser:** Not IE11 :)\n\n## Installation\n\n**CLI:** `npm install -g marked`\n\n**In-browser:** `npm install marked`\n\n## Usage\n\n### Warning: 🚨 Marked does not [sanitize](https://marked.js.org/#/USING_ADVANCED.md#options) the output HTML. Please use a sanitize library, like [DOMPurify](https://github.com/cure53/DOMPurify) (recommended), [sanitize-html](https://github.com/apostrophecms/sanitize-html) or [insane](https://github.com/bevacqua/insane) on the output HTML! 🚨\n\n**CLI**\n\n\n``` bash\n# Example with stdin input\n$ marked -o hello.html\nhello world\n^D\n$ cat hello.html\n<p>hello world</p>\n```\n\n```bash\n# Print all options\n$ marked --help\n```\n\n**Browser**\n\n```html\n<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\"/>\n  <title>Marked in the browser</title>\n</head>\n<body>\n  <div id=\"content\"></div>\n  <script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"></script>\n  <script>\n    document.getElementById('content').innerHTML =\n      marked.parse('# Marked in the browser\\n\\nRendered by **marked**.');\n  </script>\n</body>\n</html>\n```\n\n## License\n\nCopyright (c) 2011-2018, Christopher Jeffrey. (MIT License)"
+	"readme": "<a href=\"https://marked.js.org\">\n  <img width=\"60px\" height=\"60px\" src=\"https://marked.js.org/img/logo-black.svg\" align=\"right\" />\n</a>\n\n# Marked\n\n[![npm](https://badgen.net/npm/v/marked)](https://www.npmjs.com/package/marked)\n[![gzip size](https://badgen.net/badgesize/gzip/https://cdn.jsdelivr.net/npm/marked/marked.min.js)](https://cdn.jsdelivr.net/npm/marked/marked.min.js)\n[![install size](https://badgen.net/packagephobia/install/marked)](https://packagephobia.now.sh/result?p=marked)\n[![downloads](https://badgen.net/npm/dt/marked)](https://www.npmjs.com/package/marked)\n[![github actions](https://github.com/markedjs/marked/workflows/Tests/badge.svg)](https://github.com/markedjs/marked/actions)\n[![snyk](https://snyk.io/test/npm/marked/badge.svg)](https://snyk.io/test/npm/marked)\n\n- ⚡ built for speed\n- ⬇️ low-level compiler for parsing markdown without caching or blocking for long periods of time\n- ⚖️ light-weight while implementing all markdown features from the supported flavors & specifications\n- 🌐 works in a browser, on a server, or from a command line interface (CLI)\n\n## Demo\n\nCheckout the [demo page](https://marked.js.org/demo/) to see marked in action ⛹️\n\n## Docs\n\nOur [documentation pages](https://marked.js.org) are also rendered using marked 💯\n\nAlso read about:\n\n* [Options](https://marked.js.org/#/USING_ADVANCED.md)\n* [Extensibility](https://marked.js.org/#/USING_PRO.md)\n\n## Compatibility\n\n**Node.js:** Only [current and LTS](https://nodejs.org/en/about/releases/) Node.js versions are supported. End of life Node.js versions may become incompatible with Marked at any point in time.\n\n**Browser:** Not IE11 :)\n\n## Installation\n\n**CLI:** `npm install -g marked`\n\n**In-browser:** `npm install marked`\n\n## Usage\n\n### Warning: 🚨 Marked does not [sanitize](https://marked.js.org/#/USING_ADVANCED.md#options) the output HTML. Please use a sanitize library, like [DOMPurify](https://github.com/cure53/DOMPurify) (recommended), [sanitize-html](https://github.com/apostrophecms/sanitize-html) or [insane](https://github.com/bevacqua/insane) on the output HTML! 🚨\n\n**CLI**\n\n\n``` bash\n# Example with stdin input\n$ marked -o hello.html\nhello world\n^D\n$ cat hello.html\n<p>hello world</p>\n```\n\n```bash\n# Print all options\n$ marked --help\n```\n\n**Browser**\n\n```html\n<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\"/>\n  <title>Marked in the browser</title>\n</head>\n<body>\n  <div id=\"content\"></div>\n  <script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"></script>\n  <script>\n    document.getElementById('content').innerHTML =\n      marked.parse('# Marked in the browser\\n\\nRendered by **marked**.');\n  </script>\n</body>\n</html>\n```\n\n## License\n\nCopyright (c) 2011-2022, Christopher Jeffrey. (MIT License)"
 }

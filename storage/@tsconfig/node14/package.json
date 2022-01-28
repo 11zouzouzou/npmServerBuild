@@ -109,7 +109,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"d5bee29d998b24521759e1a02b67b7ff\"",
-			"fetched": 1643165446832
+			"fetched": 1643351754931
 		}
 	},
 	"_distfiles": {
@@ -125,7 +125,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "1-e9d056bfe23c4b9e",
+	"_rev": "2-ae262dd182ac939b",
 	"_id": "@tsconfig/node14",
 	"readme": "### A base TSConfig for working with Node 14.\n\nAdd the package to your `\"devDependencies\"`:\n\n```sh\nnpm install --save-dev @tsconfig/node14\nyarn add --dev @tsconfig/node14\n```\n\nAdd to your `tsconfig.json`:\n\n```json\n\"extends\": \"@tsconfig/node14/tsconfig.json\"\n```\n\n---\n\nThe `tsconfig.json`: \n\n```jsonc\n{\n  \"$schema\": \"https://json.schemastore.org/tsconfig\",\n  \"display\": \"Node 14\",\n\n  \"compilerOptions\": {\n    \"lib\": [\"es2020\"],\n    \"module\": \"commonjs\",\n    \"target\": \"es2020\",\n\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"forceConsistentCasingInFileNames\": true\n  }\n}\n\n```\n\nYou can find the [code here](https://github.com/tsconfig/bases/blob/master/bases/node14.json)."
 }

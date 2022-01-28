@@ -78,17 +78,64 @@
 				"tarball": "http://localhost:4874/npm-server-build/-/npm-server-build-1.0.1.tgz"
 			},
 			"contributors": []
+		},
+		"1.0.2": {
+			"name": "npm-server-build",
+			"version": "1.0.2",
+			"main": "./build/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git+ssh://git@github.com/11zouzouzou/npmServerBuild.git"
+			},
+			"author": {
+				"name": "zouzouzou11",
+				"email": "1096174991@qq.com"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"npm-server-build": "^1.0.0",
+				"ts-node": "^10.4.0",
+				"typescript": "^4.5.5",
+				"verdaccio": "4.x"
+			},
+			"scripts": {
+				"testnpm": "ts-node src/index.ts",
+				"dev": "yarn verdaccio --config ./default.yaml"
+			},
+			"files": [
+				"build/"
+			],
+			"devDependencies": {
+				"pm2": "^5.1.2"
+			},
+			"readmeFilename": "README.md",
+			"gitHead": "26fc6545739f08d0e93635efacda6f4057aee908",
+			"description": "npm server build test",
+			"bugs": {
+				"url": "https://github.com/11zouzouzou/npmServerBuild/issues"
+			},
+			"homepage": "https://github.com/11zouzouzou/npmServerBuild#readme",
+			"_id": "npm-server-build@1.0.2",
+			"_nodeVersion": "14.17.6",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-nhswuFyiJbI/Ahc4W5z40srXotPHzD+gqcr8ornS3VImiyBUTonWQTRqmBEp5yF4zsC8JT3FlLHJreSR3qA4Cw==",
+				"shasum": "53751cd0c065d8657986b37bb52dbe3c45b883a5",
+				"tarball": "http://47.114.144.162:4874/npm-server-build/-/npm-server-build-1.0.2.tgz"
+			},
+			"contributors": []
 		}
 	},
 	"time": {
-		"modified": "2022-01-26T03:15:44.782Z",
+		"modified": "2022-01-28T06:41:02.900Z",
 		"created": "2022-01-26T02:44:37.938Z",
 		"1.0.0": "2022-01-26T02:44:37.938Z",
-		"1.0.1": "2022-01-26T03:15:44.782Z"
+		"1.0.1": "2022-01-26T03:15:44.782Z",
+		"1.0.2": "2022-01-28T06:41:02.900Z"
 	},
 	"users": {},
 	"dist-tags": {
-		"latest": "1.0.1"
+		"latest": "1.0.2"
 	},
 	"_uplinks": {},
 	"_distfiles": {},
@@ -100,9 +147,13 @@
 		"npm-server-build-1.0.1.tgz": {
 			"shasum": "4cb777a2bc2c09318598290c775a63712dff078e",
 			"version": "1.0.1"
+		},
+		"npm-server-build-1.0.2.tgz": {
+			"shasum": "53751cd0c065d8657986b37bb52dbe3c45b883a5",
+			"version": "1.0.2"
 		}
 	},
-	"_rev": "8-64a98f435d360563",
+	"_rev": "11-fb36cb661bd97a20",
 	"_id": "npm-server-build",
-	"readme": "# npmServerBuild\nnpm server build test"
+	"readme": "# npmServerBuild\nnpm server build test\n\n## 开发记录\n[开发记录](./docs/RECORD.md)\n\n## 安装依赖包\n1. 需先全局安装 verdaccio, 运行: verdaccio --config ./default.yaml\n2. yarn or npm install\n"
 }

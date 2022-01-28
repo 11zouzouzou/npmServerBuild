@@ -478,7 +478,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"09db199deb9094a565b3493c257f68fb\"",
-			"fetched": 1643165447075
+			"fetched": 1643351755415
 		}
 	},
 	"_distfiles": {
@@ -499,7 +499,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "1-25891818b998d41b",
+	"_rev": "2-fc04494568105373",
 	"_id": "@cspotcode/source-map-consumer",
 	"readme": "A smaller version of @cspotcode/source-map which includes only the consumer, not the generator.\n\n**NOTE**: the type declarations are incorrect.  They include declarations for things from @cspotcode/source-map\nwhich are omitted from this package.\n\nThis is a delibrate, pragmatic choice.  The declarations for things which *are* included -- the consumer -- should\nbe correct."
 }

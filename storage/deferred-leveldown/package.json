@@ -3406,7 +3406,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"edb3be11daa5d0179744584ebbccc645\"",
-			"fetched": 1643186342484
+			"fetched": 1643351803258
 		}
 	},
 	"_distfiles": {
@@ -3561,7 +3561,7 @@
 			"shasum": "27a997ad95408b61161aa69bd489b86c71b78058"
 		}
 	},
-	"_rev": "2-13dc0986117a692e",
+	"_rev": "3-575f448224ded1af",
 	"_id": "deferred-leveldown",
 	"readme": "# deferred-leveldown\n\n> A mock `abstract-leveldown` implementation that queues operations while a real `abstract-leveldown` instance is being opened.\n\n[![level badge][level-badge]](https://github.com/Level/awesome)\n[![npm](https://img.shields.io/npm/v/deferred-leveldown.svg)](https://www.npmjs.com/package/deferred-leveldown)\n[![Node version](https://img.shields.io/node/v/deferred-leveldown.svg)](https://www.npmjs.com/package/deferred-leveldown)\n[![Test](https://img.shields.io/github/workflow/status/Level/deferred-leveldown/Test?label=test)](https://github.com/Level/deferred-leveldown/actions/workflows/test.yml)\n[![Coverage](https://img.shields.io/codecov/c/github/Level/deferred-leveldown?label=&logo=codecov&logoColor=fff)](https://codecov.io/gh/Level/deferred-leveldown)\n[![Standard](https://img.shields.io/badge/standard-informational?logo=javascript&logoColor=fff)](https://standardjs.com)\n[![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)\n[![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective&logoColor=fff)](https://opencollective.com/level)\n\n## Usage\n\n_If you are upgrading: please see [UPGRADING.md](UPGRADING.md)._\n\n`deferred-leveldown` implements the [`abstract-leveldown`](https://github.com/Level/abstract-leveldown) API so it can be used as a drop-in replacement where `leveldown` is needed.\n\n`put()`, `get()`, `getMany()`, `del()`, `batch()` and `clear()` operations are all queued and kept in memory until the `abstract-leveldown`-compatible object has been opened through `deferred-leveldown`'s `open()` method.\n\n`batch()` operations will all be replayed as the array form. Chained-batch operations are converted before being stored.\n\n```js\nconst deferred  = require('deferred-leveldown')\nconst leveldown = require('leveldown')\n\nconst db = deferred(leveldown('location'))\n\n// Must always call open() first\ndb.open(function (err) {\n  // ...\n})\n\n// But can operate before open() has finished\ndb.put('foo', 'bar', function (err) {\n  // ...\n})\n```\n\n## Contributing\n\n[`Level/deferred-leveldown`](https://github.com/Level/deferred-leveldown) is an **OPEN Open Source Project**. This means that:\n\n> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.\n\nSee the [Contribution Guide](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.\n\n## Donate\n\nSupport us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work.\n\n## License\n\n[MIT](LICENSE)\n\n[level-badge]: https://leveljs.org/img/badge.svg"
 }

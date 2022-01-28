@@ -1,0 +1,230 @@
+{
+	"name": "bodec",
+	"versions": {
+		"0.0.1": {
+			"name": "bodec",
+			"version": "0.0.1",
+			"main": "bodec.js",
+			"description": "bodec =====",
+			"_id": "bodec@0.0.1",
+			"dist": {
+				"shasum": "0fb8db3e30484f018368d4383f2578f46c164600",
+				"tarball": "https://registry.npmjs.org/bodec/-/bodec-0.0.1.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.4.3",
+			"_npmUser": {
+				"name": "creationix",
+				"email": "tim@creationix.com"
+			},
+			"maintainers": [
+				{
+					"name": "creationix",
+					"email": "tim@creationix.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.2": {
+			"name": "bodec",
+			"version": "0.0.2",
+			"main": "bodec.js",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/creationix/bodec.git"
+			},
+			"license": "MIT",
+			"description": "bodec =====",
+			"bugs": {
+				"url": "https://github.com/creationix/bodec/issues"
+			},
+			"homepage": "https://github.com/creationix/bodec",
+			"_id": "bodec@0.0.2",
+			"dist": {
+				"shasum": "84acfd2bfd3157cef7e5be6b17b693c991ca853a",
+				"tarball": "https://registry.npmjs.org/bodec/-/bodec-0.0.2.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.4.3",
+			"_npmUser": {
+				"name": "creationix",
+				"email": "tim@creationix.com"
+			},
+			"maintainers": [
+				{
+					"name": "creationix",
+					"email": "tim@creationix.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.0": {
+			"name": "bodec",
+			"version": "0.1.0",
+			"main": "bodec.js",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/creationix/bodec.git"
+			},
+			"license": "MIT",
+			"description": "bodec =====",
+			"bugs": {
+				"url": "https://github.com/creationix/bodec/issues"
+			},
+			"homepage": "https://github.com/creationix/bodec",
+			"_id": "bodec@0.1.0",
+			"_shasum": "bc851555430f23c9f7650a75ef64c6a94c3418cc",
+			"_from": ".",
+			"_npmVersion": "1.4.9",
+			"_npmUser": {
+				"name": "creationix",
+				"email": "tim@creationix.com"
+			},
+			"maintainers": [
+				{
+					"name": "creationix",
+					"email": "tim@creationix.com"
+				}
+			],
+			"dist": {
+				"shasum": "bc851555430f23c9f7650a75ef64c6a94c3418cc",
+				"tarball": "https://registry.npmjs.org/bodec/-/bodec-0.1.0.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.0": {
+			"name": "bodec",
+			"version": "1.0.0",
+			"main": "bodec.js",
+			"browser": "bodec-browser.js",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/creationix/bodec.git"
+			},
+			"license": "MIT",
+			"gitHead": "ed8f04f93e4ee8fb72a7a2ad33ded40cf4b6b691",
+			"description": "bodec =====",
+			"bugs": {
+				"url": "https://github.com/creationix/bodec/issues"
+			},
+			"homepage": "https://github.com/creationix/bodec",
+			"_id": "bodec@1.0.0",
+			"scripts": {},
+			"_shasum": "f798b92a36c7e89412fee300b5b73a987cd665fe",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "creationix",
+				"email": "tim@creationix.com"
+			},
+			"maintainers": [
+				{
+					"name": "creationix",
+					"email": "tim@creationix.com"
+				}
+			],
+			"dist": {
+				"shasum": "f798b92a36c7e89412fee300b5b73a987cd665fe",
+				"tarball": "https://registry.npmjs.org/bodec/-/bodec-1.0.0.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.1.0": {
+			"name": "bodec",
+			"version": "1.1.0",
+			"main": "bodec.js",
+			"browser": "bodec-browser.js",
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/creationix/bodec.git"
+			},
+			"license": "MIT",
+			"gitHead": "19f94a638f1ab3454b759ff4baf61ee09e8b3ae5",
+			"description": "bodec =====",
+			"bugs": {
+				"url": "https://github.com/creationix/bodec/issues"
+			},
+			"homepage": "https://github.com/creationix/bodec",
+			"_id": "bodec@1.1.0",
+			"scripts": {},
+			"_shasum": "185bbc36ab70acde4fe5792375453f835c5add5a",
+			"_from": ".",
+			"_npmVersion": "2.1.17",
+			"_nodeVersion": "0.10.28",
+			"_npmUser": {
+				"name": "mjackson",
+				"email": "mjijackson@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "creationix",
+					"email": "tim@creationix.com"
+				},
+				{
+					"name": "mjackson",
+					"email": "mjijackson@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "185bbc36ab70acde4fe5792375453f835c5add5a",
+				"tarball": "https://registry.npmjs.org/bodec/-/bodec-1.1.0.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2015-01-20T17:59:47.083Z",
+		"created": "2014-04-09T17:44:15.142Z",
+		"0.0.1": "2014-04-09T17:44:15.142Z",
+		"0.0.2": "2014-05-02T01:30:06.314Z",
+		"0.1.0": "2014-07-25T21:33:29.137Z",
+		"1.0.0": "2015-01-02T16:39:51.337Z",
+		"1.1.0": "2015-01-20T17:59:47.083Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.1.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"64a7fbaa2ef9b8e32394ceee26ef6d27\"",
+			"fetched": 1643351818265
+		}
+	},
+	"_distfiles": {
+		"bodec-0.0.1.tgz": {
+			"url": "https://registry.npmjs.org/bodec/-/bodec-0.0.1.tgz",
+			"sha": "0fb8db3e30484f018368d4383f2578f46c164600",
+			"registry": "npmjs"
+		},
+		"bodec-0.0.2.tgz": {
+			"url": "https://registry.npmjs.org/bodec/-/bodec-0.0.2.tgz",
+			"sha": "84acfd2bfd3157cef7e5be6b17b693c991ca853a",
+			"registry": "npmjs"
+		},
+		"bodec-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/bodec/-/bodec-0.1.0.tgz",
+			"sha": "bc851555430f23c9f7650a75ef64c6a94c3418cc",
+			"registry": "npmjs"
+		},
+		"bodec-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/bodec/-/bodec-1.0.0.tgz",
+			"sha": "f798b92a36c7e89412fee300b5b73a987cd665fe",
+			"registry": "npmjs"
+		},
+		"bodec-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/bodec/-/bodec-1.1.0.tgz",
+			"sha": "185bbc36ab70acde4fe5792375453f835c5add5a",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-e2c08d290d33cf0b",
+	"_id": "bodec",
+	"readme": "bodec\n=====\n\nBinary ops using typed arrays"
+}

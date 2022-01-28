@@ -1707,7 +1707,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"c0a00e22cc58ff785d0b625b5a34e081\"",
-			"fetched": 1643186341936
+			"fetched": 1643351801472
 		}
 	},
 	"_distfiles": {
@@ -1838,7 +1838,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "1-9e717d9762cbc87f",
+	"_rev": "2-42a2912e4e2b720f",
 	"_id": "opencollective-postinstall",
 	"readme": "# Open Collective postinstall\n\n[![Greenkeeper badge](https://badges.greenkeeper.io/opencollective/opencollective-postinstall.svg)](https://greenkeeper.io/)\n\nLightweight npm postinstall message to invite people to donate to your collective\n\n## Installation\n\n```\nnpm install --save opencollective-postinstall\n```\n\nAnd in your `package.json` add:\n\n```json\n{\n  ...\n  \"scripts\": {\n    \"postinstall\": \"opencollective-postinstall\"\n  },\n  \"collective\": {\n    \"url\": \"https://opencollective.com/webpack\"\n  }\n  ...\n}\n```\n\n## Disabling this message\n\nIn some places (e.g. CI) you may want to disable this output. You can do this by setting the environment variable `DISABLE_OPENCOLLECTIVE=true`.\n\nIt will not be shown if npm's log level is set to silent (`--silent`), warn (`--quiet`), or error (`--loglevel error`).\n\nNote: This is a lightweight alternative to the [opencollective-cli](https://github.com/opencollective/opencollective-cli) that offers a more complete postinstall message with the current balance and ASCII logo of the collective."
 }

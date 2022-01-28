@@ -4720,7 +4720,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"b8eabddc5708d03048a97b411ee84b52\"",
-			"fetched": 1643186341075
+			"fetched": 1643351772000
 		}
 	},
 	"_distfiles": {
@@ -4980,7 +4980,7 @@
 			"shasum": "a31d0c63e9c050a9575431a82fbbc56a25a249e5"
 		}
 	},
-	"_rev": "2-08e595b76f9add48",
+	"_rev": "3-5b782838206a3dee",
 	"_id": "verdaccio-audit",
 	"readme": "# verdaccio-audit\n🛡🔬 npmjs audit support for verdaccio\n\n[![verdaccio (latest)](https://img.shields.io/npm/v/verdaccio-audit/latest.svg)](https://www.npmjs.com/package/verdaccio-audit)\n[![Known Vulnerabilities](https://snyk.io/test/github/verdaccio/verdaccio-audit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/verdaccio/verdaccio-audit?targetFile=package.json)\n[![backers](https://opencollective.com/verdaccio/tiers/backer/badge.svg?label=Backer&color=brightgreen)](https://opencollective.com/verdaccio)\n[![discord](https://img.shields.io/discord/388674437219745793.svg)](http://chat.verdaccio.org/)\n![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)\n[![node](https://img.shields.io/node/v/verdaccio-audit/latest.svg)](https://www.npmjs.com/package/verdaccio-audit)\n\n## Requirements\n\n* verdaccio@3.x or higher\n\n```\n npm install --global verdaccio-audit\n```\n\n## Usage\nTo enable it you need to add this to your configuration file.\n```yaml\nmiddlewares:\n  audit:\n    enabled: true\n    strict_ssl: true # optional, defaults to true\n```\n\n### Strict SSL\n\nIn some scenarios it may be necessary to disable SSL certificate validation. Setting *strict_ssl* to false will disable these checks, but will make all connections passing through this plugin inherently insecure.\n\n## Disclaimer\n\nThis plugin is experimental and unstable. Please report any issue you found.\n\n## License\n\nMIT (http://www.opensource.org/licenses/mit-license.php)"
 }

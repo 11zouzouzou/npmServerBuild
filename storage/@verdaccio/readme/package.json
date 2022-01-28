@@ -4194,7 +4194,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"d8716aac41ba3243cd6e714b66edf4ef\"",
-			"fetched": 1643186340750
+			"fetched": 1643351762604
 		}
 	},
 	"_distfiles": {
@@ -4424,7 +4424,7 @@
 			"shasum": "80d13a7686e00a815c1ada8accfb2e6f841e2620"
 		}
 	},
-	"_rev": "2-a9d241c7394988bc",
+	"_rev": "3-de1bfe9f9728fd0d",
 	"_id": "@verdaccio/readme",
 	"readme": "# @verdaccio/readme\n\n📃 Readme markdown parser\n\n[![verdaccio (latest)](https://img.shields.io/npm/v/@verdaccio/readme/latest.svg)](https://www.npmjs.com/package/@verdaccio/readme)\n[![CircleCI](https://circleci.com/gh/verdaccio/readme/tree/master.svg?style=svg)](https://circleci.com/gh/verdaccio/readme/tree/master)\n[![Known Vulnerabilities](https://snyk.io/test/github/verdaccio/readme/badge.svg?targetFile=package.json)](https://snyk.io/test/github/verdaccio/readme?targetFile=package.json)\n[![codecov](https://codecov.io/gh/verdaccio/readme/branch/master/graph/badge.svg)](https://codecov.io/gh/verdaccio/readme)\n[![backers](https://opencollective.com/verdaccio/tiers/backer/badge.svg?label=Backer&color=brightgreen)](https://opencollective.com/verdaccio)\n[![discord](https://img.shields.io/discord/388674437219745793.svg)](http://chat.verdaccio.org/)\n![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)\n[![node](https://img.shields.io/node/v/@verdaccio/readme/latest.svg)](https://www.npmjs.com/package/@verdaccio/readme)\n\n> This package is already built-in in verdaccio\n\n```\nnpm install @verdaccio/readme\n```\n\n## License\nVerdaccio is [MIT licensed](https://github.com/verdaccio/readme/blob/master/LICENSE)."
 }

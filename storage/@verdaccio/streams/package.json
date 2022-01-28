@@ -3667,7 +3667,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"f675b9b4298600d6d6ea18e109da9502\"",
-			"fetched": 1643186340429
+			"fetched": 1643351762630
 		}
 	},
 	"_distfiles": {
@@ -3877,7 +3877,7 @@
 			"shasum": "cd5448470d725e221629adb84c74af7dfd8c9678"
 		}
 	},
-	"_rev": "2-16be5c7fcccaeeea",
+	"_rev": "3-1c32aefd977fc6f8",
 	"_id": "@verdaccio/streams",
 	"readme": "# Streams\n\n[![CircleCI](https://circleci.com/gh/verdaccio/streams.svg?style=svg)](https://circleci.com/gh/ayusharma/@verdaccio/streams)\n[![codecov](https://codecov.io/gh/verdaccio/streams/branch/master/graph/badge.svg)](https://codecov.io/gh/verdaccio/streams)\n[![verdaccio (latest)](https://img.shields.io/npm/v/@verdaccio/streams/latest.svg)](https://www.npmjs.com/package/@verdaccio/streams)\n[![backers](https://opencollective.com/verdaccio/tiers/backer/badge.svg?label=Backer&color=brightgreen)](https://opencollective.com/verdaccio)\n[![discord](https://img.shields.io/discord/388674437219745793.svg)](http://chat.verdaccio.org/)\n![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)\n[![node](https://img.shields.io/node/v/@verdaccio/streams/latest.svg)](https://www.npmjs.com/package/@verdaccio/streams)\n\n\nThis project provides an extension of `PassThrough` stream.\n\n## Detail\n\nIt provides 2 additional methods `abort()` and `done()`. Those implementations are widely use in the verdaccio core for handle `tarballs`.\n\n## License\n\nMIT (http://www.opensource.org/licenses/mit-license.php)"
 }

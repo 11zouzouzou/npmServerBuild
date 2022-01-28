@@ -1,0 +1,608 @@
+{
+	"name": "parse-ms",
+	"versions": {
+		"0.1.0": {
+			"name": "parse-ms",
+			"version": "0.1.0",
+			"description": "Parse milliseconds into an object",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/sindresorhus/parse-ms"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "http://sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=0.10.0"
+			},
+			"scripts": {
+				"test": "mocha",
+				"browser": "a=$npm_package_name; browserify -r ./index:$a -s $a index.js -o browser.js"
+			},
+			"files": [
+				"index.js"
+			],
+			"keywords": [
+				"browser",
+				"parse",
+				"time",
+				"ms",
+				"milliseconds",
+				"duration",
+				"period",
+				"range"
+			],
+			"devDependencies": {
+				"mocha": "*",
+				"browserify": "^3.0.0"
+			},
+			"bugs": {
+				"url": "https://github.com/sindresorhus/parse-ms/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/parse-ms",
+			"_id": "parse-ms@0.1.0",
+			"dist": {
+				"shasum": "2d24c4fc03facd7face821a04bd052a1be0d7ac9",
+				"tarball": "https://registry.npmjs.org/parse-ms/-/parse-ms-0.1.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.4.4",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "parse-ms",
+			"version": "0.1.1",
+			"description": "Parse milliseconds into an object",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/sindresorhus/parse-ms"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "http://sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=0.10.0"
+			},
+			"scripts": {
+				"test": "mocha",
+				"browser": "browserify -s $npm_package_name -o browser.js ."
+			},
+			"files": [
+				"index.js"
+			],
+			"keywords": [
+				"browser",
+				"parse",
+				"time",
+				"ms",
+				"milliseconds",
+				"duration",
+				"period",
+				"range"
+			],
+			"devDependencies": {
+				"mocha": "*",
+				"browserify": "^3.0.0"
+			},
+			"bugs": {
+				"url": "https://github.com/sindresorhus/parse-ms/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/parse-ms",
+			"_id": "parse-ms@0.1.1",
+			"dist": {
+				"shasum": "3e20d2f7524092324b917ef1186eace72feca32e",
+				"tarball": "https://registry.npmjs.org/parse-ms/-/parse-ms-0.1.1.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.4.6",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "parse-ms",
+			"version": "0.1.2",
+			"description": "Parse milliseconds into an object",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/sindresorhus/parse-ms"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "http://sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=0.10.0"
+			},
+			"scripts": {
+				"test": "mocha",
+				"browser": "browserify -s $npm_package_name -o browser.js ."
+			},
+			"files": [
+				"index.js"
+			],
+			"keywords": [
+				"browser",
+				"parse",
+				"time",
+				"ms",
+				"milliseconds",
+				"duration",
+				"period",
+				"range"
+			],
+			"devDependencies": {
+				"mocha": "*",
+				"browserify": "^3.0.0"
+			},
+			"bugs": {
+				"url": "https://github.com/sindresorhus/parse-ms/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/parse-ms",
+			"_id": "parse-ms@0.1.2",
+			"dist": {
+				"shasum": "dd3fa25ed6c2efc7bdde12ad9b46c163aa29224e",
+				"tarball": "https://registry.npmjs.org/parse-ms/-/parse-ms-0.1.2.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.4.6",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.0": {
+			"name": "parse-ms",
+			"version": "1.0.0",
+			"description": "Parse milliseconds into an object",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/sindresorhus/parse-ms"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "http://sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=0.10.0"
+			},
+			"scripts": {
+				"test": "mocha"
+			},
+			"files": [
+				"index.js"
+			],
+			"keywords": [
+				"browser",
+				"parse",
+				"time",
+				"ms",
+				"milliseconds",
+				"duration",
+				"period",
+				"range"
+			],
+			"devDependencies": {
+				"mocha": "*"
+			},
+			"gitHead": "192d26c06c25eb8f628da47c80110d46d66835c4",
+			"bugs": {
+				"url": "https://github.com/sindresorhus/parse-ms/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/parse-ms",
+			"_id": "parse-ms@1.0.0",
+			"_shasum": "ea045d71976984b60e8f4ecb58d0048d3416ba3c",
+			"_from": ".",
+			"_npmVersion": "1.4.14",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "ea045d71976984b60e8f4ecb58d0048d3416ba3c",
+				"tarball": "https://registry.npmjs.org/parse-ms/-/parse-ms-1.0.0.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "parse-ms",
+			"version": "1.0.1",
+			"description": "Parse milliseconds into an object",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/sindresorhus/parse-ms.git"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "http://sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=0.10.0"
+			},
+			"scripts": {
+				"test": "mocha"
+			},
+			"files": [
+				"index.js"
+			],
+			"keywords": [
+				"browser",
+				"parse",
+				"time",
+				"ms",
+				"milliseconds",
+				"duration",
+				"period",
+				"range"
+			],
+			"devDependencies": {
+				"mocha": "*"
+			},
+			"gitHead": "4bf8c19fa84efca958f3823f794f0d55c49e5827",
+			"bugs": {
+				"url": "https://github.com/sindresorhus/parse-ms/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/parse-ms#readme",
+			"_id": "parse-ms@1.0.1",
+			"_shasum": "56346d4749d78f23430ca0c713850aef91aa361d",
+			"_from": ".",
+			"_npmVersion": "2.14.12",
+			"_nodeVersion": "4.3.0",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"dist": {
+				"shasum": "56346d4749d78f23430ca0c713850aef91aa361d",
+				"tarball": "https://registry.npmjs.org/parse-ms/-/parse-ms-1.0.1.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-6-west.internal.npmjs.com",
+				"tmp": "tmp/parse-ms-1.0.1.tgz_1455611413197_0.5819392285775393"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "parse-ms",
+			"version": "2.0.0",
+			"description": "Parse milliseconds into an object",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/sindresorhus/parse-ms.git"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=6"
+			},
+			"scripts": {
+				"test": "xo && ava"
+			},
+			"files": [
+				"index.js"
+			],
+			"keywords": [
+				"browser",
+				"parse",
+				"time",
+				"ms",
+				"milliseconds",
+				"microseconds",
+				"nanoseconds",
+				"duration",
+				"period",
+				"range"
+			],
+			"devDependencies": {
+				"ava": "*",
+				"xo": "*"
+			},
+			"gitHead": "cc84ff244494dcb0608db017e9b8561126cbe0b6",
+			"bugs": {
+				"url": "https://github.com/sindresorhus/parse-ms/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/parse-ms#readme",
+			"_id": "parse-ms@2.0.0",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "8.11.2",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-AddiXFSLLCqj+tCRJ9MrUtHZB4DWojO3tk0NVZ+g5MaMQHF2+p2ktqxuoXyPFLljz/aUK0Nfhd/uGWnhXVXEyA==",
+				"shasum": "7b3640295100caf3fa0100ccceb56635b62f9d62",
+				"tarball": "https://registry.npmjs.org/parse-ms/-/parse-ms-2.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 2758,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbO7HYCRA9TVsSAnZWagAApTwP/1vtK5k27MNlr2s2tBZV\nREZRlWzqawBg/bPG+JsADyZVbMmdb4d7vizFGvIYKoG+xvE4yphY19Y/JPuN\nV/WjWFukc75qPAO9J/XRRpuhFWHDUdvUux6aS2uzXgy/ullD8yw2JD/qJyUS\nEOCHzRu0/CL4NmxoHY7UzyMKzOG1fjk/HRBlfCgiFVgIgPbe7mJwQlQbJXjz\nrl61DsyM5mPZEFotKLpMroCTmnjRbr6Q4pGZutB8Q4/5a83mgVo7K8W4Rtgi\n3thbFs/WTxm80CuoXFB5VMuddpAGBKEHvkFbQ1AxMtlzlubRPJinKJGYUstZ\nZ8ynVHzSfKgbU3dz0WMuVdQaNpg7drOg5eN95kLdVR4yquwyVyWGe2mt9Uu1\nK3PztVKLWzLTL4SuE50GH5Ky7dnwT1rqB3SLHStXrTt1+JXiw15J7rbXrioo\nVN39SFqdPMuBwAjxXMpn/f6CtQjL7RP5EkumtSyu+n/A3+AQvcKZNMKmvhkd\nUCJlLioTmC5usfxezBZ+yjscDRV00Al6PTKe2Ou6bdm+nZZrG6q7S+ksQ1Om\nlqbEEKDo7N04kUwxUJyOmV3+F98e0PplHKrhPuLS89wk5Qxy2SU5N16SmPJr\ncaRUUgKeKR+HPLYii7Xc5C8ZZ9PBgQtBqNtk+2BnEwdwsxZc7B+v/N5ACvLq\nJG0W\r\n=lVMM\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/parse-ms_2.0.0_1530638808489_0.7455900468762988"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.0": {
+			"name": "parse-ms",
+			"version": "2.1.0",
+			"description": "Parse milliseconds into an object",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/sindresorhus/parse-ms.git"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=6"
+			},
+			"scripts": {
+				"test": "xo && ava && tsd"
+			},
+			"keywords": [
+				"browser",
+				"parse",
+				"time",
+				"ms",
+				"milliseconds",
+				"microseconds",
+				"nanoseconds",
+				"duration",
+				"period",
+				"range",
+				"interval"
+			],
+			"devDependencies": {
+				"ava": "^1.4.1",
+				"tsd": "^0.7.2",
+				"xo": "^0.24.0"
+			},
+			"gitHead": "8b24b37312fcdbc45d3db2cc772bfefac33e5104",
+			"bugs": {
+				"url": "https://github.com/sindresorhus/parse-ms/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/parse-ms#readme",
+			"_id": "parse-ms@2.1.0",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "10.15.3",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-kHt7kzLoS9VBZfUsiKjv43mr91ea+U05EyKkEtqp7vNbHxmaVuEqN7XxeEVnGrMtYOAxGrDElSi96K7EgO1zCA==",
+				"shasum": "348565a753d4391fa524029956b172cb7753097d",
+				"tarball": "https://registry.npmjs.org/parse-ms/-/parse-ms-2.1.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 3677,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcv9HWCRA9TVsSAnZWagAA4Y8P/AoBV9sRpcSNNa792+QI\nco82qZRiiWH1qrkrslXNicBef5w74GDyERhjhWtUI5vrWDB6QKE9oKOj3y2y\n+srOI8Dau3EEUfcd5ZgdT96WlqLLScRTm8iAESRWZrtWkpOtTRVus9a/4xHG\ndnJv+exnWBUT0leW4urEUsUoPtrycECa3mPqsKOPV7inbITeSma9sofVj74r\nEXqxUkmUgb87ZdhDrQqmbwcjEtZ2SMqoYBguqwcjLRjBpwiGL9dy/liXrqzy\ndOgTlJOeh+MM8rp0S00XXZbyu0LCXYzhYIB5slDpiVlaOGQ0hjOKG0c9yiv2\nHh+vpgl8Rlp/sr9UPJ4E6Ed1yoJvZzZsudSSDDGt9wrw8GS4lNRUdM0FV72s\n5mfbOQfN55rsU+L/M09lQFQNNRyTLOcAGwkAjz4S/j5PBMTkrMPUH2eCrGGr\nb3iYbrTYwXVvJHQgpaQw4EHcRWr3dFGois6/2j+iOp70yaLahsulO++i81Q0\nRtUSbsPwCLMi7O7BTKShSHAlfF5tiDvv4/35w7MfaFlb9TIC+2fXRwsy++8I\nRJlrHdzi67YtWkFtkmdC0C5ZOkPiq5CtAEupj+H1M/ZYCdLucF8/KmiY1O4R\n4OXieDbcxtPxNzZjRKfTcHVn5cdGxGnmx4R0EJco3RTzpFiE3vKqOqNKRRrM\nN8Gp\r\n=PSu7\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/parse-ms_2.1.0_1556074965709_0.30666089884291026"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.0": {
+			"name": "parse-ms",
+			"version": "3.0.0",
+			"description": "Parse milliseconds into an object",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/sindresorhus/parse-ms.git"
+			},
+			"funding": "https://github.com/sponsors/sindresorhus",
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "https://sindresorhus.com"
+			},
+			"type": "module",
+			"exports": "./index.js",
+			"engines": {
+				"node": ">=12"
+			},
+			"scripts": {
+				"test": "xo && ava && tsd"
+			},
+			"keywords": [
+				"browser",
+				"parse",
+				"time",
+				"ms",
+				"milliseconds",
+				"microseconds",
+				"nanoseconds",
+				"duration",
+				"period",
+				"range",
+				"interval"
+			],
+			"devDependencies": {
+				"ava": "^3.15.0",
+				"tsd": "^0.14.0",
+				"xo": "^0.38.2"
+			},
+			"gitHead": "49dab09236deeea5d2c082182e2c73e7a79763a8",
+			"bugs": {
+				"url": "https://github.com/sindresorhus/parse-ms/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/parse-ms#readme",
+			"_id": "parse-ms@3.0.0",
+			"_nodeVersion": "15.12.0",
+			"_npmVersion": "6.14.10",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Tpb8Z7r7XbbtBTrM9UhpkzzaMrqA2VXMT3YChzYltwV3P3pM6t8wl7TvpMnSTosz1aQAdVib7kdoys7vYOPerw==",
+				"shasum": "3ea24a934913345fcc3656deda72df921da3a70e",
+				"tarball": "https://registry.npmjs.org/parse-ms/-/parse-ms-3.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 3533,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgcEEwCRA9TVsSAnZWagAAo/wP/iAgTpKhYJ2RzyreoC6V\nkqNc3LOku8dapPTBspb+K8gDf+ntlgbZEGpIVTUcY2owq6y9xat2u5d4fi8i\nkB4RXEPWsLvwrQ85GJt4yEXZzLizvxDN9LAnnq5998N1MHFrcU/+GWY53YBz\nB4eckVO3NUfqCK2NAJm/i4VGn7fZ9aWt/TGitz+TPkmVmmba8KCKT2ON9i55\nQZbxBBpzwBxrDKkxAF1zwH2Yh+U0EDvWdi2LO2IP16Z/ResWMIjkGWZ7dqiY\naZpo5Z2IGcz0pRipRcsImLxcUR6smilN9BieY62vA4GVdN2EbUMgBlhnkkt8\nv3iWl7ezeZZAi1O5bW923RJUasyHGRTICsTgv8UQNfj0XUufPeH5QhP+uk0a\nf4QYndE49q4h2dSKnQLTFBuMB8xJT00+CSQcV56ktyy0f/WugZotQav3+TeF\npXIXs59+mW5sU5IQ0bjZIGB/CIH+nbfBXCNMI7LmmOKXnKPkqrnUmLSHo6/m\nnZK3Ou1a7uSYc9u+jMv4+0xEojXKxPsNR2MSFSeRYMqctE2IxxsaWSRP3svK\nlgkN6O8klgEQCv/hL4h2IR+sOy9wjfY1VQaxZdhpsBwNSWecJxWeid1EoujL\nefVkT8FjX8jfWtdpCwS5C3IMrelxMTzBKoGVV+QHi01y3Evus23ax3yGE7Cm\nmUpy\r\n=R0ux\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/parse-ms_3.0.0_1617969455561_0.5951076339195813"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2021-04-09T11:57:37.935Z",
+		"created": "2014-03-20T21:15:53.450Z",
+		"0.1.0": "2014-03-20T21:15:53.450Z",
+		"0.1.1": "2014-04-16T20:45:47.703Z",
+		"0.1.2": "2014-04-30T22:41:48.338Z",
+		"1.0.0": "2014-08-13T10:08:25.643Z",
+		"1.0.1": "2016-02-16T08:30:15.206Z",
+		"2.0.0": "2018-07-03T17:26:48.553Z",
+		"2.1.0": "2019-04-24T03:02:45.929Z",
+		"3.0.0": "2021-04-09T11:57:35.664Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "3.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"a57a9a904991efa5b8baf353aef27960\"",
+			"fetched": 1643351783593
+		}
+	},
+	"_distfiles": {
+		"parse-ms-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/parse-ms/-/parse-ms-0.1.0.tgz",
+			"sha": "2d24c4fc03facd7face821a04bd052a1be0d7ac9",
+			"registry": "npmjs"
+		},
+		"parse-ms-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/parse-ms/-/parse-ms-0.1.1.tgz",
+			"sha": "3e20d2f7524092324b917ef1186eace72feca32e",
+			"registry": "npmjs"
+		},
+		"parse-ms-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/parse-ms/-/parse-ms-0.1.2.tgz",
+			"sha": "dd3fa25ed6c2efc7bdde12ad9b46c163aa29224e",
+			"registry": "npmjs"
+		},
+		"parse-ms-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/parse-ms/-/parse-ms-1.0.0.tgz",
+			"sha": "ea045d71976984b60e8f4ecb58d0048d3416ba3c",
+			"registry": "npmjs"
+		},
+		"parse-ms-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/parse-ms/-/parse-ms-1.0.1.tgz",
+			"sha": "56346d4749d78f23430ca0c713850aef91aa361d",
+			"registry": "npmjs"
+		},
+		"parse-ms-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/parse-ms/-/parse-ms-2.0.0.tgz",
+			"sha": "7b3640295100caf3fa0100ccceb56635b62f9d62",
+			"registry": "npmjs"
+		},
+		"parse-ms-2.1.0.tgz": {
+			"url": "https://registry.npmjs.org/parse-ms/-/parse-ms-2.1.0.tgz",
+			"sha": "348565a753d4391fa524029956b172cb7753097d",
+			"registry": "npmjs"
+		},
+		"parse-ms-3.0.0.tgz": {
+			"url": "https://registry.npmjs.org/parse-ms/-/parse-ms-3.0.0.tgz",
+			"sha": "3ea24a934913345fcc3656deda72df921da3a70e",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-93d5581d40489036",
+	"_id": "parse-ms",
+	"readme": "# parse-ms\n\n> Parse milliseconds into an object\n\n## Install\n\n```\n$ npm install parse-ms\n```\n\n## Usage\n\n```js\nimport parseMilliseconds from 'parse-ms';\n\nparseMilliseconds(1337000001);\n/*\n{\n\tdays: 15,\n\thours: 11,\n\tminutes: 23,\n\tseconds: 20,\n\tmilliseconds: 1,\n\tmicroseconds: 0,\n\tnanoseconds: 0\n}\n*/\n```\n\n## Related\n\n- [to-milliseconds](https://github.com/sindresorhus/to-milliseconds) - The inverse of this module\n- [pretty-ms](https://github.com/sindresorhus/pretty-ms) - Convert milliseconds to a human readable string"
+}

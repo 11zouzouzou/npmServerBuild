@@ -4285,7 +4285,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"d769e21af97c858164844e37f491b349\"",
-			"fetched": 1643186341601
+			"fetched": 1643351775891
 		}
 	},
 	"_distfiles": {
@@ -4520,7 +4520,7 @@
 			"shasum": "953367a42554ef7019fb4206c6e3af5e2dc217db"
 		}
 	},
-	"_rev": "2-780597ba9895f0f9",
+	"_rev": "3-928126aa7f90feaa",
 	"_id": "@verdaccio/file-locking",
 	"readme": "## Deprecated repository\n\n**This repository has been moved to a monorepo you can find in [verdaccio/monorepo](https://github.com/verdaccio/monorepo). This package is located in [`core/file-locking` folder](https://github.com/verdaccio/monorepo/tree/master/core/file-locking)**\n\n---\n\n# File Locking\n\nThis an utility to lock and unlock files \n\n[![verdaccio (latest)](https://img.shields.io/npm/v/@verdaccio/file-locking/latest.svg)](https://www.npmjs.com/package/verdaccio)\n[![docker pulls](https://img.shields.io/docker/pulls/verdaccio/verdaccio.svg?maxAge=43200)](https://verdaccio.org/docs/en/docker.html)\n[![backers](https://opencollective.com/verdaccio/tiers/backer/badge.svg?label=Backer&color=brightgreen)](https://opencollective.com/verdaccio)\n[![stackshare](https://img.shields.io/badge/Follow%20on-StackShare-blue.svg?logo=stackshare&style=flat)](https://stackshare.io/verdaccio)\n[![discord](https://img.shields.io/discord/388674437219745793.svg)](http://chat.verdaccio.org/)\n[![node](https://img.shields.io/node/v/@verdaccio/file-locking/latest.svg)](https://www.npmjs.com/package/verdaccio)\n![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)\n[![Crowdin](https://d322cqt584bo4o.cloudfront.net/verdaccio/localized.svg)](https://crowdin.com/project/verdaccio)\n\n\n[![Twitter followers](https://img.shields.io/twitter/follow/verdaccio_npm.svg?style=social&label=Follow)](https://twitter.com/verdaccio_npm)\n[![Github](https://img.shields.io/github/stars/verdaccio/verdaccio.svg?style=social&label=Stars)](https://github.com/verdaccio/verdaccio/stargazers)"
 }

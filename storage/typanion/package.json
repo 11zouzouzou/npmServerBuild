@@ -1,0 +1,1485 @@
+{
+	"name": "typanion",
+	"versions": {
+		"1.0.0": {
+			"name": "typanion",
+			"version": "1.0.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"dependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"typescript": "^3.9.5"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc -p tsconfig.test.json && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"devDependencies": {
+				"tslib": "^2.0.0"
+			},
+			"_id": "typanion@1.0.0",
+			"dist": {
+				"shasum": "03286cf9a3fd6b13a2dabd19b54cdbdacbdeefd5",
+				"integrity": "sha512-WoG9Gpsd2CxXBuBj1ZTdNAeo8US6G/PNOEFsMzkFr56EbYikWmkYOYbihRyzHQpusYVI5ZXp+7qp4FRvsnCW6A==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-1.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 9343,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe6+R9CRA9TVsSAnZWagAAPmcQAJaiLNawyj/mqSTZqmAC\nrs/A2P5YCspPO0Oysp+PUedWvujVB2RmrERSmRDsPd7OsEHGiF2+HhmWV7RJ\nm7dp09SpoLlxb4jmMc4BkC/oBF1QToY66TMWmt5J1YYG52ckrfw219wpUhbA\nm2L9KxN4P5C6IVhEs0blRqxGApM6K38dX3pccHzAhXQM+A77sCU/PCSjx5w5\nqSC+s/UxDyHHkzrZG3M+3buILcqx2FdhVoS6imQ/kPU4ebmj6NmHWVD1/Lka\n6lciGj6O6rLb1npqgDcO7j+Eq+K212RBEC7F29xWKc/TwPxneErpv4HjgldA\nzDatON4dHJBtxNUXOuGRThESKRWOuIy01J5zABwTxicfOJVO0G96R2+XoYTl\nCWJYFp7qlvxED1LIIszFip3Ivyyit5FvZhtDFSHQIZfno6VtkpD1QZMBboci\n5Qw+tqhdIEOYp8plFKWyP+aqzmY2VWvSOW9cbJxN0OY0SbofXlRPFTfBPeIw\nSqcZs9daY0SLjBGz2Rj35pWATNojBsqKh6EBhYwYPROZN9SPbhHLapHKP/eu\n7n3bm7HMCxy7s51a4FlSIVowlIUjEuw/Y5B2uYtPM03nipQ2L48Bq+EUtNTs\n8h2TKwKdxm6XSNKyeu9BsnYAdIBCm1WZd+JqJs+ZhMXht9oq0hlkFtGZH4/E\nF5+J\r\n=O0eo\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_1.0.0_1592517756983_0.4611836152618154"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "typanion",
+			"version": "1.0.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^3.9.5"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc -p tsconfig.test.json && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@1.0.1",
+			"dist": {
+				"shasum": "ae23c5a12534ff6fcff2a8a05285dd303f9063f2",
+				"integrity": "sha512-J0sjd1IEY/XzhAn3E5p/0viA/X6my6ou12PWdStwlwLvtReN1kXjyZfUUrIvV2qjGo0qugCuwtsfoj7CFZCuDw==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-1.0.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 10632,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe6+ntCRA9TVsSAnZWagAAsysP/2vlEQCqfPDPJM1KUDlQ\ntPCfhEXZHDUHLjuvmXcZbzLhDiMGJBjcqyPLvFRGAbeZ1x9iyIr+q1Z5lrX/\ne3aTE2Wk4tEG02noU1rVpWbMZsBuRr80sLbkA17dMU52wSg0oRRPgejMglVh\nCmiOn997PvzWuX/7waRE2f35y6RhGItgs8KScS+Tq3MTg/INIDRD8NiqhKj9\nhflpPZQTEg2YLh7NNth7pZCGaWQjlBSEx4JcLChQPkpBV3+CA/gdJPPmqhl6\nrmWqoFrn2ZDxVcDSYR0bDxGCQELOOAGIkWhGI68y/3lnYQ3Xg/r25KJSnsIm\nLCJ5DXaMum1ehIJR16t6O5atCyRdUpyhElxrA1rg2PQ4Rp1OTkjWU0fyzd4+\n+QMJKlOVUd6qendl4Mdnz1YZ9kMmeemKNkffViZPwO/QOuyRL2Z2lb3fVXhM\nKCN01Wa4Luj/HjCPQ99DbYFEbMrRHRE8Z/9Rak0orEXhk1tot3TNQEq1zxcO\n6w70843k3hv3uQVXAYeuVo3Z2v9Apmy1hPGK4DOhv8cUwrVqDsbfzRPZpSdb\nHbEGv/Y6SuzNLTvWtozCk1MXh8eOpFnwHQKfNJB2OMyYNx9UUn4//sKUiVv2\n/aMCPDvJZqZPF+pPwW1PrNgcKfch/64/BtDLtYFeXeUpT257Fm5xGgtIWX1a\nHrGD\r\n=LMY0\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_1.0.1_1592519149388_0.23718527132844636"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "typanion",
+			"version": "2.0.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^3.9.5"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc -p tsconfig.test.json && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@2.0.0",
+			"dist": {
+				"shasum": "43101cceaebb6a29bbc9ce8edaa660a4760e3d0b",
+				"integrity": "sha512-wYsWU3vcUAAQIhDHusMuWvLJEF33nNWyQR/t7Zd5rlyZRNBp/6I1kWZWjoRUx7Oi7BUpp38OQE0wvoyyjmK90g==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-2.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 29338,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe8QetCRA9TVsSAnZWagAAqqEP/2ql1lu6ghOl/v1uLIYK\nnqzrpJ1MOIZSnBQGw7kzq3X8Uy41sxTElK7GVTFp7DTEArBm7H/wOvtYZN0o\nIcGI/rbVGzHJvNshDD1R0avyS9SVp29idpt8YTojBYLfUh1dcgEl8S4lo5A1\n4yZUOGZgS3l/XzqBHQ7fiLPviI2rf2Bp/2gHcxEdmd9+Mu76834r/dqyZFaE\nRvuboJ3VutcLNRFARXofFF65VwGeYOweg7ezSQE/rER8NVhGkBIN1t+sD0kV\nfx58O+PhM7pozHcdrdjwbByHCf29NUCKnj/AsVg0Td82WLoLAPplcLSb+Ka2\nn+qS0D1gy6cALvEnUXJeRIWsiXDtqEK20m38uONTlpESg2sd7NpdC5F5c3x1\nZaMbvxCA2ZYcdyJ5zNNOZobmHBtM8oD6Np51MK9ncCuQ/EsxHDkdJMbP7rUo\nUSCJ5WlZY7IERqOl0X/PyUa3eq9VkHtqE4qEPuV6PILcvEmb8d/dHKIQLLN8\nrns0rgSLavZCjOpd2lgLLo+OQeJBeT8Tv7TmRF5biiMg0EkLiWVUncM6JOGL\nVp70FgsPNoQxn8rZ2raaqaO9XBb0wB3wr32f7oObrIAFfR28jxvErmQ/ZDzh\n1Bxb700Y4xn8fzqbUQWkmjpKekzzA6QxEFJIEoFlZtT/NM7xGxVHzN2RL8zs\n7juF\r\n=D+La\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_2.0.0_1592854445101_0.8614970998196614"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.1": {
+			"name": "typanion",
+			"version": "2.0.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^3.9.5"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc -p tsconfig.test.json && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@2.0.1",
+			"dist": {
+				"shasum": "2caf0cb73758c7b73266aeae7112cce917430074",
+				"integrity": "sha512-jZalOM97ma3KPdCOnbJZcs3xq9xVQL7G3fV+UWoORa9PYyXKW5hgowNwYNYToU21au+lsG2ExTcY6teBUWkSKg==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-2.0.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 30663,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe8RPxCRA9TVsSAnZWagAAIMIP/RXtmbOSyFUBBXztkMKr\nlrfueWwSKJsMbfX+ApvCP6uTz4E3GsGiCwbwzTdnb/777UElFJjIhixyAnjK\n7Jzzni8CZrjXPWiG0+4drl1tfpLt7ZVOcCiV2EhTl++WDEaGcknPAmviECSZ\nb1d21kGZe1OS69ClxHmq5vOhFAtf/kjS/JGCfn95/OtQLI/6VsrbJUuW8wRw\nQmgIw8qaHdaxDIqYQQs48TYhE27fkjfDj3URmmjjXJScpOYSaQYZ9y9wylzf\ny/pFPCxNyXT42VewGraq6m+U62cdGtDPtNb2ZSgXoojhA3PTq33H8PrisDMX\ndTtTsoimpyhbcboQAz7bs4m1r5PEg6W+aLOQ2MRVDRy7LXKY0uoJDlE3aqeL\nqjeJOyhXzyVhr59judtmOd1RdrBBTkmIRtqN23CCyRrp+j0q9lnFty4tBME1\nr6ajmABsswfLGviRc7i9qRTmrNYBHs1PGjJvLTzSTsdLygCevtWPy4460Wv9\nApY35hU2v32l7g0Zy11XmkE36OKxkrUDbinI45epS4ypwplGeYmP54aTfkgK\nrUHS+5X53Lnpjxy01nrvWNbRlgWrg2I6ND//AflKI3xYzmv8vh9H0Y3JZj44\nZSAUmcwwCS+CPLMYiPdaDItzpEDnunXq1LsusCekhvFMUt9hjAptzZ/ybOva\nu+Wu\r\n=adru\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_2.0.1_1592857584885_0.8042056626715675"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2": {
+			"name": "typanion",
+			"version": "2.0.2",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^3.9.5"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc -p tsconfig.test.json && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@2.0.2",
+			"dist": {
+				"shasum": "abe35c5f39d8dcea26631a03999721cd1d46c9c7",
+				"integrity": "sha512-RaE/VUfLv1JZMTJurgin8RV6UYbfFkeSP78xZCKGncMpIku3rFs5QWndxXcRXbq4SK6BeONRh8e4e0R9luN54Q==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-2.0.2.tgz",
+				"fileCount": 5,
+				"unpackedSize": 30635,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe8lXyCRA9TVsSAnZWagAAm4kP/3NAUp4hkXAMBrbJiLlu\nhMmjbhSGRp2KGKM8CkoeVih96tQjDzi5r9jTb8uLRu0hj5cGAStzeqBddnWP\nibL9Hb1E3K8W6Nx/aOxCmzVNy4UmZauW3FpNZvKj/xV+7vRdRkhexwIHwov6\nYnNtf/85+7cn/49gguAsn8a0NyWTFRrRvVisF7b45AFDF2mPdkUdaH0ukAu9\nE2eS59RRUwWnP/zYOFflLyCmVkpm+cVOh77W60F2TJloh0sdalaQXMGAsDQo\n1vBfssbLjhQpSqT2DyoPUrhkIC6/Th4AkB9BEPiPCaePFz9pvB9SMLopBgQ5\niNM0WuVSZiYCskZ9/nu05Zxqz42x8snuxxxP9U2o2OCOqIMtEOWqzu7mzW2J\nxbAhjlXCT+hMA62aTPCEeH/OOEr+CdECFC/PooBBkK6v83H/Vn3eyqkmO4OI\ne7r7duwvyOj7H9mJlar9Tg12bDjVBKTq6kJkEWjz9TaQDz/H7bYb1ko5ynSr\n7oKrIGzlMAD7ppp2JuIGRxmyE9eo7MO+Eg+W5uHoFh7HN/mlN0J73QHhT7HQ\nq+SIQw66tyzGr+zsbPt/c9g+XhXwbezjhJuXQvc1BsUpL3eNACKzxlTO9cYB\nuJRcojpXTBY8CipDzwvGQhGrcrDHCeZAW3ZlxibaCkXf8dc9TliurfURqxOM\nELOg\r\n=cx5a\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_2.0.2_1592940017893_0.6365512810097189"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.0": {
+			"name": "typanion",
+			"version": "2.1.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^3.9.5"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@2.1.0",
+			"dist": {
+				"shasum": "fecce601ff576c1c4505f3ecd78511135704ef1c",
+				"integrity": "sha512-IpPmfOm9h72NyLxlxxzUYRuEN7eZcbV+USUi8w9ldz94FDB1CLGAPaTJuTNgwNZMDeJ2ogeAnZhvrVLvVjVPzw==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-2.1.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 42239,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe+zJ+CRA9TVsSAnZWagAAsCYP+wZ4ddeCQpNfK/ytIW/K\nkdwpR/eY5Cwwpi6sSuSr/1H0QG5chn3idlyoIVRxdpalkoYMp6HUyDWXmDWP\nexKEmQEf/afq+r5X41RtUDgspeP4Qr54ITLR4W44aNyvLvLr7Kl0uvPh2xXO\n0bqCmV3NayMZ/ad6tfiTUSTgCTPGxEsCmyfWIZVKG3NI8osYF8YMBHU2PhnW\nZbCHMSkuOYskYSbJ19y5JCAQeDkETNCk5YEofqqSxMU95zPm8y6tliuE5uVN\nc0IySUVeA4avQvC5Pp1dxte+Z3SDWEBmiEAhpsrS7DSJ1ytpT13nLoC5kaIm\njK8zyiZLxqETxlYJ+lvGphS8QGkXWRiU2/siObNSoYZ3ES4oZgsI/9GqMqHz\nLxX90mPx0cdCYHvty23oqVTggsY5nCxc4AV92Thd3ORNg8K3rehbCj6k9e6f\nbockBMl8MWHjkZMzH1ZFJ1OaiweMDSQFONk2aBbrLhPY6KW0DuAc+kbkgOVE\nyT11aeQ+xa8jUT40W6QO1RYC3eFcKF/vC2lh+OnkBf0yMTL1nADQ4ahTYEvs\nhkKRAR3KZ54NV7UMe/tb+nosnaITK7tmK4WT348n/6nact5QkTSe9WEV86T7\nJJDYHez1xA8XDt2iaTAPRSwJVe71PC+A8nvR/5I92Ze9pSVlAcmpKnp4ZNip\nIkze\r\n=U8vi\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_2.1.0_1593520765965_0.31700346178088656"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.1": {
+			"name": "typanion",
+			"version": "2.1.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^3.9.5"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@2.1.1",
+			"dist": {
+				"shasum": "aed964731afdeeb8b15e03967161f2f3b039af0c",
+				"integrity": "sha512-AdA32ycFpA3GXsutwIesdK2WcBBSUnvChhJ4Eq080uPmO1CO7sWzFoLEECabuLvre/lzkTXnBriOBb/AxweR0Q==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-2.1.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 43334,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfBOOLCRA9TVsSAnZWagAAfN4P/3GsxlgvOa54RLGWSL32\nrUxi7Q8/KuLj+CkReSoJxakXL0hYHB7b8Yylyqi7wnffK8Oe+13Z/HZd8/Iu\n716A42ovaYcdqv3X6F78J48WXUTEOVpKsoacWHGJTVaggQm/CRYPqERthy7T\nCNvKHXtSpta4C8VeK9eLQGkGKnzhHkaSYJ3Hs4nRwZNDbjR34pBRv9G9BCHt\nWV1IeetsZKrTSZWle59ko8Vpnx2zyfMPrq0bIrIUGyK2Ehle0HY/KhL08DAi\n2/5FpQBKh06MtRLvKFd9VC3MFpn80b8pSPKQiyxuAh9ZwlgbZxVmSIlhBjcD\nY5Nw629xmO/Pq83YOFTNGs0tChp2YrX1k51/NCcCKI9QRYIrtFwB2KO6Mb/k\n03FNqvlOEZlW/KFxI33EFbxwqC6UIbLqwoF8OoaRUEP1E6zMLXNo5AYHvcTF\nAhWcI/e6KfPHQr3r1HQQqgZtMAJnVP09ykxjxOJ9hB7xYPldRhyuUyPLVb7F\nDo7kdq5X0m6cxr8oX9v5W48xNhZ7OR9h2CKFadUFAYgJ91p7B0gt7nZYAkW8\n4jv8aTpf2xedY6XP2qnRDEs06bngXqYu+2RQOsPTkaWXhTnrgM2KgeOMJqBs\nadOPHENt2j0div2TmiUse0dF6OTk1Js+ReHVUjnUG6IjAsQQeEfMc+Sggbuc\nuct+\r\n=ddvu\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_2.1.1_1594155915072_0.31972638827999544"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.2.0": {
+			"name": "typanion",
+			"version": "2.2.0",
+			"main": "lib/index.js",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^3.9.5"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index.js",
+				"module": "lib/index.mjs",
+				"types": "lib/index.d.ts"
+			},
+			"module": "lib/index.mjs",
+			"_id": "typanion@2.2.0",
+			"dist": {
+				"shasum": "f53067bc4e9075c84a7903f2dfb0a78a8e21cb63",
+				"integrity": "sha512-4ALWBMADHl/e75naCaxHPkfQSObYcAfc1loYS1LhGRN2WOe7tHcVYoOe8i0f6Z9i6PxxjdfnLVqJe80LtAg9+Q==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-2.2.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 44106,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJffN0aCRA9TVsSAnZWagAA/HwP/0GYz+HTEq716UdntyQc\nsbEiIwVoRyPa/13U4rMU4EPLQFo9ZBDSo9S4i/lwPJ4JCM78QfQBU/UaBnVX\nHVaDN4QWoUC642M41SKyxOENtECcMny8fsgZFbbM98thiVsDLBRbi0zCkxOQ\npbzcobZmL2wY19L/vHOQJfSEelMI4KZu68Dw/2CjdsIIApaBYzUUmqGY77iz\niwqu+unu0+8kzFSXR9IXgOb84Pv1vW87mdCecLWUyJy51VJmirEs44SRPXtX\nfLj+hGRChcem7iP5kkAcW5/hHFcLerVuzWTKTz3DniyIJKv7gqgthbcT6UJq\nOaGCj5Cpsfo+R6EuQeTy7zgraaj4SY889jhDlFh4TZMoXsL7jIenIUbr1zAM\nsjqq90c5MO+sAI2CGQqS6m/Aw7y0C4U+Qq0utmlzZEGuWLwfl5kGSZeGO6hA\np07rtnBWjfGCPy4AMtxpefkKX73FAM4n3upSMG7+uSHPrT/2JUTHVZn2xzec\nhNYPI4G6dN0iUIKlpVvRvA1A7/hGZ9uA8x/1Cm7icKaL+0pUSgK7dx+cHhTt\nwOC3/9vkYbfhFxcQAo6i7Wq0HhuBAQaSAt+TQffkvxYEkojlilMOkHsOrPub\n0M/cAQXBnv092w8T50yEzXkQ2SnVLp5X8Cjh7pK664n3LCpKQLy6Q193iS8p\nWWmt\r\n=xr/3\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_2.2.0_1602018585726_0.7203642367279668"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.0": {
+			"name": "typanion",
+			"version": "3.0.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.0.0",
+			"dist": {
+				"shasum": "b79b572fbed9fce9e7e2ee7fe9db3bd60d472dc8",
+				"integrity": "sha512-tKGHO+dQcNM98CRfC+mLhDlpnsZxZ5Ar9AY4Aqf9zajFQ6GVcmTxrnzwES/80MSozVGdTgQsR+uGbA91ZNOSJw==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 57136,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfuBI+CRA9TVsSAnZWagAAXb4P/1jYHW+90HI1mQOAC3xz\nGT40P9rsjJfV+H2ZUS8xj6OO2WhNZoS5RUXfXaokH3Mh9d7pf/aEEnDbRQRK\nr9buvgFiGZ18F7YIUfgWauJtrZ/SCaVD4CKRTLfAtQKPJrt2QdLmS7SvLjiR\nM2uq7ZUpIRV5T4WiJjpl1hkVvUjJmD9CEFgFY/2Sq/rKSBiTJ5WAM/sdIw7D\nmX4/2t8YKa2TwpRf51VyMwLmZip9hSR3HAV46F8+qchaNVNrM8NZ1arGms0c\nHgaQHHwyodTdJ8gR5mLxSBvQ4V8OKTHzfDz6mh2+UAhpZfyFeXEQ9a8YZW5O\n5noTl2Oh7LwAc4cA59rDfq8Fe40XDmW0HS7zYUiz5vyvTMt3v4hJjB4HcAgQ\nyFczc56o92Q1WFQbfYKob0Xmsv2XgA/aXKwIzejl7NbN8BCNDlBuqJ96YEqW\nt9TsqQZiizfrbUh+Bp+ZY5MMO9IhJN8x9wpOemj0gNGvZmCwvqHbfWhBgovA\nh//LtEeSiXDAwNlZOHyKU5O3iksgc8ul+g3v3nu3qisO/I8576IB8lA5AqPJ\nGM9JIPLVXofWt5xf0LFgifkzUY2PKcrdzZmniNkmwFwhFyr2DigdT/xiagin\nMnR6WE2dgx5BZDIxbzoeYhvKtrxst8a9rYqs+1pi42a7gIECMF34gyHLy1Ur\n+H0L\r\n=XWwC\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.0.0_1605898814134_0.16339323618753565"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.1": {
+			"name": "typanion",
+			"version": "3.0.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.0.1",
+			"dist": {
+				"shasum": "99a25fea4c1fb3184bb17265e9a7fa14badba0ea",
+				"integrity": "sha512-axqLwzdGHHNmM0Rr7A5f1lzk1UrjxlE5mndiEBSyOi/7W64oyJRV6vQAzJH4zAIu0ongg8y14QgYYV+tqC+HCg==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.0.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 57166,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfuBUxCRA9TVsSAnZWagAAW6sQAI3Nj7QFFh2nflgdhWl9\nRFlnxAR56eaZf4fiEJCX6yLao/Mvp5K2lJsvg1U0FIVPwxLbN08m4Aac7Kkz\nkblR4f/24Bui+z+ExFDTUTRlxCQNjzw/lEGmaQGU1uMduEpGNG9ixI3QA6qX\nAQ26+E2DU3nJj7aoPCP/GL9UKiQV42KZMxemZ671M0s7SJnS4Pez70VaOEGl\no3sF+zti/ATXtv7c1BSXLHdwNKCE8xYnOTdRH9XDplb7WYWqOJqGVIkIaZ5y\nxzsmQRFnTHQTQPoeLE6Jj4QZv+DAlOxndqSX7E/g3qZYCz1YNCDbtQ1yGeRD\nvfthUGYSVJWW2AUMRy13eeU6sq1cXrz+VB8rCq6xI5LorAYnp5a+/a4nOsNf\n8SyiOawKk3AYq/X5/vyyhg6cDYJvSPBhRN7TAgSeKmE0V/6Z2iJ81cEt+khK\neSV9U+A4StrfD4Oor+8gpr1fTqZ8EuoH9kR+rc31eA06uX8bY4H3qPw/c1Un\n527fSoHmlAG9Q7YMltvQBAZfPNdfBnEXI8ISqq8JCAL2Y8kxAwAsz/GgGkH0\ndGUPLsiNDKxy/AQmwy+goijqwGCtbrp/Fxvock4QdjfBXJaz08MgzgB6jNAC\ntKPvZ2doouyg5+xP63FZgS5BvyWxRSt0U7Hjw7IUhBSZJfmdqs7djhGJ9uI8\nMEL8\r\n=Z6AW\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.0.1_1605899569223_0.6372936284551751"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.1.0": {
+			"name": "typanion",
+			"version": "3.1.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.1.0",
+			"dist": {
+				"shasum": "da24f24206833148672f1bafa6134507fa15c378",
+				"integrity": "sha512-tUvy9IZYJtw4S4Ue2d1JN4gha4PNh1e7o8abqNpF8VBFSDTpSpmg6/QOB6LiLmYhyiNjzko0lFiocxb399i7Pg==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.1.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 64836,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfuFhmCRA9TVsSAnZWagAA3TgP/2gI9surkQsLHJw/gJE0\nO8TnFlWJxjHXkPKU3Zrk4HfekuQEtlz1qQDM84l03Y61QyzXD3YxBSN6pAQ3\nlz4gHzktPYQRQw5nTsI0uriiiTKpEUmhZ/Q0qfR17Ay7DmG59zXclJQy75xw\nh3zfmb7J1glRXF2vOtBlthqpK+w2gpsQ12T2RuZU+i6PNwR99rSb6vgigtWe\nQ+I4NMcLsrGgEsm5FmJmheftEETcewvGryXobKL0iPtxHmkiJAK8+jEbQ09R\ncfp552bKwwH9R5KZu297BOub0weiaizvI/tXehTJHL1DCehn/RdIZYs6Mr1F\nQ7kiTWIYlu6e6WCZ+Teq1+Vqz0AUDQpCkfr6BLH4qYzFKmoUuohFVwwLQ1V9\nbhXoeA2KgdwTI/QlC5YmBULTYnMLgSRD+ewO8xWzUtiPf1BH8JKjct2ZoiFS\n6zJ2y38pLS9VxMKRFGWJDBuT0e3LXQ1hmYIgZXik33oaik9RBGe1pK8LdVFh\nl4T4E4KrQ/hTi4WS4j48EdqNtb9U3IZHqZur3fEdCiI3scJerozQTnYZ99+i\n/Tpda2LSpxPf0Zo5b2IOO3cx2oU3VVOpn9J2he3S/x8+QusMaWBnJkddA5oF\nXRrtyrAazCcwqLrhuMaLYMianTfsHuBq6JeGXzfvhMe54dO1zeKT0gY7jzJu\nwkpD\r\n=1FWC\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.1.0_1605916773707_0.8242604044777513"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.2.0": {
+			"name": "typanion",
+			"version": "3.2.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.2.0",
+			"dist": {
+				"shasum": "ba360d8b167a73c640f9450190009aefd430270a",
+				"integrity": "sha512-v479mfSu5i8d2XJNDHoHLLPMPs6F/CG6xu/nFlDArJ5nAtGAJi9g4J5fqobCX0/SNjOQdZn8YPzlU2A29hE/mw==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.2.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 64648,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf/ta9CRA9TVsSAnZWagAACw0P/RbadR5LT7smJc84AuR+\nQaZEfBG091flx9O5tksPVIdFDAg0eP8MlT8HEGyMLkDyhdAOuwITkP6Whi/S\n0UEk9PeXltPDrHSg8DBCr2DVUimEAO1mhSFrotB8Vnn0hxZpG9oudN+TKOWf\n5lwIUCJcPfJt1nhocQiuqKrp5lsUkZddh/zKflnUeMo0MEQIgLvHMx42pPdq\nC/ZrSUaRKPzMZmHZU+rVztNyx+9spGQlhqYgcjgFsRAUhr5URJ1gjFLUiDLW\nJYpcSlSLx1IDmFPK60veiRuU4dEPAV+dp5XbeL6/r11dkkKbFmAZnEakFWcg\n1tyxFuLKXPwk+MrpWlBp2QoXgke8Zcq3fdvKqRQZxcMe7FUHNa3pO6ChT4hL\nZZD+fXIvBc/yCOZs377Tqnd/TEJZKdeLNIfo5JBeKA+QDUaArVdRfkJp7l/Y\nfsUQFmyLtJ1NdDCdzbGc5+AKG3qv3kxSjtdeihMgU3qHpWGV61kt2f3WZEFy\n1lildeBnQ2bsIw7z6mzFKwKgc+P4ajORk3hzf3jPBhEoaFq7XO4cY/tAd/Rf\n9NqKUZ1gqnm6pWdLi3OJC0eEYziXXnx9dYCT2rJzoCZG7J714Cbocs8WaAvq\nfyRlb4XEf2wdg+IHr7G9B7LzsQbuN13l0HGgEnZIrKS9NfENnxEa6NxjWKxh\nhtf4\r\n=cM64\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.2.0_1610536636845_0.14660463181240435"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.2.1": {
+			"name": "typanion",
+			"version": "3.2.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.2.1",
+			"dist": {
+				"shasum": "8b9511eb9535deae7fa8f913f699a3dbbd199217",
+				"integrity": "sha512-xfatpSrOtEUMK1Ax+Wkxw6ajbKsyvgJ0egg9c2xBXQE+lu4kAkEfsdC2mjNsK3N4NZOMSgig4d9Gmf8l5GZp2Q==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.2.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 68188,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgABu4CRA9TVsSAnZWagAA7SkP/0mbRuQhmHdQpmajHqm2\nfV7jtgQKa3p+1yeiKdrBYz5kss/Jn2rp2Ks71aHD2ek2ZbHAb9X0kTEysJ/X\nTgFpdYTxCgkEiM58DXE0jYp3Oshg7b5+tx4IZb6mf+NqFm7Eb8CcjEZ8uG6v\nsSqHAemplka5zTZtQfwlIe89O9Y9ZC0SYgEAy9DnDwdq4xwLcA2zklQJCdal\nyL6y4N73X1JThdz7G+9UN8Obk3SY9NKrTy5apjKW7k9R+OgQOh+HnFkw3cK1\ngUrzuOoSBct3WwI96Lfh4DcjtMhpno6RRYH86oGQC2EC/zMdeT2iy1xxZPi7\nAUjc34jtUO88X3PszMU3C5N3gpaXb1xlTShKnHZ9e7s+tq+c6b/ZosEu9x0m\n1FdTUno2h9x59yKCpvNgklfw4UmR2lHN1UdUrnoTyCv7L7RBEJXtlUdTBGle\n9kP4ykc/Ymznmkozh/IRcExHxnHrTZJnumlg98CHPDM40YwrzaLNEZjoUYC7\nMOih7+6O11Zm4mUA35SR1eAq+AHtBPc9FVaaCMRE/UJ25RYeDfIGVm8wzZsR\nwlmGgsdNtxkbZw/xcclvGPWw/756TObhe9UcWytejY6nuC6OLXNfKjeEyRgc\n0LXH7dFrTY82mIaEV8EwhkUzxq1Yr7oLtcGqI2zBjwRQdg0GvzU5aXP9gBNa\nqAy8\r\n=sEHI\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.2.1_1610619832405_0.8438181129934212"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.3.0": {
+			"name": "typanion",
+			"version": "3.3.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.3.0",
+			"dist": {
+				"shasum": "92d949d8fb90ba90a152b97909255e5420bfc81d",
+				"integrity": "sha512-e+54C4+ozFsTorFe50JNQlXlt4HVGQUvqul7VS0GbDfKlxh3aXbJY87Yu9IdtzvJWCyTgDX7q1PeMd3FH9zZqA==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.3.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 68537,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgGSwjCRA9TVsSAnZWagAAKHcP/R17eyELlrd+bzl445F6\nBQplWQ/1vLfeGBX5A2j0jxXe3PLMFOXzpLra6DMro77X3Ds2oR3NIHLVuoks\nQiaVuK6KO/q54qMtuznW+IrPl8KYriMLjsg6MqVNNvhdaTBp7Imz8b57Q5LN\nx92+QFLLUtz1tgG1VMb3f7viDmqWj5LCrwilbIqK4fYign4NW/M0dDlp7DuG\n4cMUcYVWU8H+PWd2Q8XjXKcMCKWGhuTSi7W0QF6C0GeDOwC9+qEigga2lS5q\nFNw1LkrLvG8abz4+a2rcS5fjsYFLgJOWQ9ZpGdRBVPnGGpopR/DiOjEdoySW\nHp7LrlHT3epYR/F7lKaJdEaYW8J5fcNAjeMl1iueBhqF1ZCcG3g1crKEYUmK\nAyCLPLMxsCRzeZ5auz7Q7pI5rSXrGnGIK/Biw3CdrljUDyQ7VxbZGptvL6aW\nUY67Ksm55JSDVzuz8NqtS2F0X03ZwuV4aKCFC2MV/FOYELUnAuIYwyZxJEkv\nkJEk5jENhv+DUmBjduwMF2LmkFzjJOAYPzA3keQP8edg8Ryul+PjUMyWUfBI\nwWpRpnduk6mFd+sy7dg7OatWhmaIxIJFf9pDcxZtUPHauSGNy/i0dCBvSc2z\nmGttivk9gArydEhCmzc5FSrTAutGbKGGdkS2IrpLk+i08AD3eVq1YDBf1jJX\ncZEe\r\n=IL2U\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.3.0_1612262434553_0.431716031001673"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.3.1": {
+			"name": "typanion",
+			"version": "3.3.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"@wessberg/rollup-plugin-ts": "^1.2.25",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.3.1",
+			"dist": {
+				"shasum": "d1ab4930d7b0d165d4356405891693b5648e3bf1",
+				"integrity": "sha512-VogBiMj3ZQuWaHkbhXwSgd9jXE4s7EMaaV7VSEiKTNYnKJs/bPjvcOGbD7rTM9aPqTABvgLVEZ+iFP6ab12HtQ==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.3.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 68537,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgiR4mCRA9TVsSAnZWagAAsVUP/ihRe9rXYPSh8Y+4q3IU\nvc202SBAfXJ9QPZ2tVlPBpYZPz0RpOoCoMQCw5huAxGsOddmSDz7zIl+HcJc\nncpq7aJeV3PumSfaNFOPCzkOaZk3C9049N3FeE3c8efthBGuj4XF+nSYvkKO\nVHOBK2+mr1QOj9C04sDPBu/YeaWkv7UzWGH410B2xYZjeeiwLddkRRBNg70H\nQ6ediy27wrpaNcOlVbQOiAA2kBpvdhVLV8irWyC3ukgbauEPxz9383CwiRwk\nw+MTPwqs+MIKWLhU2a+wQLNGBewM++2YFYk4/YEAE8B/uBs3PnjwDg16P6F5\ntAA6GOqg3TjM3QvLrC6i1Dlg4qavoU+9waiEEFIRss03r+Py6oCU38IXzIzw\n+ui0RIyyt5xMjiKCha/+87hJO/xQBK++uJojW3ASjBJdqXxiCTjU4prHHD/g\nfjOzNN0IMAU+EC5aP1ryaZ2WgqNIbeBjDPWp1hn6bKR6TomwqdhXMptdRpw4\nZSCIQJ7nZZ3Of2s4GdrnMAtpMzXt087EOkqiwdKRsdj8C+iraiVYSo3fBOXD\nIWliFCuHG3KUblrqy/E4XH2MGfeMMl3px17KnqvmL8c0BJLZ5AoV5L2YnChr\nCozeo3vYZAFpmvkjA7sjrRZzDWmfmq7JlCZuLCDQ2dbfqAKMXAg4jAnY7jCz\nHVK2\r\n=m2Ul\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.3.1_1619598885637_0.36109459426828616"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.3.2": {
+			"name": "typanion",
+			"version": "3.3.2",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@rollup/plugin-typescript": "^8.2.1",
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.3.2",
+			"dist": {
+				"shasum": "c31f3b2afb6e8ae74dbd3f96d5b1d8f9745e483e",
+				"integrity": "sha512-m3v3wtFc6R0wtl0RpEn11bKXIOjS1zch5gmx0zg2G5qfGQ3A9TVZRMSL43O5eFuGXsrgzyvDcGRmSXGP5UqpDQ==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.3.2.tgz",
+				"fileCount": 5,
+				"unpackedSize": 68316,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5uz8CRA9TVsSAnZWagAA4sMP/0631UmdnzFGmTmG6qUr\nLnsMmSZj//2E98ORuOWmRnGZP82TUVO75N4kWKANp8HvO1wYEidXBem50XNM\nA9zkYbG54ImP0xwdw4YGpIV57hzmhpoDaz74N+VrCYfF/GdptjOStWTzGSMB\nWs2b9KORcbAaRwTyBB0EN85mB0z2lwcTmiWfyaqwpeWUjjooqXO7fAH7xSgY\nXrkKgIe2lgSWSJQwAn57ablhH5eHIJLS4sQB2CeYMHyiXRo/3Akyj4yqmpPt\nYLOqM36BlQswP0QwFQdPZM79gRQZTJCC5jjVa0NcjDNDrPvynifPxFjFptje\nbI41fcgffehs2etWtKBP1w4eXsFmldmv1dlNCZWXt7unuareKT8PA4PTp5Bi\nQ0pOyT0rzoo247NXL7bDmmlsJZ5Zx8EfHSz/62FFE2LOGmhM40yB6JNPV6bC\nEsHfQ4VwCkB3rHiQ598rFAsFM/NKyWCjjoi0o33IaD2n1IzK7GSv4DctJUpc\nfY5InwgUQSrnrvhcHLzk1SQSrpSv3vAwATBejOhaZYEUE+3C2OSjU58X+oUn\nynBg7UNfBCgMnxXtEioD6Qc599Obdq4CJLpgXx5KgE2HKEK6LmkybawP2sd4\nb0DWbBHtyoYyLcxDdJNWflY0OSxIuopi/Dnncb1vOx2RtWbl1abUY9Ha56FT\nitvS\r\n=9bL1\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.3.2_1625746684229_0.2586254235978178"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.4.0": {
+			"name": "typanion",
+			"version": "3.4.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@rollup/plugin-typescript": "^8.2.1",
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.4.0",
+			"dist": {
+				"shasum": "dd1110aaee94cb07f41b35585cf980ad8aa142eb",
+				"integrity": "sha512-mC7vdadcx2hXzMxOLMwmkSmu8GE4FsR5GuojRYSdeYsEYavLK4xrBtCTm699MLnNvUDCSPjTRz0bSjzu+d9P2w==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.4.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 68754,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQKZtCRA9TVsSAnZWagAAZyYP/1f8zj/J1Ox+feXVyIU/\nOMugjkNBfqFQdNv9dWV4etsFsm7DRdBs6HensgOFh03FGp/sO4ATdnrgY4eX\nL/NfWn2PQo7hxBFLRAKMDI/uVmN/ytj4R54cw3bcJnbnNrEMztHtRLPvsczU\n68SmBY2lbyd+YdvLWwaOFqAE5ECrDQEPvvkO4wtnfs6A02xLWHScf0uu+e7H\noEYsD2DRpBDqhrNJik05dgFKK22YVkWcJPqH/oXPqpVmUc0if+Hfak4MmYjE\nrPXl8XUGrQYKZxEBzlPd+Db0AUOwbESGqEqqbd29+Z+6hPhZAuoNjM/8gaox\nUS/Hf4L25gRxAquM99rWZ+C1anzssHUY/Yjcaq35qAteQdxumWSNnl40F+Ny\nLCnrztodaBxLadVIR7Tc9qgd41rM8d0QPtQ1HzLhF4nvLQ0MZKquwvaWN0iZ\nckA4XHctFaZVPAQvkLEHospGXp5EjLMoRanTMD1korpEAIH3PBvdpBD87DVY\n6H+A93Bmtitqmkizg07M79QgItxZMU/D37/hjzLR1F/XqEOhoSoaBz8gZ5QU\nvdhDNjE6P/VMsZHKPy0864dRN1mX/hqwiN+U9DEzFw641pnjlkegalm292RK\nRDiACgwPdhIK5HrY+yQeb4+2vy6nE7CDgecFDnZm6QFr17qK54IVO0+nY0jm\nf9b+\r\n=1jL6\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.4.0_1631626861151_0.6701457949978813"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.4.1": {
+			"name": "typanion",
+			"version": "3.4.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@rollup/plugin-typescript": "^8.2.1",
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"chai": "^4.2.0",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.4.1",
+			"dist": {
+				"shasum": "d14b9cf056a592f59083a9ecff3a3ddd3855e706",
+				"integrity": "sha512-/l41vTqe9s5FYi8nWLiTiB5pUbXWasvnUsmwwDMUc9PI/mUb0ojmWQ4EP8qnNYunPbFNQGjsqY61rQhNslQ+qQ==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.4.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 69048,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQKtpCRA9TVsSAnZWagAAXNQP/jBJO99b+RnJbUV7YxDP\nyAvBoXhJePIPZQosBC+AzMEWK/PsxRQHNqPTuUBgRzTSmsuiXx2t/Ky1/FSS\nU1ANOOd3/gnlKG34jba9QLuLNxRubD9f6ggb6XxyFEc7cZwBrhhA6Y1e64Gd\n3jwE1+wdvXUIxO+hnZyeN3NnsRpUUS7i5JmKczVG4uVG9LkDK1hTp0Q2sMCu\ngTsV9SgiSgIF+D3LMkrRoo2/2XD4HUVPweUw2XcnTS6ObzPH6PpCoy5L7RSr\nJLh0NyCgYB5bhoNDFKnKM60oQuQg09dvtg97WIUwmbS2AL/7ErkRpHH5lqPG\ntv6NNzltqVTljmKnibd2Bf2m47uDlJ+ZaWp/hMrBjS5Xr+PbG6wPdyVYWrc6\nTikeAhEMSr2TnAGgNYqzzgktPgXqw13vkvpny2/nb+aoZhFO9LDcSC3UoviH\nWpDyE3MAOi6KikfhotNtx+IJPS4YNoxflHiHxjpCqzLaXpT4ACBdVi/f5GK9\nv/8ByLk6g+3V1lDxJRA42jkZ+mktsARMnTCWCy6qlOiDv5lYGZcLybqM79LF\npdIt+MTyfJysumVi6yQOQ49g6cNXYmRqjpKGjr+zmvNj1RnI+O6YO8rShJR6\nzYhtwF158VJC+gNOemqjIAidjrw9WHbGmT4Fy+Js+Y1YjoUhFijCxLVISAee\nLSeA\r\n=WiXc\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.4.1_1631628137647_0.366096921940849"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.5.0": {
+			"name": "typanion",
+			"version": "3.5.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@rollup/plugin-typescript": "^8.2.1",
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"chai": "^4.3.4",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.5.0",
+			"dist": {
+				"shasum": "17004bbe65c1947efcb0295ae2291d8dfaf6245c",
+				"integrity": "sha512-WTwtzR0EXFidHrrzyWYyb+jeFLxOVLW1VMaKOqN/JekdqJs6UiFLGv0QjKV2dzn1ub3VI7duDJ/ZXHM8UX/3dw==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.5.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 81297
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.5.0_1632069293718_0.1986396816334164"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.6.0": {
+			"name": "typanion",
+			"version": "3.6.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@rollup/plugin-typescript": "^8.2.1",
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"chai": "^4.3.4",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.6.0",
+			"dist": {
+				"shasum": "eeb67e3f950d22868c8564a08c0008d7b7f72ddd",
+				"integrity": "sha512-jfrDoJAoZ0xoMxOraCYJQYFpuzgVun2BXaHcYuQCobj/0NcUvdTNGleb2fk6hzomi+3R9BFvdJirJPmjGNl+og==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.6.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 81995
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.6.0_1634470384723_0.525755407847492"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.6.1": {
+			"name": "typanion",
+			"version": "3.6.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@rollup/plugin-typescript": "^8.2.1",
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"chai": "^4.3.4",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.6.1",
+			"dist": {
+				"shasum": "be830683331b27500ef84ac1c6fc27c52b59259c",
+				"integrity": "sha512-TntL0aJAIdsGlxD3XUxfHQL+SwKMPbn9UA4qm7EWmhpxLoEpyONsnkiCpr9LVhAXaOHYqPAG2m/NuhVCci0ZPw==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.6.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 82372
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.6.1_1634475342773_0.16629481743680996"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.7.0": {
+			"name": "typanion",
+			"version": "3.7.0",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@rollup/plugin-typescript": "^8.2.1",
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"chai": "^4.3.4",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.7.0",
+			"dist": {
+				"shasum": "8e328065a7943e69c67ac56d90f37d8af02eec0c",
+				"integrity": "sha512-RV7UTpF6wa25Bc7o6DyeuEFkrCIt8zipzrOtBJsDsWH7BP/fAHZWlHxrBe9l5qg+Gs2tqhoahg79nsUBGTTWRQ==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.7.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 84229
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.7.0_1634479368672_0.495016713984173"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.7.1": {
+			"name": "typanion",
+			"version": "3.7.1",
+			"main": "lib/index",
+			"license": "MIT",
+			"sideEffects": false,
+			"repository": {
+				"url": "https://github.com/arcanis/typanion",
+				"type": "git"
+			},
+			"workspaces": [
+				"website"
+			],
+			"devDependencies": {
+				"@rollup/plugin-typescript": "^8.2.1",
+				"@types/chai": "^4.2.11",
+				"@types/mocha": "^7.0.2",
+				"chai": "^4.3.4",
+				"mocha": "^8.0.1",
+				"rollup": "^2.17.0",
+				"ts-node": "^8.10.2",
+				"tslib": "^2.0.0",
+				"typescript": "^4.1.2"
+			},
+			"scripts": {
+				"prepack": "rm -rf lib && rollup -c",
+				"postpack": "rm -rf lib",
+				"test": "yarn tsc && TS_NODE_TRANSPILE_ONLY=true mocha --require ts-node/register --extension ts tests/**/*.test.ts"
+			},
+			"publishConfig": {
+				"main": "lib/index"
+			},
+			"_id": "typanion@3.7.1",
+			"dist": {
+				"shasum": "5fceb57a2fa0c0a5beca25a7e90ac2a420863709",
+				"integrity": "sha512-g2QDI/ZLpuEor9EnJ1b7s9S2QSJgNCPBw9ZCSkQdqXNjg5ZQs4mASgW/elVifSxISFwBeMaIAmMBP5luAOIKAw==",
+				"tarball": "https://registry.npmjs.org/typanion/-/typanion-3.7.1.tgz",
+				"fileCount": 5,
+				"unpackedSize": 86569,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh2+lRCRA9TVsSAnZWagAARRwP/2MF9uNihQTUqILBTa5C\nsxKB4VLQXDRgNGAO4aP5gxAZEcd4/YCkcJ90ZMtyoCt8Q8UySyl140Br+hxf\nDGuAOtOu1KzEcew88CtGUuCYKLGiFLuXb7QzrCwjYtY54DtAtb70cPWqxRy8\nB8GVQZFqU9dtLf/dkrbh0f3T+AwtkNshHlTOeCq2vEWbmdQqH6CiHqRdZQZn\nKIr74LBqhD8GbJkcw65+2hhMsrHVOTDopiNmJf9hWcb0JeHcYPX0/edl3vcv\neYbAU1lBagsQxkaLHQqkh1//cuwdWHRsMM4V983563vCwAleFTxOE1H6HMcA\nEoFs8hNoPp1wfXfNtMSbZWWIQGpcaNpCvueliBEf947RWY1ekAkcj7/w9z6T\nu/WU6MXS9lDrk5qXBodnXK7Bbn4yTHaIFd7JuHvMDluC6/pW5TogP+EaS93w\nBL5WRx6NhtcbfArCiM+QzxMOCSyRv0FJgEQP023AMGkxuUKRQP3KioW8Ybli\nTrzVc105Okw7Fw/oka5PQvoEhxTb0bS0KXU7rz+22s9AG0QuCF/b93wkWKUq\nLG3WzZSzAapvofpiJs7RFDR64nixLgEh+CJBvKNo6abk9lW618HlreCE7JVU\n4p/Hv8alvH1tf6aaqztTDtt2nXD/CGKud1NQg7n3wCukMFQ03TJCZGhDyJQP\naD5Z\r\n=S0pl\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "arcanis",
+				"email": "nison.mael@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "arcanis",
+					"email": "nison.mael@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typanion_3.7.1_1634907429557_0.756673090684252"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2020-06-18T22:02:36.940Z",
+		"1.0.0": "2020-06-18T22:02:37.107Z",
+		"modified": "2022-01-10T08:07:47.577Z",
+		"1.0.1": "2020-06-18T22:25:49.499Z",
+		"2.0.0": "2020-06-22T19:34:05.227Z",
+		"2.0.1": "2020-06-22T20:26:24.989Z",
+		"2.0.2": "2020-06-23T19:20:18.093Z",
+		"2.1.0": "2020-06-30T12:39:26.175Z",
+		"2.1.1": "2020-07-07T21:05:15.271Z",
+		"2.2.0": "2020-10-06T21:09:45.898Z",
+		"3.0.0": "2020-11-20T19:00:14.282Z",
+		"3.0.1": "2020-11-20T19:12:49.368Z",
+		"3.1.0": "2020-11-20T23:59:33.918Z",
+		"3.2.0": "2021-01-13T11:17:16.975Z",
+		"3.2.1": "2021-01-14T10:23:52.514Z",
+		"3.3.0": "2021-02-02T10:40:34.789Z",
+		"3.3.1": "2021-04-28T08:34:45.816Z",
+		"3.3.2": "2021-07-08T12:18:04.341Z",
+		"3.4.0": "2021-09-14T13:41:01.287Z",
+		"3.4.1": "2021-09-14T14:02:17.850Z",
+		"3.5.0": "2021-09-19T16:34:53.961Z",
+		"3.6.0": "2021-10-17T11:33:04.905Z",
+		"3.6.1": "2021-10-17T12:55:42.900Z",
+		"3.7.0": "2021-10-17T14:02:48.829Z",
+		"3.7.1": "2021-10-22T12:57:09.924Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "3.7.1"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"8302b276e5e7229470252161b1524415\"",
+			"fetched": 1643351776040
+		}
+	},
+	"_distfiles": {
+		"typanion-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-1.0.0.tgz",
+			"sha": "03286cf9a3fd6b13a2dabd19b54cdbdacbdeefd5",
+			"registry": "npmjs"
+		},
+		"typanion-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-1.0.1.tgz",
+			"sha": "ae23c5a12534ff6fcff2a8a05285dd303f9063f2",
+			"registry": "npmjs"
+		},
+		"typanion-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-2.0.0.tgz",
+			"sha": "43101cceaebb6a29bbc9ce8edaa660a4760e3d0b",
+			"registry": "npmjs"
+		},
+		"typanion-2.0.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-2.0.1.tgz",
+			"sha": "2caf0cb73758c7b73266aeae7112cce917430074",
+			"registry": "npmjs"
+		},
+		"typanion-2.0.2.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-2.0.2.tgz",
+			"sha": "abe35c5f39d8dcea26631a03999721cd1d46c9c7",
+			"registry": "npmjs"
+		},
+		"typanion-2.1.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-2.1.0.tgz",
+			"sha": "fecce601ff576c1c4505f3ecd78511135704ef1c",
+			"registry": "npmjs"
+		},
+		"typanion-2.1.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-2.1.1.tgz",
+			"sha": "aed964731afdeeb8b15e03967161f2f3b039af0c",
+			"registry": "npmjs"
+		},
+		"typanion-2.2.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-2.2.0.tgz",
+			"sha": "f53067bc4e9075c84a7903f2dfb0a78a8e21cb63",
+			"registry": "npmjs"
+		},
+		"typanion-3.0.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.0.0.tgz",
+			"sha": "b79b572fbed9fce9e7e2ee7fe9db3bd60d472dc8",
+			"registry": "npmjs"
+		},
+		"typanion-3.0.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.0.1.tgz",
+			"sha": "99a25fea4c1fb3184bb17265e9a7fa14badba0ea",
+			"registry": "npmjs"
+		},
+		"typanion-3.1.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.1.0.tgz",
+			"sha": "da24f24206833148672f1bafa6134507fa15c378",
+			"registry": "npmjs"
+		},
+		"typanion-3.2.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.2.0.tgz",
+			"sha": "ba360d8b167a73c640f9450190009aefd430270a",
+			"registry": "npmjs"
+		},
+		"typanion-3.2.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.2.1.tgz",
+			"sha": "8b9511eb9535deae7fa8f913f699a3dbbd199217",
+			"registry": "npmjs"
+		},
+		"typanion-3.3.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.3.0.tgz",
+			"sha": "92d949d8fb90ba90a152b97909255e5420bfc81d",
+			"registry": "npmjs"
+		},
+		"typanion-3.3.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.3.1.tgz",
+			"sha": "d1ab4930d7b0d165d4356405891693b5648e3bf1",
+			"registry": "npmjs"
+		},
+		"typanion-3.3.2.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.3.2.tgz",
+			"sha": "c31f3b2afb6e8ae74dbd3f96d5b1d8f9745e483e",
+			"registry": "npmjs"
+		},
+		"typanion-3.4.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.4.0.tgz",
+			"sha": "dd1110aaee94cb07f41b35585cf980ad8aa142eb",
+			"registry": "npmjs"
+		},
+		"typanion-3.4.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.4.1.tgz",
+			"sha": "d14b9cf056a592f59083a9ecff3a3ddd3855e706",
+			"registry": "npmjs"
+		},
+		"typanion-3.5.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.5.0.tgz",
+			"sha": "17004bbe65c1947efcb0295ae2291d8dfaf6245c",
+			"registry": "npmjs"
+		},
+		"typanion-3.6.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.6.0.tgz",
+			"sha": "eeb67e3f950d22868c8564a08c0008d7b7f72ddd",
+			"registry": "npmjs"
+		},
+		"typanion-3.6.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.6.1.tgz",
+			"sha": "be830683331b27500ef84ac1c6fc27c52b59259c",
+			"registry": "npmjs"
+		},
+		"typanion-3.7.0.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.7.0.tgz",
+			"sha": "8e328065a7943e69c67ac56d90f37d8af02eec0c",
+			"registry": "npmjs"
+		},
+		"typanion-3.7.1.tgz": {
+			"url": "https://registry.npmjs.org/typanion/-/typanion-3.7.1.tgz",
+			"sha": "5fceb57a2fa0c0a5beca25a7e90ac2a420863709",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-dcc8e2e2f6ad46b0",
+	"_id": "typanion",
+	"readme": ""
+}

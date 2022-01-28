@@ -1,0 +1,97 @@
+{
+	"name": "process-warning",
+	"versions": {
+		"1.0.0": {
+			"name": "process-warning",
+			"version": "1.0.0",
+			"description": "A small utility for creating warnings and emitting them.",
+			"main": "index.js",
+			"types": "index.d.ts",
+			"scripts": {
+				"test": "standard && ava -v test.js && jest jest.test.js && tsd"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/fastify/processs-warning.git"
+			},
+			"keywords": [
+				"fastify",
+				"error",
+				"warning",
+				"utility",
+				"plugin",
+				"emit",
+				"once"
+			],
+			"author": {
+				"name": "Tomas Della Vedova"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/fastify/fastify-warning/issues"
+			},
+			"homepage": "https://github.com/fastify/fastify-warning#readme",
+			"devDependencies": {
+				"ava": "^3.10.1",
+				"jest": "^27.0.1",
+				"standard": "^16.0.3",
+				"tsd": "^0.19.0"
+			},
+			"gitHead": "57eb5f271f7f1b5c05743fdfbffe96ae40458caf",
+			"_id": "process-warning@1.0.0",
+			"_nodeVersion": "12.21.0",
+			"_npmVersion": "6.14.11",
+			"_npmUser": {
+				"name": "matteo.collina",
+				"email": "hello@matteocollina.com"
+			},
+			"dist": {
+				"integrity": "sha512-du4wfLyj4yCZq1VupnVSZmRsPJsNuxoDQFdCFHLaYiEbFBD7QE0a+I4D7hOxrVnh78QE/YipFAj9lXHiXocV+Q==",
+				"shasum": "980a0b25dc38cd6034181be4b7726d89066b4616",
+				"tarball": "https://registry.npmjs.org/process-warning/-/process-warning-1.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 12051,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhyxhrCRA9TVsSAnZWagAA6B8P/3SkNUlmxamzKqcorbDZ\nbNemaP0vCXjZ05GJAs67Q8o0JSTrju54MkejdZA3RqGPqZgr0CoLCx9BYanF\n/x+erR6KKkGi1qoSNpgYrumyWEKZuby2pMRYb5YlLCQZyNnEfRGD/DvLARhG\nefn5xyFhVoNKq9bs+0v9JZIavbiFgDuvUztiJe5tT50mfvNesc8LDVWzuYwy\n/kws/10C8kvDwDpyBbFR40kgRQtZBVAUSJRNOflNsUnCgM7woG1LXM4njARg\nEbMwRizjBA9wRPvvku2CRSomeGsEVByiskJUMRf/tQFhUgTwqzMhAT8JWf6x\ngLpUuWxbzcpP0alRFR4Kld6PIAdRUlnYyYz5bkDWxiEFucXxLac/g4M1qrup\n+o5OEvDCTwqk1mpepuVpgzp0nmE5QC00JPbr+4Ua7U9XeljeVTUVnEz1xzcG\nsdeYmLjFnIvES3HUVZ6kEt7d2fGsCzmlGhpqhU2chxTtqZnWOXz5Ku7CWKXF\nAE1EfIP1YO4FjZct/M8btf/OtPnBRKnGub+ZlcQ8knPdmOqZmlqDWqHHKqxI\nflHRJSMy+DhwtyF4vnqRflsSMFaQf/2H8cxK3WBjpUQbj0rsQPVT1l+Rj2Om\n8lu3YF4aSss0h8xfUV3aTkyvQK/F1iU7t31bD56SG4USqfcIvxk7oEczqTNg\naCzy\r\n=yhw4\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "matteo.collina",
+					"email": "hello@matteocollina.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/process-warning_1.0.0_1640700011252_0.06338313721771249"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2021-12-28T14:00:11.251Z",
+		"1.0.0": "2021-12-28T14:00:11.396Z",
+		"modified": "2021-12-28T14:00:13.265Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"af6783c6cfc834b3cd0fbe022ddb1dfa\"",
+			"fetched": 1643351791907
+		}
+	},
+	"_distfiles": {
+		"process-warning-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/process-warning/-/process-warning-1.0.0.tgz",
+			"sha": "980a0b25dc38cd6034181be4b7726d89066b4616",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-fb99ac2eef16b42c",
+	"_id": "process-warning",
+	"readme": "# process-warning\n\n![CI](https://github.com/fastify/process-warning/workflows/CI/badge.svg)\n[![NPM version](https://img.shields.io/npm/v/process-warning.svg?style=flat)](https://www.npmjs.com/package/process-warning)\n[![Known Vulnerabilities](https://snyk.io/test/github/fastify/process-warning/badge.svg)](https://snyk.io/test/github/fastify/process-warning)\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)\n\nA small utility for generating consistent warning objects across your codebase.\nIt also exposes a utility for emitting those warnings, guaranteeing that they are issued only once.\n\nThis module is used by the [Fastify](https://fastify.io) framework and it was called `fastify-warning` prior to version 1.0.0.\n\n### Install\n\n```\nnpm i process-warning\n```\n\n### Usage\n\nThe module exports a builder function that returns a utility for creating warnings and emitting them.\n\n```js\nconst warning = require('process-warning')()\n```\n\n#### Methods\n\n```\nwarning.create(name, code, message)\n```\n\n- `name` (`string`, required) - The error name, you can access it later with `error.name`. For consistency, we recommend prefixing module error names with `{YourModule}Warning`\n- `code` (`string`, required) - The warning code, you can access it later with `error.code`. For consistency, we recommend prefixing plugin error codes with `{ThreeLetterModuleName}_`, e.g. `FST_`. NOTE: codes should be all uppercase.\n- `message` (`string`, required) - The warning message. You can also use interpolated strings for formatting the message.\n\nThe utility also contains an `emit` function that you can use for emitting the warnings you have previously created by passing their respective code. A warning is guaranteed to be emitted only once.\n\n```\nwarning.emit(code [, a [, b [, c]]])\n```\n\n- `code` (`string`, required) - The warning code you intend to emit.\n- `[, a [, b [, c]]]` (`any`, optional) - Parameters for string interpolation.\n\n```js\nconst warning = require('process-warning')()\nwarning.create('FastifyWarning', 'FST_ERROR_CODE', 'message')\nwarning.emit('FST_ERROR_CODE')\n```\n\nHow to use an interpolated string:\n```js\nconst warning = require('process-warning')()\nwarning.create('FastifyWarning', 'FST_ERROR_CODE', 'Hello %s')\nwarning.emit('FST_ERROR_CODE', 'world')\n```\n\nThe module also exports an `warning.emitted` [Map](https://developer.mozilla.org/it/docs/Web/JavaScript/Reference/Global_Objects/Map), which contains all the warnings already emitted. Useful for testing.\n```js\nconst warning = require('process-warning')()\nwarning.create('FastifyWarning', 'FST_ERROR_CODE', 'Hello %s')\nconsole.log(warning.emitted.get('FST_ERROR_CODE')) // false\nwarning.emit('FST_ERROR_CODE', 'world')\nconsole.log(warning.emitted.get('FST_ERROR_CODE')) // true\n```\n\n## License\n\nLicensed under [MIT](./LICENSE)."
+}

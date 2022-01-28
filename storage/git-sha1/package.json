@@ -1,0 +1,178 @@
+{
+	"name": "git-sha1",
+	"versions": {
+		"0.1.0": {
+			"name": "git-sha1",
+			"version": "0.1.0",
+			"description": "A pure JS SHA1 implementation created for js-git.",
+			"main": "sha1.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/creationix/git-sha1.git"
+			},
+			"keywords": [
+				"js-git",
+				"sha1"
+			],
+			"author": {
+				"name": "Tim Caswell",
+				"email": "tim@creationix.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/creationix/git-sha1/issues"
+			},
+			"_id": "git-sha1@0.1.0",
+			"dist": {
+				"shasum": "df76837e2b1aba02b54f66a19272b3779672f8cd",
+				"tarball": "https://registry.npmjs.org/git-sha1/-/git-sha1-0.1.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.11",
+			"_npmUser": {
+				"name": "creationix",
+				"email": "tim@creationix.com"
+			},
+			"maintainers": [
+				{
+					"name": "creationix",
+					"email": "tim@creationix.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "git-sha1",
+			"version": "0.1.1",
+			"description": "A pure JS SHA1 implementation created for js-git.",
+			"main": "git-sha1.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/creationix/git-sha1.git"
+			},
+			"keywords": [
+				"js-git",
+				"sha1"
+			],
+			"author": {
+				"name": "Tim Caswell",
+				"email": "tim@creationix.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/creationix/git-sha1/issues"
+			},
+			"homepage": "https://github.com/creationix/git-sha1",
+			"_id": "git-sha1@0.1.1",
+			"dist": {
+				"shasum": "8b97f73234bb3f50815f6a80839dc5bae5c57171",
+				"tarball": "https://registry.npmjs.org/git-sha1/-/git-sha1-0.1.1.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.4.3",
+			"_npmUser": {
+				"name": "creationix",
+				"email": "tim@creationix.com"
+			},
+			"maintainers": [
+				{
+					"name": "creationix",
+					"email": "tim@creationix.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "git-sha1",
+			"version": "0.1.2",
+			"description": "A pure JS SHA1 implementation created for js-git.",
+			"main": "git-sha1.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/creationix/git-sha1.git"
+			},
+			"keywords": [
+				"js-git",
+				"sha1"
+			],
+			"author": {
+				"name": "Tim Caswell",
+				"email": "tim@creationix.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/creationix/git-sha1/issues"
+			},
+			"homepage": "https://github.com/creationix/git-sha1",
+			"_id": "git-sha1@0.1.2",
+			"_shasum": "599ac192b71875825e13a445f3a6e05118c2f745",
+			"_from": ".",
+			"_npmVersion": "1.4.9",
+			"_npmUser": {
+				"name": "creationix",
+				"email": "tim@creationix.com"
+			},
+			"maintainers": [
+				{
+					"name": "creationix",
+					"email": "tim@creationix.com"
+				}
+			],
+			"dist": {
+				"shasum": "599ac192b71875825e13a445f3a6e05118c2f745",
+				"tarball": "https://registry.npmjs.org/git-sha1/-/git-sha1-0.1.2.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2014-07-25T21:31:32.259Z",
+		"created": "2013-10-04T07:26:15.810Z",
+		"0.1.0": "2013-10-04T07:26:17.810Z",
+		"0.1.1": "2014-04-09T18:16:47.769Z",
+		"0.1.2": "2014-07-25T21:31:32.259Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.1.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"30a4990cfbfc4a995541cd79297919e0\"",
+			"fetched": 1643351818293
+		}
+	},
+	"_distfiles": {
+		"git-sha1-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/git-sha1/-/git-sha1-0.1.0.tgz",
+			"sha": "df76837e2b1aba02b54f66a19272b3779672f8cd",
+			"registry": "npmjs"
+		},
+		"git-sha1-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/git-sha1/-/git-sha1-0.1.1.tgz",
+			"sha": "8b97f73234bb3f50815f6a80839dc5bae5c57171",
+			"registry": "npmjs"
+		},
+		"git-sha1-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/git-sha1/-/git-sha1-0.1.2.tgz",
+			"sha": "599ac192b71875825e13a445f3a6e05118c2f745",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-1b22e1b59fcaf82c",
+	"_id": "git-sha1",
+	"readme": "git-sha1\n========\n\nA pure js SHA1 implementation created for js-git."
+}

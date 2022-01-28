@@ -1,0 +1,1255 @@
+{
+	"name": "steno",
+	"versions": {
+		"0.1.0": {
+			"name": "steno",
+			"version": "0.1.0",
+			"description": "File writer",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"synchronous",
+				"stenograph"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"tape": "^3.0.1"
+			},
+			"gitHead": "0a6ea6dea44ce3b3a8570bb1cf0078a24a75e7d3",
+			"_id": "steno@0.1.0",
+			"_shasum": "bf37ff6379712087de01741b493b71de818b3747",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "bf37ff6379712087de01741b493b71de818b3747",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.1.0.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "steno",
+			"version": "0.1.1",
+			"description": "File writer",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"synchronous",
+				"stenograph"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"husky": "^0.6.1",
+				"tape": "^3.0.1"
+			},
+			"gitHead": "755159dc6dcd8af17dc0e9d06de50484ff3be025",
+			"_id": "steno@0.1.1",
+			"_shasum": "2b1004f5af9e6aa8b71396b04efc3aabace69690",
+			"_from": ".",
+			"_npmVersion": "2.1.4",
+			"_nodeVersion": "0.10.32",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "2b1004f5af9e6aa8b71396b04efc3aabace69690",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.1.1.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "steno",
+			"version": "0.1.2",
+			"description": "File writer",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"synchronous",
+				"stenograph"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"husky": "^0.6.1",
+				"tape": "^3.0.1"
+			},
+			"gitHead": "cb4eb2f962071ee3e85f2c0b51f9bc6b0c036f3b",
+			"_id": "steno@0.1.2",
+			"_shasum": "5675402311dad9d9ff60138f2d237f5dcb70668b",
+			"_from": ".",
+			"_npmVersion": "2.1.4",
+			"_nodeVersion": "0.10.32",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "5675402311dad9d9ff60138f2d237f5dcb70668b",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.1.2.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "steno",
+			"version": "0.2.0",
+			"description": "File writer",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"synchronous",
+				"stenograph"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"husky": "^0.6.1",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"gitHead": "b3e4ca3c6414f38a00eda012fe1ec2516077d0b6",
+			"_id": "steno@0.2.0",
+			"_shasum": "9188ab75d96012db191b93a05cfa25b82ccb13ce",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "9188ab75d96012db191b93a05cfa25b82ccb13ce",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.2.0.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.2.1": {
+			"name": "steno",
+			"version": "0.2.1",
+			"description": "File writer",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"synchronous",
+				"stenograph"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"husky": "^0.6.1",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"gitHead": "7892c1561d87966823b625f8b9b6b71602d97ece",
+			"_id": "steno@0.2.1",
+			"_shasum": "2669073babbe8bcfd6ee7c5e5e942fbfaf39b9d7",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "2669073babbe8bcfd6ee7c5e5e942fbfaf39b9d7",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.2.1.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.3.0": {
+			"name": "steno",
+			"version": "0.3.0",
+			"description": "Fast non-blocking file writer for Node",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"synchronous",
+				"race",
+				"condition",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"husky": "^0.6.2",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"gitHead": "dc7834b8f5ab9538cfe97e86dea6b361a6dcbc50",
+			"_id": "steno@0.3.0",
+			"_shasum": "f00d0ad24e679f09895adb189b1737a4beefbbc8",
+			"_from": ".",
+			"_npmVersion": "2.1.8",
+			"_nodeVersion": "0.10.33",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "f00d0ad24e679f09895adb189b1737a4beefbbc8",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.3.0.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.3.1": {
+			"name": "steno",
+			"version": "0.3.1",
+			"description": "Fast non-blocking file writer for Node",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"synchronous",
+				"race",
+				"condition",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"husky": "^0.6.2",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"gitHead": "807a8403ab6d0f362fe742797c97d4ddfa1d199d",
+			"_id": "steno@0.3.1",
+			"_shasum": "8856790946baa45ee2bbc6d366bce55adc858694",
+			"_from": ".",
+			"_npmVersion": "2.1.8",
+			"_nodeVersion": "0.10.33",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "8856790946baa45ee2bbc6d366bce55adc858694",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.3.1.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.3.2": {
+			"name": "steno",
+			"version": "0.3.2",
+			"description": "Fast non-blocking file writer for Node",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"synchronous",
+				"race",
+				"condition",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"husky": "^0.6.2",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"gitHead": "f49180bc1354061af4ea9eeb28be77ad749fbaf3",
+			"_id": "steno@0.3.2",
+			"_shasum": "ab1e7f547ac7f78aeecb8b6d74c25c5b292df99e",
+			"_from": ".",
+			"_npmVersion": "2.1.8",
+			"_nodeVersion": "0.10.33",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "ab1e7f547ac7f78aeecb8b6d74c25c5b292df99e",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.3.2.tgz"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.4.0": {
+			"name": "steno",
+			"version": "0.4.0",
+			"description": "Simple file writer with race condition prevention and atomic writing",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"after": "^0.8.1",
+				"husky": "^0.6.2",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"dependencies": {
+				"graceful-fs": "^3.0.8"
+			},
+			"gitHead": "158b39da76b0001c4e2b3084cad796b69c72fbdb",
+			"_id": "steno@0.4.0",
+			"_shasum": "2e4631a0d95ee527f780abb15ea39857faf90fa6",
+			"_from": ".",
+			"_npmVersion": "2.10.1",
+			"_nodeVersion": "0.12.4",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"dist": {
+				"shasum": "2e4631a0d95ee527f780abb15ea39857faf90fa6",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.4.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.4.1": {
+			"name": "steno",
+			"version": "0.4.1",
+			"description": "Simple file writer with race condition prevention and atomic writing",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"after": "^0.8.1",
+				"husky": "^0.6.2",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"dependencies": {
+				"graceful-fs": "^3.0.8"
+			},
+			"gitHead": "0a4959b071d8f5dd04c88f7666c9086a736246a0",
+			"_id": "steno@0.4.1",
+			"_shasum": "32ad7c13f34aa20e59408fa1e5312edb0a94ccbd",
+			"_from": ".",
+			"_npmVersion": "2.10.1",
+			"_nodeVersion": "0.12.4",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"dist": {
+				"shasum": "32ad7c13f34aa20e59408fa1e5312edb0a94ccbd",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.4.1.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.4.2": {
+			"name": "steno",
+			"version": "0.4.2",
+			"description": "Simple file writer with race condition prevention and atomic writing",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"after": "^0.8.1",
+				"husky": "^0.6.2",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"dependencies": {
+				"graceful-fs": "^3.0.8"
+			},
+			"gitHead": "01750f492ae3c979123efc31dfd1730e4ebfda56",
+			"_id": "steno@0.4.2",
+			"_shasum": "de79ec3d8d260cf1579730a21bff28bad4230a7d",
+			"_from": ".",
+			"_npmVersion": "2.11.2",
+			"_nodeVersion": "0.12.5",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"dist": {
+				"shasum": "de79ec3d8d260cf1579730a21bff28bad4230a7d",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.4.2.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.4.3": {
+			"name": "steno",
+			"version": "0.4.3",
+			"description": "Simple file writer with race condition prevention and atomic writing",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"after": "^0.8.1",
+				"husky": "^0.6.2",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"dependencies": {
+				"graceful-fs": "^4.1.3"
+			},
+			"gitHead": "f1d9eb3abde6bd74f1ad81503a7e8be40f131f0c",
+			"_id": "steno@0.4.3",
+			"_shasum": "796dcd08ab771b6d6a075f75e68ab77d3307180c",
+			"_from": ".",
+			"_npmVersion": "3.3.12",
+			"_nodeVersion": "5.5.0",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"dist": {
+				"shasum": "796dcd08ab771b6d6a075f75e68ab77d3307180c",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.4.3.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-9-west.internal.npmjs.com",
+				"tmp": "tmp/steno-0.4.3.tgz_1455399025673_0.2780794557183981"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.4.4": {
+			"name": "steno",
+			"version": "0.4.4",
+			"description": "Simple file writer with race condition prevention and atomic writing",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot && standard",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"fs",
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"after": "^0.8.1",
+				"husky": "^0.11.1",
+				"standard": "^6.0.7",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"dependencies": {
+				"graceful-fs": "^4.1.3"
+			},
+			"gitHead": "06e4e11e98dc3550d855e7731f80aacc2cbbd2c3",
+			"_id": "steno@0.4.4",
+			"_shasum": "071105bdfc286e6615c0403c27e9d7b5dcb855cb",
+			"_from": ".",
+			"_npmVersion": "3.6.0",
+			"_nodeVersion": "5.7.0",
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"dist": {
+				"shasum": "071105bdfc286e6615c0403c27e9d7b5dcb855cb",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.4.4.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/steno-0.4.4.tgz_1457525446258_0.39970230776816607"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.5.0": {
+			"name": "steno",
+			"version": "0.5.0",
+			"description": "Simple file writer with race condition prevention and atomic writing",
+			"main": "index.js",
+			"scripts": {
+				"test": "node test | tap-dot && standard",
+				"prepush": "npm test"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"fs",
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"author": {
+				"name": "typicode"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"after": "^0.8.1",
+				"husky": "^0.11.1",
+				"standard": "^6.0.7",
+				"tap-dot": "^0.2.3",
+				"tape": "^3.0.1"
+			},
+			"dependencies": {
+				"graceful-fs": "^4.1.3"
+			},
+			"gitHead": "9ff61b06f56a6a6959e3b52da82f9192b53f2850",
+			"_id": "steno@0.5.0",
+			"_nodeVersion": "13.9.0",
+			"_npmVersion": "6.13.7",
+			"dist": {
+				"integrity": "sha512-mWvMbYCGns7Fvj0ACjw8L4ZL+sDQSh2nMplMUt2fnHYVVPPaWSDAMLjv6IuMpjLwUhUWPpfzSNLpu+5ACkUyWA==",
+				"shasum": "d39fa388c7e7579e3f157495ec65c98cbbf70ae5",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-0.5.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 5915,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJecrTbCRA9TVsSAnZWagAAjOMP/2ElgPB6a5kl/YctUe0w\nHplbLHO1KbyMehtZO4q1Cf6YbjMDPdTTGD8SfP89LLBW++P3ic+PRlEO4wst\nGt77uISd0owFqKejvk29P0F8USSWKUeZxFN/wXxPDcktAE6PlwXDTS/VaQ6b\ntVzfUFYqiuIdVn3COytx1AFHfkW0OZMlI99gEwohLeYggN8rIIXSjuFFB5x7\nOCFQaKzqbTYZI2Xbh+IMXla7yHlQrecW2xbHieh65soA7gLRODruEBJzKSib\nkXcb+bz36OV3KzViXC7O/wpQLzH8oWgdS35aLTVTwgOA4ArvqnltkAb/ZYOT\nFi139DFxquil6TkesFxAHVmhXwOukg2fyPPmKe53IQa7Zr7vY+wLTRLhq26j\ngA3uzirfotuZJHTKjeVLF1XBqaSH0iKTvvb2wat8HMTsbSAn5Y8A9ItyN6MA\n504R+W0I0GnlrtbZGDt+tUIrQFC3wqvODNrwtMD3INuLJDOOdJqlTxRRQNpY\nm14G5S0Pc2aY/wBdSrq1Do047ocQqI0AEG15A8yYQo2ZKeUGyRVA6EeSlizN\njfkw4kdVIVeztQ+xyct7jjT8C6O3a4qI85M0e1b8IdqtZnyk+MHzo1RrDq3c\n1ABfMFhr22R4v/2cusjxicQnWKuq7ZzBBCl+G/iUwRx0fuEd/Dz765APKpSF\n3U9l\r\n=D9YV\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/steno_0.5.0_1584575707078_0.1898649231977867"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.0.0": {
+			"name": "steno",
+			"version": "1.0.0",
+			"description": "Fast file writer with race condition prevention and atomic writing",
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"scripts": {
+				"test": "jest",
+				"build": "del-cli lib && tsc",
+				"prepare": "husky install",
+				"prepublishOnly": "npm run build",
+				"postversion": "git push && git push --tags && npm publish",
+				"benchmark": "ts-node src/benchmark.ts"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"fs",
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"fast",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"author": {
+				"name": "Typicode",
+				"email": "typicode@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"@commitlint/cli": "^12.0.1",
+				"@commitlint/config-conventional": "^12.0.1",
+				"@commitlint/prompt-cli": "^12.0.1",
+				"@tsconfig/node10": "^1.0.7",
+				"@types/jest": "^26.0.20",
+				"@types/node": "^14.14.31",
+				"@typicode/eslint-config": "^0.1.0",
+				"del-cli": "^3.0.1",
+				"husky": "^5.1.3",
+				"jest": "^26.6.3",
+				"prettier": "^2.2.1",
+				"ts-jest": "^26.5.3",
+				"ts-node": "^9.1.1",
+				"typescript": "^4.2.2"
+			},
+			"eslintConfig": {
+				"extends": "@typicode",
+				"parserOptions": {
+					"project": [
+						"./tsconfig.lint.json"
+					]
+				}
+			},
+			"gitHead": "7492ae7b3d8fa71dddbbb6b73324ed450aaca340",
+			"_id": "steno@1.0.0",
+			"_nodeVersion": "15.10.0",
+			"_npmVersion": "7.6.1",
+			"dist": {
+				"integrity": "sha512-C/KgCvEa1yWnpHmaPjAXrz1yWxh6hs+HvhqqPa71euaQmNi1wr4+WFo57VQxjKKuFl2KqS7gtlrN0oxj2noQLw==",
+				"shasum": "475e32c6066ec9760229eaaf1550601764fbecba",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-1.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 6041,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgSogtCRA9TVsSAnZWagAAf10P/jDqJlLre+rvFcFRcLmT\nWjj07i/QE+gQ78t9Pj0LgiV+7gs2UN1zfNbF88PjkJ9KUUwlsZ8NneKrjuF6\n8snQXkgz6+uf+egF7MdNiGnCplZHoINNmENaI7TiRE9DG82K8UsxX37zLWRE\n9J5bO9mTmjwvonVTlJwBF0FXCAqs8hsSkXgoJemk8Dgu2Ev7ie+NQ7EgJwHN\nla91y3U2yhK79/DjbzFw8rY2criwLsTwGKoBDeLJGcLY01gw0hPtcbyEyOJj\nElNUidotV85GGfH7+Y/A1z4hSGpk/V+zgOLmxeNhahP+MqLZuPCtgtY9Yy8x\ngBgtR87sp9VV/+KCF/YDrOofppEwhNGxTJkLGC1Xn8Nb4jr/0BReEY55qOPC\ns8gmMGzuIPgkf5epr9ZmR1EH2yIJpW7sg2BQpczhPvQwcqRGYpPKh2JbJwKW\nGdIim4ltmTZB+mqJZmrKd94vzz0DEo1oIPpACDPXj73ZHU0m/ZPA/wy0+qxU\npdgmk4yL8bOmsoW5sDjVIWBNztcKc9Udl4cjpCSUeNz1FDybt4ixwxQbrq1s\nF/IIGpFhM0L2TT8v20CxS9vIWB0BFDESVDS6li1uVnBh81qxGiT+EJGdJdsq\nI/ywc2dymD8eagaqjPNT4S5eNp2jTvS/3zoDK+N4pgwvY/FJRjont4s0YP56\n3MLn\r\n=iw4I\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/steno_1.0.0_1615497260867_0.264489432178721"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "steno",
+			"version": "2.0.0",
+			"description": "Specialized fast async file writer",
+			"type": "module",
+			"exports": "./lib/index.js",
+			"types": "lib/index.d.ts",
+			"scripts": {
+				"test": "npm run build && xv 'lib/**/*.test.js'",
+				"build": "del-cli lib && tsc",
+				"lint": "eslint src --ext .ts --ignore-path .gitignore",
+				"prepare": "husky install",
+				"prepublishOnly": "npm run build",
+				"postversion": "git push && git push --tags && npm publish",
+				"benchmark": "npm run build && node lib/benchmark.js",
+				"commit": "commit"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"keywords": [
+				"fs",
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"fast",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"author": {
+				"name": "Typicode",
+				"email": "typicode@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"homepage": "https://github.com/typicode/steno",
+			"devDependencies": {
+				"@commitlint/cli": "^12.0.1",
+				"@commitlint/config-conventional": "^12.0.1",
+				"@commitlint/prompt-cli": "^12.0.1",
+				"@sindresorhus/tsconfig": "^1.0.2",
+				"@types/node": "^15.6.1",
+				"@typicode/eslint-config": "^0.1.0",
+				"del-cli": "^3.0.1",
+				"husky": "^6.0.0",
+				"typescript": "^4.2.2",
+				"xv": "^0.1.0"
+			},
+			"engines": {
+				"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+			},
+			"gitHead": "92e06b04b6efdc079b66326fa0de32abc143695a",
+			"_id": "steno@2.0.0",
+			"_nodeVersion": "16.2.0",
+			"_npmVersion": "7.15.0",
+			"dist": {
+				"integrity": "sha512-GhVTL9HHZk2R+ApyU/rDFbSZRoXjyaGYWkt0Esxz6+Ocwbn7Etbz6SzlvX5tanuYIRyQ2q8E3+GMuAfih772Fw==",
+				"shasum": "1dff26d139f7771012c068693afdca4cd00f5ebd",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-2.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 7342,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgvEQfCRA9TVsSAnZWagAA+TEQAJMmeRwl23qfxEmqh11w\nWBvjnCfUIeXXGY/mAuiPrPH3ScbUcJ4l6ERfCIwZAtjzAHYQCAmgIaHZVvV1\nzgfnoAeTh2MZPgefHSaqUnr5Rcbyh7U8yqsEWE88O3Y94p8wRXdO5f66NpXE\nV0JxqZX3l9kVRp6c5UX4mBE0+n4oszTPvMQ0zukg31HOE1DW51QiYtoErDal\nxEq13xFocznMAqYG7tz1YFTYFNhk+Z1GkT5KbXXN5y+K2xlbq6Na8u6SvSyu\nqCNLArmLKhTeiiPJ7KMwJ10tOYnsCnoQq6rLqkMYUo0DElC3FLjeia+y1t3M\n3UQmVBzQiuj2GddWmz4AOEzEpuSPsxCXrlGfeAc9CoPMmDKoF4zcTv0oSKs+\n3fpLSl1d2Z0pEykoYiCIpD8/sMG4e2+8R3z6mgGBOtfmJj0qlMLX1Tee2A8d\nO4H56bGx36qho8eCjOZoxKEPHZfPVEJwtllYKYCiasM+RSrHJ+1K51bTyEvN\nKfXKJgGIxWQs9m3A/1qoFXK7qQV4ldkRziO5NPXjtT36iBF5B9LLFfC+ptED\nz90RC7Ce3tD2ekzmCr4lYrC/nor2Qe9F4khLm+GsFRkbZUPVwBxfjMvUSl6U\nVfqw1ilfI/a102HReGGTaLCFpWJczV6g5RndIXJoU6kUI8cnmzpxdkNq+Y21\nad8J\r\n=n0Km\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/steno_2.0.0_1622950943665_0.9261681450664279"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.0": {
+			"name": "steno",
+			"version": "2.1.0",
+			"description": "Specialized fast async file writer",
+			"keywords": [
+				"fs",
+				"file",
+				"write",
+				"writer",
+				"asynchronous",
+				"fast",
+				"race",
+				"condition",
+				"atomic",
+				"writing",
+				"safe"
+			],
+			"homepage": "https://github.com/typicode/steno",
+			"bugs": {
+				"url": "https://github.com/typicode/steno/issues"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/typicode/steno.git"
+			},
+			"funding": "https://github.com/sponsors/typicode",
+			"license": "MIT",
+			"author": {
+				"name": "Typicode",
+				"email": "typicode@gmail.com"
+			},
+			"type": "module",
+			"exports": "./lib/index.js",
+			"types": "lib/index.d.ts",
+			"scripts": {
+				"test": "npm run build && xv lib",
+				"build": "del-cli lib && tsc",
+				"lint": "eslint src --ext .ts --ignore-path .gitignore",
+				"prepare": "husky install",
+				"prepublishOnly": "npm run build",
+				"postversion": "git push && git push --tags && npm publish",
+				"benchmark": "npm run build && node lib/benchmark.js",
+				"commit": "commit"
+			},
+			"devDependencies": {
+				"@commitlint/cli": "^13.1.0",
+				"@commitlint/config-conventional": "^13.1.0",
+				"@commitlint/prompt-cli": "^13.1.0",
+				"@sindresorhus/tsconfig": "^1.0.2",
+				"@types/node": "^16.6.1",
+				"@typicode/eslint-config": "^0.1.2",
+				"del-cli": "^4.0.1",
+				"husky": "^7.0.1",
+				"typescript": "^4.3.5",
+				"xv": "^0.2.3"
+			},
+			"engines": {
+				"node": "^14.13.1 || >=16.0.0"
+			},
+			"gitHead": "019bf507435ff7d31a262d3a36418686dfdef4cf",
+			"_id": "steno@2.1.0",
+			"_nodeVersion": "16.5.0",
+			"_npmVersion": "7.20.5",
+			"dist": {
+				"integrity": "sha512-mauOsiaqTNGFkWqIfwcm3y/fq+qKKaIWf1vf3ocOuTdco9XoHCO2AGF1gFYXuZFSWuP38Q8LBHBGJv2KnJSXyA==",
+				"shasum": "05a9c378ce42ed04f642cda6fcb41787a10e4e33",
+				"tarball": "https://registry.npmjs.org/steno/-/steno-2.1.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 8682,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhHCiwCRA9TVsSAnZWagAAn7YP/0yoTyNlSheb7ndDl+/M\nEDz5bFhhX0vqlTRBvEgzl6AT+mqgb1YLoeS/z4s06av6xhd0HkK0aZwwLkh7\nBiosgaF+qDdPTJEYtpQ88N4jyd/5T0S63jmK3D9l/MffU2fNk2dPw71/wFzw\n08SEZaFLz1ULo2gtLgmv/dHNkfy5czmkctLlfLMVnx2IYdlXQ8oTTA9PaAbC\nXHEmoUFZ2Ba6VKcbJjIqoI5WrS7IQMNC07CFmuvS9eHBY/fQc0VlTtZmtcCD\nAPKD39dtYE2GOKbk/vEGdWcEVTyJs8Z0Mwl/lxmGr5C2F+0QZRjqTcFYriuB\n3oZwlCRbE+JGHxbsi99Ya35G3W1llK03m59YyJn5QE4RGM+YZnBSJnmMX6c9\n23s2E1uwAjkGv2DJ0Zute+636YUy/ixlzsB58OW3CkN8g8Q/qoxrcBNFrTAz\nm7mBnTjPfYTYOQ2gwXG3QKdc33oqYwaObGkl7T3mL7TnmrtV5PaU0CNZJ8+o\nfJidRIWp0hpK8EV3tGE7ouJrguVsAgzWkYsFCXYfrj3q7RiTJdAuVGYYQELl\nOA2zygph6t1O18ZMn8Av8A20YE9+zaLfhjCUmsSoV74l8fUDb2uBo8zHYOBv\ni99MFircCQC/6pjTJaaTBWRt2D4+M9Yf8E7CwUqKHxHfsZi3fgNmx/vTKt6D\n6FdE\r\n=sTqc\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"_npmUser": {
+				"name": "typicode",
+				"email": "typicode@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "typicode",
+					"email": "typicode@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/steno_2.1.0_1629235376578_0.8286608165344509"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2021-08-17T21:22:58.540Z",
+		"created": "2014-10-21T22:15:06.688Z",
+		"0.1.0": "2014-10-21T22:15:06.688Z",
+		"0.1.1": "2014-10-23T19:20:48.261Z",
+		"0.1.2": "2014-10-23T21:18:38.010Z",
+		"0.2.0": "2014-11-06T06:41:04.855Z",
+		"0.2.1": "2014-11-06T13:30:56.589Z",
+		"0.3.0": "2014-11-27T09:27:26.184Z",
+		"0.3.1": "2014-11-28T05:51:21.783Z",
+		"0.3.2": "2014-12-08T22:36:41.615Z",
+		"0.4.0": "2015-06-02T18:42:15.650Z",
+		"0.4.1": "2015-06-02T19:01:48.222Z",
+		"0.4.2": "2015-06-25T12:06:00.827Z",
+		"0.4.3": "2016-02-13T21:30:29.265Z",
+		"0.4.4": "2016-03-09T12:10:50.243Z",
+		"0.5.0": "2020-03-18T23:55:07.224Z",
+		"1.0.0": "2021-03-11T21:14:20.969Z",
+		"2.0.0": "2021-06-06T03:42:23.870Z",
+		"2.1.0": "2021-08-17T21:22:56.736Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "2.1.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"6fbfb71dd5ecf1a80c7527d630e3e6b8\"",
+			"fetched": 1643351787184
+		}
+	},
+	"_distfiles": {
+		"steno-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.1.0.tgz",
+			"sha": "bf37ff6379712087de01741b493b71de818b3747",
+			"registry": "npmjs"
+		},
+		"steno-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.1.1.tgz",
+			"sha": "2b1004f5af9e6aa8b71396b04efc3aabace69690",
+			"registry": "npmjs"
+		},
+		"steno-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.1.2.tgz",
+			"sha": "5675402311dad9d9ff60138f2d237f5dcb70668b",
+			"registry": "npmjs"
+		},
+		"steno-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.2.0.tgz",
+			"sha": "9188ab75d96012db191b93a05cfa25b82ccb13ce",
+			"registry": "npmjs"
+		},
+		"steno-0.2.1.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.2.1.tgz",
+			"sha": "2669073babbe8bcfd6ee7c5e5e942fbfaf39b9d7",
+			"registry": "npmjs"
+		},
+		"steno-0.3.0.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.3.0.tgz",
+			"sha": "f00d0ad24e679f09895adb189b1737a4beefbbc8",
+			"registry": "npmjs"
+		},
+		"steno-0.3.1.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.3.1.tgz",
+			"sha": "8856790946baa45ee2bbc6d366bce55adc858694",
+			"registry": "npmjs"
+		},
+		"steno-0.3.2.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.3.2.tgz",
+			"sha": "ab1e7f547ac7f78aeecb8b6d74c25c5b292df99e",
+			"registry": "npmjs"
+		},
+		"steno-0.4.0.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.4.0.tgz",
+			"sha": "2e4631a0d95ee527f780abb15ea39857faf90fa6",
+			"registry": "npmjs"
+		},
+		"steno-0.4.1.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.4.1.tgz",
+			"sha": "32ad7c13f34aa20e59408fa1e5312edb0a94ccbd",
+			"registry": "npmjs"
+		},
+		"steno-0.4.2.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.4.2.tgz",
+			"sha": "de79ec3d8d260cf1579730a21bff28bad4230a7d",
+			"registry": "npmjs"
+		},
+		"steno-0.4.3.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.4.3.tgz",
+			"sha": "796dcd08ab771b6d6a075f75e68ab77d3307180c",
+			"registry": "npmjs"
+		},
+		"steno-0.4.4.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.4.4.tgz",
+			"sha": "071105bdfc286e6615c0403c27e9d7b5dcb855cb",
+			"registry": "npmjs"
+		},
+		"steno-0.5.0.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-0.5.0.tgz",
+			"sha": "d39fa388c7e7579e3f157495ec65c98cbbf70ae5",
+			"registry": "npmjs"
+		},
+		"steno-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-1.0.0.tgz",
+			"sha": "475e32c6066ec9760229eaaf1550601764fbecba",
+			"registry": "npmjs"
+		},
+		"steno-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-2.0.0.tgz",
+			"sha": "1dff26d139f7771012c068693afdca4cd00f5ebd",
+			"registry": "npmjs"
+		},
+		"steno-2.1.0.tgz": {
+			"url": "https://registry.npmjs.org/steno/-/steno-2.1.0.tgz",
+			"sha": "05a9c378ce42ed04f642cda6fcb41787a10e4e33",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-5a580473f752e7a8",
+	"_id": "steno",
+	"readme": "# Steno [![](http://img.shields.io/npm/dm/steno.svg?style=flat)](https://www.npmjs.org/package/steno) [![Node.js CI](https://github.com/typicode/steno/actions/workflows/node.js.yml/badge.svg)](https://github.com/typicode/steno/actions/workflows/node.js.yml)\n\n> Specialized fast async file writer\n\n**Steno** makes writing to the same file often/concurrently fast and safe.\n\nUsed in [lowdb](https://github.com/typicode/lowdb).\n\n_https://en.wikipedia.org/wiki/Stenotype_\n\n## Features\n\n- Fast (see benchmark)\n- Lightweight (~6kb)\n- Promise-based\n- Atomic write\n- No race condition\n- TypeScript definitions\n\n## Usage\n\n```javascript\nimport { Writer } from 'steno'\n\n// Create a singleton writer\nconst file = new Writer('file.txt')\n\n// Use it in the rest of your code\nasync function save() {\n  await file.write('some data')\n}\n```\n\n## Benchmark\n\n`npm run benchmark` (see `src/benchmark.ts`)\n\n```\nWrite 1KB data to the same file x 1000\n\n  fs     : 62.303ms\n  steno  : 1.384ms\n\n  fs.txt = steno.txt ✓\n\n\nWrite 1MB data to the same file x 1000\n\n  fs     : 2.300s\n  steno  : 5.444ms\n\n  fs.txt = steno.txt ✓\n```\n\n## License\n\nMIT - [Typicode](https://github.com/typicode)"
+}

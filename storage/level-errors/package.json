@@ -1565,7 +1565,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"cea3741e962fa21327a81f1aa5c92d34\"",
-			"fetched": 1643186342652
+			"fetched": 1643351803263
 		}
 	},
 	"_distfiles": {
@@ -1640,7 +1640,7 @@
 			"shasum": "2132a677bf4e679ce029f517c2f17432800c05c8"
 		}
 	},
-	"_rev": "2-07a28f43ed7f7ad2",
+	"_rev": "3-c85019ff04acf59e",
 	"_id": "level-errors",
 	"readme": "# level-errors\n\n> Error types for [levelup][levelup].\n\n[![level badge][level-badge]](https://github.com/Level/awesome)\n[![npm](https://img.shields.io/npm/v/level-errors.svg)](https://www.npmjs.com/package/level-errors)\n[![Node version](https://img.shields.io/node/v/level-errors.svg)](https://www.npmjs.com/package/level-errors)\n[![Test](https://img.shields.io/github/workflow/status/Level/errors/Test?label=test)](https://github.com/Level/errors/actions/workflows/test.yml)\n[![Coverage](https://img.shields.io/codecov/c/github/Level/errors?label=&logo=codecov&logoColor=fff)](https://codecov.io/gh/Level/errors)\n[![Standard](https://img.shields.io/badge/standard-informational?logo=javascript&logoColor=fff)](https://standardjs.com)\n[![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)\n[![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective&logoColor=fff)](https://opencollective.com/level)\n\n## API\n\n**If you are upgrading:** please see [`UPGRADING.md`](UPGRADING.md).\n\n### `.LevelUPError()`\n\nGeneric error base class.\n\n### `.InitializationError()`\n\nError initializing the database, like when the database's location argument is missing.\n\n### `.OpenError()`\n\nError opening the database.\n\n### `.ReadError()`\n\nError reading from the database.\n\n### `.WriteError()`\n\nError writing to the database.\n\n### `.NotFoundError()`\n\nData not found error.\n\nHas extra properties:\n\n- `notFound`: `true`\n- `status`: 404\n\n### `.EncodingError()`\n\nError encoding data.\n\n## Contributing\n\n[`Level/errors`](https://github.com/Level/errors) is an **OPEN Open Source Project**. This means that:\n\n> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.\n\nSee the [Contribution Guide](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.\n\n## Donate\n\nSupport us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work.\n\n## License\n\n[MIT](LICENSE)\n\n[level-badge]: https://leveljs.org/img/badge.svg\n\n[levelup]: https://github.com/Level/levelup"
 }
