@@ -61,10 +61,12 @@ LoadModule ssl_module libexec/apache2/mod_ssl.so
     ProxyPassReverse        /       http://127.0.0.1:4874/
 </VirtualHost>
 ```
-
-### docker使用
+## nrm/yrm 包源使用
+[nrm使用](./NRM.md)
+## docker使用
 TODO
-
+## 阿里云私有服务部署
+> 安全组记得开放，若服务器装了宝塔，也需将宝塔的端口放行
 ## 填坑记录
 ### verdaccio 5.x proxy bug
 > 当使用5.x版本时,再使用apache代理时，将会出现跨域问题:
@@ -120,6 +122,3 @@ yarn pm2 start ./verdaccio.js
 
 ### 反向代理必须要在根节点(/) 其他节点会出错
 TODO
-
-### 阿里云私有服务部署
-> 安全组记得开放，若服务器装了宝塔，也需将宝塔的端口放行
